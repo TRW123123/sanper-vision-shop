@@ -63,6 +63,16 @@ const Navbar = () => {
                 <NavigationMenuTrigger>Produkte</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[600px] gap-3 p-6 md:grid-cols-2">
+                    <li className="md:col-span-2">
+                      <NavigationMenuLink asChild>
+                        <Link
+                          to="/produkte"
+                          className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground font-medium"
+                        >
+                          Alle Produkte ansehen
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
                     {productCategories.map((category) => (
                       <li key={category.href}>
                         <NavigationMenuLink asChild>

@@ -1,0 +1,457 @@
+export interface Product {
+  id: string;
+  produktname: string;
+  slug: string;
+  kategorie: string;
+  systemtyp: string;
+  material: string;
+  einsatzbereich: string[];
+  masse_optionen: string;
+  motorisierung: boolean;
+  windschutz: string;
+  wasserschutz: string;
+  zertifikate: string[];
+  anmerkungen: string;
+  kurzbeschreibung: string;
+  bilder: string[];
+}
+
+const createSlug = (name: string): string => {
+  return name
+    .toLowerCase()
+    .replace(/ä/g, 'ae')
+    .replace(/ö/g, 'oe')
+    .replace(/ü/g, 'ue')
+    .replace(/ß/g, 'ss')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+};
+
+export const products: Product[] = [
+  {
+    id: "1",
+    produktname: "Reinigbares Guillotinefenster",
+    slug: createSlug("Reinigbares Guillotinefenster"),
+    kategorie: "Verglasungssysteme",
+    systemtyp: "Motorisiertes vertikales Schiebesystem, leicht zu reinigen",
+    material: "Aluminiumprofile; gehärtetes Laminatglas",
+    einsatzbereich: ["Balkon", "Terrasse", "Café", "Restaurant", "Wintergarten"],
+    masse_optionen: "Individuelle Maße; 2–3 Paneele; Reinigungsmodus",
+    motorisierung: true,
+    windschutz: "Ja",
+    wasserschutz: "Ja",
+    zertifikate: ["CE", "TSE", "PFB-Tests"],
+    anmerkungen: "Patentiert; einfache Reinigung",
+    kurzbeschreibung: "Innovatives motorisiertes Guillotinefenster mit einzigartigem Reinigungsmodus für mühelose Wartung und perfekte Transparenz.",
+    bilder: ["https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "2",
+    produktname: "Guillotine-Glassysteme",
+    slug: createSlug("Guillotine-Glassysteme"),
+    kategorie: "Verglasungssysteme",
+    systemtyp: "Motorisiertes oder manuelles vertikales Schiebesystem",
+    material: "Aluminiumrahmen; gehärtetes Glas; Doppelverglasung",
+    einsatzbereich: ["Balkon", "Café", "Restaurant", "Büro", "Wintergarten"],
+    masse_optionen: "Projektbezogene Maße; 2–3 Paneele",
+    motorisierung: true,
+    windschutz: "Ja",
+    wasserschutz: "Ja",
+    zertifikate: ["CE", "ISO 9001", "EN 13659"],
+    anmerkungen: "Panoramablick; Sicherheit",
+    kurzbeschreibung: "Elegante Guillotine-Glassysteme mit Doppelverglasung für uneingeschränkten Panoramablick und maximale Sicherheit.",
+    bilder: ["https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "3",
+    produktname: "Bioklimatische Pergola",
+    slug: createSlug("Bioklimatische Pergola"),
+    kategorie: "Pergola-Systeme",
+    systemtyp: "Motorisierte lamellenbasierte bioklimatische Pergola",
+    material: "Extrudiertes Aluminium; Edelstahl; integrierte LED",
+    einsatzbereich: ["Terrasse", "Garten", "Pool", "Restaurant", "Café"],
+    masse_optionen: "Modular; Spannweite 5–6 m; verstellbarer Lamellenwinkel; LED; Heizungsoption",
+    motorisierung: true,
+    windschutz: "Sehr hoch (bis 120 km/h)",
+    wasserschutz: "Ja",
+    zertifikate: ["CE", "EN 13561", "Qualicoat"],
+    anmerkungen: "Lamellenwinkel 0–135°; hohe Schneelast",
+    kurzbeschreibung: "Premium bioklimatische Pergola mit motorisierten Lamellen, integrierter LED-Beleuchtung und extremer Windbeständigkeit bis 120 km/h.",
+    bilder: ["https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "4",
+    produktname: "Einmotorige bioklimatische Pergola",
+    slug: createSlug("Einmotorige bioklimatische Pergola"),
+    kategorie: "Pergola-Systeme",
+    systemtyp: "Einmotorige lamellenbasierte Pergola mit Dreh- und Einzugsfunktion",
+    material: "Aluminiumlamellen; Scherenmechanismus",
+    einsatzbereich: ["Villaterrassen", "Café/Restaurant"],
+    masse_optionen: "Maximal 4×7 m; Paneele lassen sich vollständig zurückziehen",
+    motorisierung: true,
+    windschutz: "Hoch",
+    wasserschutz: "Ja",
+    zertifikate: ["CE", "EN 13561"],
+    anmerkungen: "Patentiertes Mechanismus; vollständig öffnungsfähiges Dach",
+    kurzbeschreibung: "Innovative einmotorige Pergola mit patentiertem Scherenmechanismus für vollständig zurückziehbare Lamellen.",
+    bilder: ["https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "5",
+    produktname: "Rolling Roof Pergola (Falt-Dach)",
+    slug: createSlug("Rolling Roof Pergola (Falt-Dach)"),
+    kategorie: "Pergola-Systeme",
+    systemtyp: "Motorisiertes faltbares Dachsystem",
+    material: "Extrudierte Aluminium-Paneele; langlebiger Motor",
+    einsatzbereich: ["Café", "Restaurant", "Garten", "Terrasse"],
+    masse_optionen: "Modular; Paneelbreite 21 cm; Spannweite 5–6 m; RAL-Farben",
+    motorisierung: true,
+    windschutz: "Hoch",
+    wasserschutz: "Ja",
+    zertifikate: ["CE", "EN 13561", "5 Jahre Garantie"],
+    anmerkungen: "Paneele drehen sich um 360°; vollständig zu öffnendes Dach",
+    kurzbeschreibung: "Flexibles Rolling Roof System mit 360° drehbaren Aluminium-Paneelen und 5 Jahren Garantie.",
+    bilder: ["https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "6",
+    produktname: "Kassettenmarkise",
+    slug: createSlug("Kassettenmarkise"),
+    kategorie: "Textile Beschattung",
+    systemtyp: "Kassettenmarkise mit Gelenkarmen",
+    material: "Aluminiumgehäuse und -arme; Acryl-/PVC-Stoff",
+    einsatzbereich: ["Balkon", "Terrasse", "Café", "Geschäft"],
+    masse_optionen: "Breite 2–6 m; Ausladung 1,5–3,5 m; optionaler Windsensor",
+    motorisierung: false,
+    windschutz: "Mittel",
+    wasserschutz: "Ja",
+    zertifikate: ["CE", "EN 13561", "TÜV-zertifizierter Motor"],
+    anmerkungen: "Stoff ist im Kassettgehäuse geschützt; ästhetisches Design",
+    kurzbeschreibung: "Hochwertige Kassettenmarkise mit vollständigem Stoffschutz und optionalem Windsensor.",
+    bilder: ["https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "7",
+    produktname: "Wintent-Fenstermarkise",
+    slug: createSlug("Wintent-Fenstermarkise"),
+    kategorie: "Textile Beschattung",
+    systemtyp: "Fenstermarkise (steiler Winkel)",
+    material: "Aluminiumgehäuse; Acrylstoff",
+    einsatzbereich: ["Fenster", "Schaufenster", "Terrasse", "Ladengeschäft"],
+    masse_optionen: "Breite 1–4 m; Neigung 60–90°; viele Farben",
+    motorisierung: false,
+    windschutz: "Mittel",
+    wasserschutz: "Ja",
+    zertifikate: ["CE", "EN 13561"],
+    anmerkungen: "Schlanke Kassette; hoher Neigungswinkel; dekorativ",
+    kurzbeschreibung: "Dekorative Fenstermarkise mit steilem Neigungswinkel ideal für Schaufenster und Ladenfronten.",
+    bilder: ["https://images.unsplash.com/photo-1600566753151-384129cf4e3e?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "8",
+    produktname: "Zip-Screen",
+    slug: createSlug("Zip-Screen"),
+    kategorie: "Textile Beschattung",
+    systemtyp: "Motorisierte vertikale Zip-Screen-Markise",
+    material: "Aluminium-Seitenkanäle; PVC-beschichtetes Polyestergewebe",
+    einsatzbereich: ["Pergola-Seiten", "Veranda", "Balkon", "Büro"],
+    masse_optionen: "Maximal 5–6 m Breite; 3–4 m Höhe; mehr als 20 Farben",
+    motorisierung: true,
+    windschutz: "Sehr hoch (bis 80 km/h)",
+    wasserschutz: "Ja",
+    zertifikate: ["CE", "EN 13561", "EN 60335"],
+    anmerkungen: "Ganzjähriger Schutz; fungiert als Insektenschutz; energieeffizient",
+    kurzbeschreibung: "Hochleistungs-Zip-Screen mit extremer Windbeständigkeit und Insektenschutzfunktion für ganzjährigen Einsatz.",
+    bilder: ["https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "9",
+    produktname: "Zip-Dachmarkise",
+    slug: createSlug("Zip-Dachmarkise"),
+    kategorie: "Textile Beschattung",
+    systemtyp: "Motorisierte horizontale Zip-Dachmarkise",
+    material: "Aluminiumführungen; blickdichter oder perforierter Stoff; Gasdruckfeder",
+    einsatzbereich: ["Pergola-Dächer", "Wintergarten", "Veranda", "Oberlicht"],
+    masse_optionen: "Breite 4–5 m; Ausladung 5–6 m; multisegment",
+    motorisierung: true,
+    windschutz: "Hoch",
+    wasserschutz: "Ja",
+    zertifikate: ["CE", "EN 13561", "IP65-Motor"],
+    anmerkungen: "Mit Kolbenspannung; mit Sensoren; vollständig schließend",
+    kurzbeschreibung: "Premium Zip-Dachmarkise mit Kolbenspannung und Sensortechnik für perfekte Stoffspannung.",
+    bilder: ["https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "10",
+    produktname: "Kolbenunterstützte Zip-Dachmarkise",
+    slug: createSlug("Kolbenunterstützte Zip-Dachmarkise"),
+    kategorie: "Textile Beschattung",
+    systemtyp: "Kolbenunterstützte Dachmarkise",
+    material: "Aluminiumgehäuse; Gasdruckzylinder; blickdichtes Gewebe",
+    einsatzbereich: ["Große Spannweiten", "große Terrassen", "Dachfenster"],
+    masse_optionen: "Fläche über 10 m²; Doppel-Motor; Doppel-Kolben",
+    motorisierung: true,
+    windschutz: "Hoch",
+    wasserschutz: "Ja",
+    zertifikate: ["CE", "ISO 9001"],
+    anmerkungen: "Hohe Spannung; faltenfrei",
+    kurzbeschreibung: "Spezialsystem für große Flächen mit Doppel-Motor und Gasdruckunterstützung für faltenfreie Stoffspannung.",
+    bilder: ["https://images.unsplash.com/photo-1600566752229-250ed79c5ee5?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "11",
+    produktname: "Motorisiertes Deckenrollo",
+    slug: createSlug("Motorisiertes Deckenrollo"),
+    kategorie: "Textile Beschattung",
+    systemtyp: "Motorisiertes Deckenrollo (Rollvorhang)",
+    material: "Aluminiumprofil; technisches Textil oder Blackout-Gewebe",
+    einsatzbereich: ["Innen-Dächer von Wintergärten", "Atrien in Büros", "Ausstellungshallen"],
+    masse_optionen: "Projektabhängig; optional doppellagig",
+    motorisierung: true,
+    windschutz: "—",
+    wasserschutz: "Mittel",
+    zertifikate: ["CE", "B1 schwer entflammbar"],
+    anmerkungen: "Innenbereich; Gruppensteuerung",
+    kurzbeschreibung: "Intelligentes Deckenrollo-System mit Gruppensteuerung ideal für Wintergärten und Atrien.",
+    bilder: ["https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "12",
+    produktname: "Transparente Zip-Markise",
+    slug: createSlug("Transparente Zip-Markise"),
+    kategorie: "Transparente Schutzsysteme",
+    systemtyp: "Motorisierte transparente PVC-Zip-Markise",
+    material: "Kristall-PVC; Aluminium-Seitenkanäle",
+    einsatzbereich: ["Restaurant", "Café", "Wintergarten", "Terrasse"],
+    masse_optionen: "Maximal 4 m Breite; 3 m Höhe; PVC in 0,5/0,8/1 mm",
+    motorisierung: true,
+    windschutz: "Sehr hoch",
+    wasserschutz: "Ja",
+    zertifikate: ["CE", "EN 13561", "PVC ISO 2286"],
+    anmerkungen: "Verdeckt die Aussicht nicht; UV-geschützt",
+    kurzbeschreibung: "Kristallklares PVC-System für Wetterschutz ohne Sichteinschränkung – ideal für Gastronomie.",
+    bilder: ["https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "13",
+    produktname: "Transparenter Rollladen",
+    slug: createSlug("Transparenter Rollladen"),
+    kategorie: "Transparente Schutzsysteme",
+    systemtyp: "Motorisierter transparenter Polycarbonat-Rollladen",
+    material: "Polycarbonat-Paneele; Aluminiumprofile",
+    einsatzbereich: ["Schaufenster", "Ausstellungsraum", "Garage"],
+    masse_optionen: "Maximal 4 m Breite; 5 m Höhe; modular",
+    motorisierung: true,
+    windschutz: "Hoch",
+    wasserschutz: "Ja",
+    zertifikate: ["CE", "EN 13241-1"],
+    anmerkungen: "Sicherheit und Transparenz; vergilbt nicht",
+    kurzbeschreibung: "Innovativer transparenter Rollladen aus Polycarbonat für Sicherheit bei vollem Einblick.",
+    bilder: ["https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "14",
+    produktname: "Gartenzaun (Windschutz)",
+    slug: createSlug("Gartenzaun (Windschutz)"),
+    kategorie: "Transparente Schutzsysteme",
+    systemtyp: "Fester oder beweglicher Glaswindschutz",
+    material: "Laminiertes; gehärtetes Glas; Aluminiumsteher",
+    einsatzbereich: ["Offener Café-Bereich", "Gartenterrasse", "Poolbereich", "Bürotrennwand"],
+    masse_optionen: "Höhe 1–1,5 m; Breite 1–2 m; fest oder mit Rollen",
+    motorisierung: false,
+    windschutz: "Mittel/Hoch",
+    wasserschutz: "Mittel",
+    zertifikate: ["CE", "EN 12150", "ISO 9227"],
+    anmerkungen: "Panoramablick; windschneidend",
+    kurzbeschreibung: "Eleganter Glas-Windschutz für Terrassen und Pools mit Option für mobile Rollensysteme.",
+    bilder: ["https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "15",
+    produktname: "Sonnenschutzlamellen",
+    slug: createSlug("Sonnenschutzlamellen"),
+    kategorie: "Transparente Schutzsysteme",
+    systemtyp: "Festes oder motorisiertes Sonnenschutzsystem",
+    material: "Extrudierte Aluminiumlamellen",
+    einsatzbereich: ["Büro- und Wohnfassaden", "Schulen", "Krankenhäuser"],
+    masse_optionen: "Lamellenbreite 100–400 mm; feste Neigung oder motorisch 0–90° verstellbar",
+    motorisierung: false,
+    windschutz: "Hoch",
+    wasserschutz: "—",
+    zertifikate: ["CE", "EN 1991", "TSE"],
+    anmerkungen: "Energieeffizient; ästhetische Fassade",
+    kurzbeschreibung: "Architektonische Sonnenschutzlamellen für energieeffiziente Fassadengestaltung von Büros und öffentlichen Gebäuden.",
+    bilder: ["https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "16",
+    produktname: "Wintergartensysteme",
+    slug: createSlug("Wintergartensysteme"),
+    kategorie: "Verglasungssysteme",
+    systemtyp: "Isoliertes Aluminium-Glashaus-System",
+    material: "Thermisch getrenntes Aluminium; laminiertes und wärmeschutzverglastes Dach und Fassade",
+    einsatzbereich: ["Villagarten", "Café", "Restaurant", "Dachterrasse"],
+    masse_optionen: "Projektmaße; modular; öffnungsfähiges Dach; integrierte LED",
+    motorisierung: false,
+    windschutz: "Hoch",
+    wasserschutz: "Hoch",
+    zertifikate: ["CE", "Eurocode 9", "EN 1279", "EN 12150"],
+    anmerkungen: "Ganzjahresnutzung; vollständige Isolierung",
+    kurzbeschreibung: "Premium-Wintergartensystem mit thermischer Trennung für ganzjährigen Komfort und maximale Energieeffizienz.",
+    bilder: ["https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "17",
+    produktname: "Schallschutzvorhang",
+    slug: createSlug("Schallschutzvorhang"),
+    kategorie: "Innenraum & Akustik",
+    systemtyp: "Akustischer Schallschutzvorhang",
+    material: "Samt + Filz + Vinylbarriere",
+    einsatzbereich: ["Theater", "Konzertsaal", "Studio", "industrielle Bereiche"],
+    masse_optionen: "Höhe 3–6 m; modular; mit Schienen",
+    motorisierung: false,
+    windschutz: "Hoch (schalldämmend)",
+    wasserschutz: "—",
+    zertifikate: ["ISO 354", "DIN 4102"],
+    anmerkungen: "Reduziert Lärm um 10–15 dB; faltbar",
+    kurzbeschreibung: "Professioneller Schallschutzvorhang mit Mehrschichtsystem für Lärmreduktion bis zu 15 dB.",
+    bilder: ["https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "18",
+    produktname: "Trennvorhang",
+    slug: createSlug("Trennvorhang"),
+    kategorie: "Innenraum & Akustik",
+    systemtyp: "Großflächiger Raumtrennvorhang",
+    material: "Dickes Gewebe; stählerne Trägerschiene",
+    einsatzbereich: ["Sporthalle", "Messe", "Hotelballsaal"],
+    masse_optionen: "Breite 10–20 m; Höhe 5–8 m; motorisierte Option",
+    motorisierung: false,
+    windschutz: "Mittel",
+    wasserschutz: "—",
+    zertifikate: ["DIN 4102", "ISO 11654"],
+    anmerkungen: "Akustische und visuelle Trennung; faltbar und platzsparend parkbar",
+    kurzbeschreibung: "Großflächiger Raumtrennvorhang für Sporthallen und Veranstaltungsräume mit akustischen Eigenschaften.",
+    bilder: ["https://images.unsplash.com/photo-1497366412874-3415097a27e7?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "19",
+    produktname: "Bühnenvorhang",
+    slug: createSlug("Bühnenvorhang"),
+    kategorie: "Innenraum & Akustik",
+    systemtyp: "Motorisierter oder manueller Theater-Bühnenvorhang",
+    material: "Schweres Samtgewebe; Bühnenmechanik",
+    einsatzbereich: ["Theater", "Konzertsaal", "Veranstaltungszentrum"],
+    masse_optionen: "Höhe 5–10 m; Bühnenbreite; zweiteilig",
+    motorisierung: false,
+    windschutz: "—",
+    wasserschutz: "—",
+    zertifikate: ["NFPA 701", "CE"],
+    anmerkungen: "Akustisch wirksam; lichtundurchlässig; ästhetisch",
+    kurzbeschreibung: "Klassischer Theater-Bühnenvorhang aus schwerem Samt mit professioneller Bühnenmechanik.",
+    bilder: ["https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "20",
+    produktname: "Projektionsleinwand",
+    slug: createSlug("Projektionsleinwand"),
+    kategorie: "Innenraum & Akustik",
+    systemtyp: "Manuelle oder motorisierte Projektionsleinwand",
+    material: "Vinylprojektionsfläche; Aluminiumrolle",
+    einsatzbereich: ["Konferenzraum", "Kino", "Heimkino", "Schulung"],
+    masse_optionen: "100–150 Zoll; 16:9 oder 4:3; mit Kassette",
+    motorisierung: false,
+    windschutz: "—",
+    wasserschutz: "—",
+    zertifikate: ["CE", "RoHS", "M1"],
+    anmerkungen: "Mattweiße Oberfläche; schwarzer Rand",
+    kurzbeschreibung: "Professionelle Projektionsleinwand für Konferenzräume und Schulungsräume mit matter Oberfläche.",
+    bilder: ["https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "21",
+    produktname: "Heimkino-Projektionsleinwand",
+    slug: createSlug("Heimkino-Projektionsleinwand"),
+    kategorie: "Innenraum & Akustik",
+    systemtyp: "Elektrische Heimkino-Leinwand",
+    material: "PVC mit Glasfaserverstärkung; Aluminiumkassette",
+    einsatzbereich: ["Heimkino", "Wohnzimmer"],
+    masse_optionen: "92–120 Zoll; 16:9; Kassettensystem",
+    motorisierung: true,
+    windschutz: "—",
+    wasserschutz: "—",
+    zertifikate: ["CE", "TÜV", "NFPA 701"],
+    anmerkungen: "4K/8K-geeignet; akustisch transparent optional",
+    kurzbeschreibung: "Premium Heimkino-Leinwand mit elektrischem Antrieb, 4K/8K-geeignet und optionaler akustischer Transparenz.",
+    bilder: ["https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=800&h=600&fit=crop"]
+  },
+  {
+    id: "22",
+    produktname: "Pergola Arc",
+    slug: createSlug("Pergola Arc"),
+    kategorie: "Pergola-Systeme",
+    systemtyp: "Pergola mit gebogenem Schienensystem",
+    material: "Stahlverstärkte Aluminiumprofile; PVC-Membran",
+    einsatzbereich: ["Hotel", "Villaterrasse", "halbrunde Höfe"],
+    masse_optionen: "Breite 4 m; Spannweite 6,7 m; modular; Höhe 3,65 m",
+    motorisierung: true,
+    windschutz: "Hoch",
+    wasserschutz: "Hoch",
+    zertifikate: ["CE", "EN 13561", "DIN 4102"],
+    anmerkungen: "Gewölbtes Design; Smart-Home-kompatibel; LED-Beleuchtung",
+    kurzbeschreibung: "Architektonische Pergola Arc mit gewölbtem Design, Smart-Home-Integration und LED-Beleuchtung.",
+    bilder: ["https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=600&fit=crop"]
+  }
+];
+
+export const categories = [
+  {
+    id: "pergola-systeme",
+    name: "Pergola-Systeme",
+    description: "Bioclimatic Pergolen mit drehbaren Lamellen für optimale Klimakontrolle und Rolling Roof Systeme für vollständigen Wetterschutz.",
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=600&fit=crop"
+  },
+  {
+    id: "verglasungssysteme",
+    name: "Verglasungssysteme",
+    description: "Rahmenlose Giyotin-Glas-Systeme und Wintergärten für transparente Raumabschlüsse mit maximaler Lichtausbeute.",
+    image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&h=600&fit=crop"
+  },
+  {
+    id: "textile-beschattung",
+    name: "Textile Beschattung",
+    description: "Kassettenmarkisen, ZIP-Screen und Piston-Tavan Systeme für flexible und elegante Sonnenschutzlösungen.",
+    image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&h=600&fit=crop"
+  },
+  {
+    id: "transparente-schutzsysteme",
+    name: "Transparente Schutzsysteme",
+    description: "Durchsichtige ZIP-Screens und Rolltore für Windschutz ohne Sichteinschränkung. Ideal für Gastronomie und Terrassen.",
+    image: "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&h=600&fit=crop"
+  },
+  {
+    id: "innenraum-akustik",
+    name: "Innenraum & Akustik",
+    description: "Schallvorhänge und Raumtrennvorhänge für optimierte Akustik und flexible Raumgestaltung in Büros und öffentlichen Räumen.",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop"
+  }
+];
+
+export const getProductsByCategory = (kategorie: string): Product[] => {
+  return products.filter(p => p.kategorie === kategorie);
+};
+
+export const getProductBySlug = (slug: string): Product | undefined => {
+  return products.find(p => p.slug === slug);
+};
+
+export const getCategoryIdFromName = (name: string): string => {
+  return name
+    .toLowerCase()
+    .replace(/ä/g, 'ae')
+    .replace(/ö/g, 'oe')
+    .replace(/ü/g, 'ue')
+    .replace(/ß/g, 'ss')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+};

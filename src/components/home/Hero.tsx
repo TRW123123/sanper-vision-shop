@@ -32,8 +32,8 @@ const Hero = () => {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white hover:text-primary">
-              <Link to="/produkte/pergola-systeme">
+            <Button size="lg" variant="hero" asChild>
+              <Link to="/produkte">
                 Produkte entdecken
               </Link>
             </Button>

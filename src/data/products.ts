@@ -459,10 +459,10 @@ export const getCategoryIdFromName = (name: string): string => {
 // Bestseller-Produkte für Homepage
 export const getBestsellerProducts = (): Product[] => {
   const bestsellerSlugs = [
-    "tek-hareket-bioclimatic-pergola",
+    "bioklimatische-pergola",
     "zip-screen",
     "transparente-zip-markise",
-    "giyotin-glassystem"
+    "guillotine-glassysteme"
   ];
   
   return products.filter(product => bestsellerSlugs.includes(product.slug));

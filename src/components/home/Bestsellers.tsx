@@ -27,22 +27,17 @@ const Bestsellers = () => {
           </p>
         </div>
 
-        {/* Asymmetrisches 4-Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {bestsellers.map((product, index) => {
-            // Große Cards an Position 0 und 3, kleine an 1 und 2
-            const isLarge = index === 0 || index === 3;
-            const colSpan = isLarge ? "lg:col-span-2" : "lg:col-span-1";
-            const aspectRatio = isLarge ? 4 / 3 : 3 / 4;
-
+        {/* Gleichmäßiges 2x2 Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 max-w-5xl mx-auto">
+          {bestsellers.slice(0, 4).map((product, index) => {
             return (
               <Link
                 key={product.id}
                 to={`/produkt/${product.slug}`}
-                className={`group relative overflow-hidden rounded-lg shadow-medium hover:shadow-strong transition-all duration-300 hover:-translate-y-1 bg-card ${colSpan}`}
+                className="group relative overflow-hidden rounded-lg shadow-medium hover:shadow-strong transition-all duration-300 hover:-translate-y-1 bg-card"
               >
                 {/* Produktbild */}
-                <AspectRatio ratio={aspectRatio}>
+                <AspectRatio ratio={4 / 3}>
                   <img
                     src={product.bilder[0] || "/placeholder.svg"}
                     alt={product.produktname}

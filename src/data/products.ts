@@ -455,3 +455,15 @@ export const getCategoryIdFromName = (name: string): string => {
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '');
 };
+
+// Bestseller-Produkte für Homepage
+export const getBestsellerProducts = (): Product[] => {
+  const bestsellerSlugs = [
+    "tek-hareket-bioclimatic-pergola",
+    "zip-screen",
+    "transparente-zip-markise",
+    "giyotin-glassystem"
+  ];
+  
+  return products.filter(product => bestsellerSlugs.includes(product.slug));
+};

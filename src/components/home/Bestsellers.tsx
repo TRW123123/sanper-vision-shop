@@ -80,7 +80,7 @@ const Bestsellers = () => {
 
         {/* Zentraler CTA */}
         <div className="text-center">
-          <Button size="lg" asChild>
+          <Button size="lg" asChild className="hover-scale">
             <Link to="/produkte">
               Alle Produkte ansehen
               <ArrowRight className="ml-2 h-4 w-4" />

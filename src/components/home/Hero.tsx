@@ -26,13 +26,13 @@ const Hero = () => {
             Premium-Qualität mit deutscher Ingenieurskunst für Wohn- und Gewerbeprojekte.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
+            <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground hover-scale">
               <Link to="/kontakt?type=beratung">
                 Beratung anfragen
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button size="lg" variant="hero" asChild>
+            <Button size="lg" variant="hero" asChild className="hover-scale">
               <Link to="/produkte">
                 Produkte entdecken
               </Link>

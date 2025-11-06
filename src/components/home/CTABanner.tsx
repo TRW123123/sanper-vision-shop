@@ -16,7 +16,7 @@ const CTABanner = () => {
             <Button
               size="lg"
               asChild
-              className="bg-white text-accent hover:bg-white/90"
+              className="bg-white text-accent hover:bg-white/90 hover-scale"
             >
               <Link to="/kontakt?type=beratung">
                 Beratung anfragen
@@ -27,7 +27,7 @@ const CTABanner = () => {
               size="lg"
               variant="outline"
               asChild
-              className="border-white text-white hover:bg-white hover:text-accent"
+              className="border-white text-white hover:bg-white hover:text-accent hover-scale"
             >
               <a href="tel:+4900000000">
                 <Phone className="mr-2 h-4 w-4" />

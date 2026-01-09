@@ -7,13 +7,14 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Kontakt = () => {
   const [searchParams] = useSearchParams();
   const type = searchParams.get("type");
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     firma: "",
@@ -22,13 +23,19 @@ const Kontakt = () => {
     nachricht: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+
+    // Simulate API delay
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
     toast({
       title: "Anfrage gesendet",
       description: "Wir werden uns in Kürze bei Ihnen melden.",
     });
     setFormData({ name: "", firma: "", email: "", telefon: "", nachricht: "" });
+    setIsSubmitting(false);
   };
 
   return (
@@ -120,6 +127,8 @@ const Kontakt = () => {
                       <Input
                         id="name"
                         required
+                        autoComplete="name"
+                        placeholder="Max Mustermann"
                         value={formData.name}
                         onChange={(e) =>
                           setFormData({ ...formData, name: e.target.value })
@@ -131,6 +140,8 @@ const Kontakt = () => {
                       <Label htmlFor="firma">Firma</Label>
                       <Input
                         id="firma"
+                        autoComplete="organization"
+                        placeholder="Musterfirma GmbH"
                         value={formData.firma}
                         onChange={(e) =>
                           setFormData({ ...formData, firma: e.target.value })
@@ -144,6 +155,8 @@ const Kontakt = () => {
                         id="email"
                         type="email"
                         required
+                        autoComplete="email"
+                        placeholder="max@beispiel.de"
                         value={formData.email}
                         onChange={(e) =>
                           setFormData({ ...formData, email: e.target.value })
@@ -156,6 +169,8 @@ const Kontakt = () => {
                       <Input
                         id="telefon"
                         type="tel"
+                        autoComplete="tel"
+                        placeholder="+49 123 456789"
                         value={formData.telefon}
                         onChange={(e) =>
                           setFormData({ ...formData, telefon: e.target.value })
@@ -184,9 +199,13 @@ const Kontakt = () => {
                       verarbeitet.
                     </div>
 
-                    <Button type="submit" size="lg" className="w-full">
-                      <Send className="mr-2 h-4 w-4" />
-                      Anfrage senden
+                    <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                      {isSubmitting ? (
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      ) : (
+                        <Send className="mr-2 h-4 w-4" />
+                      )}
+                      {isSubmitting ? "Wird gesendet..." : "Anfrage senden"}
                     </Button>
                   </form>
                 </CardContent>

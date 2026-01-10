@@ -1,0 +1,184 @@
+---
+import LandingPageLayout from "@/layouts/LandingPageLayout.astro";
+import landingPages from "@/data/landing_pages.json";
+import { Button } from "@/components/ui/button";
+import { Check, Star, Shield, ArrowRight } from "lucide-react";
+
+export async function getStaticPaths() {
+  return landingPages.map((page) => ({
+    params: { slug: page.slug },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+
+// Helper to determine template type if not strictly defined (fallback)
+const templateType = page.template || "hub";
+---
+
+<LandingPageLayout title={page.title} description={page.meta_description} image={`/images/${page.images[0]}.jpg`}>
+  
+  {/* HERO SECTION */}
+  <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+    {/* Background Image with Overlay */}
+    <div class="absolute inset-0 z-0">
+      <div class="absolute inset-0 bg-black/40 z-10"></div>
+      {/* Note: In production we would use Astro <Image /> optimized component here */}
+      <img 
+        src={`/images/${page.images[0]}.jpg`} 
+        alt={page.h1}
+        class="w-full h-full object-cover"
+        onError={(e) => e.currentTarget.src='https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&h=900&fit=crop'}
+      />
+    </div>
+
+    <div class="container relative z-20 text-center text-white pt-20">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6 animate-fade-in">
+            <span class="w-2 h-2 rounded-full bg-green-500"></span>
+            <span class="text-sm font-medium">Direkt vom Hersteller</span>
+        </div>
+
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight text-shadow-lg">
+        {page.h1}
+      </h1>
+      
+      <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10 text-white/90 leading-relaxed">
+        {page.intro_text}
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <Button size="lg" className="bg-primary hover:bg-primary/90 text-white min-w-[200px] h-14 text-lg" asChild>
+            <a href="#kontakt">Kostenloses Angebot</a>
+        </Button>
+        <Button size="lg" variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 min-w-[200px] h-14 text-lg backdrop-blur-sm" asChild>
+            <a href="#features">Mehr erfahren</a>
+        </Button>
+      </div>
+
+        {/* Trust Pilot / Ratings Mockup */}
+        <div class="mt-12 flex flex-col items-center gap-2">
+            <div class="flex gap-1 text-yellow-400">
+                {[1,2,3,4,5].map(() => <Star className="fill-current w-5 h-5" />)}
+            </div>
+            <p class="text-sm text-white/80">4.9/5 Basierend auf <span class="font-bold text-white">150+ Google Bewertungen</span></p>
+        </div>
+    </div>
+  </section>
+
+  {/* FEATURES / USP GRID */}
+  <section id="features" class="py-20 bg-background">
+    <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {page.features?.map((feature) => (
+          <div class="p-6 rounded-2xl bg-surface border border-border/50 shadow-sm hover:shadow-md transition-all">
+            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 text-primary">
+              <Check className="w-6 h-6" />
+            </div>
+            <h3 class="font-semibold text-lg mb-2">{feature}</h3>
+            <p class="text-muted-foreground text-sm">Geprüfte Qualität für langlebige Freude an Ihrem Produkt.</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* MANUFACTURER TRUST BLOCK (Static for now, dynamic later) */}
+  <section class="py-20 bg-surface">
+    <div class="container">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="flex-1 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-accent/10 text-accent font-medium text-sm">
+                    <Shield className="w-4 h-4" />
+                    Sanper Vision Versprechen
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold">Warum Kunden uns vertrauen</h2>
+                <div class="space-y-4">
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 rounded-full bg-background flex items-center justify-center shadow-sm shrink-0 border border-border">
+                            <span class="font-bold text-primary">01</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">Keine Zwischenhändler</h3>
+                            <p class="text-muted-foreground">Sie kaufen direkt ab Werk. Das spart Kosten und garantiert direkte Kommunikation.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 rounded-full bg-background flex items-center justify-center shadow-sm shrink-0 border border-border">
+                             <span class="font-bold text-primary">02</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">Alles aus einer Hand</h3>
+                            <p class="text-muted-foreground">Von der Beratung über das Aufmaß bis zur Montage - wir kümmern uns um alles.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 rounded-full bg-background flex items-center justify-center shadow-sm shrink-0 border border-border">
+                             <span class="font-bold text-primary">03</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">5 Jahre Garantie</h3>
+                            <p class="text-muted-foreground">Wir stehen zu unserer Qualität. Auf alle Systeme geben wir 5 Jahre volle Herstellergarantie.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 relative">
+                <div class="aspect-square rounded-2xl overflow-hidden shadow-2xl relative z-10 bg-muted">
+                    {/* Placeholder for Showroom/Trust Image */}
+                     <img 
+                        src="/images/showroom-placeholder.jpg" 
+                        alt="Sanper Showroom"
+                        class="w-full h-full object-cover"
+                        onError={(e) => e.currentTarget.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80'}
+                      />
+                </div>
+                {/* Decorative Elements */}
+                <div class="absolute -bottom-6 -right-6 w-full h-full border-2 border-primary/20 rounded-2xl -z-10"></div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  {/* FAQ SECTION */}
+  {page.faq && page.faq.length > 0 && (
+    <section class="py-20 bg-background">
+      <div class="container max-w-3xl">
+        <h2 class="text-3xl font-bold text-center mb-12">Häufige Fragen</h2>
+        <div class="space-y-4">
+          {page.faq.map((item) => (
+            <div class="p-6 rounded-xl border border-border bg-card hover:shadow-sm transition-shadow">
+              <h3 class="font-semibold text-lg mb-2 flex items-center gap-3">
+                <span class="text-primary/60">?</span> {item.question}
+              </h3>
+              <p class="text-muted-foreground pl-6 border-l-2 border-primary/20 ml-1.5">{item.answer}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {/* LEAD CAPTURE / FINAL CTA */}
+  <section id="kontakt" class="py-24 bg-primary text-primary-foreground relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 transform origin-bottom"></div>
+    <div class="container relative z-10 text-center">
+      <h2 class="text-3xl md:text-5xl font-bold mb-6">Starten Sie Ihr Projekt</h2>
+      <p class="text-xl opacity-90 mb-10 max-w-2xl mx-auto">
+        Lassen Sie sich kostenlos beraten oder fordern Sie direkt ein unverbindliches Angebot an. Wir melden uns innerhalb von 24 Stunden.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button size="lg" variant="secondary" className="min-w-[220px] h-14 text-lg shadow-xl" asChild>
+            <a href="/kontakt?type=beratung">Beratungstermin vereinbaren</a>
+        </Button>
+        {/*
+        <Button size="lg" variant="outline" className="border-white/30 hover:bg-white/10 text-white min-w-[220px] h-14 text-lg">
+            WhatsApp Chat starten
+        </Button>
+        */}
+      </div>
+    </div>
+  </section>
+
+</LandingPageLayout>

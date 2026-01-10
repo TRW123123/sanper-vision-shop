@@ -1,0 +1,39 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { Configurator } from "@/components/configurator/Configurator";
+---
+
+<Layout 
+  title="Traumgarten Konfigurator - Sanper Beschattungssysteme"
+  description="Konfigurieren Sie Ihre individuelle Pergola, Wintergarten oder Markise in wenigen Schritten."
+>
+  <main className="min-h-screen bg-muted/30">
+    <div className="container py-12 lg:py-20">
+      <div className="text-center max-w-3xl mx-auto mb-12">
+        <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+          Ihr Projekt in 4 Schritten
+        </h1>
+        <p className="text-xl text-muted-foreground">
+          Nutzen Sie unseren Konfigurator für ein maßgeschneidertes Angebot. 
+          Unverbindlich und kostenlos.
+        </p>
+      </div>
+      
+      {/* Hidden Netlify Form for Detection */}
+      <form name="konfigurator" data-netlify="true" netlify-honeypot="bot-field" hidden>
+        <input type="text" name="productType" />
+        <input type="text" name="width" />
+        <input type="text" name="projection" />
+        <input type="text" name="extras" />
+        <input type="text" name="firstName" />
+        <input type="text" name="lastName" />
+        <input type="email" name="email" />
+        <input type="text" name="phone" />
+        <input type="text" name="zip" />
+        <textarea name="message"></textarea>
+      </form>
+
+      <Configurator client:load />
+    </div>
+  </main>
+</Layout>

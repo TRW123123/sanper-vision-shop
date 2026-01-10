@@ -1,0 +1,12 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import AnfrageView from "@/components/pages/AnfrageView";
+
+// Meta tags for better SEO on the request page
+const title = "Angebot anfordern – Sanper Gölgelendirme Systeme";
+const description = "Fordern Sie jetzt Ihr individuelles Angebot für Beschattungs- und Verglasungssysteme an. Kostenlos und unverbindlich.";
+---
+
+<Layout title={title} description={description}>
+  <AnfrageView client:load />
+</Layout>

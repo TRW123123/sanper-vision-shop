@@ -1,0 +1,53 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import ProductDetailView from "@/components/pages/ProductDetailView";
+import { products, getCategoryIdFromName } from "@/data/products";
+
+export async function getStaticPaths() {
+  return products.map((product) => {
+    return {
+      params: { slug: product.slug },
+      props: { product },
+    };
+  });
+}
+
+const { product } = Astro.props;
+const categoryId = getCategoryIdFromName(product.kategorie);
+const relatedProducts = products
+    .filter((p) => p.kategorie === product.kategorie && p.id !== product.id)
+    .slice(0, 3);
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: product.produktname,
+  description: product.kurzbeschreibung,
+  brand: {
+    "@type": "Brand",
+    name: "Sanper Gölgelendirme Systeme",
+  },
+  category: product.kategorie,
+  image: product.bilder,
+  offers: {
+    "@type": "Offer",
+    availability: "https://schema.org/InStock",
+    priceCurrency: "EUR",
+  },
+};
+---
+
+<Layout 
+  title={`${product.produktname} – Sanper Gölgelendirme Systeme`}
+  description={product.kurzbeschreibung}
+  image={product.bilder[0]}
+>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(structuredData)} />
+  
+  <ProductDetailView 
+    client:load 
+    product={product} 
+    categoryId={categoryId}
+    relatedProducts={relatedProducts}
+  />
+</Layout>

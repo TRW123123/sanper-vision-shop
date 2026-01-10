@@ -1,0 +1,31 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import CategoryView from "@/components/pages/CategoryView";
+import { categories, getProductsByCategory } from "@/data/products";
+
+export async function getStaticPaths() {
+  return categories.map((category) => {
+    return {
+      params: { kategorie: category.id },
+      props: { 
+        category,
+        products: getProductsByCategory(category.name)
+      },
+    };
+  });
+}
+
+const { category, products } = Astro.props;
+---
+
+<Layout 
+  title={`${category.name} – Sanper Gölgelendirme Systeme`}
+  description={category.description}
+  image={category.image}
+>
+  <CategoryView 
+    client:load 
+    category={category} 
+    initialProducts={products} 
+  />
+</Layout>

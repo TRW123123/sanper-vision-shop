@@ -1,0 +1,98 @@
+{
+    "pergola_bioclimatic": {
+        "name": "Bioklimatik Pergola",
+        "technical_term": "Bioclimatic Pergola",
+        "filename": "bioclimatic-pergola.png",
+        "keywords": [
+            "aluminum slats",
+            "motorized roof",
+            "modern outdoor living",
+            "luxury patio",
+            "architectural shading"
+        ],
+        "variations": [
+            "open roof",
+            "closed roof",
+            "sunset lighting"
+        ]
+    },
+    "rolling_roof": {
+        "name": "Rolling Roof",
+        "technical_term": "Rolling Roof Pergola",
+        "filename": "rolling-roof.png",
+        "keywords": [
+            "retracting slats",
+            "tilting roof",
+            "open sky view",
+            "aluminum structure",
+            "premium terrace"
+        ],
+        "variations": [
+            "fully retracted",
+            "tilted slats"
+        ]
+    },
+    "winter_garden": {
+        "name": "Kış Bahçesi",
+        "technical_term": "Winter Garden Sunroom",
+        "filename": "winter-garden.png",
+        "keywords": [
+            "glass enclosure",
+            "insulated glass",
+            "panoramic view",
+            "indoor-outdoor living",
+            "cozy extension"
+        ],
+        "variations": [
+            "winter snow outside",
+            "rainy cozy evening",
+            "spring sunny day"
+        ]
+    },
+    "guillotine_glass": {
+        "name": "Giyotin Cam",
+        "technical_term": "Guillotine Glass System",
+        "filename": "guillotine-glass.png",
+        "keywords": [
+            "vertical sliding glass",
+            "motorized window",
+            "balcony railing mode",
+            "frameless glass view"
+        ],
+        "variations": [
+            "half open",
+            "fully closed"
+        ]
+    },
+    "zip_blind": {
+        "name": "Zip Perde",
+        "technical_term": "Zip Screen Blind",
+        "filename": "zip-screen.png",
+        "keywords": [
+            "external roller blind",
+            "sun protection",
+            "wind resistance",
+            "modern facade",
+            "textile shading"
+        ],
+        "variations": [
+            "covering modern window",
+            "semi-transparent view"
+        ]
+    },
+    "wintent": {
+        "name": "Wintent",
+        "technical_term": "Drop Arm Awning",
+        "filename": "wintent-awning.png",
+        "keywords": [
+            "window awning",
+            "cassette awning",
+            "storefront shading",
+            "boutique exterior"
+        ],
+        "variations": [
+            "cafe storefront",
+            "home window"
+        ]
+    }
+}

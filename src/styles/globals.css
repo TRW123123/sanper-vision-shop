@@ -1,0 +1,258 @@
+@import "tailwindcss";
+
+@theme {
+    --color-background: hsl(var(--background));
+    --color-foreground: hsl(var(--foreground));
+
+    --color-card: hsl(var(--card));
+    --color-card-foreground: hsl(var(--card-foreground));
+
+    --color-popover: hsl(var(--popover));
+    --color-popover-foreground: hsl(var(--popover-foreground));
+
+    --color-primary: hsl(var(--primary));
+    --color-primary-foreground: hsl(var(--primary-foreground));
+
+    --color-secondary: hsl(var(--secondary));
+    --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+    --color-muted: hsl(var(--muted));
+    --color-muted-foreground: hsl(var(--muted-foreground));
+
+    --color-accent: hsl(var(--accent));
+    --color-accent-foreground: hsl(var(--accent-foreground));
+
+    --color-destructive: hsl(var(--destructive));
+    --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+    --color-border: hsl(var(--border));
+    --color-input: hsl(var(--input));
+    --color-ring: hsl(var(--ring));
+
+    --color-chart-1: hsl(var(--chart-1));
+    --color-chart-2: hsl(var(--chart-2));
+    --color-chart-3: hsl(var(--chart-3));
+    --color-chart-4: hsl(var(--chart-4));
+    --color-chart-5: hsl(var(--chart-5));
+
+    --radius-lg: var(--radius);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-sm: calc(var(--radius) - 4px);
+
+    --animate-accordion-down: accordion-down 0.2s ease-out;
+    --animate-accordion-up: accordion-up 0.2s ease-out;
+    --animate-fade-in: fade-in 0.5s ease-out;
+
+    @keyframes accordion-down {
+        from {
+            height: 0
+        }
+
+        to {
+            height: var(--radix-accordion-content-height)
+        }
+    }
+
+    @keyframes accordion-up {
+        from {
+            height: var(--radix-accordion-content-height)
+        }
+
+        to {
+            height: 0
+        }
+    }
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+/* 
+  Shadcn UI Variables 
+  These are essential for the components to look right.
+*/
+:root {
+    /* Base colors - Sanper Design System */
+    --background: 0 0% 100%;
+    --foreground: 210 20% 6%;
+
+    /* Surface colors */
+    --surface: 215 20% 10%;
+    --surface-foreground: 0 0% 98%;
+
+    /* Card */
+    --card: 0 0% 100%;
+    --card-foreground: 210 20% 6%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 20% 6%;
+
+    /* Primary - Anthracite Base */
+    --primary: 210 20% 6%;
+    --primary-foreground: 0 0% 98%;
+
+    /* Secondary - Surface */
+    --secondary: 215 20% 10%;
+    --secondary-foreground: 0 0% 98%;
+
+    /* Accent 1 - Lime/Teal */
+    --accent: 160 85% 39%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Accent 2 - Teal Blue */
+    --accent-2: 190 100% 38%;
+    --accent-2-foreground: 0 0% 100%;
+
+    /* Muted - Gray */
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 9% 42%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Border */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+
+    /* Ring */
+    --ring: 160 85% 39%;
+
+    /* Radius */
+    --radius: 0.5rem;
+
+    /* Shadows */
+    --shadow-soft: 0 2px 8px -2px hsl(210 20% 6% / 0.08);
+    --shadow-medium: 0 4px 16px -4px hsl(210 20% 6% / 0.12);
+    --shadow-strong: 0 8px 32px -8px hsl(210 20% 6% / 0.16);
+
+    /* Transitions */
+    --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Sidebar (for compatibility) */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+}
+
+.dark {
+    --background: 215 20% 10%;
+    --foreground: 0 0% 98%;
+
+    --surface: 210 20% 6%;
+    --surface-foreground: 0 0% 98%;
+
+    --card: 215 20% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 215 20% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 210 20% 6%;
+
+    --secondary: 215 25% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --accent: 160 85% 39%;
+    --accent-foreground: 0 0% 100%;
+
+    --accent-2: 190 100% 38%;
+    --accent-2-foreground: 0 0% 100%;
+
+    --muted: 215 25% 15%;
+    --muted-foreground: 220 15% 65%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 25% 20%;
+    --input: 215 25% 20%;
+
+    --ring: 160 85% 39%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+}
+
+/* 
+  Global Styles 
+*/
+@layer utilities {
+    .animate-on-scroll {
+        @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+    }
+
+    .animate-on-scroll.is-visible {
+        @apply opacity-100 translate-y-0;
+    }
+
+    .animate-delay-100 {
+        transition-delay: 100ms;
+    }
+
+    .animate-delay-200 {
+        transition-delay: 200ms;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        font-feature-settings: 'cv11', 'ss01';
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-semibold;
+        line-height: 1.2;
+    }
+
+    h1 {
+        @apply text-5xl lg:text-6xl;
+        font-weight: 600;
+    }
+
+    h2 {
+        @apply text-3xl lg:text-4xl;
+        font-weight: 600;
+    }
+
+    h3 {
+        @apply text-2xl lg:text-3xl;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+}

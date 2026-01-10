@@ -1,0 +1,58 @@
+---
+import "@/styles/globals.css";
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  noIndex?: boolean;
+}
+
+const { 
+  title, 
+  description = "Sanper Vision - Premium Beschattungssysteme direkt vom Hersteller.", 
+  image = "/images/og-default.jpg",
+  noIndex = false
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://sanper.de");
+---
+
+<!doctype html>
+<html lang="de" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO -->
+    <title>{title}</title>
+    <link rel="canonical" href={canonicalURL} />
+    {noIndex && <meta name="robots" content="noindex, nofollow" />}
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    
+    <!-- Preload fonts if necessary -->
+  </head>
+  <body class="min-h-screen bg-background text-foreground antialiased selection:bg-accent selection:text-white">
+    <!-- Header/Nav could go here -->
+    
+    <main>
+      <slot />
+    </main>
+
+    <!-- Global Trust/Footer Section could go here -->
+    <footer class="bg-surface py-12 mt-20 border-t border-border/40">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-muted-foreground text-sm">&copy; {new Date().getFullYear()} Sanper Vision. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+  </body>
+</html>

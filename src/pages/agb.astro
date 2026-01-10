@@ -1,0 +1,116 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Navbar from "@/components/layout/Navbar"; // Layout already has Navbar? No, Layout HAS Navbar. 
+// Original AGB.tsx had Navbar inside. Astro Layout has Navbar. 
+// So I just need the content.
+---
+
+<Layout 
+  title="AGB – Sanper Gölgelendirme Systeme"
+  description="Allgemeine Geschäftsbedingungen der Sanper Gölgelendirme Systeme GmbH für Lieferung und Montage von Beschattungssystemen."
+>
+  <main>
+    <section className="py-20 lg:py-32">
+      <div className="container max-w-3xl">
+        <h1 className="mb-8">Allgemeine Geschäftsbedingungen</h1>
+
+        <div className="space-y-8 text-muted-foreground">
+          <div>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">
+              § 1 Geltungsbereich
+            </h2>
+            <p className="leading-relaxed">
+              Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge zwischen
+              Sanper Gölgelendirme Systeme GmbH und ihren Kunden über die Lieferung
+              und Montage von Beschattungs- und Verglasungssystemen.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">
+              § 2 Vertragsschluss
+            </h2>
+            <p className="leading-relaxed">
+              Der Vertrag kommt durch schriftliche Auftragsbestätigung oder durch
+              Ausführung der Leistung zustande. Angebote sind freibleibend und
+              unverbindlich.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">
+              § 3 Preise und Zahlungsbedingungen
+            </h2>
+            <p className="leading-relaxed mb-3">
+              Alle Preise verstehen sich in Euro zzgl. der gesetzlichen
+              Umsatzsteuer. Die Zahlungsbedingungen werden individuell vereinbart.
+            </p>
+            <p className="leading-relaxed">
+              Standardmäßig gilt: 30% Anzahlung bei Auftragserteilung, 60% bei
+              Lieferung, 10% nach Abnahme innerhalb von 14 Tagen.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">
+              § 4 Lieferung und Montage
+            </h2>
+            <p className="leading-relaxed">
+              Liefertermine sind nur verbindlich, wenn sie schriftlich als verbindlich
+              bestätigt wurden. Die Montage erfolgt durch geschulte Fachpartner nach
+              Vereinbarung.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">
+              § 5 Gewährleistung
+            </h2>
+            <p className="leading-relaxed">
+              Es gelten die gesetzlichen Gewährleistungsrechte. Für Mängel, die auf
+              unsachgemäßer Behandlung, normaler Abnutzung oder höherer Gewalt
+              beruhen, übernehmen wir keine Haftung.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">
+              § 6 Eigentumsvorbehalt
+            </h2>
+            <p className="leading-relaxed">
+              Die gelieferte Ware bleibt bis zur vollständigen Bezahlung unser
+              Eigentum.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">
+              § 7 Haftung
+            </h2>
+            <p className="leading-relaxed">
+              Wir haften nach den gesetzlichen Bestimmungen. Eine weitergehende
+              Haftung ist ausgeschlossen, soweit gesetzlich zulässig.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">
+              § 8 Schlussbestimmungen
+            </h2>
+            <p className="leading-relaxed">
+              Es gilt das Recht der Bundesrepublik Deutschland. Gerichtsstand ist
+              Musterstadt. Sollten einzelne Bestimmungen dieser AGB unwirksam sein,
+              bleibt die Wirksamkeit der übrigen Bestimmungen davon unberührt.
+            </p>
+          </div>
+
+          <div className="pt-4 border-t border-border">
+            <p className="text-sm">
+              Stand: {new Date().toLocaleDateString("de-DE")}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

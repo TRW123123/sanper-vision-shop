@@ -1,0 +1,59 @@
+---
+import "@/styles/globals.css";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import { Toaster } from "@/components/ui/toaster";
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const { 
+  title, 
+  description = "Sanper Gölgelendirme Systeme - Premium Beschattungslösungen",
+  image = "/og-image.png"
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Preload LCP Hero Image -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+
+    <title>{title}</title>
+  </head>
+  <body>
+    <!-- 
+      Navbar logic usually requires client-side state for mobile menu, 
+      so we load it on client. 
+    -->
+    <Navbar client:load />
+    
+    <slot />
+    
+    <Footer />
+    <Toaster client:load />
+    <script src="../lib/scroll-animation.js"></script>
+  </body>
+</html>

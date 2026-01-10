@@ -1,0 +1,38 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Hero from "@/components/home/Hero";
+import ValueProposition from "@/components/home/ValueProposition";
+import Bestsellers from "@/components/home/Bestsellers";
+import ProductCategories from "@/components/home/ProductCategories";
+import ProcessSteps from "@/components/home/ProcessSteps";
+import CTABanner from "@/components/home/CTABanner";
+import { SocialProof } from "@/components/home/SocialProof";
+import { ProjectGallery } from "@/components/home/ProjectGallery";
+---
+
+<Layout
+  title="Sanper Beschattungssysteme - Premium Pergolen & Wintergärten"
+  description="Maßgefertigte bioklimatische Pergolen, Wintergärten und Markisen. Premium Qualität direkt vom Hersteller. Jetzt Angebot anfordern!"
+>
+  <main>
+    <Hero client:load />
+    <div class="animate-on-scroll py-20">
+      <ValueProposition />
+    </div>
+    <div class="animate-on-scroll py-20">
+      <ProductCategories />
+    </div>
+    <div class="animate-on-scroll py-20 bg-muted/30">
+      <ProjectGallery client:visible />
+    </div>
+    <div class="animate-on-scroll py-20">
+      <SocialProof client:visible />
+    </div>
+    <div class="animate-on-scroll py-20">
+      <ProcessSteps />
+    </div>
+    <div class="animate-on-scroll py-20">
+      <CTABanner />
+    </div>
+  </main>
+</Layout>

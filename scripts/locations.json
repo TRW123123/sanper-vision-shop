@@ -1,0 +1,32 @@
+[
+    {
+        "city": "Berlin",
+        "context": "urban rooftop terrace",
+        "architecture": "modern minimalist or historic altbau brick",
+        "vibe": "cosmopolitan"
+    },
+    {
+        "city": "München",
+        "context": "luxury garden patio",
+        "architecture": "bavarian modern villa, clean lines, white facade",
+        "vibe": "affluent, sunny"
+    },
+    {
+        "city": "Hamburg",
+        "context": "harbor view balcony or brick townhouse garden",
+        "architecture": "red brick clinker, northern german style",
+        "vibe": "overcast soft lighting, maritime"
+    },
+    {
+        "city": "Köln",
+        "context": "rhine view terrace",
+        "architecture": "contemporary urban apartment",
+        "vibe": "modern casual"
+    },
+    {
+        "city": "Sylt",
+        "context": "coastal holiday home deck",
+        "architecture": "thatched roof house (reetdachhaus), dunes background",
+        "vibe": "breezy, coastal luxury"
+    }
+]

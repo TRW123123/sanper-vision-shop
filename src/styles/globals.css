@@ -200,6 +200,10 @@
   Global Styles 
 */
 @layer utilities {
+    .container {
+        @apply mx-auto px-4 md:px-6 lg:px-8 w-full max-w-[1400px];
+    }
+
     .animate-on-scroll {
         @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
     }

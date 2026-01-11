@@ -20,7 +20,7 @@ const ProdukteList = () => {
                     <div className="max-w-3xl mx-auto text-center">
                         <h1 className="mb-6">Unsere Produktkategorien</h1>
                         <p className="text-lg text-muted-foreground mb-8">
-                            Von intelligenten Pergola-Systemen bis zu akustischen Innenraumlösungen –
+                            Von intelligenten Pergola-Systemen bis zu modernen Verglasungen –
                             entdecken Sie unser umfassendes Portfolio für Wohn- und Gewerbeprojekte.
                         </p>
 

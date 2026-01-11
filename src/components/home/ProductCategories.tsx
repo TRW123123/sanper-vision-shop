@@ -33,13 +33,6 @@ const ProductCategories = () => {
       image: "/images/products/transparent-zip-blind.png",
       href: "/produkte/transparente-schutzsysteme",
     },
-    {
-      title: "Innenraum & Akustik",
-      description:
-        "Schallvorhänge und Raumtrennvorhänge für optimierte Akustik und flexible Raumgestaltung in Büros und öffentlichen Räumen.",
-      image: "/images/products/acoustic-curtain.png",
-      href: "/produkte/innenraum-akustik",
-    },
   ];
 
   return (

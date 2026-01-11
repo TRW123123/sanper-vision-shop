@@ -302,91 +302,6 @@ export const products: Product[] = [
     bilder: ["/images/products/winter-garden.png"]
   },
   {
-    id: "17",
-    produktname: "Schallschutzvorhang",
-    slug: createSlug("Schallschutzvorhang"),
-    kategorie: "Innenraum & Akustik",
-    systemtyp: "Akustischer Schallschutzvorhang",
-    material: "Samt + Filz + Vinylbarriere",
-    einsatzbereich: ["Theater", "Konzertsaal", "Studio", "industrielle Bereiche"],
-    masse_optionen: "Höhe 3–6 m; modular; mit Schienen",
-    motorisierung: false,
-    windschutz: "Hoch (schalldämmend)",
-    wasserschutz: "—",
-    zertifikate: ["ISO 354", "DIN 4102"],
-    anmerkungen: "Reduziert Lärm um 10–15 dB; faltbar",
-    kurzbeschreibung: "Professioneller Schallschutzvorhang mit Mehrschichtsystem für Lärmreduktion bis zu 15 dB.",
-    bilder: ["/images/products/acoustic-curtain.png"]
-  },
-  {
-    id: "18",
-    produktname: "Trennvorhang",
-    slug: createSlug("Trennvorhang"),
-    kategorie: "Innenraum & Akustik",
-    systemtyp: "Großflächiger Raumtrennvorhang",
-    material: "Dickes Gewebe; stählerne Trägerschiene",
-    einsatzbereich: ["Sporthalle", "Messe", "Hotelballsaal"],
-    masse_optionen: "Breite 10–20 m; Höhe 5–8 m; motorisierte Option",
-    motorisierung: false,
-    windschutz: "Mittel",
-    wasserschutz: "—",
-    zertifikate: ["DIN 4102", "ISO 11654"],
-    anmerkungen: "Akustische und visuelle Trennung; faltbar und platzsparend parkbar",
-    kurzbeschreibung: "Großflächiger Raumtrennvorhang für Sporthallen und Veranstaltungsräume mit akustischen Eigenschaften.",
-    bilder: ["/images/products/divider-curtain.png"]
-  },
-  {
-    id: "19",
-    produktname: "Bühnenvorhang",
-    slug: createSlug("Bühnenvorhang"),
-    kategorie: "Innenraum & Akustik",
-    systemtyp: "Motorisierter oder manueller Theater-Bühnenvorhang",
-    material: "Schweres Samtgewebe; Bühnenmechanik",
-    einsatzbereich: ["Theater", "Konzertsaal", "Veranstaltungszentrum"],
-    masse_optionen: "Höhe 5–10 m; Bühnenbreite; zweiteilig",
-    motorisierung: false,
-    windschutz: "—",
-    wasserschutz: "—",
-    zertifikate: ["NFPA 701", "CE"],
-    anmerkungen: "Akustisch wirksam; lichtundurchlässig; ästhetisch",
-    kurzbeschreibung: "Klassischer Theater-Bühnenvorhang aus schwerem Samt mit professioneller Bühnenmechanik.",
-    bilder: ["/images/products/stage-curtain.png"]
-  },
-  {
-    id: "20",
-    produktname: "Projektionsleinwand",
-    slug: createSlug("Projektionsleinwand"),
-    kategorie: "Innenraum & Akustik",
-    systemtyp: "Manuelle oder motorisierte Projektionsleinwand",
-    material: "Vinylprojektionsfläche; Aluminiumrolle",
-    einsatzbereich: ["Konferenzraum", "Kino", "Heimkino", "Schulung"],
-    masse_optionen: "100–150 Zoll; 16:9 oder 4:3; mit Kassette",
-    motorisierung: false,
-    windschutz: "—",
-    wasserschutz: "—",
-    zertifikate: ["CE", "RoHS", "M1"],
-    anmerkungen: "Mattweiße Oberfläche; schwarzer Rand",
-    kurzbeschreibung: "Professionelle Projektionsleinwand für Konferenzräume und Schulungsräume mit matter Oberfläche.",
-    bilder: ["/images/products/projection-screen.png"]
-  },
-  {
-    id: "21",
-    produktname: "Heimkino-Projektionsleinwand",
-    slug: createSlug("Heimkino-Projektionsleinwand"),
-    kategorie: "Innenraum & Akustik",
-    systemtyp: "Elektrische Heimkino-Leinwand",
-    material: "PVC mit Glasfaserverstärkung; Aluminiumkassette",
-    einsatzbereich: ["Heimkino", "Wohnzimmer"],
-    masse_optionen: "92–120 Zoll; 16:9; Kassettensystem",
-    motorisierung: true,
-    windschutz: "—",
-    wasserschutz: "—",
-    zertifikate: ["CE", "TÜV", "NFPA 701"],
-    anmerkungen: "4K/8K-geeignet; akustisch transparent optional",
-    kurzbeschreibung: "Premium Heimkino-Leinwand mit elektrischem Antrieb, 4K/8K-geeignet und optionaler akustischer Transparenz.",
-    bilder: ["/images/products/home-cinema.png"]
-  },
-  {
     id: "22",
     produktname: "Pergola Arc",
     slug: createSlug("Pergola Arc"),
@@ -410,31 +325,25 @@ export const categories = [
     id: "pergola-systeme",
     name: "Pergola-Systeme",
     description: "Bioclimatic Pergolen mit drehbaren Lamellen für optimale Klimakontrolle und Rolling Roof Systeme für vollständigen Wetterschutz.",
-    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=600&fit=crop"
+    image: "/images/pergola-systeme-terrasse-lamellendach-b2c-hero-01.jpeg"
   },
   {
     id: "verglasungssysteme",
     name: "Verglasungssysteme",
     description: "Rahmenlose Giyotin-Glas-Systeme und Wintergärten für transparente Raumabschlüsse mit maximaler Lichtausbeute.",
-    image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&h=600&fit=crop"
+    image: "/images/wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-02.jpg"
   },
   {
     id: "textile-beschattung",
     name: "Textile Beschattung",
     description: "Kassettenmarkisen, ZIP-Screen und Piston-Tavan Systeme für flexible und elegante Sonnenschutzlösungen.",
-    image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&h=600&fit=crop"
+    image: "/images/zip-screen-systeme-terrasse-dikey-zip-b2c-hero-03.jpg"
   },
   {
     id: "transparente-schutzsysteme",
     name: "Transparente Schutzsysteme",
     description: "Durchsichtige ZIP-Screens und Rolltore für Windschutz ohne Sichteinschränkung. Ideal für Gastronomie und Terrassen.",
-    image: "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&h=600&fit=crop"
-  },
-  {
-    id: "innenraum-akustik",
-    name: "Innenraum & Akustik",
-    description: "Schallvorhänge und Raumtrennvorhänge für optimierte Akustik und flexible Raumgestaltung in Büros und öffentlichen Räumen.",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop"
+    image: "/images/transparentes-rolltor-gewerbe-schaufenster-b2b-hero-01.jpg"
   }
 ];
 

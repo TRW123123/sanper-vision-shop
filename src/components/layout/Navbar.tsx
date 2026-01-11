@@ -34,11 +34,6 @@ const Navbar = () => {
       href: "/produkte/transparente-schutzsysteme",
       description: "ZIP-Screens, Rolltore, Windschutz",
     },
-    {
-      title: "Innenraum & Akustik",
-      href: "/produkte/innenraum-akustik",
-      description: "Schallvorhänge, Raumtrennvorhänge",
-    },
   ];
 
   return (

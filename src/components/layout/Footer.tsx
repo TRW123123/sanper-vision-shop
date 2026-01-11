@@ -52,14 +52,6 @@ const Footer = () => {
                   Transparente Schutzsysteme
                 </a>
               </li>
-              <li>
-                <a
-                  href="/produkte/innenraum-akustik"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Innenraum & Akustik
-                </a>
-              </li>
             </ul>
           </div>
 

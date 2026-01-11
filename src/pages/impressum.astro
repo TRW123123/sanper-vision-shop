@@ -41,10 +41,10 @@ const structuredData = {
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(structuredData)} />
 
   <main>
-    <article className="py-12 lg:py-20">
-      <div className="container max-w-3xl">
+    <article class="py-12 lg:py-20">
+      <div class="container max-w-3xl">
         {/* Breadcrumbs */}
-        <Breadcrumb className="mb-8">
+        <Breadcrumb class="mb-8">
           <BreadcrumbList>
             <BreadcrumbItem>
               <BreadcrumbLink asChild>
@@ -58,23 +58,23 @@ const structuredData = {
           </BreadcrumbList>
         </Breadcrumb>
 
-        <h1 className="mb-6 text-4xl font-bold">Impressum</h1>
+        <h1 class="mb-6 text-4xl font-bold">Impressum</h1>
 
-        <p className="mb-12 text-lg text-muted-foreground leading-relaxed">
+        <p class="mb-12 text-lg text-muted-foreground leading-relaxed">
           Sanper Gölgelendirme Systeme GmbH ist Ihr Spezialist für hochwertige 
           Beschattungssysteme, Bioklimatische Pergolen, Zip-Markisen und Glassysteme. 
           Transparenz und rechtliche Klarheit sind uns wichtig.
         </p>
 
-        <div className="space-y-12">
+        <div class="space-y-12">
           {/* Angaben gemäß § 5 TMG */}
           <section>
-            <h2 className="text-2xl font-semibold text-foreground mb-4">
+            <h2 class="text-2xl font-semibold text-foreground mb-4">
               Angaben gemäß § 5 TMG
             </h2>
-            <address className="not-italic">
-              <p className="leading-relaxed">
-                <strong className="text-foreground">{company.legalName}</strong>
+            <address class="not-italic">
+              <p class="leading-relaxed">
+                <strong class="text-foreground">{company.legalName}</strong>
                 <br />
                 {company.address.street}
                 <br />
@@ -87,26 +87,26 @@ const structuredData = {
 
           {/* Vertreten durch */}
           <section>
-            <h2 className="text-2xl font-semibold text-foreground mb-4">
+            <h2 class="text-2xl font-semibold text-foreground mb-4">
               Vertreten durch
             </h2>
-            <p className="leading-relaxed">
+            <p class="leading-relaxed">
               Geschäftsführer: {company.legal.ceo}
             </p>
           </section>
 
           {/* Kontakt */}
-          <section className="bg-muted/50 p-6 rounded-lg border border-border">
-            <h2 className="text-2xl font-semibold text-foreground mb-4">
+          <section class="bg-muted/50 p-6 rounded-lg border border-border">
+            <h2 class="text-2xl font-semibold text-foreground mb-4">
               Kontakt
             </h2>
-            <p className="leading-relaxed">
-              <strong className="text-foreground">Telefon:</strong> {company.contact.phone}
+            <p class="leading-relaxed">
+              <strong class="text-foreground">Telefon:</strong> {company.contact.phone}
               <br />
-              <strong className="text-foreground">E-Mail:</strong>{" "}
+              <strong class="text-foreground">E-Mail:</strong>{" "}
               <a 
                 href={`mailto:${company.contact.email}`} 
-                className="text-accent hover:underline"
+                class="text-accent hover:underline"
               >
                 {company.contact.email}
               </a>
@@ -115,36 +115,36 @@ const structuredData = {
 
           {/* Registereintrag */}
           <section>
-            <h2 className="text-2xl font-semibold text-foreground mb-4">
+            <h2 class="text-2xl font-semibold text-foreground mb-4">
               Registereintrag
             </h2>
-            <p className="leading-relaxed">
+            <p class="leading-relaxed">
               Eintragung im Handelsregister
               <br />
-              <strong className="text-foreground">Registergericht:</strong> {company.legal.registerCourt}
+              <strong class="text-foreground">Registergericht:</strong> {company.legal.registerCourt}
               <br />
-              <strong className="text-foreground">Registernummer:</strong> {company.legal.registerNumber}
+              <strong class="text-foreground">Registernummer:</strong> {company.legal.registerNumber}
             </p>
           </section>
 
           {/* Umsatzsteuer-ID */}
           <section>
-            <h2 className="text-2xl font-semibold text-foreground mb-4">
+            <h2 class="text-2xl font-semibold text-foreground mb-4">
               Umsatzsteuer-ID
             </h2>
-            <p className="leading-relaxed">
+            <p class="leading-relaxed">
               Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
               <br />
-              <strong className="text-foreground">{company.legal.vatId}</strong>
+              <strong class="text-foreground">{company.legal.vatId}</strong>
             </p>
           </section>
 
           {/* Verantwortlich für den Inhalt */}
           <section>
-            <h2 className="text-2xl font-semibold text-foreground mb-4">
+            <h2 class="text-2xl font-semibold text-foreground mb-4">
               Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
             </h2>
-            <address className="not-italic leading-relaxed">
+            <address class="not-italic leading-relaxed">
               {company.legal.responsibleContent}
               <br />
               {company.address.street}
@@ -155,17 +155,17 @@ const structuredData = {
 
           {/* EU-Streitschlichtung */}
           <section>
-            <h2 className="text-2xl font-semibold text-foreground mb-4">
+            <h2 class="text-2xl font-semibold text-foreground mb-4">
               EU-Streitschlichtung
             </h2>
-            <p className="leading-relaxed">
+            <p class="leading-relaxed">
               Die Europäische Kommission stellt eine Plattform zur
               Online-Streitbeilegung (OS) bereit:{" "}
               <a
                 href="https://ec.europa.eu/consumers/odr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-accent hover:underline"
+                class="text-accent hover:underline"
               >
                 https://ec.europa.eu/consumers/odr
               </a>
@@ -176,10 +176,10 @@ const structuredData = {
 
           {/* Verbraucherstreitbeilegung */}
           <section>
-            <h2 className="text-2xl font-semibold text-foreground mb-4">
+            <h2 class="text-2xl font-semibold text-foreground mb-4">
               Verbraucherstreitbeilegung / Universalschlichtungsstelle
             </h2>
-            <p className="leading-relaxed">
+            <p class="leading-relaxed">
               Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren
               vor einer Verbraucherschlichtungsstelle teilzunehmen.
             </p>
@@ -187,17 +187,17 @@ const structuredData = {
 
           {/* Haftungsausschluss */}
           <section>
-            <h2 className="text-2xl font-semibold text-foreground mb-4">
+            <h2 class="text-2xl font-semibold text-foreground mb-4">
               Haftung für Inhalte
             </h2>
-            <p className="leading-relaxed mb-4">
+            <p class="leading-relaxed mb-4">
               Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf 
               diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 
               TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder 
               gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, 
               die auf eine rechtswidrige Tätigkeit hinweisen.
             </p>
-            <p className="leading-relaxed">
+            <p class="leading-relaxed">
               Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach 
               den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung 
               ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung 
@@ -208,10 +208,10 @@ const structuredData = {
 
           {/* Haftung für Links */}
           <section>
-            <h2 className="text-2xl font-semibold text-foreground mb-4">
+            <h2 class="text-2xl font-semibold text-foreground mb-4">
               Haftung für Links
             </h2>
-            <p className="leading-relaxed">
+            <p class="leading-relaxed">
               Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir 
               keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine 
               Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige 
@@ -223,10 +223,10 @@ const structuredData = {
 
           {/* Urheberrecht */}
           <section>
-            <h2 className="text-2xl font-semibold text-foreground mb-4">
+            <h2 class="text-2xl font-semibold text-foreground mb-4">
               Urheberrecht
             </h2>
-            <p className="leading-relaxed">
+            <p class="leading-relaxed">
               Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten 
               unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, 
               Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes 
@@ -238,19 +238,19 @@ const structuredData = {
 
           {/* Bildnachweise */}
           <section>
-            <h2 className="text-2xl font-semibold text-foreground mb-4">
+            <h2 class="text-2xl font-semibold text-foreground mb-4">
               Bildnachweise
             </h2>
-            <p className="leading-relaxed">
+            <p class="leading-relaxed">
               Alle Produktbilder und Grafiken sind urheberrechtlich geschützt durch Sanper Gölgelendirme Systeme GmbH oder lizenziert via Unsplash/Pexels.
             </p>
           </section>
 
           {/* Link zur Datenschutzerklärung */}
-          <section className="pt-8 border-t border-border">
-            <p className="leading-relaxed">
+          <section class="pt-8 border-t border-border">
+            <p class="leading-relaxed">
               Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in unserer{" "}
-              <a href="/datenschutz" className="text-accent hover:underline font-medium">
+              <a href="/datenschutz" class="text-accent hover:underline font-medium">
                 Datenschutzerklärung
               </a>
               .

@@ -1,506 +1,596 @@
 [
     {
-        "slug": "pergola-systeme",
+        "id": 1,
+        "slug": "",
         "template": "hub",
         "product_id": "pergola-systeme",
-        "title": "Pergola Systeme & Lamellendächer vom Hersteller | Sanper",
-        "meta_description": "Hochwertige Pergola Systeme und Lamellendächer direkt vom Hersteller. Maßgefertigt, wetterfest und langlebig. Jetzt konfigurieren & Angebot anfordern.",
-        "h1": "Pergola Systeme für höchste Ansprüche",
-        "intro_text": "Erweitern Sie Ihren Wohnraum mit unseren innovativen Pergola-Systemen. Ob bioklimatisches Lamellendach oder textiles Faltdach – wir bieten maßgeschneiderte Lösungen für Garten und Terrasse.",
+        "title": "Sanper Outdoor Living Systeme | Maßgefertigt vom Hersteller",
+        "h1": "Sanper Outdoor Living Systeme",
+        "intro_text": "Maßgefertigte Pergolen, Wintergärten und Zip-Screens direkt vom Hersteller. Eigene Montage, klare Zuständigkeit, langlebige Systeme für NRW.",
+        "meta_description": "Sanper Outdoor Living: Hochwertige Pergolen & Wintergärten direkt vom Hersteller. Maßgefertigt, langlebig & inklusive Montage. Jetzt beraten lassen.",
         "features": [
-            "Bioklimatische Lamellen",
-            "Integrierte LED-Beleuchtung",
-            "5 Jahre Garantie",
-            "Wetterfest bis 120 km/h"
+            "Herstellerkompetenz",
+            "Eigene Montage",
+            "Klare Zuständigkeit",
+            "Langlebige Systeme"
         ],
         "images": [
+            "pergola-systeme-terrasse-aluminium-festdach-b2c-hero-01",
+            "wintergarten-systeme-glasdach-zip-screen-b2c-hero-01",
             "pergola-systeme-terrasse-lamellendach-b2c-hero-01"
         ],
         "faq": [
             {
-                "question": "Was kostet eine Pergola nach Maß?",
-                "answer": "Die Kosten variieren je nach Größe und Ausstattung. Kontaktieren Sie uns für ein unverbindliches Angebot."
-            },
-            {
-                "question": "Ist die Montage in NRW inklusive?",
-                "answer": "Ja, wir bieten Lieferung und fachgerechte Montage in ganz NRW und Umgebung an."
+                "question": "Warum Sanper Vision?",
+                "answer": "Als Hersteller bieten wir Ihnen alles aus einer Hand: Von der individuellen Planung bis zur fachgerechten Montage ohne Zwischenhändler."
             }
         ]
     },
     {
-        "slug": "lamellendach",
-        "template": "hub",
-        "product_id": "bioklimatische-pergola",
-        "title": "Bioklimatisches Lamellendach kaufen | Aluminium & Wasserdicht",
-        "meta_description": "Bioklimatische Lamellendächer aus Aluminium. Regulieren Sie Sonne & Schatten per Knopfdruck. Wasserdicht & sturmsicher. Jetzt beraten lassen.",
-        "h1": "Das Bioklimatische Lamellendach: Perfektes Klima auf Ihrer Terrasse",
-        "intro_text": "Genießen Sie Ihre Terrasse bei jedem Wetter. Unsere Lamellendächer bieten flexiblen Schutz vor Sonne, Regen und Wind durch verstellbare Aluminium-Lamellen.",
-        "features": [
-            "Drehbare Aluminium-Lamellen",
-            "Hitzestau-Vermeidung",
-            "Automatischer Regensensor",
-            "Schneelast-geprüft"
-        ],
-        "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-hero-02"
-        ],
-        "faq": [
-            {
-                "question": "Sind die Lamellendächer wasserdicht?",
-                "answer": "Ja, im geschlossenen Zustand bilden die Lamellen eine wasserdichte Fläche mit integrierter Entwässerung."
-            }
-        ]
-    },
-    {
-        "slug": "terrassenueberdachung",
+        "id": 2,
+        "slug": "pergola-systeme",
         "template": "hub",
         "product_id": "pergola-systeme",
-        "title": "Terrassenüberdachung Aluminium Modern | Sanper Vision",
-        "meta_description": "Moderne Terrassenüberdachungen aus Aluminium. Langlebig, pflegeleicht und stilvoll. Verwandeln Sie Ihre Terrasse in ein Outdoor-Wohnzimmer.",
-        "h1": "Moderne Terrassenüberdachungen aus Aluminium",
-        "intro_text": "Schützen Sie Ihre Terrassenmöbel und verlängern Sie die Outdoor-Saison. Unsere Aluminium-Überdachungen verbinden Design mit höchster Funktionalität.",
+        "title": "Pergola Systeme aus Aluminium | Sanper Vision",
+        "h1": "Pergola Systeme aus Aluminium",
+        "intro_text": "Wetterfeste Pergola-Systeme für Terrasse und Garten. Modular erweiterbar, langlebig und präzise montiert durch eigene Teams.",
+        "meta_description": "Pergola Systeme aus Aluminium von Sanper. Wetterfest, modular & langlebig. Ihr Experte für moderne Terrassenüberdachungen in NRW.",
         "features": [
-            "Rostfreies Aluminium",
-            "Pulverbeschichtung in Wunschfarbe",
-            "Erweiterbar mit Glaselementen",
-            "Hohe Traglast"
+            "Wetterfest",
+            "Modular erweiterbar",
+            "Präzise Montage",
+            "Langlebiges Aluminium"
         ],
         "images": [
-            "pergola-systeme-terrasse-aluminium-festdach-b2c-hero-01"
+            "pergola-systeme-terrasse-aluminium-festdach-b2c-hero-01",
+            "pergola-systeme-garten-aluminium-festdach-b2c-hero-02",
+            "pergola-systeme-carport-lamellendach-b2c-hero-05"
         ],
         "faq": [
             {
                 "question": "Benötige ich eine Baugenehmigung?",
-                "answer": "Das hängt von der Größe und dem Bundesland ab. Wir unterstützen Sie gerne bei der Klärung."
+                "answer": "Das hängt von Größe und Standort ab. Wir unterstützen Sie gerne mit den nötigen Zeichnungen und Informationen für Ihren Bauantrag."
             }
         ]
     },
     {
+        "id": 3,
+        "slug": "pergola-systeme/lamellendach",
+        "template": "money",
+        "product_id": "bioklimatische-pergola",
+        "title": "Bioklimatische Pergola mit Lamellendach | Sanper",
+        "h1": "Bioklimatische Pergola mit Lamellendach",
+        "intro_text": "Regulieren Sie Sonne, Luft und Schutz per Knopfdruck. Das Lamellendach ist die flexibelste Pergola-Lösung für jedes Wetter.",
+        "meta_description": "Bioklimatische Pergola mit verstellbarem Lamellendach. Perfekter Sonnenschutz & Regenschutz per Knopfdruck. Jetzt konfigurieren.",
+        "features": [
+            "Sonne regulierbar",
+            "Integrierter Regenschutz",
+            "Hitzestau-Vermeidung",
+            "Per Funk steuerbar"
+        ],
+        "images": [
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-01",
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-02",
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-07"
+        ],
+        "faq": [
+            {
+                "question": "Wie verhält sich das Dach bei Schnee?",
+                "answer": "Unsere Lamellendächer sind für hohe Schneelasten ausgelegt. Bei extremem Schneefall können die Lamellen auch senkrecht gestellt werden."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "slug": "pergola-systeme/bioklimatisch",
+        "template": "money",
+        "product_id": "bioklimatische-pergola",
+        "title": "Bioklimatische Pergola Systeme | Intelligente Luftzirkulation",
+        "h1": "Bioklimatische Pergola Systeme",
+        "intro_text": "Intelligente Luftzirkulation durch drehbare Lamellen. Ideal für heiße Sommer und wechselhaftes Wetter, um Hitzestau zu vermeiden.",
+        "meta_description": "Bioklimatische Pergola Systeme für intelligente Luftzirkulation. Genießen Sie Ihre Terrasse auch an heißen Tagen ohne Hitzestau.",
+        "features": [
+            "Natürliche Ventilation",
+            "Kein Hitzestau",
+            "Energiesparend",
+            "Angenehmes Mikroklima"
+        ],
+        "images": [
+            "pergola-systeme-garten-lamellendach-led-b2c-hero-03",
+            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-05",
+            "pergola-systeme-terrasse-lamellendach-zip-screen-b2c-detail-01"
+        ],
+        "faq": [
+            {
+                "question": "Was bedeutet bioklimatisch?",
+                "answer": "Bioklimatisch bedeutet, dass die Pergola die natürlichen Bedingungen (Sonne, Wind) nutzt, um passiv ein angenehmes Klima zu schaffen, z.B. durch den Kamineffekt bei leicht geöffneten Lamellen."
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "slug": "pergola-systeme/terrasse",
+        "template": "money",
+        "product_id": "pergola-systeme",
+        "title": "Pergola für Terrassen | Geschützter Lebensraum",
+        "h1": "Pergola für Terrassen",
+        "intro_text": "Verwandeln Sie Ihre Terrasse in einen geschützten Lebensraum. Stabil, pflegeleicht und optisch klar – passend zu jeder Hausarchitektur.",
+        "meta_description": "Hochwertige Pergola für Ihre Terrasse. Erweitern Sie Ihren Wohnraum stilvoll und wetterfest. Direkt vom Hersteller Sanper Vision.",
+        "features": [
+            "Nahtloser Anbau",
+            "Wohnraum-Erweiterung",
+            "Pflegeleicht",
+            "Wertsteigerung"
+        ],
+        "images": [
+            "pergola-systeme-terrasse-aluminium-festdach-b2c-hero-01",
+            "pergola-systeme-terrasse-aluminium-festdach-zip-screen-b2c-hero-04",
+            "pergola-systeme-terrasse-stoffdach-b2c-hero-01"
+        ],
+        "faq": [
+            {
+                "question": "Wie erfolgt der Wandanschluss?",
+                "answer": "Der Wandanschluss wird fachgerecht abgedichtet, damit kein Regenwasser an der Hausfassade herunterläuft. Wir prüfen vorab die Beschaffenheit Ihrer Außenwand."
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "slug": "pergola-systeme/aluminium",
+        "template": "money",
+        "product_id": "pergola-systeme",
+        "title": "Pergola aus Aluminium | Langlebig & Wartungsarm",
+        "h1": "Pergola aus Aluminium",
+        "intro_text": "Aluminium-Pergolen sind wartungsarm, formstabil und langlebig – ideal für dauerhaftes Outdoor Living ohne ständiges Streichen.",
+        "meta_description": "Pergola aus Aluminium: Rostfrei, wartungsarm und extrem langlebig. Die moderne Alternative zu Holz. Jetzt informieren.",
+        "features": [
+            "Rostfrei",
+            "Kein Streichen nötig",
+            "Hohe Traglast",
+            "Modernes Design"
+        ],
+        "images": [
+            "pergola-systeme-terrasse-aluminium-festdach-b2c-hero-03",
+            "pergola-systeme-garten-aluminium-festdach-b2c-hero-02",
+            "pergola-systeme-terrasse-tavan-zip-screen-b2c-hero-01"
+        ],
+        "faq": [
+            {
+                "question": "Warum Aluminium statt Holz?",
+                "answer": "Aluminium verwittert nicht, muss nicht gestrichen werden und verzieht sich nicht. Es ist die deutlich langlebigere und pflegeleichtere Wahl für Überdachungen."
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "slug": "pergola-systeme/freistehend",
+        "template": "money",
+        "product_id": "pergola-systeme",
+        "title": "Freistehende Pergola | Flexibel im Garten",
+        "h1": "Freistehende Pergola",
+        "intro_text": "Unabhängig vom Haus – ideal für Garten, Pool oder Sitzplatz. Maximale Flexibilität bei der Standortwahl bei gleicher Stabilität.",
+        "meta_description": "Freistehende Pergola für Garten & Pool. Schaffen Sie eine Schattenoase unabhängig vom Haus. Stabil & windfest.",
+        "features": [
+            "Freie Standortwahl",
+            "Ideal für Poolbereiche",
+            "4-Säulen-Stabilität",
+            "Pavillon-Charakter"
+        ],
+        "images": [
+            "pergola-systeme-garten-aluminium-festdach-b2c-hero-02",
+            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-04",
+            "pergola-systeme-garten-lamellendach-led-b2c-hero-03"
+        ],
+        "faq": [
+            {
+                "question": "Brauche ich ein Fundament?",
+                "answer": "Ja, für eine freistehende Pergola sind Punktfundamente an den Säulen notwendig, um die Standsicherheit bei Wind zu gewährleisten."
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "slug": "pergola-systeme/wintergarten-kombination",
+        "template": "money",
+        "product_id": "wintergarten-systeme",
+        "title": "Pergola als Kaltwintergarten | Flexibler Glusschutz",
+        "h1": "Pergola als Kaltwintergarten",
+        "intro_text": "Kombinieren Sie Lamellendach und Glas. Schutz vor Wind und Wetter bei maximaler Offenheit – nutzen Sie Ihre Terrasse fast das ganze Jahr.",
+        "meta_description": "Pergola zum Kaltwintergarten erweitern. Mit Glasschiebewänden zum geschützten Gartenzimmer. Flexibel & Transparent.",
+        "features": [
+            "Kombination Glas & Dach",
+            "Windgeschützt",
+            "Verlängerte Saison",
+            "Flexible Öffnung"
+        ],
+        "images": [
+            "wintergarten-systeme-glasdach-zip-screen-b2c-hero-01",
+            "wintergarten-systeme-glasdach-tavan-zip-screen-b2c-hero-03",
+            "pergola-systeme-terrasse-lamellendach-glas-schiebesystem-b2c-hero-06"
+        ],
+        "faq": [
+            {
+                "question": "Kann man den Kaltwintergarten beheizen?",
+                "answer": "Ja, mit Infrarotstrahlern lässt er sich temporär aufwärmen. Er ist jedoch nicht thermisch isoliert wie ein Wohnraum."
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "slug": "pergola-systeme/montage",
+        "template": "hub",
+        "product_id": "pergola-systeme",
+        "title": "Pergola Montage & Service | Sanper Vision",
+        "h1": "Pergola Montage durch Sanper",
+        "intro_text": "Eigene Montageteams, saubere Ausführung, klare Verantwortung – von der ersten Planung bis zur schlüsselfertigen Übergabe.",
+        "meta_description": "Fachgerechte Pergola Montage durch eigene Sanper-Teams. Sauber, schnell & zuverlässig. Wir kümmern uns um alles.",
+        "features": [
+            "Eigene Monteure",
+            "Keine Subunternehmen",
+            "Saubere Baustelle",
+            "Einweisung inklusive"
+        ],
+        "images": [
+            "pergola-systeme-terrasse-lamellendach-b2c-detail-01",
+            "pergola-systeme-terrasse-lamellendach-zip-screen-b2c-detail-01",
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-02"
+        ],
+        "faq": [
+            {
+                "question": "Wie lange dauert die Montage?",
+                "answer": "In der Regel ist (je nach Größe und Komplexität) die Montage innerhalb von 1 bis 2 Tagen abgeschlossen."
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "slug": "pergola-systeme/preise",
+        "template": "hub",
+        "product_id": "pergola-systeme",
+        "title": "Pergola Preise & Kosten | Direkt vom Hersteller",
+        "h1": "Pergola Preise & Kosten",
+        "intro_text": "Transparente Preise direkt vom Hersteller. Keine Händlermargen, klare Angebote und ein erstklassiges Preis-Leistungs-Verhältnis.",
+        "meta_description": "Was kostet eine Pergola? Infos zu Preisen & Kostenfaktoren. Sparen Sie durch den Direktkauf beim Hersteller.",
+        "features": [
+            "Fairer Direktpreis",
+            "Keine versteckten Kosten",
+            "Wertbeständig",
+            "Kostenloses Angebot"
+        ],
+        "images": [
+            "pergola-systeme-terrasse-aluminium-festdach-zip-screen-b2c-hero-04",
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-07",
+            "pergola-systeme-carport-lamellendach-b2c-hero-05"
+        ],
+        "faq": [
+            {
+                "question": "Wovon hängen die Preise ab?",
+                "answer": "Die Hauptfaktoren sind Größe, Modell (Lamelle vs. Stoff/Glas), Ausstattung (LED, Screens) und Montageaufwand."
+            }
+        ]
+    },
+    {
+        "id": 11,
         "slug": "wintergarten-systeme",
         "template": "hub",
         "product_id": "wintergarten-systeme",
-        "title": "Wintergarten Systeme & Kaltwintergärten | Sanper",
-        "meta_description": "Erleben Sie die Natur das ganze Jahr. Maßgefertigte Wintergarten-Systeme und Kaltwintergärten aus Glas und Aluminium. Direkt vom Hersteller.",
-        "h1": "Wintergarten Systeme: Licht und Raum für Ihr Zuhause",
-        "intro_text": "Ein Wintergarten schafft wertvollen zusätzlichen Wohnraum. Unsere Systeme aus Glas und Aluminium sind thermisch optimiert oder als Kaltwintergarten verfügbar.",
+        "title": "Wintergarten & Gartenzimmer Systeme | Sanper Vision",
+        "h1": "Wintergarten & Gartenzimmer Systeme",
+        "intro_text": "Ungedämmte Wintergärten für verlängerte Nutzung Ihrer Terrasse – lichtdurchflutet, flexibel und nach Maß gefertigt.",
+        "meta_description": "Wintergarten Systeme und Gartenzimmer aus Aluminium. Genießen Sie Ihre Terrasse bei jedem Wetter. Maßgefertigt von Sanper.",
         "features": [
-            "Thermisch getrennte Profile",
-            "Sicherheitsglas",
-            "Integrierte Beschattung möglich",
-            "Ganzjährige Nutzung"
+            "Lichtdurchflutet",
+            "Wetterschutz",
+            "Verlängerte Nutzung",
+            "Maßanfertigung"
         ],
         "images": [
-            "wintergarten-systeme-glasdach-zip-screen-b2c-hero-01"
+            "wintergarten-systeme-glasdach-zip-screen-b2c-hero-01",
+            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-02",
+            "wintergarten-systeme-glasdach-tavan-zip-screen-b2c-hero-03"
         ],
         "faq": [
             {
-                "question": "Was ist der Unterschied zum Kaltwintergarten?",
-                "answer": "Ein Wohnwintergarten ist isoliert und beheizbar, ein Kaltwintergarten (Sommergarten) dient als Wind- und Wetterschutz ohne thermische Trennung."
+                "question": "Wohnwintergarten oder Kaltwintergarten?",
+                "answer": "Unsere Systeme sind Kaltwintergärten (Sommergärten), die als Wetterschutz dienen, aber nicht als permanent beheizter Wohnraum isoliert sind."
             }
         ]
     },
     {
+        "id": 12,
+        "slug": "wintergarten-systeme/kaltwintergarten",
+        "template": "money",
+        "product_id": "wintergarten-systeme",
+        "title": "Kaltwintergarten nach Maß | Günstige Alternative",
+        "h1": "Kaltwintergarten nach Maß",
+        "intro_text": "Die kosteneffiziente Alternative zum Wohnwintergarten. Bietet Schutz vor Wind und Regen ohne die extrem hohen Baukosten eines isolierten Anbaus.",
+        "meta_description": "Kaltwintergarten kaufen: Die preiswerte Alternative zum Wintergarten. Schutz für Pflanzen & Möbel. Direkt vom Hersteller.",
+        "features": [
+            "Kosteneffizient",
+            "Schnelle Montage",
+            "Pflanzenüberwinterung",
+            "Windschutz"
+        ],
+        "images": [
+            "wintergarten-systeme-glasdach-zip-screen-b2c-hero-01",
+            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-03",
+            "pergola-systeme-terrasse-lamellendach-glas-schiebesystem-b2c-hero-06"
+        ],
+        "faq": [
+            {
+                "question": "Bildet sich Kondenswasser?",
+                "answer": "Bei Temperaturunterschieden kann Kondensat entstehen. Gute Belüftung (z.B. durch Schiebeelemente) minimiert dieses natürliche physikalische Phänomen."
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "slug": "wintergarten-systeme/glasschiebewand",
+        "template": "money",
+        "product_id": "verglasungssysteme",
+        "title": "Glasschiebewände für Terrassen | Sanper Vision",
+        "h1": "Glasschiebewände für Terrassen",
+        "intro_text": "Windschutz ohne Sichtverlust. Unsere rahmenlosen Glasschiebewände sind nachrüstbar, leichtgängig und bieten maximale Transparenz.",
+        "meta_description": "Glasschiebewände für Ihre Terrasse. Rahmenlose Optik, winddicht & leichtgängig. Jetzt nachrüsten & Aussicht genießen.",
+        "features": [
+            "Rahmenlose Optik",
+            "Barrierefreie Schwelle",
+            "Leichtgängig",
+            "Winddicht"
+        ],
+        "images": [
+            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-02",
+            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-04",
+            "pergola-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
+        ],
+        "faq": [
+            {
+                "question": "Kann man die Wände nachrüsten?",
+                "answer": "Ja, unsere Glasschiebewände lassen sich unter fast jede bestehende Terrassenüberdachung oder Pergola montieren."
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "slug": "wintergarten-systeme/montage",
+        "template": "hub",
+        "product_id": "wintergarten-systeme",
+        "title": "Wintergarten Montage Service | Fachgerecht & Dicht",
+        "h1": "Wintergarten Montage Service",
+        "intro_text": "Präzision bei Glas ist entscheidend. Unsere spezialisierten Teams sorgen für saubere Anschlüsse und Dichtigkeit Ihres Gartenzimmers.",
+        "meta_description": "Montage-Service für Wintergärten. Unsere Profis garantieren einen dichten Aufbau und passgenaue Glasmontage.",
+        "features": [
+            "Glas-Spezialisten",
+            "Dichte Anschlüsse",
+            "Sicherheitsglas-Handling",
+            "Saubere Arbeit"
+        ],
+        "images": [
+            "wintergarten-systeme-glasdach-tavan-zip-screen-b2c-hero-03",
+            "wintergarten-systeme-glasdach-zip-screen-b2c-hero-01",
+            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-02"
+        ],
+        "faq": [
+            {
+                "question": "Wie lange dauert der Aufbau?",
+                "answer": "Ein kompletter Kaltwintergarten ist meist in 2 bis 3 Tagen aufgebaut, abhängig von Fundamentvorrbeiten."
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "slug": "wintergarten-systeme/polen-preise",
+        "template": "hub",
+        "product_id": "wintergarten-systeme",
+        "title": "Wintergarten Preise Vergleich | Qualität vs. Import",
+        "h1": "Wintergarten Preise – Deutschland vs Import",
+        "intro_text": "Warum Direktvertrieb mit Service vor Ort langfristig oft günstiger und sicherer ist als ein vermeintliches Billigangebot aus dem Ausland.",
+        "meta_description": "Wintergarten aus Polen oder Deutschland? Ein Preis-Leistungs-Vergleich. Warum Service & Garantie den Unterschied machen.",
+        "features": [
+            "Deutsches Gewährleistungsrecht",
+            "Ansprechpartner vor Ort",
+            "Zertifizierte Qualität",
+            "Ersatzteilgarantie"
+        ],
+        "images": [
+            "wintergarten-systeme-glasdach-zip-screen-b2c-hero-01",
+            "pergola-systeme-terrasse-lamellendach-glas-schiebesystem-b2c-hero-06",
+            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
+        ],
+        "faq": [
+            {
+                "question": "Wo liegen die Unterschiede?",
+                "answer": "Oft sparen Import-Produkte an der Profilstärke oder Beschichtung. Zudem ist die Reklamationsabwicklung im Ausland oft schwierig."
+            }
+        ]
+    },
+    {
+        "id": 16,
         "slug": "zip-screen-systeme",
         "template": "hub",
         "product_id": "zip-screen",
-        "title": "ZIP Screen Senkrechtmarkisen | Windfester Sonnenschutz",
-        "meta_description": "ZIP Screens für Fenster und Terrassen. Windfester Sonnenschutz, Insektenschutz und Privatsphäre. Maßgefertigt und motorisiert.",
-        "h1": "ZIP Screen Systeme: Der moderne textile Sonnenschutz",
-        "intro_text": "Effektiver Hitzeschutz ohne zu verdunkeln. Unsere ZIP Screens laufen windstabil in seitlichen Führungsschienen und ersetzen klassische Rollläden.",
+        "title": "Zip Screen Systeme | Windfester Sonnenschutz",
+        "h1": "Zip Screen Systeme",
+        "intro_text": "Moderner Sonnenschutz für Terrasse und Glasflächen. Durch das Reißverschluss-System windstabil, insektenhemmend und elegant.",
+        "meta_description": "ZIP Screen Systeme: Der windfeste textile Sonnenschutz. Perfekt für Fenster & Terrassen. Hitzeschutz ohne Abdunkelung.",
         "features": [
-            "Windstabil bis 120 km/h",
-            "Sichtschutz bei Tag",
-            "Insektenschutz inklusive",
-            "Smart Home fähig"
+            "Windstabil (ZIP)",
+            "Hitzeschutz",
+            "Insektenschutz",
+            "Modernes Design"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-03"
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-03",
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-04",
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-06"
         ],
         "faq": [
             {
-                "question": "Kann man durch den Stoff noch rausschauen?",
-                "answer": "Ja, unsere Screen-Stoffe ermöglichen Sicht nach draußen bei gleichzeitigem Hitzeschutz."
+                "question": "Wie windfest sind ZIP Screens?",
+                "answer": "Unsere Systeme halten Windgeschwindigkeiten bis zu 120 km/h stand, da das Tuch fest in der Schiene geführt wird."
             }
         ]
     },
     {
-        "slug": "verglasungssysteme",
-        "template": "hub",
-        "product_id": "verglasungssysteme",
-        "title": "Verglasungssysteme & Glasschiebewände | Sanper",
-        "meta_description": "Flexible Verglasungssysteme für Terrasse und Balkon. Guillotine-Glas, Schiebe-Dreh-Systeme und Windschutzglas. Transparent und sicher.",
-        "h1": "Innovative Verglasungssysteme für maximale Transparenz",
-        "intro_text": "Schützen Sie sich vor Wind und Wetter, ohne die Aussicht zu verlieren. Unsere Glassysteme sind flexibel, sicher und leicht zu bedienen.",
-        "features": [
-            "Gehärtetes Sicherheitsglas",
-            "Rahmenlose Optik",
-            "Leichtgängige Schienen",
-            "Schalldämmend"
-        ],
-        "images": [
-            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-02"
-        ],
-        "faq": []
-    },
-    {
-        "slug": "pergola-systeme/kaufen",
+        "id": 17,
+        "slug": "zip-screen-systeme/senkrechtmarkise",
         "template": "money",
-        "product_id": "pergola-systeme",
-        "title": "Pergola kaufen direkt beim Hersteller | Top Preise & Qualität",
-        "meta_description": "Sie möchten eine Pergola kaufen? Profitieren Sie von Herstellerpreisen, maßgefertigter Qualität und unserem Montage-Service. Jetzt Angebot anfordern.",
-        "h1": "Pergola kaufen: Investieren Sie in Qualität vom Hersteller",
-        "intro_text": "Beim Kauf einer Pergola zählen Qualität und Langlebigkeit. Als Hersteller bieten wir Ihnen faire Preise ohne Zwischenhändler und volle Garantie.",
+        "product_id": "zip-screen",
+        "title": "Elektrische Senkrechtmarkise | Hitzeschutz nach Maß",
+        "h1": "Elektrische Senkrechtmarkise",
+        "intro_text": "Effektiver Hitzeschutz ohne klobige Rollladen-Optik. Maßgefertigt, elektrisch steuerbar und langlebig.",
+        "meta_description": "Elektrische Senkrechtmarkise mit ZIP-Führung. Effektiver Hitzeschutz für Fenster. Modern, leise & komfortabel.",
         "features": [
-            "Direktvertrieb ohne Zwischenhändler",
-            "Individuelle Planung inklusive",
-            "Transparente Festpreise",
-            "Finanzierung möglich"
+            "Elektrischer Antrieb",
+            "Filigrane Kassette",
+            "Hitzeschutz",
+            "Sicht nach draußen"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-hero-01"
+            "zip-screen-systeme-terrasse-seitenbeschattung-b2c-hero-02",
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-01",
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-02"
         ],
-        "faq": []
+        "faq": [
+            {
+                "question": "Sind die Markisen wetterfest?",
+                "answer": "Die Tücher sind witterungsbeständig und verrotten nicht. Bei Sturm sollten sie jedoch (wenn kein ZIP) eingefahren werden - ZIP-Anlagen sind sturmfest."
+            }
+        ]
     },
     {
-        "slug": "pergola-systeme/montage",
+        "id": 18,
+        "slug": "zip-screen-systeme/terrasse",
         "template": "money",
-        "product_id": "pergola-systeme",
-        "title": "Pergola mit Montage | Fachgerechter Aufbau durch Profis",
-        "meta_description": "Pergola Montage vom Profi. Wir liefern und montieren Ihre Pergola fachgerecht, sauber und schnell. Lehnen Sie sich zurück.",
-        "h1": "Pergola mit Montage: Unser Rundum-Sorglos-Service",
-        "intro_text": "Eine fachgerechte Montage ist entscheided für die Langlebigkeit Ihrer Pergola. Unsere geschulten Montageteams sorgen für einen perfekten Aufbau.",
+        "product_id": "zip-screen",
+        "title": "Zip Screens für Terrassen | Seitlicher Schutz",
+        "h1": "Zip Screens für Terrassen",
+        "intro_text": "Ergänzen Sie Ihre Terrassenüberdachung mit seitlichen ZIP-Screens. Der perfekte Schutz gegen tiefstehende Sonne, Wind und neugierige Blicke.",
+        "meta_description": "ZIP Screens für Terrassenüberdachungen. Seitlicher Sicht- und Windschutz. Nachrüstbar und per Fernbedienung steuerbar.",
         "features": [
-            "Eigene Montageteams",
-            "Fundamentarbeiten auf Wunsch",
-            "Saubere Baustelle",
-            "Einweisung in die Technik"
+            "Seitenbeschattung",
+            "Privacy-Schutz",
+            "Nachrüstbar",
+            "Windschutz"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-detail-01"
-        ],
-        "faq": []
-    },
-    {
-        "slug": "lamellendach/preise",
-        "template": "money",
-        "product_id": "bioklimatische-pergola",
-        "title": "Lamellendach Preise & Kosten | Was kostet Qualität?",
-        "meta_description": "Transparente Infos zu Lamellendach Preisen. Erfahren Sie, was ein hochwertiges Lamellendach kostet und wovon der Preis abhängt.",
-        "h1": "Lamellendach Preise: Qualität, die sich auszahlt",
-        "intro_text": "Der Preis eines Lamellendachs hängt von Größe, Ausstattung und Zubehör ab. Wir bieten Ihnen ein erstklassiges Preis-Leistungs-Verhältnis.",
-        "features": [
-            "Kostenloses Angebot",
-            "Keine versteckten Kosten",
-            "Bestpreis-Garantie",
-            "Wertsteigerung für Ihre Immobilie"
-        ],
-        "images": [
-            "pergola-systeme-garten-lamellendach-led-b2c-hero-03"
-        ],
-        "faq": []
-    },
-    {
-        "slug": "wintergarten-systeme/montage",
-        "template": "money",
-        "product_id": "wintergarten-systeme",
-        "title": "Wintergarten kaufen mit Montage | Alles aus einer Hand",
-        "meta_description": "Wintergarten kaufen inklusive Montage. Wir planen, fertigen und montieren Ihren Traum-Wintergarten. Stressfrei zum neuen Wohnraum.",
-        "h1": "Wintergarten mit Montage: Ihr Weg zum Traumraum",
-        "intro_text": "Ein Wintergarten ist ein komplexes Bauprojekt. Vertrauen Sie auf unsere Erfahrung von der Planung bis zur schlüsselfertigen Montage.",
-        "features": [
-            "Bauantrag-Service",
-            "Fundament & Bodenplatte",
-            "Anschluss an Hauswand",
-            "Elektroinstallation vorbereitet"
-        ],
-        "images": [
-            "wintergarten-systeme-glasdach-tavan-zip-screen-b2c-hero-03"
-        ],
-        "faq": []
-    },
-    {
-        "slug": "pergola-systeme/terrasse",
-        "template": "location",
-        "product_id": "pergola-systeme",
-        "title": "Pergola für die Terrasse | Der perfekte Wetterschutz",
-        "meta_description": "Machen Sie Ihre Terrasse wetterfest mit einer Pergola von Sanper. Schutz vor Sonne und Regen für unbeschwerte Stunden im Freien.",
-        "h1": "Die ideale Pergola für Ihre Terrasse",
-        "intro_text": "Verwandeln Sie Ihre Terrasse in einen geschützten Rückzugsort. Unsere Pergolen passen sich harmonisch an Ihre Hausarchitektur an.",
-        "features": [
-            "Wandanbau oder Freistehend",
-            "Passend für jeden Bodenbelag",
-            "Integrierter Wasserablauf",
-            "Farblich anpassbar"
-        ],
-        "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-hero-07"
-        ],
-        "faq": []
-    },
-    {
-        "slug": "pergola-systeme/garten",
-        "template": "location",
-        "product_id": "pergola-systeme",
-        "title": "Garten Pergola Freistehend | Schatteninsel im Grünen",
-        "meta_description": "Freistehende Garten Pergola. Schaffen Sie eine Schattenoase mitten in Ihrem Garten. Robust, langlebig und individuell gestaltbar.",
-        "h1": "Garten Pergola: Ihre Oase im Grünen",
-        "intro_text": "Eine freistehende Pergola im Garten schafft einen neuen Lebensmittelpunkt. Genießen Sie die Natur geschützt vor zu viel Sonne.",
-        "features": [
-            "Freistehende Konstruktion",
-            "Keine Hauswand nötig",
-            "Perfekt für Poolbereiche",
-            "Stabil verankert"
-        ],
-        "images": [
-            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-04"
-        ],
-        "faq": []
-    },
-    {
-        "slug": "pergola-systeme/freistehend",
-        "template": "feature",
-        "product_id": "pergola-systeme",
-        "title": "Pergola Freistehend | Flexibel platzierbar",
-        "meta_description": "Entdecken Sie unsere freistehenden Pergola-Modelle. Maximale Flexibilität bei der Standortwahl in Ihrem Garten oder auf der Dachterrasse.",
-        "h1": "Freistehende Pergola: Flexibilität ohne Grenzen",
-        "intro_text": "Nicht jede Pergola muss an der Hauswand stehen. Unsere freistehenden Modelle bieten Ihnen volle Gestaltungsfreiheit.",
-        "features": [
-            "Stabile 4-Posten Konstruktion",
-            "Windstabil",
-            "Ideal als Pavillon",
-            "Modular erweiterbar"
-        ],
-        "images": [
-            "pergola-systeme-garten-aluminium-festdach-b2c-hero-02"
-        ],
-        "faq": []
-    },
-    {
-        "slug": "pergola-systeme/wasserdicht",
-        "template": "feature",
-        "product_id": "pergola-systeme",
-        "title": "Pergola Wasserdicht | 100% Regenschutz für Draußen",
-        "meta_description": "Eine wasserdichte Pergola garantiert trockene Stunden im Freien. Entdecken Sie unsere Lamellendächer und Faltmarkisen mit Regenschutz.",
-        "h1": "Wasserdichte Pergola: Genießen Sie den Regen",
-        "intro_text": "Mit unseren wasserdichten Pergola-Systemen fällt die Grillparty nie mehr ins Wasser. Zuverlässiger Schutz auch bei starkem Regen.",
-        "features": [
-            "Dichtschließende Lamellen",
-            "Integrierte Regenrinne",
-            "Wasserablauf durch Pfosten",
-            "Getestete Dichtigkeit"
-        ],
-        "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-hero-01"
-        ],
-        "faq": []
-    },
-    {
-        "slug": "lamellendach/aluminium",
-        "template": "feature",
-        "product_id": "bioklimatische-pergola",
-        "title": "Aluminium Lamellendach | Modern, Robust & Pflegeleicht",
-        "meta_description": "Lamellendächer aus Aluminium sind die Premium-Lösung für Ihre Terrasse. Rostfrei, pflegeleicht und extrem langlebig. Jetzt informieren.",
-        "h1": "Das Aluminium Lamellendach: Langlebige Eleganz",
-        "intro_text": "Aluminium ist das perfekte Material für den Außenbereich. Unsere Lamellendächer sind korrosionsbeständig und behalten über Jahre ihre Optik.",
-        "features": [
-            "Hochwertiges Strangpress-Aluminium",
-            "Pulverbeschichtet",
-            "Kein Rosten, kein Streichen",
-            "Leichte Reinigung"
-        ],
-        "images": [
-            "pergola-systeme-garten-aluminium-festdach-b2c-hero-03"
-        ],
-        "faq": []
-    },
-    {
-        "slug": "terrassenueberdachung/alu",
-        "template": "feature",
-        "product_id": "pergola-systeme",
-        "title": "Alu Terrassenüberdachung | Der Bestseller",
-        "meta_description": "Alu Terrassenüberdachungen sind beliebt wie nie. Entdecken Sie warum Aluminium das beste Material für Ihr Terrassendach ist.",
-        "h1": "Alu Terrassenüberdachung: Der Klassiker neu definiert",
-        "intro_text": "Eine Terrassenüberdachung aus Aluminium ist eine Investition fürs Leben. Stabil, filigran und absolut wartungsarm.",
-        "features": [
-            "Schlanke Profile, hohe Traglast",
-            "Riesige Farbauswahl",
-            "Kompatibel mit Glasschiebewänden",
-            "Zeitloses Design"
-        ],
-        "images": [
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-04",
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-03",
             "pergola-systeme-terrasse-aluminium-festdach-zip-screen-b2c-hero-04"
         ],
-        "faq": []
+        "faq": [
+            {
+                "question": "Kann man ZIP Screens nachrüsten?",
+                "answer": "Ja, sie lassen sich problemlos an bestehende Pergolen oder Überdachungen montieren, sofern ein Sturz/Balken vorhanden ist."
+            }
+        ]
     },
     {
-        "slug": "zip-screen-systeme/terrasse",
-        "template": "location",
+        "id": 19,
+        "slug": "zip-screen-systeme/wetterfest",
+        "template": "money",
         "product_id": "zip-screen",
-        "title": "Senkrechtmarkise für Terrasse | Windschutz & Schatten",
-        "meta_description": "Senkrechtmarkisen für die Terrasse. Schützen Sie sich vor tiefstehender Sonne und Wind. ZIP-Technologie für straffen Tuchsit.",
-        "h1": "Senkrechtmarkise für Ihre Terrasse",
-        "intro_text": "Ergänzen Sie Ihre Terrassenüberdachung mit seitlichen ZIP-Screens. Der perfekte Schutz gegen Wind und neugierige Blicke.",
+        "title": "Wetterfeste Außenrollos | Robust & Durchdacht",
+        "h1": "Wetterfeste Außenrollos",
+        "intro_text": "Robuster als klassische Markisen – unsere wetterfesten Außenrollos mit ZIP-Technologie trotzen Wind und wechselhaftem Wetter.",
+        "meta_description": "Wetterfeste Außenrollos (ZIP Screen). Die sturmfeste Alternative zur Markise. Hitzeschutz bei jedem Wette.",
         "features": [
-            "Nachrüstbar für viele Dächer",
-            "Textiler Charakter",
-            "Vielseitig einsetzbar",
-            "Einfache Funksteuerung"
+            "Kein Klappern bei Wind",
+            "Wasserabweisend",
+            "UV-Beständig",
+            "Robustes System"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-seitenbeschattung-b2c-hero-02"
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-06",
+            "zip-screen-systeme-garten-seitenbeschattung-b2c-hero-05",
+            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-05"
         ],
-        "faq": []
+        "faq": [
+            {
+                "question": "Hält das Tuch Regen ab?",
+                "answer": "Es ist wasserabweisend und schützt vor leichtem Regen. Es ist jedoch keine 100%ige Wasserbarriere wie Glas."
+            }
+        ]
     },
     {
-        "slug": "wintergarten-systeme/kaltwintergarten",
-        "template": "feature",
-        "product_id": "wintergarten-systeme",
-        "title": "Kaltwintergarten / Sommergarten | Die günstige Alternative",
-        "meta_description": "Ein Kaltwintergarten verlängert den Sommer. Ungedämmter Glasanbau als Wind- und Wetterschutz für Terrasse und Pflanzen.",
-        "h1": "Der Kaltwintergarten: Ihr Glashaus für den Garten",
-        "intro_text": "Ein Kaltwintergarten (oder Sommergarten) bietet Schutz vor Witterung, heizt sich durch die Sonne schnell auf und ist kostengünstiger als ein Wohnwintergarten.",
-        "features": [
-            "Günstiger in der Anschaffung",
-            "Filigrane Profile (unisso-liert)",
-            "Perfektes Überwinterungsquartier für Pflanzen",
-            "Verlängert die Nutzung der Terrasse"
-        ],
-        "images": [
-            "wintergarten-systeme-glasdach-zip-screen-b2c-hero-01"
-        ],
-        "faq": []
-    },
-    {
-        "slug": "lamellendach/3x4m",
-        "template": "dimension",
-        "product_id": "bioklimatische-pergola",
-        "title": "Lamellendach 3x4m | Das beliebte Standardmaß",
-        "meta_description": "Lamellendach in 3x4m. Die ideale Größe für viele Terrassen. Schnell lieferbar und perfekt proportioniert. Jetzt Angebot für 3x4m anfordern.",
-        "h1": "Lamellendach 3x4m: Die beliebte Größe",
-        "intro_text": "Das Maß 3x4 Meter ist ideal für eine typische Sitzgruppe für 4-6 Personen. Wir fertigen dieses Maß passgenau für Ihre Bedürfnisse.",
-        "features": [
-            "Ideales Verhältnis Breite/Tiefe",
-            "Ausreichend Platz für Esstisch",
-            "Oft ohne Baugenehmigung möglich (prüfen!)",
-            "Attraktive Paketpreise"
-        ],
-        "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-hero-07"
-        ],
-        "faq": []
-    },
-    {
-        "slug": "pergola-systeme/mit-led",
-        "template": "feature",
+        "id": 20,
+        "slug": "ueber-uns",
+        "template": "hub",
         "product_id": "pergola-systeme",
-        "title": "Pergola mit LED Beleuchtung | Stimmungsvolles Licht",
-        "meta_description": "Pergola mit integrierter LED Beleuchtung. Dimmbare Spots oder LED-Stripes für gemütliche Abende auf der Terrasse.",
-        "h1": "Pergola mit LED: Licht für lange Abende",
-        "intro_text": "Verlängern Sie den Tag mit integrierter LED-Beleuchtung in Ihrer Pergola. Dimmbar und per Fernbedienung steuerbar für die perfekte Atmosphäre.",
+        "title": "Über Sanper Vision | Herstellerkompetenz",
+        "h1": "Über Sanper",
+        "intro_text": "Herstellerkompetenz, eigene Montage und klare Verantwortung – Sanper Vision steht für hochwertiges Outdoor Living ohne Zwischenhandel.",
+        "meta_description": "Lernen Sie Sanper Vision kennen. Ihr Hersteller für Pergolen & Wintergärten. Eigene Produktion, eigene Montage, faire Preise.",
         "features": [
-            "Integriert in Lamellen oder Rahmen",
-            "Dimmbar",
-            "Warmweiß oder RGB",
-            "Energiesparend"
+            "Familienunternehmen",
+            "Eigene Produktion",
+            "Regionale Verbundenheit",
+            "Handschlagqualität"
         ],
         "images": [
+            "pergola-systeme-gewerbe-glas-schiebesystem-b2b-hero-03",
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-01",
+            "pergola-systeme-terrasse-aluminium-festdach-b2c-hero-01"
+        ],
+        "faq": [
+            {
+                "question": "Wo befindet sich der Showroom?",
+                "answer": "Besuchen Sie unsere Ausstellung (Adresse im Footer) und erleben Sie unsere Systeme live."
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "slug": "kontakt",
+        "template": "hub",
+        "product_id": "pergola-systeme",
+        "title": "Kontakt & Beratung | Sanper Vision",
+        "h1": "Beratung & Angebot",
+        "intro_text": "Starten Sie Ihr Projekt mit einer unverbindlichen Beratung. Persönlich, klar und transparent begleiten wir Sie zum Traum-Gartenzimmer.",
+        "meta_description": "Kontaktieren Sie uns für eine kostenlose Beratung. Wir planen Ihr Projekt individuell und erstellen ein unverbindliches Angebot.",
+        "features": [
+            "Kostenlose Erstberatung",
+            "Schnelles Angebot",
+            "Persönlicher Ansprechpartner",
+            "Vor-Ort Termin"
+        ],
+        "images": [
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-07",
+            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-04",
             "pergola-systeme-garten-lamellendach-led-b2c-hero-03"
         ],
-        "faq": []
+        "faq": [
+            {
+                "question": "Wie läuft eine Anfrage ab?",
+                "answer": "Sie senden uns Ihre Wünsche, wir erstellen eine grobe Kostenschätzung und kommen dann für das Feinaufmaß zu Ihnen."
+            }
+        ]
     },
     {
-        "slug": "pergola-systeme/nrw",
-        "template": "location",
-        "product_id": "pergola-systeme",
-        "title": "Pergola kaufen in NRW | Ausstellung & Montage vor Ort",
-        "meta_description": "Ihr Pergola Experte in NRW. Besuchen Sie unseren Showroom in Dortmund. Lieferung und Montage in ganz Nordrhein-Westfalen.",
-        "h1": "Pergola kaufen in NRW: Ihr Partner vor Ort",
-        "intro_text": "Wir sind Ihr regionaler Ansprechpartner für Pergola-Systeme in NRW. Kurze Wege, persönliche Beratung und eigener Montage-Service.",
-        "features": [
-            "Showroom in Dortmund",
-            "Schnelle Termine in NRW",
-            "Regionale Referenzen",
-            "Persönlicher Ansprechpartner"
-        ],
-        "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-hero-02"
-        ],
-        "faq": []
-    },
-    {
-        "slug": "pergola-systeme/gastronomie",
-        "template": "audience",
-        "product_id": "pergola-systeme",
-        "title": "Pergola für Gastronomie & Hotels | Mehr Umsatz Outdoor",
-        "meta_description": "Wetterfeste Pergola-Lösungen für Gastronomie und Hotellerie. Erweitern Sie Ihre Gastraum-Kapazität unabhängig vom Wetter. B2B Konditionen.",
-        "h1": "Pergola Lösungen für die Gastronomie",
-        "intro_text": "Machen Sie Ihren Außenbereich zur umsatzstarken Zone, die bei jedem Wetter genutzt werden kann. Unsere Gastro-Pergolen sind robust und einladend.",
-        "features": [
-            "Raucherbereich schaffen",
-            "Mehr Sitzplätze bei Regen",
-            "Modulare Großanlagen",
-            "B2B Leasing möglich"
-        ],
-        "images": [
-            "pergola-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
-        ],
-        "faq": []
-    },
-    {
-        "slug": "guillotine-glassysteme",
-        "template": "hub",
-        "product_id": "guillotine-glassysteme",
-        "title": "Guillotine Glassysteme | Elektrische Schiebefenster",
-        "meta_description": "Elektrische Guillotine Fenster & Absturzsicherung. Vertikale Schiebefenster für Balkon und Gastronomie. Modern, sicher, motorisiert.",
-        "h1": "Guillotine Glassysteme: Vertikale Innovation",
-        "intro_text": "Das Guillotine-System ist Geländer und Fenster in einem. Die motorisierten Scheiben fahren vertikal nach unten und öffnen den Raum.",
-        "features": [
-            "Motorisiert per Fernbedienung",
-            "Integriertes Geländer (Absturzsicherung)",
-            "Perfekt für Balkone",
-            "Isolierverglasung"
-        ],
-        "images": [
-            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-04"
-        ],
-        "faq": []
-    },
-    {
-        "slug": "schiebeglas-systeme",
-        "template": "hub",
+        "id": 25,
+        "slug": "wintergarten-systeme/glasschiebewand-nachruesten",
+        "template": "money",
         "product_id": "verglasungssysteme",
-        "title": "Glasschiebewände für Terrassen | Sanper Vision",
-        "meta_description": "Rahmenlose Glasschiebewände für Ihre Terrassenüberdachung. Genießen Sie den Panoramablick bei vollem Windschutz. Nachrüstbar.",
-        "h1": "Glasschiebewände: Transparenz pur",
-        "intro_text": "Erweitern Sie Ihre Überdachung zum Glashaus. Unsere leichtgängigen Glasschiebewände lassen sich komplett zur Seite schieben.",
+        "title": "Glasschiebewände nachrüsten | Terrassendach erweitern",
+        "h1": "Glasschiebewände nachrüsten",
+        "intro_text": "Machen Sie aus Ihrem bestehenden Terrassendach einen Kaltwintergarten. Unsere Glassysteme lassen sich flexibel nachrüsten.",
+        "meta_description": "Glasschiebewände nachträglich einbauen. Erweitern Sie Ihre Überdachung zum Glashaus. Passend für Holz un Alu.",
         "features": [
-            "Ganzglas-Optik",
-            "Mitnehmer-Funktion",
-            "Barrierefreie Bodenschiene möglich",
-            "Gehärtetes Glas"
+            "Nachrüst-System",
+            "Passt für Alu & Holz",
+            "Bodenbündige Schienen",
+            "Mehr Wetterschutz"
         ],
         "images": [
-            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-02"
+            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-02",
+            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-03",
+            "pergola-systeme-terrasse-lamellendach-glas-schiebesystem-b2c-hero-06"
         ],
-        "faq": []
-    },
-    {
-        "slug": "windschutz-glas",
-        "template": "hub",
-        "product_id": "gartenzaun-windschutz",
-        "title": "Windschutz aus Glas | Höhenverstellbar & Fest",
-        "meta_description": "Windschutzwände aus Glas für Terrasse und Gastronomie. Feste oder höhenverstellbare Systeme (Up-Down). Schützen Sie sich vor Zugluft.",
-        "h1": "Windschutz aus Glas: Komfort ohne Zugluft",
-        "intro_text": "Ein Glas-Windschutz sorgt für angenehme Ruhe auf der Terrasse, ohne die Sicht zu versperren. Ideal auch als 'Up-Down' System.",
-        "features": [
-            "Manuell höhenverstellbar",
-            "Sicherheitsglas",
-            "Als Zaun oder Terrassenabtrennung",
-            "Elegantes Design"
-        ],
-        "images": [
-            "windschutzglas-systeme-terrasse-verstellbar-b2c-hero-01"
-        ],
-        "faq": []
+        "faq": [
+            {
+                "question": "Geht das auch bei Holz-Dächern?",
+                "answer": "Ja, unsere Profile lassen sich an nahezu jede Unterkonstruktion (Holz, Alu, Stahl) montieren."
+            }
+        ]
     }
 ]

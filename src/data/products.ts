@@ -32,7 +32,7 @@ export const products: Product[] = [
   {
     id: "1",
     produktname: "Reinigbares Guillotinefenster",
-    slug: createSlug("Reinigbares Guillotinefenster"),
+    slug: "wintergarten-systeme/glasschiebewand", // Mapped to closest match or keep generic if no landing page
     kategorie: "Verglasungssysteme",
     systemtyp: "Motorisiertes vertikales Schiebesystem, leicht zu reinigen",
     material: "Aluminiumprofile; gehärtetes Laminatglas",
@@ -49,7 +49,7 @@ export const products: Product[] = [
   {
     id: "2",
     produktname: "Guillotine-Glassysteme",
-    slug: createSlug("Guillotine-Glassysteme"),
+    slug: "wintergarten-systeme/glasschiebewand", // Mapped
     kategorie: "Verglasungssysteme",
     systemtyp: "Motorisiertes oder manuelles vertikales Schiebesystem",
     material: "Aluminiumrahmen; gehärtetes Glas; Doppelverglasung",
@@ -66,7 +66,7 @@ export const products: Product[] = [
   {
     id: "3",
     produktname: "Bioklimatische Pergola",
-    slug: createSlug("Bioklimatische Pergola"),
+    slug: "pergola-systeme/lamellendach",
     kategorie: "Pergola-Systeme",
     systemtyp: "Motorisierte lamellenbasierte bioklimatische Pergola",
     material: "Extrudiertes Aluminium; Edelstahl; integrierte LED",
@@ -83,7 +83,7 @@ export const products: Product[] = [
   {
     id: "4",
     produktname: "Einmotorige bioklimatische Pergola",
-    slug: createSlug("Einmotorige bioklimatische Pergola"),
+    slug: "pergola-systeme/bioklimatisch",
     kategorie: "Pergola-Systeme",
     systemtyp: "Einmotorige lamellenbasierte Pergola mit Dreh- und Einzugsfunktion",
     material: "Aluminiumlamellen; Scherenmechanismus",
@@ -100,7 +100,7 @@ export const products: Product[] = [
   {
     id: "5",
     produktname: "Rolling Roof Pergola (Falt-Dach)",
-    slug: createSlug("Rolling Roof Pergola (Falt-Dach)"),
+    slug: "pergola-systeme/aluminium",
     kategorie: "Pergola-Systeme",
     systemtyp: "Motorisiertes faltbares Dachsystem",
     material: "Extrudierte Aluminium-Paneele; langlebiger Motor",
@@ -117,7 +117,7 @@ export const products: Product[] = [
   {
     id: "6",
     produktname: "Kassettenmarkise",
-    slug: createSlug("Kassettenmarkise"),
+    slug: "zip-screen-systeme/senkrechtmarkise", // Approximate mapping
     kategorie: "Textile Beschattung",
     systemtyp: "Kassettenmarkise mit Gelenkarmen",
     material: "Aluminiumgehäuse und -arme; Acryl-/PVC-Stoff",
@@ -134,7 +134,7 @@ export const products: Product[] = [
   {
     id: "7",
     produktname: "Wintent-Fenstermarkise",
-    slug: createSlug("Wintent-Fenstermarkise"),
+    slug: "zip-screen-systeme/wetterfest", // Approximate mapping
     kategorie: "Textile Beschattung",
     systemtyp: "Fenstermarkise (steiler Winkel)",
     material: "Aluminiumgehäuse; Acrylstoff",
@@ -151,7 +151,7 @@ export const products: Product[] = [
   {
     id: "8",
     produktname: "Zip-Screen",
-    slug: createSlug("Zip-Screen"),
+    slug: "zip-screen-systeme",
     kategorie: "Textile Beschattung",
     systemtyp: "Motorisierte vertikale Zip-Screen-Markise",
     material: "Aluminium-Seitenkanäle; PVC-beschichtetes Polyestergewebe",
@@ -168,7 +168,7 @@ export const products: Product[] = [
   {
     id: "9",
     produktname: "Zip-Dachmarkise",
-    slug: createSlug("Zip-Dachmarkise"),
+    slug: "zip-screen-systeme/terrasse",
     kategorie: "Textile Beschattung",
     systemtyp: "Motorisierte horizontale Zip-Dachmarkise",
     material: "Aluminiumführungen; blickdichter oder perforierter Stoff; Gasdruckfeder",
@@ -185,7 +185,7 @@ export const products: Product[] = [
   {
     id: "10",
     produktname: "Kolbenunterstützte Zip-Dachmarkise",
-    slug: createSlug("Kolbenunterstützte Zip-Dachmarkise"),
+    slug: "zip-screen-systeme/terrasse",
     kategorie: "Textile Beschattung",
     systemtyp: "Kolbenunterstützte Dachmarkise",
     material: "Aluminiumgehäuse; Gasdruckzylinder; blickdichtes Gewebe",
@@ -202,7 +202,7 @@ export const products: Product[] = [
   {
     id: "11",
     produktname: "Motorisiertes Deckenrollo",
-    slug: createSlug("Motorisiertes Deckenrollo"),
+    slug: "zip-screen-systeme/senkrechtmarkise",
     kategorie: "Textile Beschattung",
     systemtyp: "Motorisiertes Deckenrollo (Rollvorhang)",
     material: "Aluminiumprofil; technisches Textil oder Blackout-Gewebe",
@@ -217,77 +217,9 @@ export const products: Product[] = [
     bilder: ["/images/products/ceiling-roller-blind.png"]
   },
   {
-    id: "12",
-    produktname: "Transparente Zip-Markise",
-    slug: createSlug("Transparente Zip-Markise"),
-    kategorie: "Transparente Schutzsysteme",
-    systemtyp: "Motorisierte transparente PVC-Zip-Markise",
-    material: "Kristall-PVC; Aluminium-Seitenkanäle",
-    einsatzbereich: ["Restaurant", "Café", "Wintergarten", "Terrasse"],
-    masse_optionen: "Maximal 4 m Breite; 3 m Höhe; PVC in 0,5/0,8/1 mm",
-    motorisierung: true,
-    windschutz: "Sehr hoch",
-    wasserschutz: "Ja",
-    zertifikate: ["CE", "EN 13561", "PVC ISO 2286"],
-    anmerkungen: "Verdeckt die Aussicht nicht; UV-geschützt",
-    kurzbeschreibung: "Kristallklares PVC-System für Wetterschutz ohne Sichteinschränkung – ideal für Gastronomie.",
-    bilder: ["/images/products/transparent-zip-blind.png"]
-  },
-  {
-    id: "13",
-    produktname: "Transparenter Rollladen",
-    slug: createSlug("Transparenter Rollladen"),
-    kategorie: "Transparente Schutzsysteme",
-    systemtyp: "Motorisierter transparenter Polycarbonat-Rollladen",
-    material: "Polycarbonat-Paneele; Aluminiumprofile",
-    einsatzbereich: ["Schaufenster", "Ausstellungsraum", "Garage"],
-    masse_optionen: "Maximal 4 m Breite; 5 m Höhe; modular",
-    motorisierung: true,
-    windschutz: "Hoch",
-    wasserschutz: "Ja",
-    zertifikate: ["CE", "EN 13241-1"],
-    anmerkungen: "Sicherheit und Transparenz; vergilbt nicht",
-    kurzbeschreibung: "Innovativer transparenter Rollladen aus Polycarbonat für Sicherheit bei vollem Einblick.",
-    bilder: ["/images/products/transparent-shutter.png"]
-  },
-  {
-    id: "14",
-    produktname: "Gartenzaun (Windschutz)",
-    slug: createSlug("Gartenzaun (Windschutz)"),
-    kategorie: "Transparente Schutzsysteme",
-    systemtyp: "Fester oder beweglicher Glaswindschutz",
-    material: "Laminiertes; gehärtetes Glas; Aluminiumsteher",
-    einsatzbereich: ["Offener Café-Bereich", "Gartenterrasse", "Poolbereich", "Bürotrennwand"],
-    masse_optionen: "Höhe 1–1,5 m; Breite 1–2 m; fest oder mit Rollen",
-    motorisierung: false,
-    windschutz: "Mittel/Hoch",
-    wasserschutz: "Mittel",
-    zertifikate: ["CE", "EN 12150", "ISO 9227"],
-    anmerkungen: "Panoramablick; windschneidend",
-    kurzbeschreibung: "Eleganter Glas-Windschutz für Terrassen und Pools mit Option für mobile Rollensysteme.",
-    bilder: ["/images/products/glass-windbreaker.png"]
-  },
-  {
-    id: "15",
-    produktname: "Sonnenschutzlamellen",
-    slug: createSlug("Sonnenschutzlamellen"),
-    kategorie: "Transparente Schutzsysteme",
-    systemtyp: "Festes oder motorisiertes Sonnenschutzsystem",
-    material: "Extrudierte Aluminiumlamellen",
-    einsatzbereich: ["Büro- und Wohnfassaden", "Schulen", "Krankenhäuser"],
-    masse_optionen: "Lamellenbreite 100–400 mm; feste Neigung oder motorisch 0–90° verstellbar",
-    motorisierung: false,
-    windschutz: "Hoch",
-    wasserschutz: "—",
-    zertifikate: ["CE", "EN 1991", "TSE"],
-    anmerkungen: "Energieeffizient; ästhetische Fassade",
-    kurzbeschreibung: "Architektonische Sonnenschutzlamellen für energieeffiziente Fassadengestaltung von Büros und öffentlichen Gebäuden.",
-    bilder: ["/images/products/sun-louvers.png"]
-  },
-  {
     id: "16",
     produktname: "Wintergartensysteme",
-    slug: createSlug("Wintergartensysteme"),
+    slug: "wintergarten-systeme",
     kategorie: "Verglasungssysteme",
     systemtyp: "Isoliertes Aluminium-Glashaus-System",
     material: "Thermisch getrenntes Aluminium; laminiertes und wärmeschutzverglastes Dach und Fassade",
@@ -304,7 +236,7 @@ export const products: Product[] = [
   {
     id: "22",
     produktname: "Pergola Arc",
-    slug: createSlug("Pergola Arc"),
+    slug: "pergola-systeme/terrasse",
     kategorie: "Pergola-Systeme",
     systemtyp: "Pergola mit gebogenem Schienensystem",
     material: "Stahlverstärkte Aluminiumprofile; PVC-Membran",
@@ -338,12 +270,6 @@ export const categories = [
     name: "Textile Beschattung",
     description: "Kassettenmarkisen, ZIP-Screen und Piston-Tavan Systeme für flexible und elegante Sonnenschutzlösungen.",
     image: "/images/zip-screen-systeme-terrasse-dikey-zip-b2c-hero-03.jpg"
-  },
-  {
-    id: "transparente-schutzsysteme",
-    name: "Transparente Schutzsysteme",
-    description: "Durchsichtige ZIP-Screens und Rolltore für Windschutz ohne Sichteinschränkung. Ideal für Gastronomie und Terrassen.",
-    image: "/images/transparentes-rolltor-gewerbe-schaufenster-b2b-hero-01.jpg"
   }
 ];
 

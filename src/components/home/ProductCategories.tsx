@@ -10,28 +10,21 @@ const ProductCategories = () => {
       description:
         "Bioclimatic Pergolen mit drehbaren Lamellen für optimale Klimakontrolle und Rolling Roof Systeme für vollständigen Wetterschutz.",
       image: "/images/products/bioclimatic-pergola.png",
-      href: "/produkte/pergola-systeme",
+      href: "/pergola-systeme",
     },
     {
       title: "Verglasungssysteme",
       description:
         "Rahmenlose Giyotin-Glas-Systeme und Wintergärten für transparente Raumabschlüsse mit maximaler Lichtausbeute.",
       image: "/images/products/guillotine-glass.png",
-      href: "/produkte/verglasungssysteme",
+      href: "/wintergarten-systeme",
     },
     {
       title: "Textile Beschattung",
       description:
         "Kassettenmarkisen, ZIP-Screen und Piston-Tavan Systeme für flexible und elegante Sonnenschutzlösungen.",
       image: "/images/products/zip-screen.png",
-      href: "/produkte/textile-beschattung",
-    },
-    {
-      title: "Transparente Schutzsysteme",
-      description:
-        "Durchsichtige ZIP-Screens und Rolltore für Windschutz ohne Sichteinschränkung. Ideal für Gastronomie und Terrassen.",
-      image: "/images/products/transparent-zip-blind.png",
-      href: "/produkte/transparente-schutzsysteme",
+      href: "/zip-screen-systeme",
     },
   ];
 
@@ -41,7 +34,7 @@ const ProductCategories = () => {
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="mb-4">Unsere Produktkategorien</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Von intelligenten Pergola-Systemen bis zu akustischen Innenraumlösungen –
+            Von intelligenten Pergola-Systemen bis zu modernen Wintergärten –
             entdecken Sie unser umfassendes Portfolio für Wohn- und Gewerbeprojekte.
           </p>
         </div>

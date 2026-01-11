@@ -31,7 +31,22 @@ const PROJECTS = [
     }
 ];
 
-export const ProjectGallery = () => {
+export interface ProjectItem {
+    image: string;
+    title: string;
+    category: string;
+}
+
+interface ProjectGalleryProps {
+    items?: ProjectItem[];
+}
+
+export const ProjectGallery = ({ items }: ProjectGalleryProps) => {
+    // Fallback or Empty state logic can be handled here if needed
+    const galleryItems = items || PROJECTS;
+
+    if (!galleryItems || galleryItems.length === 0) return null;
+
     return (
         <section className="py-20">
             <div className="container mx-auto px-4">
@@ -42,7 +57,7 @@ export const ProjectGallery = () => {
 
                 <Carousel className="w-full max-w-5xl mx-auto">
                     <CarouselContent>
-                        {PROJECTS.map((project, i) => (
+                        {galleryItems.map((project, i) => (
                             <CarouselItem key={i} className="md:basis-1/2 lg:basis-1/3">
                                 <div className="p-2">
                                     <Card className="overflow-hidden border-none shadow-none group cursor-pointer">

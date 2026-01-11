@@ -16,23 +16,18 @@ const Navbar = () => {
   const productCategories = [
     {
       title: "Pergola-Systeme",
-      href: "/produkte/pergola-systeme",
+      href: "/pergola-systeme",
       description: "Bioclimatic, Rolling Roof, Pergola Arc",
     },
     {
       title: "Verglasungssysteme",
-      href: "/produkte/verglasungssysteme",
+      href: "/wintergarten-systeme",
       description: "Giyotin-Glas, Wintergarten",
     },
     {
       title: "Textile Beschattung",
-      href: "/produkte/textile-beschattung",
+      href: "/zip-screen-systeme",
       description: "Markisen, ZIP-Screen, Piston-Tavan",
-    },
-    {
-      title: "Transparente Schutzsysteme",
-      href: "/produkte/transparente-schutzsysteme",
-      description: "ZIP-Screens, Rolltore, Windschutz",
     },
   ];
 
@@ -57,16 +52,7 @@ const Navbar = () => {
                 <NavigationMenuTrigger>Produkte</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[600px] gap-3 p-6 md:grid-cols-2">
-                    <li className="md:col-span-2">
-                      <NavigationMenuLink asChild>
-                        <a
-                          href="/produkte"
-                          className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground font-medium"
-                        >
-                          Alle Produkte ansehen
-                        </a>
-                      </NavigationMenuLink>
-                    </li>
+
                     {productCategories.map((category) => (
                       <li key={category.href}>
                         <NavigationMenuLink asChild>
@@ -89,20 +75,8 @@ const Navbar = () => {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <a href="/referenzen" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
-                  Referenzen
-                </a>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
                 <a href="/ueber-uns" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
                   Über uns
-                </a>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <a href="/blog" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
-                  Blog
                 </a>
               </NavigationMenuItem>
 
@@ -167,27 +141,11 @@ const Navbar = () => {
             </div>
 
             <a
-              href="/referenzen"
-              className="block py-2 text-base font-medium"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Referenzen
-            </a>
-
-            <a
               href="/ueber-uns"
               className="block py-2 text-base font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
               Über uns
-            </a>
-
-            <a
-              href="/blog"
-              className="block py-2 text-base font-medium"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Blog
             </a>
 
             <a

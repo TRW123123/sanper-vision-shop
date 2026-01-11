@@ -33,7 +33,7 @@ const Bestsellers = () => {
             return (
               <a
                 key={product.id}
-                href={`/produkt/${product.slug}`}
+                href={`/${product.slug}`}
                 className="group relative overflow-hidden rounded-lg shadow-medium hover:shadow-strong transition-all duration-300 hover:-translate-y-1 bg-card"
               >
                 {/* Produktbild */}

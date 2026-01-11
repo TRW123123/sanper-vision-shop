@@ -22,7 +22,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="/produkte/pergola-systeme"
+                  href="/pergola-systeme"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Pergola-Systeme
@@ -30,7 +30,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/produkte/verglasungssysteme"
+                  href="/wintergarten-systeme"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Verglasungssysteme
@@ -38,18 +38,10 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/produkte/textile-beschattung"
+                  href="/zip-screen-systeme"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Textile Beschattung
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/produkte/transparente-schutzsysteme"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Transparente Schutzsysteme
                 </a>
               </li>
             </ul>
@@ -65,22 +57,6 @@ const Footer = () => {
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Über uns
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/referenzen"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Referenzen
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/blog"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Blog
                 </a>
               </li>
               <li>
@@ -162,7 +138,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 };
 

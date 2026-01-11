@@ -15,6 +15,9 @@ const {
   description = "Sanper Gölgelendirme Systeme - Premium Beschattungslösungen",
   image = "/og-image.png"
 } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://www.sanper.de");
+const isProduction = process.env.CONTEXT === 'production';
 ---
 
 <!doctype html>
@@ -42,6 +45,8 @@ const {
     <meta name="twitter:image" content={image} />
 
     <title>{title}</title>
+    <link rel="canonical" href={canonicalURL} />
+    {!isProduction && <meta name="robots" content="noindex, nofollow" />}
   </head>
   <body>
     <!-- 

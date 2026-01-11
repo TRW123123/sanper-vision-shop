@@ -18,6 +18,8 @@ const {
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://sanper.de");
+const isProduction = process.env.CONTEXT === 'production';
+const shouldNoIndex = noIndex || !isProduction;
 ---
 
 <!doctype html>
@@ -32,7 +34,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://sanper.d
     <!-- SEO -->
     <title>{title}</title>
     <link rel="canonical" href={canonicalURL} />
-    {noIndex && <meta name="robots" content="noindex, nofollow" />}
+    {shouldNoIndex && <meta name="robots" content="noindex, nofollow" />}
     
     <!-- Open Graph -->
     <meta property="og:type" content="website" />

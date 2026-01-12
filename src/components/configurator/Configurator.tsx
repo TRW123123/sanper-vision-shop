@@ -6,7 +6,7 @@ import { StepType } from "./steps/StepType";
 import { StepDimensions } from "./steps/StepDimensions";
 import { StepExtras } from "./steps/StepExtras";
 import { StepContact } from "./steps/StepContact";
-import { Check, ChevronRight, ChevronLeft } from "lucide-react";
+import { Check, ChevronRight, ChevronLeft, Loader2 } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 
 export type ConfiguratorState = {
@@ -41,6 +41,7 @@ const INITIAL_STATE: ConfiguratorState = {
 
 export const Configurator = () => {
     const [state, setState] = useState<ConfiguratorState>(INITIAL_STATE);
+    const [isSubmitting, setIsSubmitting] = useState(false);
     const { toast } = useToast();
 
     const updateState = (updates: Partial<ConfiguratorState>) => {
@@ -62,6 +63,7 @@ export const Configurator = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        setIsSubmitting(true);
 
         const formData = new FormData();
         formData.append("form-name", "konfigurator");
@@ -93,6 +95,8 @@ export const Configurator = () => {
                 description: "Bitte versuchen Sie es später erneut.",
                 variant: "destructive"
             });
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
@@ -152,7 +156,7 @@ export const Configurator = () => {
                 <Button
                     variant="outline"
                     onClick={prevStep}
-                    disabled={state.step === 1}
+                    disabled={state.step === 1 || isSubmitting}
                     className={state.step === 1 ? "invisible" : ""}
                 >
                     <ChevronLeft className="mr-2 h-4 w-4" />
@@ -165,9 +169,22 @@ export const Configurator = () => {
                         <ChevronRight className="ml-2 h-4 w-4" />
                     </Button>
                 ) : (
-                    <Button onClick={handleSubmit} className="bg-primary text-primary-foreground hover:bg-primary/90">
-                        Anfrage absenden
-                        <Check className="ml-2 h-4 w-4" />
+                    <Button
+                        onClick={handleSubmit}
+                        disabled={isSubmitting}
+                        className="bg-primary text-primary-foreground hover:bg-primary/90"
+                    >
+                        {isSubmitting ? (
+                            <>
+                                Wird gesendet...
+                                <Loader2 className="ml-2 h-4 w-4 animate-spin" />
+                            </>
+                        ) : (
+                            <>
+                                Anfrage absenden
+                                <Check className="ml-2 h-4 w-4" />
+                            </>
+                        )}
                     </Button>
                 )}
             </div>

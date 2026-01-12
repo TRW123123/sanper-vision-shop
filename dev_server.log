@@ -1,0 +1,43 @@
+
+> sanper-vision-astro@0.0.1 dev /app
+> astro dev
+
+17:04:00 [types] Generated 1ms
+17:04:00 [content] Syncing content
+17:04:00 [content] Synced content
+17:04:00 [vite] Re-optimizing dependencies because vite config has changed
+
+ astro  v5.16.8 ready in 499 ms
+
+┃ Local    http://localhost:4321/
+┃ Network  use --host to expose
+
+17:04:00 watching for file changes...
+17:04:01 [ERROR] [vite] Error: The following dependencies are imported but could not be resolved:
+
+  next-themes (imported by /app/src/components/ui/sonner.tsx)
+
+Are they installed?
+    at file:///app/node_modules/.pnpm/vite@6.4.1_jiti@2.6.1_lightningcss@1.30.2_yaml@2.8.2/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:14849:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///app/node_modules/.pnpm/vite@6.4.1_jiti@2.6.1_lightningcss@1.30.2_yaml@2.8.2/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:47014:28
+17:04:36 [200] /konfigurator 259ms
+17:04:40 [vite] ✨ new dependencies optimized: lucide-react, framer-motion, @radix-ui/react-slot, class-variance-authority, @radix-ui/react-navigation-menu, @radix-ui/react-toast, clsx, tailwind-merge, @radix-ui/react-label, @radix-ui/react-checkbox, @radix-ui/react-slider
+17:04:40 [vite] ✨ optimized dependencies changed. reloading
+17:04:41 [200] /konfigurator 36ms
+17:05:27 [watch] verification/verify_loading.py
+17:05:27 [watch] verification/verify_loading.py
+17:05:33 [200] /konfigurator 56ms
+17:06:10 [watch] verification/verify_loading.py
+17:06:10 [watch] verification/verify_loading.py
+17:06:15 [200] /konfigurator 50ms
+17:06:32 [watch] verification/verify_loading.py
+17:06:32 [watch] verification/verify_loading.py
+17:06:37 [200] /konfigurator 49ms
+17:07:26 [watch] verification/verify_loading.py
+17:07:26 [watch] verification/verify_loading.py
+17:07:31 [200] /konfigurator 50ms
+17:08:15 [watch] verification/verify_loading.py
+17:08:15 [watch] verification/verify_loading.py
+17:08:20 [200] /konfigurator 47ms
+17:08:30 [200] POST / 86ms

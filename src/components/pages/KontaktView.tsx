@@ -4,12 +4,13 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { company } from "@/data/company";
 
 const KontaktView = () => {
     const [type, setType] = useState<string | null>(null);
+    const [isSubmitting, setIsSubmitting] = useState(false);
     const { toast } = useToast();
     const [formData, setFormData] = useState({
         name: "",
@@ -25,13 +26,19 @@ const KontaktView = () => {
         setType(searchParams.get("type"));
     }, []);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        setIsSubmitting(true);
+
+        // Simulate API call
+        await new Promise(resolve => setTimeout(resolve, 1500));
+
         toast({
             title: "Anfrage gesendet",
             description: "Wir werden uns in Kürze bei Ihnen melden.",
         });
         setFormData({ name: "", firma: "", email: "", telefon: "", nachricht: "" });
+        setIsSubmitting(false);
     };
 
     return (
@@ -185,9 +192,18 @@ const KontaktView = () => {
                                         verarbeitet.
                                     </div>
 
-                                    <Button type="submit" size="lg" className="w-full">
-                                        <Send className="mr-2 h-4 w-4" />
-                                        Anfrage senden
+                                    <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                                        {isSubmitting ? (
+                                            <>
+                                                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                                                Wird gesendet...
+                                            </>
+                                        ) : (
+                                            <>
+                                                <Send className="mr-2 h-4 w-4" />
+                                                Anfrage senden
+                                            </>
+                                        )}
                                     </Button>
                                 </form>
                             </CardContent>

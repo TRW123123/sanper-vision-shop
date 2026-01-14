@@ -1,6 +1,6 @@
 export const company = {
-    name: "Sanper Gölgelendirme Systeme GmbH",
-    legalName: "Sanper Gölgelendirme Systeme GmbH",
+    name: "Sanper Beschattungssysteme GmbH",
+    legalName: "Sanper Beschattungssysteme GmbH",
     slogan: "Premium Beschattungssysteme & Verglasungen",
     address: {
         street: "Am Sandtorkai 1",

@@ -12,12 +12,52 @@ interface Props {
 
 const { 
   title, 
-  description = "Sanper Gölgelendirme Systeme - Premium Beschattungslösungen",
+  description = "Sanper Beschattungssysteme - Premium Pergolen & Wintergärten",
   image = "/og-image.png"
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://www.sanper.de");
+const siteUrl = Astro.site?.toString() || "https://www.sanper.de";
+const canonicalURL = new URL(Astro.url.pathname, siteUrl);
+const ogImageURL = new URL(image, siteUrl).toString();
 const isProduction = process.env.CONTEXT === 'production';
+
+// Organization Schema
+const organizationSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sanper Beschattungssysteme",
+  "legalName": "Sanper Beschattungssysteme GmbH",
+  "url": "https://www.sanper.de",
+  "logo": "https://www.sanper.de/logo.png",
+  "description": "Maßgefertigte bioklimatische Pergolen, Wintergärten und Markisen. Premium Qualität direkt vom Hersteller.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Am Sandtorkai 1",
+    "addressLocality": "Hamburg",
+    "postalCode": "20457",
+    "addressCountry": "DE"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+49-40-123-456-78",
+    "contactType": "customer service",
+    "availableLanguage": ["German"]
+  },
+  "sameAs": []
+});
+
+// WebSite Schema
+const websiteSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Sanper Beschattungssysteme",
+  "url": "https://www.sanper.de",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.sanper.de/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+});
 ---
 
 <!doctype html>
@@ -27,6 +67,7 @@ const isProduction = process.env.CONTEXT === 'production';
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
     <meta name="generator" content={Astro.generator} />
     
     <!-- Preload LCP Hero Image -->
@@ -35,18 +76,24 @@ const isProduction = process.env.CONTEXT === 'production';
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta property="og:url" content={canonicalURL.toString()} />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sanper Beschattungssysteme" />
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={image} />
+    <meta name="twitter:image" content={ogImageURL} />
 
     <title>{title}</title>
     <link rel="canonical" href={canonicalURL} />
     {!isProduction && <meta name="robots" content="noindex, nofollow" />}
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json" set:html={organizationSchema} />
+    <script type="application/ld+json" set:html={websiteSchema} />
   </head>
   <body>
     <!-- 
@@ -62,3 +109,4 @@ const isProduction = process.env.CONTEXT === 'production';
     <script src="../lib/scroll-animation.js"></script>
   </body>
 </html>
+

@@ -5,12 +5,13 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Check, Send, ShieldCheck, Star } from "lucide-react";
+import { Check, Send, ShieldCheck, Star, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { products } from "@/data/products";
 
 const AnfrageView = () => {
     const { toast } = useToast();
+    const [isSubmitting, setIsSubmitting] = useState(false);
     const [selectedProductSlug, setSelectedProductSlug] = useState<string>("");
 
     // Form State
@@ -39,10 +40,15 @@ const AnfrageView = () => {
         }
     }, []);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        setIsSubmitting(true);
+
         // Here you would typically send data to an API/backend
         console.log("Form Data Submitted:", formData);
+
+        // Simulate network delay
+        await new Promise(resolve => setTimeout(resolve, 1500));
 
         toast({
             title: "Anfrage erfolgreich gesendet!",
@@ -51,6 +57,7 @@ const AnfrageView = () => {
         });
 
         // Optional: Reset form or redirect
+        setIsSubmitting(false);
     };
 
     const selectedProduct = products.find(p => p.slug === selectedProductSlug);
@@ -280,8 +287,12 @@ const AnfrageView = () => {
                                         </div>
                                     </div>
 
-                                    <Button type="submit" size="lg" className="w-full text-base font-semibold shadow-lg hover:shadow-xl transition-all">
-                                        <Send className="mr-2 h-5 w-5" />
+                                    <Button type="submit" size="lg" className="w-full text-base font-semibold shadow-lg hover:shadow-xl transition-all" disabled={isSubmitting}>
+                                        {isSubmitting ? (
+                                            <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                                        ) : (
+                                            <Send className="mr-2 h-5 w-5" />
+                                        )}
                                         Kostenloses Angebot anfordern
                                     </Button>
 

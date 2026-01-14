@@ -16,6 +16,7 @@ export async function getStaticPaths() {
 }
 
 const { page } = Astro.props;
+const siteUrl = "https://www.sanper.de";
 
 // Helper to determine template type if not strictly defined (fallback)
 const templateType = page.template || "hub";
@@ -47,9 +48,48 @@ const galleryItems = page.images?.slice(1).map((img) => ({
     title: page.h1, // Use H1 as title for now
     category: page.title.split("|")[0].trim() // Use main title part as category
 })) || [];
+
+// Generate BreadcrumbList Schema
+const breadcrumbItems = [
+  { name: "Startseite", url: siteUrl + "/" }
+];
+if (parentPage) {
+  breadcrumbItems.push({ name: parentPage.h1, url: `${siteUrl}/${parentPage.slug}/` });
+}
+breadcrumbItems.push({ name: page.h1, url: `${siteUrl}/${page.slug}/` });
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": breadcrumbItems.map((item, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "name": item.name,
+    "item": item.url
+  }))
+});
+
+// Generate FAQPage Schema (if FAQ exists)
+const faqSchema = page.faq && page.faq.length > 0 ? JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": page.faq.map(item => ({
+    "@type": "Question",
+    "name": item.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.answer
+    }
+  }))
+}) : null;
 ---
 
 <LandingPageLayout title={page.title} description={page.meta_description} image={`/images/${page.images[0]}.jpg`}>
+  <!-- Inject page-specific schemas -->
+  <Fragment slot="schema">
+    <script type="application/ld+json" set:html={breadcrumbSchema} />
+    {faqSchema && <script type="application/ld+json" set:html={faqSchema} />}
+  </Fragment>
   
   {/* HERO SECTION */}
   <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">

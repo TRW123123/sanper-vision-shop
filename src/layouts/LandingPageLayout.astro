@@ -12,14 +12,25 @@ interface Props {
 
 const { 
   title, 
-  description = "Sanper Vision - Premium Beschattungssysteme direkt vom Hersteller.", 
-  image = "/images/og-default.jpg",
+  description = "Sanper Beschattungssysteme - Premium Pergolen & Wintergärten direkt vom Hersteller.", 
+  image = "/og-image.png",
   noIndex = false
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://sanper.de");
+const siteUrl = Astro.site?.toString() || "https://www.sanper.de";
+const canonicalURL = new URL(Astro.url.pathname, siteUrl);
+const ogImageURL = new URL(image, siteUrl).toString();
 const isProduction = process.env.CONTEXT === 'production';
 const shouldNoIndex = noIndex || !isProduction;
+
+// Organization Schema (consistent across all layouts)
+const organizationSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sanper Beschattungssysteme",
+  "url": "https://www.sanper.de",
+  "logo": "https://www.sanper.de/logo.png"
+});
 ---
 
 <!doctype html>
@@ -29,6 +40,7 @@ const shouldNoIndex = noIndex || !isProduction;
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
     <meta name="generator" content={Astro.generator} />
     
     <!-- SEO -->
@@ -38,12 +50,20 @@ const shouldNoIndex = noIndex || !isProduction;
     
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:url" content={canonicalURL.toString()} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta property="og:site_name" content="Sanper Beschattungssysteme" />
     
-    <!-- Preload fonts if necessary -->
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:image" content={ogImageURL} />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json" set:html={organizationSchema} />
+    <slot name="schema" />
   </head>
   <body class="min-h-screen bg-background text-foreground antialiased selection:bg-accent selection:text-white flex flex-col">
     <Navbar client:load />
@@ -55,3 +75,4 @@ const shouldNoIndex = noIndex || !isProduction;
     <Footer />
   </body>
 </html>
+

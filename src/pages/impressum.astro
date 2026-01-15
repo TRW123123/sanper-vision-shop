@@ -14,7 +14,7 @@ import { company } from "@/data/company";
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": company.legalName,
+  "name": company.name,
   "url": company.contact.website,
   "logo": "https://www.sanper.de/logo.png",
   "address": {
@@ -26,7 +26,6 @@ const structuredData = {
   },
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": company.contact.phone,
     "email": company.contact.email,
     "contactType": "customer service"
   }
@@ -35,7 +34,7 @@ const structuredData = {
 
 <Layout 
   title="Impressum - Sanper Beschattungssysteme"
-  description="Impressum der Sanper Gölgelendirme Systeme GmbH - Ihr Spezialist für Beschattungssysteme, Pergolen und Glassysteme. Rechtliche Angaben gemäß § 5 TMG."
+  description="Impressum von Sanper Beschattungssysteme - Ihr Spezialist für Beschattungssysteme, Pergolen und Glassysteme. Rechtliche Angaben gemäß § 5 TMG."
   class="min-h-screen"
 >
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(structuredData)} />
@@ -60,12 +59,6 @@ const structuredData = {
 
         <h1 class="mb-6 text-4xl font-bold">Impressum</h1>
 
-        <p class="mb-12 text-lg text-muted-foreground leading-relaxed">
-          Sanper Gölgelendirme Systeme GmbH ist Ihr Spezialist für hochwertige 
-          Beschattungssysteme, Bioklimatische Pergolen, Zip-Markisen und Glassysteme. 
-          Transparenz und rechtliche Klarheit sind uns wichtig.
-        </p>
-
         <div class="space-y-12">
           {/* Angaben gemäß § 5 TMG */}
           <section>
@@ -85,24 +78,12 @@ const structuredData = {
             </address>
           </section>
 
-          {/* Vertreten durch */}
-          <section>
-            <h2 class="text-2xl font-semibold text-foreground mb-4">
-              Vertreten durch
-            </h2>
-            <p class="leading-relaxed">
-              Geschäftsführer: {company.legal.ceo}
-            </p>
-          </section>
-
           {/* Kontakt */}
           <section class="bg-muted/50 p-6 rounded-lg border border-border">
             <h2 class="text-2xl font-semibold text-foreground mb-4">
               Kontakt
             </h2>
             <p class="leading-relaxed">
-              <strong class="text-foreground">Telefon:</strong> {company.contact.phone}
-              <br />
               <strong class="text-foreground">E-Mail:</strong>{" "}
               <a 
                 href={`mailto:${company.contact.email}`} 
@@ -110,32 +91,6 @@ const structuredData = {
               >
                 {company.contact.email}
               </a>
-            </p>
-          </section>
-
-          {/* Registereintrag */}
-          <section>
-            <h2 class="text-2xl font-semibold text-foreground mb-4">
-              Registereintrag
-            </h2>
-            <p class="leading-relaxed">
-              Eintragung im Handelsregister
-              <br />
-              <strong class="text-foreground">Registergericht:</strong> {company.legal.registerCourt}
-              <br />
-              <strong class="text-foreground">Registernummer:</strong> {company.legal.registerNumber}
-            </p>
-          </section>
-
-          {/* Umsatzsteuer-ID */}
-          <section>
-            <h2 class="text-2xl font-semibold text-foreground mb-4">
-              Umsatzsteuer-ID
-            </h2>
-            <p class="leading-relaxed">
-              Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
-              <br />
-              <strong class="text-foreground">{company.legal.vatId}</strong>
             </p>
           </section>
 
@@ -236,21 +191,11 @@ const structuredData = {
             </p>
           </section>
 
-          {/* Bildnachweise */}
-          <section>
-            <h2 class="text-2xl font-semibold text-foreground mb-4">
-              Bildnachweise
-            </h2>
-            <p class="leading-relaxed">
-              Alle Produktbilder und Grafiken sind urheberrechtlich geschützt durch Sanper Gölgelendirme Systeme GmbH oder lizenziert via Unsplash/Pexels.
-            </p>
-          </section>
-
           {/* Link zur Datenschutzerklärung */}
           <section class="pt-8 border-t border-border">
             <p class="leading-relaxed">
               Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in unserer{" "}
-              <a href="/datenschutz" class="text-accent hover:underline font-medium">
+              <a href="/datenschutz/" class="text-accent hover:underline font-medium">
                 Datenschutzerklärung
               </a>
               .

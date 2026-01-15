@@ -1,28 +1,25 @@
 export const company = {
-    name: "Sanper Beschattungssysteme GmbH",
-    legalName: "Sanper Beschattungssysteme GmbH",
+    name: "Sanper Beschattungssysteme",
+    legalName: "Hakan Yilmaz",
     slogan: "Premium Beschattungssysteme & Verglasungen",
     address: {
-        street: "Am Sandtorkai 1",
-        zip: "20457",
-        city: "Hamburg",
+        street: "Wambeler Holz 20",
+        zip: "44145",
+        city: "Dortmund",
         country: "Deutschland"
     },
     contact: {
-        phone: "+49 (0) 40 123 456 78",
+        phone: "", // Keine Telefonnummer angegeben
         email: "info@sanper.de",
         website: "https://www.sanper.de"
     },
     legal: {
-        ceo: "Hakan Sanper",
-        registerCourt: "Amtsgericht Hamburg",
-        registerNumber: "HRB 123456",
-        vatId: "DE 123 456 789",
-        responsibleContent: "Hakan Sanper"
+        owner: "Hakan Yilmaz",
+        responsibleContent: "Hakan Yilmaz"
     },
     socials: {
-        instagram: "https://instagram.com/sanper",
-        facebook: "https://facebook.com/sanper",
-        linkedin: "https://linkedin.com/company/sanper"
+        instagram: "",
+        facebook: "",
+        linkedin: ""
     }
 };

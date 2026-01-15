@@ -1,0 +1,100 @@
+---
+// CookieConsent.astro - GDPR/TTDSG compliant cookie banner
+// No analytics loaded until explicit consent
+// Uses localStorage for consent state
+---
+
+<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[9999] hidden">
+  <div class="bg-background border-t border-border shadow-lg">
+    <div class="container py-4">
+      <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+        <p class="text-sm text-muted-foreground max-w-2xl">
+          Wir verwenden notwendige Cookies für den Betrieb dieser Website.
+          Mit Ihrer Einwilligung nutzen wir zusätzlich anonyme Statistiken zur Verbesserung von Inhalten und Benutzerfreundlichkeit.
+        </p>
+        <div class="flex gap-3 shrink-0">
+          <button 
+            id="consent-essential" 
+            class="px-4 py-2 text-sm font-medium rounded-md border border-border bg-background hover:bg-muted transition-colors"
+          >
+            Notwendige akzeptieren
+          </button>
+          <button 
+            id="consent-all" 
+            class="px-4 py-2 text-sm font-medium rounded-md border border-border bg-background hover:bg-muted transition-colors"
+          >
+            Alles akzeptieren
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Cookie consent management - GDPR/TTDSG compliant
+  const CONSENT_KEY = 'sanper_cookie_consent';
+  
+  function getConsent(): string | null {
+    return localStorage.getItem(CONSENT_KEY);
+  }
+  
+  function setConsent(value: 'essential' | 'all'): void {
+    localStorage.setItem(CONSENT_KEY, value);
+  }
+  
+  function hideBanner(): void {
+    const banner = document.getElementById('cookie-banner');
+    if (banner) {
+      banner.classList.add('hidden');
+    }
+  }
+  
+  function showBanner(): void {
+    const banner = document.getElementById('cookie-banner');
+    if (banner) {
+      banner.classList.remove('hidden');
+    }
+  }
+  
+  function loadAnalytics(): void {
+    // Placeholder for analytics loading
+    // Only called when user explicitly consents to "all"
+    // Example: Google Analytics, Plausible, etc.
+    // Currently no analytics configured
+    console.log('[Consent] Analytics consent granted - no analytics configured yet');
+  }
+  
+  function initConsent(): void {
+    const consent = getConsent();
+    
+    if (!consent) {
+      // First visit - show banner
+      showBanner();
+    } else if (consent === 'all') {
+      // User previously consented to all - load analytics
+      loadAnalytics();
+    }
+    // If consent === 'essential', do nothing (no analytics)
+  }
+  
+  // Event listeners
+  document.addEventListener('DOMContentLoaded', () => {
+    initConsent();
+    
+    const essentialBtn = document.getElementById('consent-essential');
+    const allBtn = document.getElementById('consent-all');
+    
+    essentialBtn?.addEventListener('click', () => {
+      setConsent('essential');
+      hideBanner();
+      // No analytics loaded
+    });
+    
+    allBtn?.addEventListener('click', () => {
+      setConsent('all');
+      hideBanner();
+      loadAnalytics();
+    });
+  });
+</script>

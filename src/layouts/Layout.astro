@@ -9,12 +9,14 @@ interface Props {
   title: string;
   description?: string;
   image?: string;
+  noindex?: boolean;
 }
 
 const { 
   title, 
   description = "Sanper Beschattungssysteme - Premium Pergolen & Wintergärten",
-  image = "/og-image.png"
+  image = "/og-image.png",
+  noindex = false
 } = Astro.props;
 
 const siteUrl = Astro.site?.toString() || "https://www.sanper.de";
@@ -68,6 +70,7 @@ const websiteSchema = JSON.stringify({
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
+    <meta name="robots" content={noindex ? "noindex, follow" : "index, follow"} />
     <meta name="generator" content={Astro.generator} />
     
     <!-- Preload LCP Hero Image -->

@@ -1,13 +1,11 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import Navbar from "@/components/layout/Navbar"; // Layout already has Navbar? No, Layout HAS Navbar. 
-// Original AGB.tsx had Navbar inside. Astro Layout has Navbar. 
-// So I just need the content.
 ---
 
 <Layout 
-  title="AGB – Sanper Gölgelendirme Systeme"
-  description="Allgemeine Geschäftsbedingungen der Sanper Gölgelendirme Systeme GmbH für Lieferung und Montage von Beschattungssystemen."
+  title="AGB – Sanper Beschattungssysteme"
+  description="Allgemeine Geschäftsbedingungen von Sanper Beschattungssysteme für Lieferung und Montage von Beschattungssystemen."
+  noindex={true}
 >
   <main>
     <section class="py-20 lg:py-32">
@@ -21,7 +19,7 @@ import Navbar from "@/components/layout/Navbar"; // Layout already has Navbar? N
             </h2>
             <p class="leading-relaxed">
               Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge zwischen
-              Sanper Gölgelendirme Systeme GmbH und ihren Kunden über die Lieferung
+              Sanper Beschattungssysteme und ihren Kunden über die Lieferung
               und Montage von Beschattungs- und Verglasungssystemen.
             </p>
           </div>
@@ -99,14 +97,14 @@ import Navbar from "@/components/layout/Navbar"; // Layout already has Navbar? N
             </h2>
             <p class="leading-relaxed">
               Es gilt das Recht der Bundesrepublik Deutschland. Gerichtsstand ist
-              Musterstadt. Sollten einzelne Bestimmungen dieser AGB unwirksam sein,
+              Dortmund. Sollten einzelne Bestimmungen dieser AGB unwirksam sein,
               bleibt die Wirksamkeit der übrigen Bestimmungen davon unberührt.
             </p>
           </div>
 
           <div class="pt-4 border-t border-border">
             <p class="text-sm">
-              Stand: {new Date().toLocaleDateString("de-DE")}
+              Stand: Januar 2026
             </p>
           </div>
         </div>

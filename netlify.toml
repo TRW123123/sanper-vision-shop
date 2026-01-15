@@ -1,0 +1,55 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.processing.html]
+  pretty_urls = true
+
+# Ensure trailing slashes are consistent
+[[redirects]]
+  from = "/kontakt"
+  to = "/kontakt/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ueber-uns"
+  to = "/ueber-uns/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/impressum"
+  to = "/impressum/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/datenschutz"
+  to = "/datenschutz/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/agb"
+  to = "/agb/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pergola-systeme"
+  to = "/pergola-systeme/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wintergarten-systeme"
+  to = "/wintergarten-systeme/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/zip-screen-systeme"
+  to = "/zip-screen-systeme/"
+  status = 301
+  force = true

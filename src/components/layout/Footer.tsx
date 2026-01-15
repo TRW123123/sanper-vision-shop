@@ -22,7 +22,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="/pergola-systeme"
+                  href="/pergola-systeme/"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Pergola-Systeme
@@ -30,7 +30,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/wintergarten-systeme"
+                  href="/wintergarten-systeme/"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Verglasungssysteme
@@ -38,7 +38,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/zip-screen-systeme"
+                  href="/zip-screen-systeme/"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Textile Beschattung
@@ -53,7 +53,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="/ueber-uns"
+                  href="/ueber-uns/"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Über uns
@@ -61,7 +61,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/kontakt"
+                  href="/kontakt/"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Kontakt
@@ -112,7 +112,7 @@ const Footer = () => {
             <ul className="flex flex-wrap gap-4 text-sm">
               <li>
                 <a
-                  href="/impressum"
+                  href="/impressum/"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Impressum
@@ -120,7 +120,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/datenschutz"
+                  href="/datenschutz/"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Datenschutz
@@ -128,7 +128,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/agb"
+                  href="/agb/"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   AGB

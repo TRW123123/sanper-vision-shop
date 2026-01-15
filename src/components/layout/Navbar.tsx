@@ -16,17 +16,17 @@ const Navbar = () => {
   const productCategories = [
     {
       title: "Pergola-Systeme",
-      href: "/pergola-systeme",
+      href: "/pergola-systeme/",
       description: "Bioclimatic, Rolling Roof, Pergola Arc",
     },
     {
       title: "Verglasungssysteme",
-      href: "/wintergarten-systeme",
+      href: "/wintergarten-systeme/",
       description: "Giyotin-Glas, Wintergarten",
     },
     {
       title: "Textile Beschattung",
-      href: "/zip-screen-systeme",
+      href: "/zip-screen-systeme/",
       description: "Markisen, ZIP-Screen, Piston-Tavan",
     },
   ];
@@ -75,13 +75,13 @@ const Navbar = () => {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <a href="/ueber-uns" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
+                <a href="/ueber-uns/" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
                   Über uns
                 </a>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <a href="/kontakt" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
+                <a href="/kontakt/" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
                   Kontakt
                 </a>
               </NavigationMenuItem>
@@ -141,7 +141,7 @@ const Navbar = () => {
             </div>
 
             <a
-              href="/ueber-uns"
+              href="/ueber-uns/"
               className="block py-2 text-base font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -149,7 +149,7 @@ const Navbar = () => {
             </a>
 
             <a
-              href="/kontakt"
+              href="/kontakt/"
               className="block py-2 text-base font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >

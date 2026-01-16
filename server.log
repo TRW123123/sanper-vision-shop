@@ -1,0 +1,41 @@
+
+> sanper-vision-astro@0.0.1 dev /app
+> astro dev
+
+17:14:33 [types] Generated 1ms
+17:14:33 [content] Syncing content
+17:14:33 [content] Synced content
+17:14:33 [vite] Re-optimizing dependencies because vite config has changed
+
+ astro  v5.16.11 ready in 809 ms
+
+┃ Local    http://localhost:4321/
+┃ Network  use --host to expose
+
+17:14:33 watching for file changes...
+17:14:33 [ERROR] [vite] Error: The following dependencies are imported but could not be resolved:
+
+  next-themes (imported by /app/src/components/ui/sonner.tsx)
+
+Are they installed?
+    at file:///app/node_modules/.pnpm/vite@6.4.1_jiti@2.6.1_lightningcss@1.30.2_yaml@2.8.2/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:14849:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///app/node_modules/.pnpm/vite@6.4.1_jiti@2.6.1_lightningcss@1.30.2_yaml@2.8.2/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:47014:28
+17:15:19 [200] /kontakt 230ms
+17:15:20 [200] /kontakt 24ms
+17:15:23 [vite] ✨ new dependencies optimized: lucide-react, @radix-ui/react-toast, class-variance-authority, @radix-ui/react-slot, @radix-ui/react-navigation-menu, @radix-ui/react-label, clsx, tailwind-merge
+17:15:23 [vite] ✨ optimized dependencies changed. reloading
+17:15:23 [200] /kontakt 27ms
+17:15:49 [watch] verification/verify_loading.py
+17:15:49 [watch] verification/verify_loading.py
+17:15:54 [200] /kontakt 54ms
+17:16:23 [watch] /src/components/pages/KontaktView.tsx, /src/styles/globals.css
+17:16:23 [watch] src/components/pages/KontaktView.tsx
+17:16:28 [200] /kontakt 47ms
+17:16:42 [watch] verification/verify_loading.py
+17:16:42 [watch] verification/verify_loading.py
+17:16:50 [200] /kontakt 46ms
+17:17:08 [watch] /src/components/pages/KontaktView.tsx, /src/styles/globals.css
+17:17:08 [watch] src/components/pages/KontaktView.tsx
+17:18:48 [watch] verification/verify_loading.py
+17:18:48 [watch] verification/verify_loading.py

@@ -9,7 +9,7 @@ export const company = {
         country: "Deutschland"
     },
     contact: {
-        phone: "", // Keine Telefonnummer angegeben
+        phone: "0170 534 2268",
         email: "info@sanper.de",
         website: "https://www.sanper.de"
     },

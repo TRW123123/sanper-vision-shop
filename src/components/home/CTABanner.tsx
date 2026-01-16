@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-
+import { company } from "@/data/company";
 import { ArrowRight, Phone } from "lucide-react";
 
 const CTABanner = () => {
@@ -29,9 +29,9 @@ const CTABanner = () => {
               asChild
               className="border-white text-white hover:bg-white hover:text-accent hover-scale"
             >
-              <a href="tel:+4900000000">
+              <a href={`tel:${company.contact.phone.replace(/\s/g, '')}`}>
                 <Phone className="mr-2 h-4 w-4" />
-                +49 (0) 000 000000
+                {company.contact.phone}
               </a>
             </Button>
           </div>

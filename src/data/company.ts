@@ -4,7 +4,7 @@ export const company = {
     slogan: "Premium Beschattungssysteme & Verglasungen",
     address: {
         street: "Wambeler Holz 20",
-        zip: "44145",
+        zip: "44328",
         city: "Dortmund",
         country: "Deutschland"
     },

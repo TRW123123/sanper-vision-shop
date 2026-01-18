@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @layer base {
     :root {
@@ -65,15 +63,12 @@
         --ring: 224.3 76.3% 48%;
     }
 
-    /* Fix D-07: Vertical scrolling forced to avoid horizontal overflow on small screens */
     html,
     body {
         overflow-x: hidden;
         scroll-behavior: smooth;
     }
-}
 
-@layer base {
     * {
         border-color: hsl(var(--border));
     }
@@ -92,7 +87,6 @@
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Animations */
 .animate-fade-in {
     animation: fadeIn 0.8s ease-out forwards;
 }
@@ -110,7 +104,6 @@
 }
 
 .container {
-    /* D-07 Hardening: Ensure padding allows content to breathe on small screens */
     padding-left: 1rem;
     padding-right: 1rem;
     margin-left: auto;

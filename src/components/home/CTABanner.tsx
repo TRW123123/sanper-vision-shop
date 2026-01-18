@@ -25,9 +25,8 @@ const CTABanner = () => {
             </Button>
             <Button
               size="lg"
-              variant="outline"
+              className="bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white hover:text-accent-foreground transition-all duration-300 min-w-[200px]"
               asChild
-              className="border-white text-white hover:bg-white hover:text-accent hover-scale"
             >
               <a href={`tel:${company.contact.phone.replace(/\s/g, '')}`}>
                 <Phone className="mr-2 h-4 w-4" />

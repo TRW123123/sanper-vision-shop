@@ -25,3 +25,8 @@ pnpm-debug.log*
 
 # Local Netlify folder
 .netlify
+
+# Data Exclusions
+src/data/*.xlsx
+src/data/*.csv
+src/data/*.backup.json

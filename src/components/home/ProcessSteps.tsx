@@ -29,7 +29,7 @@ const ProcessSteps = () => {
   ];
 
   return (
-    <section className="py-section-lg bg-muted/30">
+    <section className="py-24 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="mb-4">Ihr Weg zum perfekten System</h2>

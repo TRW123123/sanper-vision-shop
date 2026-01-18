@@ -2,7 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import Hero from "@/components/home/Hero";
 import ValueProposition from "@/components/home/ValueProposition";
-import Bestsellers from "@/components/home/Bestsellers";
+
 import ProductCategories from "@/components/home/ProductCategories";
 import ProcessSteps from "@/components/home/ProcessSteps";
 import CTABanner from "@/components/home/CTABanner";
@@ -16,22 +16,22 @@ import { ProjectGallery } from "@/components/home/ProjectGallery";
 >
   <main>
     <Hero client:load />
-    <div class="animate-on-scroll py-20">
+    <div class="animate-on-scroll">
       <ValueProposition />
     </div>
-    <div class="animate-on-scroll py-20">
+    <div class="animate-on-scroll">
       <ProductCategories />
     </div>
-    <div class="animate-on-scroll py-20 bg-muted/30">
+    <div class="animate-on-scroll bg-muted/30">
       <ProjectGallery client:visible />
     </div>
-    <div class="animate-on-scroll py-20">
+    <div class="animate-on-scroll">
       <SocialProof client:visible />
     </div>
-    <div class="animate-on-scroll py-20">
+    <div class="animate-on-scroll">
       <ProcessSteps />
     </div>
-    <div class="animate-on-scroll py-20">
+    <div class="animate-on-scroll">
       <CTABanner />
     </div>
   </main>

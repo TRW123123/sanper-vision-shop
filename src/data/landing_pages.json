@@ -26,7 +26,15 @@
                 "question": "Warum Sanper Vision?",
                 "answer": "Als Hersteller bieten wir Ihnen alles aus einer Hand: Von der individuellen Planung bis zur fachgerechten Montage ohne Zwischenhändler."
             }
-        ]
+        ],
+        "block_1_content": "Sanper ist kein Anbieter für Standardlösungen. Wir arbeiten für Menschen, die ihren Außenbereich langfristig nutzen wollen und deshalb mehr brauchen als ein Produkt von der Stange. Der entscheidende Unterschied liegt in der Verantwortung: Planung, Fertigung und Montage müssen zusammenpassen. Bei Sanper sind Maße, Statik, Material und Befestigung vorab abgestimmt – nicht erst auf der Baustelle. Diese Seite hilft Ihnen zu prüfen, ob ein individuell geplantes System für Ihr Projekt sinnvoll ist, bevor Sie Angebote vergleichen.",
+        "block_2_content": "Viele Probleme entstehen nach dem Kauf: unklare Zuständigkeiten, Verzögerungen, fehlende Ersatzteile oder Monteure ohne Systemkenntnis. Diese Risiken sind bei Outdoor-Systemen besonders relevant. Sanper reduziert sie durch klare Verantwortlichkeit, abgestimmte Prozesse und planbaren Service. Wenn Sie eine kurzfristige Lösung suchen, gibt es einfachere Wege. Wenn Sie Wert auf Haltbarkeit und Sicherheit legen, sind Sie hier richtig.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_trust",
+        "cta_primary_text": "Beratung starten",
+        "cta_secondary_text": "Kostenloses Angebot",
+        "faq_theme": "allgemein",
+        "faq_unique_q_count": 5
     },
     {
         "id": 2,
@@ -55,7 +63,15 @@
                 "question": "Benötige ich eine Baugenehmigung?",
                 "answer": "Das hängt von Größe und Standort ab. Wir unterstützen Sie gerne mit den nötigen Zeichnungen und Informationen für Ihren Bauantrag."
             }
-        ]
+        ],
+        "block_1_content": "Ein Pergola-System ist keine Einzelanschaffung, sondern eine Entscheidung über Nutzung, Erweiterbarkeit und Lebensdauer. Entscheidend ist, ob Dach, Entwässerung, Beschattung und Steuerung als Einheit gedacht sind. Systeme, die von Anfang an modular geplant werden, lassen sich an neue Anforderungen anpassen, ohne neu bauen zu müssen. Diese Seite hilft zu klären, ob ein durchgängiges System für Ihre Nutzung sinnvoller ist als eine einzelne Lösung.",
+        "block_2_content": "Risiken entstehen, wenn Komponenten nicht zusammenpassen: spätere Nachrüstungen, Undichtigkeiten oder eingeschränkte Erweiterungen. Wer das Systemdenken ignoriert, zahlt langfristig doppelt. Eine frühe Systementscheidung verhindert diese Folgekosten.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_faq",
+        "cta_primary_text": "System prüfen",
+        "cta_secondary_text": "—",
+        "faq_theme": "system",
+        "faq_unique_q_count": 5
     },
     {
         "id": 3,
@@ -85,7 +101,15 @@
                 "question": "Wie verhält sich das Dach bei Schnee?",
                 "answer": "Unsere Lamellendächer sind für hohe Schneelasten ausgelegt. Bei extremem Schneefall können die Lamellen auch senkrecht gestellt werden."
             }
-        ]
+        ],
+        "block_1_content": "Ein Lamellendach bietet Kontrolle über Licht, Luft und Regen. Im Vergleich zu Glas oder Stoff steht hier die flexible Nutzung im Vordergrund. Diese Seite hilft, die Lösung anhand des tatsächlichen Nutzungsverhaltens zu bewerten – nicht anhand von Optik allein.",
+        "block_2_content": "Grenzen bestehen bei maximaler Lichtdurchlässigkeit oder vollständiger Abdichtung. Wer Wintergarten-Eigenschaften erwartet, wählt die falsche Lösung.",
+        "block_1_placement": "after_features",
+        "block_2_placement": "before_faq",
+        "cta_primary_text": "Lösung vergleichen",
+        "cta_secondary_text": "—",
+        "faq_theme": "vergleich",
+        "faq_unique_q_count": 5
     },
     {
         "id": 4,
@@ -113,7 +137,15 @@
                 "question": "Was bedeutet bioklimatisch?",
                 "answer": "Bioklimatisch bedeutet, dass die Pergola die natürlichen Bedingungen (Sonne, Wind) nutzt, um passiv ein angenehmes Klima zu schaffen, z.B. durch den Kamineffekt bei leicht geöffneten Lamellen."
             }
-        ]
+        ],
+        "block_1_content": "Bioklimatische Systeme sind sinnvoll, wenn Hitze, Luftstau und wechselnde Wetterbedingungen die Nutzung einschränken. Die verstellbaren Lamellen regulieren Licht und Luft aktiv und schaffen ein nutzbares Mikroklima. Diese Lösung ist nicht für reine Beschattung gedacht, sondern für Flächen, die regelmäßig genutzt werden.",
+        "block_2_content": "Risiken entstehen durch falsche Erwartungen an Steuerung und Automatik. Ohne korrekte Auslegung kann Hitze bleiben oder Regen nicht sauber abgeführt werden.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_faq",
+        "cta_primary_text": "Beratung prüfen",
+        "cta_secondary_text": "—",
+        "faq_theme": "klima",
+        "faq_unique_q_count": 5
     },
     {
         "id": 5,
@@ -142,7 +174,15 @@
                 "question": "Wie erfolgt der Wandanschluss?",
                 "answer": "Der Wandanschluss wird fachgerecht abgedichtet, damit kein Regenwasser an der Hausfassade herunterläuft. Wir prüfen vorab die Beschaffenheit Ihrer Außenwand."
             }
-        ]
+        ],
+        "block_1_content": "Terrassenlösungen müssen an Gebäudeanschlüsse, Gefälle und Abdichtung angepasst werden. Diese Seite hilft zu prüfen, wie eine Pergola sinnvoll an das Haus angebunden wird, ohne Bausubstanz zu gefährden.",
+        "block_2_content": "Risiken entstehen durch falsche Befestigung oder mangelhafte Abdichtung. Das zeigt sich oft erst nach Monaten.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_faq",
+        "cta_primary_text": "Beratung anfragen",
+        "cta_secondary_text": "—",
+        "faq_theme": "anbau",
+        "faq_unique_q_count": 5
     },
     {
         "id": 6,
@@ -170,7 +210,15 @@
                 "question": "Warum Aluminium statt Holz?",
                 "answer": "Aluminium verwittert nicht, muss nicht gestrichen werden und verzieht sich nicht. Es ist die deutlich langlebigere und pflegeleichtere Wahl für Überdachungen."
             }
-        ]
+        ],
+        "block_1_content": "Aluminium eignet sich für Systeme, die formstabil, wartungsarm und langlebig sein sollen. Im Vergleich zu Holz oder Stahl verändert es sich kaum und benötigt keine regelmäßige Pflege. Diese Seite hilft bei der Materialentscheidung anhand von Nutzung und Wartungsaufwand.",
+        "block_2_content": "Risiken liegen in falschen Materialstärken oder minderwertigen Profilen. Nicht jedes Aluminium erfüllt die gleichen Anforderungen.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_faq",
+        "cta_primary_text": "Material bewerten",
+        "cta_secondary_text": "—",
+        "faq_theme": "material",
+        "faq_unique_q_count": 5
     },
     {
         "id": 7,
@@ -199,7 +247,15 @@
                 "question": "Brauche ich ein Fundament?",
                 "answer": "Ja, für eine freistehende Pergola sind Punktfundamente an den Säulen notwendig, um die Standsicherheit bei Wind zu gewährleisten."
             }
-        ]
+        ],
+        "block_1_content": "Freistehende Pergolen ermöglichen maximale Freiheit bei der Platzierung, etwa bei Pool- oder Gartenbereichen. Voraussetzung ist eine saubere statische Planung. Diese Seite hilft zu klären, wann freistehend technisch sinnvoll ist.",
+        "block_2_content": "Häufige Risiken sind fehlende Fundamente oder unterschätzte Windlasten. Ohne Prüfung drohen spätere Schäden oder Genehmigungsprobleme.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_cta",
+        "cta_primary_text": "Machbarkeit klären",
+        "cta_secondary_text": "—",
+        "faq_theme": "statik",
+        "faq_unique_q_count": 5
     },
     {
         "id": 8,
@@ -228,7 +284,15 @@
                 "question": "Kann man den Kaltwintergarten beheizen?",
                 "answer": "Ja, mit Infrarotstrahlern lässt er sich temporär aufwärmen. Er ist jedoch nicht thermisch isoliert wie ein Wohnraum."
             }
-        ]
+        ],
+        "block_1_content": "Die Kombination aus Pergola und Glas kann sinnvoll sein, wenn flexible Nutzung gewünscht ist. Entscheidend ist die klare Abgrenzung zwischen offenem und geschlossenem Bereich.",
+        "block_2_content": "Risiken liegen in Kondensatbildung und falscher Belüftung, wenn Nutzung und Konstruktion nicht zusammenpassen.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_faq",
+        "cta_primary_text": "Projekt prüfen",
+        "cta_secondary_text": "—",
+        "faq_theme": "hybrid",
+        "faq_unique_q_count": 5
     },
     {
         "id": 9,
@@ -256,7 +320,15 @@
                 "question": "Wie lange dauert die Montage?",
                 "answer": "In der Regel ist (je nach Größe und Komplexität) die Montage innerhalb von 1 bis 2 Tagen abgeschlossen."
             }
-        ]
+        ],
+        "block_1_content": "Eine saubere Montage entscheidet über Funktion und Lebensdauer. Diese Seite erklärt den Ablauf von Vorbereitung bis Einweisung und schafft Transparenz über Dauer und Koordination.",
+        "block_2_content": "Risiken entstehen durch Fremdmonteure oder fehlende Systemkenntnis. Das führt zu Nacharbeiten und Verzögerungen.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_cta",
+        "cta_primary_text": "Ablauf klären",
+        "cta_secondary_text": "—",
+        "faq_theme": "montage",
+        "faq_unique_q_count": 5
     },
     {
         "id": 10,
@@ -285,7 +357,15 @@
                 "question": "Wovon hängen die Preise ab?",
                 "answer": "Die Hauptfaktoren sind Größe, Modell (Lamelle vs. Stoff/Glas), Ausstattung (LED, Screens) und Montageaufwand."
             }
-        ]
+        ],
+        "block_1_content": "Preise ergeben sich aus Maßen, Technik, Montage und Zubehör. Diese Seite erklärt, welche Faktoren den Preis beeinflussen, damit Angebote vergleichbar werden.",
+        "block_2_content": "Risiken bestehen bei Pauschalpreisen ohne Leistungsabgrenzung. Nachträge sind dann vorprogrammiert.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_cta",
+        "cta_primary_text": "Angebot anfordern",
+        "cta_secondary_text": "—",
+        "faq_theme": "preis",
+        "faq_unique_q_count": 5
     },
     {
         "id": 11,
@@ -315,7 +395,15 @@
                 "question": "Wohnwintergarten oder Kaltwintergarten?",
                 "answer": "Unsere Systeme sind Kaltwintergärten (Sommergärten), die als Wetterschutz dienen, aber nicht als permanent beheizter Wohnraum isoliert sind."
             }
-        ]
+        ],
+        "block_1_content": "Wintergarten und Pergola unterscheiden sich grundlegend in Nutzung und Bauweise. Diese Seite hilft, die passende Lösung für Ganzjahres- oder Übergangsnutzung zu wählen.",
+        "block_2_content": "Risiken entstehen durch falsche Erwartungen an Dämmung und Wintertauglichkeit.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_faq",
+        "cta_primary_text": "System prüfen",
+        "cta_secondary_text": "—",
+        "faq_theme": "vergleich",
+        "faq_unique_q_count": 5
     },
     {
         "id": 12,
@@ -344,7 +432,15 @@
                 "question": "Bildet sich Kondenswasser?",
                 "answer": "Bei Temperaturunterschieden kann Kondensat entstehen. Gute Belüftung (z.B. durch Schiebeelemente) minimiert dieses natürliche physikalische Phänomen."
             }
-        ]
+        ],
+        "block_1_content": "Ein Kaltwintergarten ist kosteneffizient für Übergangszeiten. Diese Seite hilft zu prüfen, ob diese Lösung für Ihre Nutzung ausreicht.",
+        "block_2_content": "Risiken liegen bei Frost, fehlender Isolierung und eingeschränkter Nutzung im Winter.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_faq",
+        "cta_primary_text": "Beratung prüfen",
+        "cta_secondary_text": "—",
+        "faq_theme": "winter",
+        "faq_unique_q_count": 5
     },
     {
         "id": 13,
@@ -372,7 +468,15 @@
                 "question": "Kann man die Wände nachrüsten?",
                 "answer": "Ja, unsere Glasschiebewände lassen sich unter fast jede bestehende Terrassenüberdachung oder Pergola montieren."
             }
-        ]
+        ],
+        "block_1_content": "Glasschiebewände schaffen Wind- und Wetterschutz bei offener Nutzung. Diese Seite hilft zu entscheiden, wann sie sinnvoll ergänzen.",
+        "block_2_content": "Risiken entstehen durch minderwertige Lauftechnik oder unzureichende Dichtigkeit.",
+        "block_1_placement": "after_features",
+        "block_2_placement": "before_faq",
+        "cta_primary_text": "Lösung bewerten",
+        "cta_secondary_text": "—",
+        "faq_theme": "glas",
+        "faq_unique_q_count": 5
     },
     {
         "id": 14,
@@ -401,7 +505,15 @@
                 "question": "Wie lange dauert der Aufbau?",
                 "answer": "Ein kompletter Kaltwintergarten ist meist in 2 bis 3 Tagen aufgebaut, abhängig von Fundamentvorrbeiten."
             }
-        ]
+        ],
+        "block_1_content": "Die Montage eines Wintergartens stellt andere Anforderungen als eine Pergola. Glas, Anschlüsse und Abdichtung müssen präzise zusammenspielen. Diese Seite beschreibt, worauf es bei der Montage ankommt, damit Funktion und Sicherheit langfristig gewährleistet bleiben.",
+        "block_2_content": "Risiken entstehen durch unsachgemäßes Glas-Handling, fehlerhafte Anschlüsse oder fehlende Erfahrung. Das führt zu Undichtigkeiten oder Schäden an der Bausubstanz.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_cta",
+        "cta_primary_text": "Ablauf klären",
+        "cta_secondary_text": "—",
+        "faq_theme": "montage",
+        "faq_unique_q_count": 5
     },
     {
         "id": 15,
@@ -430,7 +542,15 @@
                 "question": "Wo liegen die Unterschiede?",
                 "answer": "Oft sparen Import-Produkte an der Profilstärke oder Beschichtung. Zudem ist die Reklamationsabwicklung im Ausland oft schwierig."
             }
-        ]
+        ],
+        "block_1_content": "Importangebote wirken oft günstiger, unterscheiden sich aber deutlich bei Gewährleistung und Service. Diese Seite hilft, Preise realistisch zu vergleichen und die langfristigen Konsequenzen zu bewerten.",
+        "block_2_content": "Risiken liegen bei fehlenden Ansprechpartnern, Ersatzteilen oder rechtlicher Durchsetzung im Schadensfall.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_cta",
+        "cta_primary_text": "Beratung anfragen",
+        "cta_secondary_text": "—",
+        "faq_theme": "import",
+        "faq_unique_q_count": 5
     },
     {
         "id": 16,
@@ -460,7 +580,15 @@
                 "question": "Wie windfest sind ZIP Screens?",
                 "answer": "Unsere Systeme halten Windgeschwindigkeiten bis zu 120 km/h stand, da das Tuch fest in der Schiene geführt wird."
             }
-        ]
+        ],
+        "block_1_content": "Zip-Screen-Systeme sind für windstabile Beschattung und Sichtschutz konzipiert. Diese Seite hilft zu entscheiden, ob ein Screen-System besser passt als eine klassische Markise.",
+        "block_2_content": "Risiken entstehen, wenn Einsatzbereich und Windlast unterschätzt werden. Nicht jedes System ist für jede Lage geeignet.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_faq",
+        "cta_primary_text": "System prüfen",
+        "cta_secondary_text": "—",
+        "faq_theme": "screen",
+        "faq_unique_q_count": 5
     },
     {
         "id": 17,
@@ -489,7 +617,15 @@
                 "question": "Sind die Markisen wetterfest?",
                 "answer": "Die Tücher sind witterungsbeständig und verrotten nicht. Bei Sturm sollten sie jedoch (wenn kein ZIP) eingefahren werden - ZIP-Anlagen sind sturmfest."
             }
-        ]
+        ],
+        "block_1_content": "Senkrechtmarkisen eignen sich zur gezielten Verschattung von Fassaden und Terrassen. Diese Seite hilft, den Einsatz nach Sonnenstand und Sichtbedarf zu bewerten.",
+        "block_2_content": "Risiken bestehen bei unzureichender Führung oder falscher Montage, was zu Geräuschen und Verschleiß führt.",
+        "block_1_placement": "after_features",
+        "block_2_placement": "before_faq",
+        "cta_primary_text": "Lösung bewerten",
+        "cta_secondary_text": "—",
+        "faq_theme": "markise",
+        "faq_unique_q_count": 5
     },
     {
         "id": 18,
@@ -518,7 +654,15 @@
                 "question": "Kann man ZIP Screens nachrüsten?",
                 "answer": "Ja, sie lassen sich problemlos an bestehende Pergolen oder Überdachungen montieren, sofern ein Sturz/Balken vorhanden ist."
             }
-        ]
+        ],
+        "block_1_content": "Für Terrassen schaffen Zip-Screens zusätzlichen Wind- und Sichtschutz. Diese Seite zeigt, wann Seitenbeschattung den Aufenthaltskomfort deutlich erhöht.",
+        "block_2_content": "Risiken entstehen durch falsche Befestigung oder fehlende Abstimmung mit bestehenden Konstruktionen.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_faq",
+        "cta_primary_text": "Projekt prüfen",
+        "cta_secondary_text": "—",
+        "faq_theme": "terrasse",
+        "faq_unique_q_count": 5
     },
     {
         "id": 19,
@@ -547,7 +691,15 @@
                 "question": "Hält das Tuch Regen ab?",
                 "answer": "Es ist wasserabweisend und schützt vor leichtem Regen. Es ist jedoch keine 100%ige Wasserbarriere wie Glas."
             }
-        ]
+        ],
+        "block_1_content": "Wetterfest bedeutet widerstandsfähig, aber nicht grenzenlos. Diese Seite hilft, realistische Erwartungen an Wind- und Regenschutz zu entwickeln.",
+        "block_2_content": "Risiken liegen im Einsatz außerhalb der vorgesehenen Belastungsgrenzen, was die Lebensdauer verkürzt.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_faq",
+        "cta_primary_text": "Beratung prüfen",
+        "cta_secondary_text": "—",
+        "faq_theme": "wetter",
+        "faq_unique_q_count": 5
     },
     {
         "id": 20,
@@ -576,7 +728,15 @@
                 "question": "Wo befindet sich der Showroom?",
                 "answer": "Besuchen Sie unsere Ausstellung (Adresse im Footer) und erleben Sie unsere Systeme live."
             }
-        ]
+        ],
+        "block_1_content": "Sanper arbeitet als Familienunternehmen mit klarer Verantwortung für Planung, Fertigung und Montage. Diese Seite gibt Einblick in Arbeitsweise und Entscheidungswege.",
+        "block_2_content": "Risiken bei anonymen Anbietern sind unklare Zuständigkeiten und wechselnde Ansprechpartner.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_cta",
+        "cta_primary_text": "Gespräch vereinbaren",
+        "cta_secondary_text": "—",
+        "faq_theme": "unternehmen",
+        "faq_unique_q_count": 5
     },
     {
         "id": 21,
@@ -605,7 +765,15 @@
                 "question": "Wie läuft eine Anfrage ab?",
                 "answer": "Sie senden uns Ihre Wünsche, wir erstellen eine grobe Kostenschätzung und kommen dann für das Feinaufmaß zu Ihnen."
             }
-        ]
+        ],
+        "block_1_content": "Der Kontakt dient der strukturierten Klärung Ihres Projekts. Diese Seite beschreibt, wie der nächste Schritt abläuft und welche Informationen sinnvoll sind.",
+        "block_2_content": "Risiken entstehen, wenn Anforderungen unklar bleiben oder zu früh Angebote eingeholt werden.",
+        "block_1_placement": "before_form",
+        "block_2_placement": "after_form",
+        "cta_primary_text": "Rückruf anfordern",
+        "cta_secondary_text": "—",
+        "faq_theme": "kontakt",
+        "faq_unique_q_count": 3
     },
     {
         "id": 25,

@@ -1,0 +1,24 @@
+﻿27e1557 2026-01-19 Fix: Replace CTA placeholder dashes with meaningful text (18 pages) + repair corrupted page id:19
+22e847f 2026-01-19 fix(css): migrate to Tailwind v4 @import syntax
+862802f 2026-01-18 fix(build): resolve all type errors and tailwind configuration for production deployment
+ff64bdf 2026-01-16 Fix: PLZ auf 44328 korrigiert
+d6ca7d4 2026-01-16 Fix: CTABanner Telefonnummer aus company.ts
+af4249a 2026-01-16 Update: Telefonnummer auf 0170 534 2268
+6448bb2 2026-01-15 fix(seo): add noindex to legal pages + exclude from sitemap (GSC readiness)
+60fcceb 2026-01-15 feat: add GDPR-compliant cookie consent banner and update Datenschutzerkl├ñrung
+9a1652f 2026-01-15 fix: update impressum with real owner data - Hakan Yilmaz, Dortmund
+059af43 2026-01-15 fix: remove redirect rules causing loop - rely on Astro+Netlify pretty_urls
+9432e71 2026-01-15 fix(seo): add trailing slashes to all internal links + netlify.toml
+66180ae 2026-01-14 fix: deep SEO - LandingPageLayout www domain, FAQPage/BreadcrumbList schemas, absolute OG URLs
+51fc432 2026-01-14 fix: critical SEO issues - add og-image/logo assets, implement Organization/WebSite schema, fix German localization, absolute OG URLs
+5860a5c 2026-01-11 Trigger Netlify Deploy
+31a5316 2026-01-11 Fix: SEO Canonical & NoIndex Logic
+dd28e2a 2026-01-11 Fix: Restore corrupted [...slug].astro
+e616e63 2026-01-11 Fix: Smart Image Update & Showroom Integration
+74a3b65 2026-01-11 feat: cleanup audit - removed Innenraumakustik, fixed duplicates, mapped images
+848ae70 2026-01-11 fix: replace className with class in legal pages
+a502411 2026-01-11 fix: explicit container class definition for layout padding
+357ee67 2026-01-11 feat: Implement Gold Standard content (25 pages) and asset integration
+124f354 2026-01-11 Add files via upload
+d302a60 2026-01-11 Add files via upload
+de8319f 2026-01-10 Initial commit Sanper SEO System

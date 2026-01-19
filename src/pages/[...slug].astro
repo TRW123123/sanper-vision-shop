@@ -119,13 +119,24 @@ const faqSchema = page.faq && page.faq.length > 0 ? JSON.stringify({
         {page.intro_text}
       </p>
 
+      {/* CSV Content Block 1 - after_intro placement */}
+      {page.block_1_content && page.block_1_placement === "after_intro" && (
+        <p class="text-base md:text-lg max-w-3xl mx-auto mb-10 text-white/80 leading-relaxed">
+          {page.block_1_content}
+        </p>
+      )}
+
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        {/* Primary CTA - always rendered from CSV */}
         <Button size="lg" className="bg-primary hover:bg-primary/90 text-white min-w-[200px] h-14 text-lg" asChild>
-            <a href="#kontakt">Kostenloses Angebot</a>
+            <a href="#kontakt">{page.cta_primary_text || "Kostenloses Angebot"}</a>
         </Button>
-        <Button size="lg" variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 min-w-[200px] h-14 text-lg backdrop-blur-sm" asChild>
-            <a href="#features">Mehr erfahren</a>
-        </Button>
+        {/* Secondary CTA - only render if NOT "—" */}
+        {page.cta_secondary_text && page.cta_secondary_text !== "—" && (
+          <Button size="lg" variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 min-w-[200px] h-14 text-lg backdrop-blur-sm" asChild>
+              <a href="#features">{page.cta_secondary_text}</a>
+          </Button>
+        )}
       </div>
 
         {/* Trust Pilot / Ratings Mockup */}
@@ -148,12 +159,23 @@ const faqSchema = page.faq && page.faq.length > 0 ? JSON.stringify({
               <Check className="w-6 h-6" />
             </div>
             <h3 class="font-semibold text-lg mb-2">{feature}</h3>
-            <p class="text-muted-foreground text-sm">Geprüfte Qualität für langlebige Freude an Ihrem Produkt.</p>
+            <p class="text-muted-foreground text-sm">Durchdacht konstruiert für maximale Langlebigkeit und Funktionalität.</p>
           </div>
         ))}
       </div>
     </div>
   </section>
+
+  {/* CSV Content Block 2 - before_trust placement */}
+  {page.block_2_content && page.block_2_placement === "before_trust" && (
+    <section class="py-12 bg-muted/30">
+      <div class="container max-w-4xl">
+        <p class="text-lg text-muted-foreground leading-relaxed">
+          {page.block_2_content}
+        </p>
+      </div>
+    </section>
+  )}
 
   {/* MANUFACTURER TRUST BLOCK (Static for now, dynamic later) */}
   <section class="py-20 bg-surface">
@@ -189,8 +211,8 @@ const faqSchema = page.faq && page.faq.length > 0 ? JSON.stringify({
                              <span class="font-bold text-primary">03</span>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-lg">5 Jahre Garantie</h3>
-                            <p class="text-muted-foreground">Wir stehen zu unserer Qualität. Auf alle Systeme geben wir 5 Jahre volle Herstellergarantie.</p>
+                            <h3 class="font-semibold text-lg">Persönliche Betreuung</h3>
+                            <p class="text-muted-foreground">Ein fester Ansprechpartner begleitet Sie von der Planung bis zur Abnahme – ohne Callcenter, ohne Warteschleifen.</p>
                         </div>
                     </div>
                 </div>
@@ -217,6 +239,26 @@ const faqSchema = page.faq && page.faq.length > 0 ? JSON.stringify({
     <ProjectGallery client:visible items={galleryItems} />
   )}
 
+  {/* CSV Content Block - before_faq placement */}
+  {page.block_1_content && page.block_1_placement === "before_faq" && (
+    <section class="py-12 bg-muted/30">
+      <div class="container max-w-4xl">
+        <p class="text-lg text-muted-foreground leading-relaxed">
+          {page.block_1_content}
+        </p>
+      </div>
+    </section>
+  )}
+  {page.block_2_content && page.block_2_placement === "before_faq" && (
+    <section class="py-12 bg-muted/30">
+      <div class="container max-w-4xl">
+        <p class="text-lg text-muted-foreground leading-relaxed">
+          {page.block_2_content}
+        </p>
+      </div>
+    </section>
+  )}
+
   {/* FAQ SECTION */}
   {page.faq && page.faq.length > 0 && (
     <section class="py-20 bg-background">
@@ -226,12 +268,32 @@ const faqSchema = page.faq && page.faq.length > 0 ? JSON.stringify({
           {page.faq.map((item) => (
             <div class="p-6 rounded-xl border border-border bg-card hover:shadow-sm transition-shadow">
               <h3 class="font-semibold text-lg mb-2 flex items-center gap-3">
-                <span class="text-primary/60">?</span> {item.question}
+                {item.question}
               </h3>
               <p class="text-muted-foreground pl-6 border-l-2 border-primary/20 ml-1.5">{item.answer}</p>
             </div>
           ))}
         </div>
+      </div>
+    </section>
+  )}
+
+  {/* CSV Content Block - before_cta placement */}
+  {page.block_1_content && page.block_1_placement === "before_cta" && (
+    <section class="py-12 bg-muted/30">
+      <div class="container max-w-4xl">
+        <p class="text-lg text-muted-foreground leading-relaxed">
+          {page.block_1_content}
+        </p>
+      </div>
+    </section>
+  )}
+  {page.block_2_content && page.block_2_placement === "before_cta" && (
+    <section class="py-12 bg-muted/30">
+      <div class="container max-w-4xl">
+        <p class="text-lg text-muted-foreground leading-relaxed">
+          {page.block_2_content}
+        </p>
       </div>
     </section>
   )}

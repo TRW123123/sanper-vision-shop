@@ -1,11 +1,51 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import KontaktView from "@/components/pages/KontaktView";
+import CSVContentBlocks from "@/components/csv/CSVContentBlocks.astro";
+import CSVFAQSection from "@/components/csv/CSVFAQSection.astro";
+import CSVCTASection from "@/components/csv/CSVCTASection.astro";
+import { getPageContent } from "@/lib/getPageContent";
+
+// Load CSV content for kontakt (slug = "kontakt")
+const pageContent = getPageContent("kontakt");
 ---
 
 <Layout 
   title="Kontakt – Sanper Beschattungssysteme"
   description="Kontaktieren Sie uns für eine individuelle Beratung. Wir sind Ihr Partner für Beschattungssysteme und Verglasungen."
 >
+  {/* CSV Content Block - before_form placement (block_1 with placement="before_form") */}
+  <CSVContentBlocks 
+    block_1_content={pageContent?.block_1_content}
+    block_1_placement={pageContent?.block_1_placement}
+    block_2_content={pageContent?.block_2_content}
+    block_2_placement={pageContent?.block_2_placement}
+    targetPlacement="before_form"
+  />
+  
+  {/* Contact Form View Component */}
   <KontaktView client:load />
+  
+  {/* CSV Content Block - after_form placement (block_2 with placement="after_form") */}
+  <CSVContentBlocks 
+    block_1_content={pageContent?.block_1_content}
+    block_1_placement={pageContent?.block_1_placement}
+    block_2_content={pageContent?.block_2_content}
+    block_2_placement={pageContent?.block_2_placement}
+    targetPlacement="after_form"
+  />
+  
+  {/* CSV FAQ Section - renders all FAQs if faq_unique_q_count > 0 */}
+  <CSVFAQSection 
+    faq={pageContent?.faq}
+    faq_unique_q_count={pageContent?.faq_unique_q_count}
+  />
+  
+  {/* CSV CTA Section - renders if cta_primary_text exists */}
+  <CSVCTASection 
+    cta_primary_text={pageContent?.cta_primary_text}
+    cta_secondary_text={pageContent?.cta_secondary_text}
+    variant="minimal"
+  />
 </Layout>
+

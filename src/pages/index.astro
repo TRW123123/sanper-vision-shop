@@ -8,6 +8,12 @@ import ProcessSteps from "@/components/home/ProcessSteps";
 import CTABanner from "@/components/home/CTABanner";
 import { SocialProof } from "@/components/home/SocialProof";
 import { ProjectGallery } from "@/components/home/ProjectGallery";
+import CSVContentBlocks from "@/components/csv/CSVContentBlocks.astro";
+import CSVFAQSection from "@/components/csv/CSVFAQSection.astro";
+import { getPageContent } from "@/lib/getPageContent";
+
+// Load CSV content for homepage (slug = "")
+const pageContent = getPageContent("");
 ---
 
 <Layout
@@ -15,10 +21,30 @@ import { ProjectGallery } from "@/components/home/ProjectGallery";
   description="Maßgefertigte bioklimatische Pergolen, Wintergärten und Markisen. Premium Qualität direkt vom Hersteller. Jetzt Angebot anfordern!"
 >
   <main>
-    <Hero client:load />
+    <Hero client:load ctaPrimaryText={pageContent?.cta_primary_text} ctaSecondaryText={pageContent?.cta_secondary_text} />
+    
+    {/* CSV Content Block - after_intro placement */}
+    <CSVContentBlocks 
+      block_1_content={pageContent?.block_1_content}
+      block_1_placement={pageContent?.block_1_placement}
+      block_2_content={pageContent?.block_2_content}
+      block_2_placement={pageContent?.block_2_placement}
+      targetPlacement="after_intro"
+    />
+    
     <div class="animate-on-scroll py-20">
       <ValueProposition />
     </div>
+    
+    {/* CSV Content Block - before_trust placement */}
+    <CSVContentBlocks 
+      block_1_content={pageContent?.block_1_content}
+      block_1_placement={pageContent?.block_1_placement}
+      block_2_content={pageContent?.block_2_content}
+      block_2_placement={pageContent?.block_2_placement}
+      targetPlacement="before_trust"
+    />
+    
     <div class="animate-on-scroll py-20">
       <ProductCategories />
     </div>
@@ -31,8 +57,16 @@ import { ProjectGallery } from "@/components/home/ProjectGallery";
     <div class="animate-on-scroll py-20">
       <ProcessSteps />
     </div>
+    
+    {/* CSV FAQ Section */}
+    <CSVFAQSection 
+      faq={pageContent?.faq}
+      faq_unique_q_count={pageContent?.faq_unique_q_count}
+    />
+    
     <div class="animate-on-scroll py-20">
       <CTABanner />
     </div>
   </main>
 </Layout>
+

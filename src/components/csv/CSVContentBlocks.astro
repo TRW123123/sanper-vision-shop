@@ -1,0 +1,51 @@
+---
+/**
+ * CSVContentBlocks.astro
+ * Reusable renderer for CSV-driven content blocks
+ * 
+ * Props:
+ * - block_1_content: string
+ * - block_1_placement: string
+ * - block_2_content: string  
+ * - block_2_placement: string
+ * - targetPlacement: string (which placement to render now)
+ */
+
+interface Props {
+  block_1_content?: string;
+  block_1_placement?: string;
+  block_2_content?: string;
+  block_2_placement?: string;
+  targetPlacement: string;
+}
+
+const { 
+  block_1_content, 
+  block_1_placement, 
+  block_2_content, 
+  block_2_placement, 
+  targetPlacement 
+} = Astro.props;
+---
+
+{/* Render block_1 if placement matches */}
+{block_1_content && block_1_placement === targetPlacement && (
+  <section class="py-12 bg-muted/30">
+    <div class="container max-w-4xl">
+      <p class="text-lg text-muted-foreground leading-relaxed">
+        {block_1_content}
+      </p>
+    </div>
+  </section>
+)}
+
+{/* Render block_2 if placement matches */}
+{block_2_content && block_2_placement === targetPlacement && (
+  <section class="py-12 bg-muted/30">
+    <div class="container max-w-4xl">
+      <p class="text-lg text-muted-foreground leading-relaxed">
+        {block_2_content}
+      </p>
+    </div>
+  </section>
+)}

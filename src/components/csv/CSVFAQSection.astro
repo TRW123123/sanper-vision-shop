@@ -1,0 +1,38 @@
+---
+/**
+ * CSVFAQSection.astro
+ * Reusable renderer for CSV-driven FAQ section
+ * 
+ * Props:
+ * - faq: Array<{ question: string; answer: string }>
+ * - faq_unique_q_count: number (expected count, for validation)
+ */
+
+interface Props {
+  faq?: Array<{ question: string; answer: string }>;
+  faq_unique_q_count?: number;
+}
+
+const { faq, faq_unique_q_count } = Astro.props;
+
+// Only render if FAQ exists and count > 0
+const shouldRender = faq && faq.length > 0 && (faq_unique_q_count ?? 0) > 0;
+---
+
+{shouldRender && (
+  <section class="py-20 bg-background">
+    <div class="container max-w-3xl">
+      <h2 class="text-3xl font-bold text-center mb-12">Häufige Fragen</h2>
+      <div class="space-y-4">
+        {faq?.map((item) => (
+          <div class="p-6 rounded-xl border border-border bg-card hover:shadow-sm transition-shadow">
+            <h3 class="font-semibold text-lg mb-2 flex items-center gap-3">
+              {item.question}
+            </h3>
+            <p class="text-muted-foreground pl-6 border-l-2 border-primary/20 ml-1.5">{item.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

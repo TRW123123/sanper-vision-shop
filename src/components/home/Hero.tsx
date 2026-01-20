@@ -2,7 +2,17 @@ import { Button } from "@/components/ui/button";
 
 import { ArrowRight } from "lucide-react";
 
-const Hero = () => {
+interface HeroProps {
+  ctaPrimaryText?: string;
+  ctaSecondaryText?: string;
+}
+
+const Hero = ({ ctaPrimaryText, ctaSecondaryText }: HeroProps = {}) => {
+  // CSV-driven CTA logic
+  const primaryText = ctaPrimaryText || "Beratung starten";
+  const secondaryText = ctaSecondaryText;
+  const showSecondary = secondaryText && secondaryText !== "—";
+
   return (
     <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -27,16 +37,18 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in delay-200">
             <Button size="lg" className="text-lg px-8 py-6 w-full sm:w-auto group" asChild>
-              <a href="/konfigurator">
-                Jetzt Traumgarten konfigurieren
+              <a href="/kontakt">
+                {primaryText}
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 w-full sm:w-auto bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 hover:text-white" asChild>
-              <a href="/anfrage">
-                Katalog anfordern
-              </a>
-            </Button>
+            {showSecondary && (
+              <Button size="lg" variant="outline" className="text-lg px-8 py-6 w-full sm:w-auto bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 hover:text-white" asChild>
+                <a href="/anfrage">
+                  {secondaryText}
+                </a>
+              </Button>
+            )}
           </div>
         </div>
       </div>
@@ -52,3 +64,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

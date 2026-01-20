@@ -802,5 +802,142 @@
                 "answer": "Ja, unsere Profile lassen sich an nahezu jede Unterkonstruktion (Holz, Alu, Stahl) montieren."
             }
         ]
+    },
+    {
+        "id": 22,
+        "slug": "referenzen",
+        "template": "hub",
+        "product_id": "pergola-systeme",
+        "title": "Referenzen | Sanper Vision Projekte",
+        "h1": "Referenzen & Projektbeispiele",
+        "intro_text": "Entdecken Sie realisierte Projekte und lassen Sie sich inspirieren. Von der Terrasse bis zum Gewerbeobjekt.",
+        "meta_description": "Referenzprojekte von Sanper Vision. Sehen Sie, wie unsere Pergolen und Wintergärten in der Praxis aussehen.",
+        "features": [
+            "Projektvielfalt",
+            "Reale Beispiele",
+            "Vor-Ort Inspiration",
+            "Bewährte Qualität"
+        ],
+        "images": [
+            "pergola-systeme-terrasse-aluminium-festdach-b2c-hero-01",
+            "wintergarten-systeme-glasdach-zip-screen-b2c-hero-01",
+            "showroom_consultation_germany"
+        ],
+        "faq": [
+            {
+                "question": "Kann ich Referenzobjekte besichtigen?",
+                "answer": "Ja, nach Absprache können wir Ihnen realisierte Projekte in Ihrer Region zeigen."
+            }
+        ],
+        "block_1_content": "Referenzprojekte zeigen, wie Systeme in der Praxis genutzt werden. Diese Seite hilft, eigene Anforderungen mit realen Projekten abzugleichen.",
+        "block_2_content": "Risiken entstehen, wenn Referenzen nicht vergleichbar sind oder wichtige Details fehlen.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_cta",
+        "cta_primary_text": "Projekt prüfen",
+        "cta_secondary_text": "—",
+        "faq_theme": "referenzen",
+        "faq_unique_q_count": 1
+    },
+    {
+        "id": 23,
+        "slug": "genehmigung",
+        "template": "hub",
+        "product_id": "pergola-systeme",
+        "title": "Baugenehmigung für Pergola & Wintergarten | Sanper",
+        "h1": "Baugenehmigung – Wann nötig?",
+        "intro_text": "Ob Sie eine Genehmigung brauchen, hängt von Größe, Standort und Bundesland ab. Wir helfen bei der Klärung.",
+        "meta_description": "Brauche ich eine Baugenehmigung für meine Pergola? Infos zu Vorschriften und Unterstützung beim Bauantrag.",
+        "features": [
+            "Rechtssicherheit",
+            "Unterstützung beim Antrag",
+            "Bundesland-spezifisch",
+            "Expertenberatung"
+        ],
+        "images": [
+            "pergola-systeme-terrasse-aluminium-festdach-b2c-hero-01",
+            "showroom_consultation_germany"
+        ],
+        "faq": [
+            {
+                "question": "Wann brauche ich eine Genehmigung?",
+                "answer": "Das hängt von Größe und Standort ab. In NRW sind z.B. viele Überdachungen bis 30m² genehmigungsfrei."
+            }
+        ],
+        "block_1_content": "Je nach Bauart und Standort kann eine Genehmigung erforderlich sein. Diese Seite hilft zu klären, wann das zutrifft und wie vorzugehen ist.",
+        "block_2_content": "Risiken bestehen bei verspäteter Klärung, die Projekte verzögern oder stoppen kann.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_cta",
+        "cta_primary_text": "Genehmigung klären",
+        "cta_secondary_text": "—",
+        "faq_theme": "recht",
+        "faq_unique_q_count": 1
+    },
+    {
+        "id": 24,
+        "slug": "wartung",
+        "template": "hub",
+        "product_id": "pergola-systeme",
+        "title": "Wartung & Pflege | Sanper Systeme",
+        "h1": "Wartung & Pflege",
+        "intro_text": "Wenig Aufwand, lange Freude. So pflegen Sie Ihre Pergola oder Ihren Wintergarten richtig.",
+        "meta_description": "Wartungstipps für Pergolen und Wintergärten. So bleibt Ihr System langlebig und funktionsfähig.",
+        "features": [
+            "Pflegeleicht",
+            "Langlebig",
+            "Wartungsarm",
+            "Ersatzteil-Service"
+        ],
+        "images": [
+            "pergola-systeme-terrasse-aluminium-festdach-b2c-hero-01",
+            "showroom_consultation_germany"
+        ],
+        "faq": [
+            {
+                "question": "Wie oft sollte ich warten?",
+                "answer": "Eine jährliche Sichtprüfung und Reinigung der Entwässerung reicht in der Regel aus."
+            }
+        ],
+        "block_1_content": "Wartung beeinflusst Lebensdauer und Funktion. Diese Seite hilft, den realen Wartungsaufwand richtig einzuschätzen.",
+        "block_2_content": "Risiken entstehen, wenn Wartung unterschätzt oder nicht eingeplant wird.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_cta",
+        "cta_primary_text": "Wartung bewerten",
+        "cta_secondary_text": "—",
+        "faq_theme": "wartung",
+        "faq_unique_q_count": 1
+    },
+    {
+        "id": 25,
+        "slug": "lieferzeit",
+        "template": "hub",
+        "product_id": "pergola-systeme",
+        "title": "Lieferzeit & Projektablauf | Sanper",
+        "h1": "Lieferzeit & Projektablauf",
+        "intro_text": "Von der Anfrage bis zur Montage. So planen Sie Ihr Projekt zeitlich richtig.",
+        "meta_description": "Wie lange dauert es bis zur fertigen Pergola? Infos zu Lieferzeiten und Projektablauf.",
+        "features": [
+            "Planbare Termine",
+            "Transparenter Ablauf",
+            "Eigene Produktion",
+            "Flexible Koordination"
+        ],
+        "images": [
+            "pergola-systeme-terrasse-aluminium-festdach-b2c-hero-01",
+            "showroom_consultation_germany"
+        ],
+        "faq": [
+            {
+                "question": "Wie lange dauert die Lieferung?",
+                "answer": "Je nach Auslastung und Komplexität rechnen Sie mit 4-8 Wochen von Auftragsbestätigung bis Montage."
+            }
+        ],
+        "block_1_content": "Lieferzeiten hängen von Planung, Fertigung und Montage ab. Diese Seite erklärt die wichtigsten Einflussfaktoren.",
+        "block_2_content": "Risiken entstehen durch unrealistische Erwartungen oder fehlende Abstimmung im Projektablauf.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_cta",
+        "cta_primary_text": "Termin klären",
+        "cta_secondary_text": "—",
+        "faq_theme": "lieferung",
+        "faq_unique_q_count": 1
     }
 ]

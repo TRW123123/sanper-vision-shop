@@ -6,7 +6,7 @@ import { Check, Star, Shield, ArrowRight } from "lucide-react";
 import { ProjectGallery } from "@/components/home/ProjectGallery";
 
 export async function getStaticPaths() {
-  const excludedSlugs = new Set(["", "ueber-uns", "kontakt"]);
+  const excludedSlugs = new Set(["", "kontakt"]);
   return landingPages
     .filter((page) => !excludedSlugs.has(page.slug)) // Exclude conflicting static pages
     .map((page) => ({
@@ -165,6 +165,17 @@ const faqSchema = page.faq && page.faq.length > 0 ? JSON.stringify({
       </div>
     </div>
   </section>
+
+  {/* CSV Content Block 1 - after_features placement */}
+  {page.block_1_content && page.block_1_placement === "after_features" && (
+    <section class="py-12 bg-muted/30">
+      <div class="container max-w-4xl">
+        <p class="text-lg text-muted-foreground leading-relaxed">
+          {page.block_1_content}
+        </p>
+      </div>
+    </section>
+  )}
 
   {/* CSV Content Block 2 - before_trust placement */}
   {page.block_2_content && page.block_2_placement === "before_trust" && (

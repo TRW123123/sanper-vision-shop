@@ -4,13 +4,14 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { company } from "@/data/company";
 
 const KontaktView = () => {
     const [type, setType] = useState<string | null>(null);
     const { toast } = useToast();
+    const [isSubmitting, setIsSubmitting] = useState(false);
     const [formData, setFormData] = useState({
         name: "",
         firma: "",
@@ -27,11 +28,17 @@ const KontaktView = () => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        toast({
-            title: "Anfrage gesendet",
-            description: "Wir werden uns in Kürze bei Ihnen melden.",
-        });
-        setFormData({ name: "", firma: "", email: "", telefon: "", nachricht: "" });
+        setIsSubmitting(true);
+
+        // Simulate network delay
+        setTimeout(() => {
+            toast({
+                title: "Anfrage gesendet",
+                description: "Wir werden uns in Kürze bei Ihnen melden.",
+            });
+            setFormData({ name: "", firma: "", email: "", telefon: "", nachricht: "" });
+            setIsSubmitting(false);
+        }, 1500);
     };
 
     return (
@@ -185,9 +192,13 @@ const KontaktView = () => {
                                         verarbeitet.
                                     </div>
 
-                                    <Button type="submit" size="lg" className="w-full">
-                                        <Send className="mr-2 h-4 w-4" />
-                                        Anfrage senden
+                                    <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                                        {isSubmitting ? (
+                                            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                                        ) : (
+                                            <Send className="mr-2 h-4 w-4" />
+                                        )}
+                                        {isSubmitting ? "Wird gesendet..." : "Anfrage senden"}
                                     </Button>
                                 </form>
                             </CardContent>

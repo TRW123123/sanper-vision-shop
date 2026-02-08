@@ -11,7 +11,7 @@ const BlogView = () => {
             category: "Produktwissen",
             date: "2024-01-15",
             readTime: "5 min",
-            image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop",
+            image: "/images/hero-bg.jpg",
         },
         {
             title: "Ganzjährige Terrassennutzung: Verglasung und Beschattung kombinieren",

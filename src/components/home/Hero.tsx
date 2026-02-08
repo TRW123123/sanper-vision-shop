@@ -16,13 +16,15 @@ const Hero = ({ ctaPrimaryText, ctaSecondaryText }: HeroProps = {}) => {
   return (
     <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-primary/50 z-10" />
-        <img
-          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop"
-          alt="Moderne Pergola-Architektur"
-          className="w-full h-full object-cover"
-        />
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: 'url(/images/hero-bg.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       {/* Content */}

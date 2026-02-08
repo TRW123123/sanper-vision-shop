@@ -10,27 +10,39 @@ import {
 
 const TESTIMONIALS = [
     {
-        name: "Michael Weber",
-        role: "Hausbesitzer in Köln",
-        content: "Die bioclimatische Pergola hat unsere Terrasse komplett verwandelt. Endlich können wir auch bei Regen draußen sitzen. Die Beratung war top!",
+        name: "Berkcan Inci",
+        role: "Terrassen-Projekt",
+        content: "Die Schattenlösung für unsere Terrasse hat unsere Erwartungen weit übertroffen. Material, Motorqualität und Verarbeitung waren erstklassig.",
         rating: 5
     },
     {
-        name: "Sabine Müller",
-        role: "Gastronomin",
-        content: "Für unser Café brauchten wir eine flexible Lösung. Die Guillotine-Fenster sind ein echter Hingucker und unsere Gäste lieben es.",
+        name: "Y.B YSN OTO ELEKTRİK",
+        role: "Gewerbekunde",
+        content: "Wir haben Zip-Screens für unseren Bürogarten installieren lassen – wirkt drinnen wie eine Klimaanlage. Bei Beschattungssystemen schaue ich nach keiner anderen Firma mehr.",
         rating: 5
     },
     {
-        name: "Thomas Klein",
-        role: "Architekt",
-        content: "Ich arbeite regelmäßig mit Sanper zusammen. Die Qualität der Systeme und die Zuverlässigkeit bei der Montage überzeugen mich jedes Mal.",
+        name: "Hüseyin Altan Yildirim",
+        role: "Gastronomie",
+        content: "Wir haben Pergola und Guillotine-Glas für unseren Betrieb machen lassen. Sie waren sowohl beim Aufmaß als auch bei der Montage sehr engagiert.",
         rating: 5
     },
     {
-        name: "Familie Richter",
-        role: "Privatkunden",
-        content: "Von der Planung bis zur Montage lief alles reibungslos. Das Team war pünktlich, sauber und sehr freundlich. Klare Weiterempfehlung!",
+        name: "Yasemin Saribuga",
+        role: "Privatkunde",
+        content: "Wir haben eine bioklimatische Pergola und ein Zip-Screen-System installieren lassen. Sowohl die Produktqualität als auch das Montageteam waren perfekt.",
+        rating: 5
+    },
+    {
+        name: "Elvan Saka",
+        role: "Terrassen-Projekt",
+        content: "Bioklimatische Pergola auf unserer Terrasse – das Ergebnis ist großartig! Sowohl ästhetisch als auch funktional. Das Montageteam war sehr professionell.",
+        rating: 5
+    },
+    {
+        name: "Selim Yavuz",
+        role: "Verglasungssysteme",
+        content: "Kundenbeziehungen, Preis-Leistung und Ausführungsqualität sind perfekt. Besonders im Bereich Windschutz-Glassysteme sehr erfolgreich.",
         rating: 5
     }
 ];
@@ -40,8 +52,8 @@ export const SocialProof = () => {
         <section className="py-20 bg-muted/30">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold mb-4">Was unsere Kunden sagen</h2>
-                    <p className="text-muted-foreground text-lg">Echte Meinungen zu unseren Projekten</p>
+                    <h2 className="text-3xl font-bold mb-4">Kundenstimmen zur Sanper Qualität</h2>
+                    <p className="text-muted-foreground text-lg">Echtes Feedback zu Sanper Systemen & Produktion</p>
                 </div>
 
                 <Carousel className="w-full max-w-4xl mx-auto">

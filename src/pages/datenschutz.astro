@@ -1,5 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import { company } from "@/data/company";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -10,7 +11,7 @@ import {
 } from "@/components/ui/breadcrumb";
 ---
 
-<Layout 
+<Layout
   title="Datenschutzerklärung - Sanper Beschattungssysteme"
   description="Datenschutzerklärung von Sanper Beschattungssysteme. Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO."
   noindex={true}
@@ -36,32 +37,40 @@ import {
         <h1 class="mb-8 text-4xl font-bold">Datenschutzerklärung</h1>
 
         <div class="prose prose-neutral dark:prose-invert max-w-none space-y-8">
-          
           {/* 1. Verantwortlicher */}
           <section>
             <h2 class="text-2xl font-semibold mb-4">1. Verantwortlicher</h2>
-            <p class="mb-4">Verantwortlicher im Sinne der Datenschutzgesetze ist:</p>
+            <p class="mb-4">
+              Verantwortlicher im Sinne der Datenschutzgesetze ist:
+            </p>
             <address class="not-italic leading-relaxed">
-              Hakan Yilmaz<br />
-              Wambeler Holz 20<br />
-              44145 Dortmund<br />
+              <strong>Hakan Yilmaz</strong><br />
+              {company.address.street}<br />
+              {company.address.zip}
+              {company.address.city}<br />
               Deutschland
             </address>
             <p class="mt-4">
-              E-Mail: <a href="mailto:info@sanper.de" class="text-accent hover:underline">info@sanper.de</a>
+              E-Mail: <a
+                href="mailto:info@sanper.de"
+                class="text-accent hover:underline">info@sanper.de</a
+              >
             </p>
           </section>
 
           {/* 2. Allgemeine Hinweise */}
           <section>
-            <h2 class="text-2xl font-semibold mb-4">2. Allgemeine Hinweise zur Datenverarbeitung</h2>
+            <h2 class="text-2xl font-semibold mb-4">
+              2. Allgemeine Hinweise zur Datenverarbeitung
+            </h2>
             <p class="mb-4">
               Der Schutz Ihrer personenbezogenen Daten ist uns wichtig.
-              Personenbezogene Daten werden auf dieser Website nur im technisch notwendigen Umfang
-              sowie zur Bearbeitung von Anfragen verarbeitet.
+              Personenbezogene Daten werden auf dieser Website nur im technisch
+              notwendigen Umfang sowie zur Bearbeitung von Anfragen verarbeitet.
             </p>
             <p>
-              Eine Weitergabe an Dritte findet nicht statt, sofern dies nicht gesetzlich vorgeschrieben ist.
+              Eine Weitergabe an Dritte findet nicht statt, sofern dies nicht
+              gesetzlich vorgeschrieben ist.
             </p>
           </section>
 
@@ -69,9 +78,9 @@ import {
           <section>
             <h2 class="text-2xl font-semibold mb-4">3. Hosting</h2>
             <p class="mb-4">
-              Diese Website wird bei einem externen Hosting-Dienstleister betrieben.
-              Beim Aufruf der Website werden durch den Hosting-Anbieter automatisch
-              sogenannte Server-Logfiles erhoben.
+              Diese Website wird bei einem externen Hosting-Dienstleister
+              betrieben. Beim Aufruf der Website werden durch den
+              Hosting-Anbieter automatisch sogenannte Server-Logfiles erhoben.
             </p>
             <p class="mb-4">Erfasst werden können:</p>
             <ul class="list-disc list-inside space-y-1 mb-4">
@@ -83,8 +92,9 @@ import {
               <li>Referrer-URL</li>
             </ul>
             <p>
-              Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO
-              (berechtigtes Interesse an der sicheren und stabilen Bereitstellung der Website).
+              Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f
+              DSGVO (berechtigtes Interesse an der sicheren und stabilen
+              Bereitstellung der Website).
             </p>
           </section>
 
@@ -92,9 +102,10 @@ import {
           <section>
             <h2 class="text-2xl font-semibold mb-4">4. Server-Logfiles</h2>
             <p>
-              Der Hosting-Anbieter erhebt und speichert automatisch Informationen in Server-Logfiles,
-              die Ihr Browser automatisch übermittelt.
-              Diese Daten werden nicht mit anderen Datenquellen zusammengeführt.
+              Der Hosting-Anbieter erhebt und speichert automatisch
+              Informationen in Server-Logfiles, die Ihr Browser automatisch
+              übermittelt. Diese Daten werden nicht mit anderen Datenquellen
+              zusammengeführt.
             </p>
           </section>
 
@@ -102,41 +113,45 @@ import {
           <section>
             <h2 class="text-2xl font-semibold mb-4">5. Kontaktaufnahme</h2>
             <p class="mb-4">
-              Wenn Sie uns per Kontaktformular oder E-Mail kontaktieren,
-              werden Ihre Angaben inklusive der von Ihnen angegebenen Kontaktdaten
-              zur Bearbeitung der Anfrage gespeichert.
+              Wenn Sie uns per Kontaktformular oder E-Mail kontaktieren, werden
+              Ihre Angaben inklusive der von Ihnen angegebenen Kontaktdaten zur
+              Bearbeitung der Anfrage gespeichert.
             </p>
             <p>
-              Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO
-              (vorvertragliche Maßnahmen).
+              Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche
+              Maßnahmen).
             </p>
           </section>
 
           {/* 6. Google Search Console */}
           <section>
-            <h2 class="text-2xl font-semibold mb-4">6. Google Search Console</h2>
+            <h2 class="text-2xl font-semibold mb-4">
+              6. Google Search Console
+            </h2>
             <p class="mb-4">
-              Diese Website nutzt Google Search Console,
-              einen Dienst der Google Ireland Limited.
-              Google Search Console dient ausschließlich der technischen Überwachung
-              und Optimierung der Website.
+              Diese Website nutzt Google Search Console, einen Dienst der Google
+              Ireland Limited. Google Search Console dient ausschließlich der
+              technischen Überwachung und Optimierung der Website.
             </p>
             <p>
-              Dabei werden keine Cookies gesetzt
-              und keine personenbezogenen Nutzungsprofile erstellt.
+              Dabei werden keine Cookies gesetzt und keine personenbezogenen
+              Nutzungsprofile erstellt.
             </p>
           </section>
 
           {/* 7. Cookies */}
           <section>
-            <h2 class="text-2xl font-semibold mb-4">7. Cookies und Einwilligungsmanagement</h2>
+            <h2 class="text-2xl font-semibold mb-4">
+              7. Cookies und Einwilligungsmanagement
+            </h2>
             <p class="mb-4">
-              Diese Website verwendet nur technisch notwendige Cookies,
-              die für den Betrieb der Website erforderlich sind.
+              Diese Website verwendet nur technisch notwendige Cookies, die für
+              den Betrieb der Website erforderlich sind.
             </p>
             <p class="mb-4">
-              Optionale Analyse-Cookies werden ausschließlich nach ausdrücklicher Einwilligung
-              über das Cookie-Einwilligungsbanner gesetzt.
+              Optionale Analyse-Cookies werden ausschließlich nach
+              ausdrücklicher Einwilligung über das Cookie-Einwilligungsbanner
+              gesetzt.
             </p>
             <p class="mb-4">Beim ersten Besuch der Website können Nutzer:</p>
             <ul class="list-disc list-inside space-y-1 mb-4">
@@ -144,23 +159,27 @@ import {
               <li>allen Cookies zustimmen</li>
             </ul>
             <p>
-              Ohne Einwilligung werden keine Analyse- oder Tracking-Cookies gesetzt
-              und keine entsprechenden Dienste geladen.
+              Ohne Einwilligung werden keine Analyse- oder Tracking-Cookies
+              gesetzt und keine entsprechenden Dienste geladen.
             </p>
           </section>
 
           {/* 8. SSL/TLS */}
           <section>
-            <h2 class="text-2xl font-semibold mb-4">8. SSL- bzw. TLS-Verschlüsselung</h2>
+            <h2 class="text-2xl font-semibold mb-4">
+              8. SSL- bzw. TLS-Verschlüsselung
+            </h2>
             <p>
-              Diese Website nutzt eine SSL- bzw. TLS-Verschlüsselung
-              zur sicheren Übertragung von Daten.
+              Diese Website nutzt eine SSL- bzw. TLS-Verschlüsselung zur
+              sicheren Übertragung von Daten.
             </p>
           </section>
 
           {/* 9. Rechte */}
           <section>
-            <h2 class="text-2xl font-semibold mb-4">9. Rechte der betroffenen Person</h2>
+            <h2 class="text-2xl font-semibold mb-4">
+              9. Rechte der betroffenen Person
+            </h2>
             <p class="mb-4">Betroffene Personen haben das Recht auf:</p>
             <ul class="list-disc list-inside space-y-1 mb-4">
               <li>Auskunft</li>
@@ -175,20 +194,24 @@ import {
 
           {/* 10. Aktualität */}
           <section>
-            <h2 class="text-2xl font-semibold mb-4">10. Aktualität und Änderung</h2>
+            <h2 class="text-2xl font-semibold mb-4">
+              10. Aktualität und Änderung
+            </h2>
             <p>
-              Diese Datenschutzerklärung ist aktuell gültig
-              und kann bei rechtlichen oder technischen Änderungen angepasst werden.
+              Diese Datenschutzerklärung ist aktuell gültig und kann bei
+              rechtlichen oder technischen Änderungen angepasst werden.
             </p>
           </section>
-
         </div>
 
         {/* Link zum Impressum */}
         <div class="mt-12 pt-8 border-t border-border">
           <p class="text-muted-foreground">
             Weitere rechtliche Informationen finden Sie in unserem{" "}
-            <a href="/impressum/" class="text-accent hover:underline font-medium">
+            <a
+              href="/impressum/"
+              class="text-accent hover:underline font-medium"
+            >
               Impressum
             </a>.
           </p>

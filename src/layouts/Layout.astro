@@ -12,53 +12,41 @@ interface Props {
   noindex?: boolean;
 }
 
-const { 
-  title, 
+const {
+  title,
   description = "Sanper Beschattungssysteme - Premium Pergolen & Wintergärten",
   image = "/og-image.png",
-  noindex = false
+  noindex = false,
 } = Astro.props;
 
 const siteUrl = Astro.site?.toString() || "https://www.sanper.de";
 const canonicalURL = new URL(Astro.url.pathname, siteUrl);
 const ogImageURL = new URL(image, siteUrl).toString();
-const isProduction = process.env.CONTEXT === 'production';
+const isProduction = process.env.CONTEXT === "production";
 
 // Organization Schema
 const organizationSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Sanper Beschattungssysteme",
-  "url": "https://www.sanper.de",
-  "logo": "https://www.sanper.de/logo.png",
-  "description": "Maßgefertigte bioklimatische Pergolen, Wintergärten und Markisen. Premium Qualität direkt vom Hersteller.",
-  "address": {
+  name: "Sanper Beschattungssysteme",
+  url: "https://www.sanper.de",
+  logo: "https://www.sanper.de/logo.png",
+  description:
+    "Maßgefertigte bioklimatische Pergolen, Wintergärten und Markisen. Premium Qualität direkt vom Hersteller.",
+  address: {
     "@type": "PostalAddress",
-    "streetAddress": "Wambeler Holz 20",
-    "addressLocality": "Dortmund",
-    "postalCode": "44145",
-    "addressCountry": "DE"
+    streetAddress: "Wambeler Holz 20",
+    addressLocality: "Dortmund",
+    postalCode: "44328",
+    addressCountry: "DE",
   },
-  "contactPoint": {
+  contactPoint: {
     "@type": "ContactPoint",
-    "email": "info@sanper.de",
-    "contactType": "customer service",
-    "availableLanguage": ["German"]
+    email: "info@sanper.de",
+    contactType: "customer service",
+    availableLanguage: ["German"],
   },
-  "sameAs": []
-});
-
-// WebSite Schema
-const websiteSchema = JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Sanper Beschattungssysteme",
-  "url": "https://www.sanper.de",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://www.sanper.de/?s={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
+  sameAs: [],
 });
 ---
 
@@ -70,12 +58,15 @@ const websiteSchema = JSON.stringify({
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
-    <meta name="robots" content={noindex ? "noindex, follow" : "index, follow"} />
+    <meta
+      name="robots"
+      content={noindex ? "noindex, follow" : "index, follow"}
+    />
     <meta name="generator" content={Astro.generator} />
-    
+
     <!-- Preload LCP Hero Image -->
-    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop" />
-    
+    <link rel="preload" as="image" href="/images/hero-bg.jpg" />
+
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -83,7 +74,7 @@ const websiteSchema = JSON.stringify({
     <meta property="og:url" content={canonicalURL.toString()} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Sanper Beschattungssysteme" />
-    
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
@@ -93,10 +84,9 @@ const websiteSchema = JSON.stringify({
     <title>{title}</title>
     <link rel="canonical" href={canonicalURL} />
     {!isProduction && <meta name="robots" content="noindex, nofollow" />}
-    
+
     <!-- Structured Data -->
     <script type="application/ld+json" set:html={organizationSchema} />
-    <script type="application/ld+json" set:html={websiteSchema} />
   </head>
   <body>
     <!-- 
@@ -104,13 +94,12 @@ const websiteSchema = JSON.stringify({
       so we load it on client. 
     -->
     <Navbar client:load />
-    
+
     <slot />
-    
+
     <Footer />
     <CookieConsent />
-    <Toaster client:load />
+    <Toaster client:idle />
     <script src="../lib/scroll-animation.js"></script>
   </body>
 </html>
-

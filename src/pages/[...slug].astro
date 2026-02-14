@@ -203,18 +203,20 @@ const faqSchema =
     <div class="container">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {
-          page.features?.map((feature) => (
-            <div class="p-6 rounded-2xl bg-surface border border-border/50 shadow-sm hover:shadow-md transition-all">
-              <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 text-primary">
-                <Check className="w-6 h-6" />
+          page.features?.map((feature, index) => {
+            const description =
+              page.feature_descriptions?.[index] ||
+              "Durchdacht konstruiert für maximale Langlebigkeit und Funktionalität.";
+            return (
+              <div class="p-6 rounded-2xl bg-surface border border-border/50 shadow-sm hover:shadow-md transition-all">
+                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 text-primary">
+                  <Check className="w-6 h-6" />
+                </div>
+                <h3 class="font-semibold text-lg mb-2">{feature}</h3>
+                <p class="text-muted-foreground text-sm">{description}</p>
               </div>
-              <h3 class="font-semibold text-lg mb-2">{feature}</h3>
-              <p class="text-muted-foreground text-sm">
-                Durchdacht konstruiert für maximale Langlebigkeit und
-                Funktionalität.
-              </p>
-            </div>
-          ))
+            );
+          })
         }
       </div>
     </div>

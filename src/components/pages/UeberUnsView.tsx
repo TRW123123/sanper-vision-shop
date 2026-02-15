@@ -83,7 +83,7 @@ const UeberUnsView = () => {
                         </div>
                         <div className="aspect-[4/3] rounded-lg overflow-hidden">
                             <img
-                                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop"
+                                src="/images/stock/team-office.jpg"
                                 alt="Moderne Büroarchitektur"
                                 className="w-full h-full object-cover"
                             />

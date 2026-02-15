@@ -10,26 +10,26 @@ interface Props {
   noIndex?: boolean;
 }
 
-const { 
-  title, 
-  description = "Sanper Beschattungssysteme - Premium Pergolen & Wintergärten direkt vom Hersteller.", 
+const {
+  title,
+  description = "Sanper Beschattungssysteme - Premium Pergolen & Wintergärten direkt vom Hersteller.",
   image = "/og-image.png",
-  noIndex = false
+  noIndex = false,
 } = Astro.props;
 
 const siteUrl = Astro.site?.toString() || "https://www.sanper.de";
 const canonicalURL = new URL(Astro.url.pathname, siteUrl);
 const ogImageURL = new URL(image, siteUrl).toString();
-const isProduction = process.env.CONTEXT === 'production';
+const isProduction = process.env.CONTEXT === "production";
 const shouldNoIndex = noIndex || !isProduction;
 
 // Organization Schema (consistent across all layouts)
 const organizationSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Sanper Beschattungssysteme",
-  "url": "https://www.sanper.de",
-  "logo": "https://www.sanper.de/logo.png"
+  name: "Sanper Beschattungssysteme",
+  url: "https://www.sanper.de",
+  logo: "https://www.sanper.de/logo.png",
 });
 ---
 
@@ -42,12 +42,15 @@ const organizationSchema = JSON.stringify({
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
     <meta name="generator" content={Astro.generator} />
-    
+
     <!-- SEO -->
     <title>{title}</title>
     <link rel="canonical" href={canonicalURL} />
-    {shouldNoIndex && <meta name="robots" content="noindex, nofollow" />}
-    
+    <meta
+      name="robots"
+      content={shouldNoIndex ? "noindex, nofollow" : "index, follow"}
+    />
+
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL.toString()} />
@@ -55,19 +58,21 @@ const organizationSchema = JSON.stringify({
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImageURL} />
     <meta property="og:site_name" content="Sanper Beschattungssysteme" />
-    
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:image" content={ogImageURL} />
-    
+
     <!-- Structured Data -->
     <script type="application/ld+json" set:html={organizationSchema} />
     <slot name="schema" />
   </head>
-  <body class="min-h-screen bg-background text-foreground antialiased selection:bg-accent selection:text-white flex flex-col">
+  <body
+    class="min-h-screen bg-background text-foreground antialiased selection:bg-accent selection:text-white flex flex-col"
+  >
     <Navbar client:load />
-    
+
     <main class="flex-1">
       <slot />
     </main>
@@ -75,4 +80,3 @@ const organizationSchema = JSON.stringify({
     <Footer />
   </body>
 </html>
-

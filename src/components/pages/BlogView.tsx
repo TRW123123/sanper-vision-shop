@@ -20,7 +20,7 @@ const BlogView = () => {
             category: "Planung",
             date: "2024-01-08",
             readTime: "7 min",
-            image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&h=600&fit=crop",
+            image: "/images/stock/blog-pergola.jpg",
         },
         {
             title: "ZIP-Screen vs. klassische Markise: Vor- und Nachteile im Vergleich",
@@ -29,7 +29,7 @@ const BlogView = () => {
             category: "Vergleich",
             date: "2024-01-02",
             readTime: "6 min",
-            image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&h=600&fit=crop",
+            image: "/images/stock/blog-wintergarten.jpg",
         },
         {
             title: "Wartung und Pflege von Pergola-Systemen",
@@ -38,7 +38,7 @@ const BlogView = () => {
             category: "Wartung",
             date: "2023-12-20",
             readTime: "4 min",
-            image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=600&fit=crop",
+            image: "/images/stock/blog-terrasse.jpg",
         },
     ];
 

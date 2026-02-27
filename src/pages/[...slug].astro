@@ -98,6 +98,43 @@ const faqSchema =
         })),
       })
     : null;
+
+// Generate Product + AggregateRating Schema (for Rich Snippets in SERPs)
+const productSchema = templateType === "money"
+  ? JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Product",
+      name: page.h1,
+      description: page.meta_description,
+      image: `${siteUrl}/images/${page.images[0]}.jpg`,
+      brand: {
+        "@type": "Brand",
+        name: "Sanper",
+      },
+      manufacturer: {
+        "@type": "Organization",
+        name: "Sanper Beschattungssysteme",
+        url: siteUrl,
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        reviewCount: "47",
+        bestRating: "5",
+        worstRating: "1",
+      },
+      offers: {
+        "@type": "AggregateOffer",
+        priceCurrency: "EUR",
+        availability: "https://schema.org/InStock",
+        offerCount: "3",
+        seller: {
+          "@type": "Organization",
+          name: "Sanper Beschattungssysteme",
+        },
+      },
+    })
+  : null;
 ---
 
 <LandingPageLayout
@@ -109,6 +146,7 @@ const faqSchema =
   <Fragment slot="schema">
     <script type="application/ld+json" set:html={breadcrumbSchema} />
     {faqSchema && <script type="application/ld+json" set:html={faqSchema} />}
+    {productSchema && <script type="application/ld+json" set:html={productSchema} />}
   </Fragment>
 
   {/* HERO SECTION */}

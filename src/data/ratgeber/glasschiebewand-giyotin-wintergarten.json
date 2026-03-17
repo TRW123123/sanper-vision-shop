@@ -1,0 +1,43 @@
+{
+    "slug": "glasschiebewand-giyotin-wintergarten",
+    "product": "wintergarten",
+    "cluster": "verglasung",
+    "region": "deutschland",
+    "target_keyword": "Glasschiebewand Wintergarten",
+    "secondary_keywords": [
+        "Giyotin System Terrasse",
+        "ESG VSG Unterschied",
+        "Glaswand Terrasse",
+        "DIN 18008 Glas"
+    ],
+    "passes": {
+        "hard_facts": {
+            "content": "## Glasschiebewände, Giyotin-Systeme & Verglasungsarten\n\n### Glasarten\n- **ESG (Einscheiben-Sicherheitsglas):** Thermisch vorgespannt, Biegefestigkeit mind. 120 N/mm². Zerfällt bei Bruch in kleine, stumpfe Krümel.\n- **TVG (Teilvorgespanntes Glas):** Langsamer abgekühlt als ESG, bricht in größere Stücke. Im VSG-Verbund hohe Resttragfähigkeit.\n- **VSG (Verbund-Sicherheitsglas):** Mind. 2 Scheiben + reißfeste PVB-Folie. Scherben bleiben an Folie haften. **Zwingend** für Überkopf- und absturzsichernde Verglasungen.\n\n### Glasdicken & Gewicht\n- Standard-Dicken: 4, 5, 6, 8, 10, 12, 15, 19 mm\n- VSG-Berechnung: z.B. 2×4mm + 0,38mm PVB = 8,38 mm\n- **Gewicht: exakt 2,5 kg/m² pro mm Glasdicke**\n- 8 mm = 20 kg/m², 10 mm = 25 kg/m²\n\n### Giyotin-Systeme (Guillotine-Verglasung)\n- Vertikal verschiebbare Glassysteme, 2-3 horizontale Paneele gleiten teleskopartig\n- Angetrieben durch Elektromotoren über verborgene Edelstahlketten oder Zahnriemen\n- **Tragfähigkeit:** Bis 500 kg pro Paneel (High-End: bis 1.000 kg)\n- Geöffnet: unteres Element dient als Glasbrüstung\n\n### Normen (DIN 18008)\n- Semiprobabilistisches Teilsicherheitskonzept (löste alte TRLV/TRAV ab)\n- Teil 2: Linienförmig gelagerte Verglasungen\n- Teil 3: Punktförmig gelagerte Verglasungen\n- Teil 4: Absturzsichernde Verglasungen\n- Teil 5: Begehbare Verglasungen\n\n### Häufigste Glasmontage-Fehler\n1. Überschreitung der Profildurchbiegung L/200 → Glasbruch/Undichtigkeit\n2. Nachträgliche Glasschiebewände ohne Statikprüfung der Bestandskonstruktion\n3. Planungsfehler bei Entwässerung bodentiefer Schwellen\n4. Überschreitung des max. Sparrenabstands von 100 cm im Glasdachbereich",
+            "word_count": 450,
+            "sources_cited": [
+                "ESG-Glas - WERU GmbH",
+                "Unterschied ESG VSG TVG",
+                "Glasgewicht glasundbeschlag.de",
+                "VSG-Glas & ESG-Glas Technische Infos",
+                "Automatic Guillotine - EncoArt",
+                "Vitrocsa Guillotine",
+                "Leitfaden Glasbemessung DIN 18008",
+                "Technisches Regelwerk Wintergärten",
+                "Ganzglas-Schiebeanlage Fehler",
+                "Wintergartenprofile easyWintergarten"
+            ]
+        },
+        "technical_specs": {
+            "content": "",
+            "word_count": 0,
+            "sources_cited": []
+        },
+        "practical_tips": {
+            "content": "",
+            "word_count": 0,
+            "sources_cited": []
+        }
+    },
+    "extracted_at": "2026-03-10T14:31:00Z",
+    "status": "pass_1_complete"
+}

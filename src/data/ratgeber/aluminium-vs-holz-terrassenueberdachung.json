@@ -1,0 +1,39 @@
+{
+    "slug": "aluminium-vs-holz-terrassenueberdachung",
+    "product": "alle",
+    "cluster": "material",
+    "region": "deutschland",
+    "target_keyword": "Terrassenüberdachung Aluminium oder Holz",
+    "secondary_keywords": [
+        "Pergola Aluminium Vorteile",
+        "Terrassendach Material Vergleich",
+        "Polycarbonat Nachteile"
+    ],
+    "passes": {
+        "hard_facts": {
+            "content": "## Material-Vergleich: Aluminium vs. Holz vs. Polycarbonat\n\n### Aluminium-Legierungen\n- **EN AW-6060 (AlMgSi0,5):** Hauptlegierung, optimale Balance aus Festigkeit, Leichtigkeit und Korrosionsbeständigkeit\n- **6063-T5 / 6063-T6:** Alternative Legierungen für Premium-Systeme\n- **Stranggepresst** = mechanisches Umformverfahren, bei dem erhitztes Alu durch eine Matrize gepresst wird → endlose Profile in gewünschter Form\n\n### Qualicoat-Pulverbeschichtung\n- Weltweites Qualitäts- und Prüfsiegel\n- Anforderungen: Schichtdicke ≥ 60μm, strenge Glanztoleranzen, hohe Haftfestigkeit\n- Lösungsmittelfrei, extrem UV-, salz- und feuchtigkeitsbeständig\n- **Haltbarkeit:** Bewährt sich über Jahrzehnte, Farben bleiben dauerhaft brillant, kein Abblättern\n\n### Nachteile von Holz\n- Stark witterungsanfällig, neigt zu Vergrauung und Fäulnis\n- Enormer Wartungsaufwand: alle 3–5 Jahre abschleifen + Schutzlasur gegen Fäulnis/Insektenbefall\n- Arbeitet (Ausdehnung/Schrumpfung) bei Temperatur-/Feuchtigkeitsänderungen\n\n### Nachteile von Polycarbonat (Stegplatten)\n- Geringerer Hagelschutz\n- Dampfdurchlässig → Kondenswasser, Schmutz und Insekten in Hohlkammern\n- Laute Knackgeräusche bei thermischer Ausdehnung\n- Deutlich höhere Regengeräusche als Glasdächer\n\n### Edelstahlbolzen + Messinglager vs. Kunststoff-Lager\n- Selbstschmierende Messinglager + Edelstahlbolzen → besonders leichtgängige und langlebige Lamellenführung\n- Exakter physikalischer Unterschied zu Kunststoffbuchsen anderer Hersteller: In den Quellen nicht spezifiziert",
+            "word_count": 400,
+            "sources_cited": [
+                "Aluminiumlegierung AlMgSi0,5 - Alufritze",
+                "Technischer Vergleich Pergola-Systeme",
+                "Bioklimatische Pergolen - Pratic",
+                "Qualicoat Qualitätssicherungssysteme",
+                "Sanper Marken-Intelligenz.pdf",
+                "Die 12 besten Pergolen Vergleich",
+                "Terrassenüberdachung Kosten 2025 - Vario Kielgast"
+            ]
+        },
+        "technical_specs": {
+            "content": "",
+            "word_count": 0,
+            "sources_cited": []
+        },
+        "practical_tips": {
+            "content": "",
+            "word_count": 0,
+            "sources_cited": []
+        }
+    },
+    "extracted_at": "2026-03-10T14:30:00Z",
+    "status": "pass_1_complete"
+}

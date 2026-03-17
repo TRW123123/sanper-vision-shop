@@ -1,0 +1,37 @@
+{
+    "slug": "baugenehmigung-terrassenueberdachung-nrw",
+    "product": "terrassenueberdachung",
+    "cluster": "baugenehmigung",
+    "region": "nrw",
+    "target_keyword": "Baugenehmigung Terrassenüberdachung NRW",
+    "secondary_keywords": [
+        "Terrassenüberdachung genehmigungsfrei NRW",
+        "BauO NRW Pergola",
+        "Lamellendach Baugenehmigung"
+    ],
+    "passes": {
+        "hard_facts": {
+            "content": "## Verfahrensfreie Terrassenüberdachungen in NRW (BauO NRW)\n\n- **Maximal zulässige Fläche:** 30 m² [Baugenehmigung für Terrassenüberdachungen in NRW]\n- **Maximal zulässige Tiefe:** 4,50 m [Baugenehmigung für Terrassenüberdachungen in NRW]\n- **Grenzabstand:** Mindestens 3 Meter zum Nachbargrundstück [Alles zur Baugenehmigung bei Terrassenüberdachungen in NRW]\n\n### Rechtliche Einordnung\n- **Pergolen** (nach oben offen, kein Regenschutz): In NRW komplett baugenehmigungsfrei, unabhängig von der Größe\n- **Lamellendächer** (drehbare Lamellen): Gelten baurechtlich als feste Terrassenüberdachungen, da als Wetterschutz geeignet und bestimmt\n\n### Sonderregeln NRW\n- **Grenzbebauung (unter 3m):** Nur erlaubt bei planungsrechtlicher Zulässigkeit (z.B. Reihenhäuser) oder schriftlicher Nachbarzustimmung, meist als Baulast im Grundbuch gesichert\n- **Brandschutz:** Bei Grenzanbau muss eine Gebäudeabschlusswand bis unter die Dachhaut errichtet werden\n- **Außenbereich/Denkmalschutz:** Trotz 30m²-Regel ist ein Bauantrag nötig bei Lage im Außenbereich, Denkmalschutzgebiet oder wenn B-Plan Bebauung verbietet\n\n### Ländervergleich\n- **Bayern:** Verfahrensfrei nur bis 30 m² Fläche und max. 3 m Tiefe (vs. 4,50m in NRW)\n- **Niedersachsen:** Seit Juli 2025 bis zu 40 m² Fläche verfahrensfrei\n\n### Häufige Fehler von Bauherren\n1. **Irrtum der Verfahrensfreiheit:** Ignorieren von Baugrenzen oder der zulässigen Grundflächenzahl (GRZ) des B-Plans\n2. **Nachträgliche Aufrüstung:** Seitliche Verglasung macht die Überdachung zum genehmigungspflichtigen Kaltwintergarten\n3. **Tücke der Geländehöhe:** Maximalhöhen bemessen sich ab natürlicher Geländeoberfläche; nachträgliche Aufschüttungen werden falsch berechnet\n4. **Grenzüberbau durch Details:** Regenrinnen oder im geöffneten Zustand überstehende Lamellen überschreiten die Grundstücksgrenze = illegaler Überbau",
+            "word_count": 470,
+            "sources_cited": [
+                "Baugenehmigung für Terrassenüberdachungen in NRW",
+                "Alles zur Baugenehmigung bei Terrassenüberdachungen in NRW",
+                "Rechtlicher Leitfaden für die Errichtung von Pergolen",
+                "Terrassenüberdachungen - Stadt Porta Westfalica",
+                "Pergola-Terrassenüberdachung ohne Baugenehmigung"
+            ]
+        },
+        "technical_specs": {
+            "content": "",
+            "word_count": 0,
+            "sources_cited": []
+        },
+        "practical_tips": {
+            "content": "",
+            "word_count": 0,
+            "sources_cited": []
+        }
+    },
+    "extracted_at": "2026-03-10T14:20:00Z",
+    "status": "pass_1_complete"
+}

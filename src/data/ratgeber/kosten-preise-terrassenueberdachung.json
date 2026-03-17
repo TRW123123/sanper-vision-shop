@@ -1,0 +1,37 @@
+{
+    "slug": "kosten-preise-terrassenueberdachung",
+    "product": "alle",
+    "cluster": "kosten",
+    "region": "deutschland",
+    "target_keyword": "Terrassenüberdachung Kosten pro m2",
+    "secondary_keywords": [
+        "Lamellendach Preise",
+        "Wintergarten Kosten",
+        "Pergola Preis",
+        "Terrassendach Kosten"
+    ],
+    "passes": {
+        "hard_facts": {
+            "content": "## Kosten & Preise für Lamellendächer, Terrassenüberdachungen & Wintergärten\n\n### Preise pro m² nach Dachtyp\n- **Festdach (Alu + Glas):** 250–700 €/m²\n- **Lamellendach manuell:** 540–700 €/m²\n- **Lamellendach bioklimatisch Premium (inkl. Montage):** 900–1.200 €/m²\n- **Kaltwintergarten:** 500–3.000 €/m² (Durchschnitt: 1.200–1.800 €/m²)\n- **Wohnwintergarten Standard:** 1.700–2.800 €/m²\n- **Wohnwintergarten Premium:** 4.000–5.500 €/m²\n\n### Typische Preistreiber\n- Alu + Glas deutlich teurer als Polycarbonat oder Holz\n- Große Spannweiten: +15–30% (stärkere Profile oder Mittelstützen)\n- RAL-Sonderfarben: 100–400 € Aufpreis\n- Elektrische Motorisierung statt Handkurbel: 500–1.500 € extra\n\n### Zubehör-Einzelpreise\n- **ZIP-Screens:** 150–500 €/m² (ab ca. 1.800 € pro Seite)\n- **LED-Beleuchtung:** 200–800 € (integrierte Lichtleisten)\n- **Infrarot-Heizstrahler:** 500–2.500 €\n- **Glasschiebewände:** 150–1.000 €/lfm (Komplett: 1.500–4.000 €)\n\n### Deutschland vs. Import (Polen)\n- Polen Material: 860–1.500 €/m² (Warmwintergarten)\n- Deutschland: 1.100–2.500 €/m² → reine Materialersparnis: 20–40%\n- ABER: Transport, Koordination + lokale Fundamente (3.000–6.000 €) schmälern Ersparnis\n- **Break-Even für Import: erst ab 15–20 m² Projektgröße**\n\n### Versteckte Kosten (häufig übersehen)\n- **Fundament:** 70–150 €/m² (Bodenplatte) oder 200–600 € (Punktfundamente); extern: 2.000–5.000 € gesamt\n- **Elektrik:** 500–2.000 € (Motoren, Sensoren, Steckdosen)\n- **Entwässerung:** 300–800 €\n- **Baurechtliche Kosten:** Baugenehmigung 100–600 €, Bauzeichnungen/Statiker 300–1.200 €",
+            "word_count": 490,
+            "sources_cited": [
+                "Outdoor-Living Kostenratgeber DE.pdf",
+                "Kosten, Ideen & Beispiele - ADA-Wintergarten",
+                "Terrassenüberdachung Kosten 2025 - Vario Kielgast",
+                "Terrassenüberdachung Kosten und Preise - Aroundhome"
+            ]
+        },
+        "technical_specs": {
+            "content": "",
+            "word_count": 0,
+            "sources_cited": []
+        },
+        "practical_tips": {
+            "content": "",
+            "word_count": 0,
+            "sources_cited": []
+        }
+    },
+    "extracted_at": "2026-03-10T14:25:00Z",
+    "status": "pass_1_complete"
+}

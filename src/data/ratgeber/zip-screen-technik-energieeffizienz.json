@@ -1,0 +1,39 @@
+{
+    "slug": "zip-screen-technik-energieeffizienz",
+    "product": "zip-screen",
+    "cluster": "technik",
+    "region": "deutschland",
+    "target_keyword": "ZIP Screen Technik Windfestigkeit",
+    "secondary_keywords": [
+        "Senkrechtmarkise Windklasse",
+        "ZIP Screen vs Markise",
+        "g_tot Wert Sonnenschutz",
+        "Soltis Screen"
+    ],
+    "passes": {
+        "hard_facts": {
+            "content": "## ZIP-Screens & Senkrechtmarkisen — Technik, Windfestigkeit & Energieeffizienz\n\n### z-LOCK/Keder-Technik\n- Halbreißverschluss (Zipper) dauerhaft an Tuchrändern angeschweißt/vernäht\n- Gleitet in Kunststoff-Gegenlager (Keder) in der Alu-Führungsschiene\n- Resultiert in lückenloser, spaltfreier Verbindung, extreme Tuchspannung, kein Flattern\n\n### Windklasse (DIN EN 13561)\n- Standard ZIP-Screens: Windwiderstandsklasse 3 (bis 49 km/h)\n- Premium-Systeme: Klasse 6, halten 120–145 km/h stand\n- Zum Vergleich: Gelenkarm-Markisen erreichen nur Klasse 1-2 (bis 38 km/h)\n\n### Verwendete Stoffe\n- **Soltis:** Vorgerecktes Polyester mit PVC-Beschichtung (z.B. Soltis 92)\n- **Glasfaserscreens:** PVC-ummantelte Glasfasergarne\n- **Acrylgewebe:** Spinngefärbt, UV-beständig\n\n### g_tot-Wert (Gesamtenergiedurchlassgrad nach EN 14501)\n- Skala 0–1; je niedriger, desto besser der Wärmeschutz\n- Premium-Screens (Soltis 92): exzellente g_tot-Werte von **0,05 bis 0,12**\n- **Blockieren bis zu 97% der einfallenden Sonnenwärme** VOR dem Glas\n\n### ZIP-Screen vs. Gelenkarm-Markise\n| | ZIP-Screen | Gelenkarm-Markise |\n|---|---|---|\n| Führung | Allseitig straff in Schiene | Freischwebend |\n| Windklasse | Bis Klasse 6 (145 km/h) | Klasse 1-2 (38 km/h) |\n| Seitlicher Abschluss | Spaltfrei (= Insektenschutz) | Lichtspalt, kein Abschluss |\n| Regen | Wasserabweisend | Bildet Wassersäcke |\n| Fassade | Auch für mehrstöckig | Nur horizontale Beschattung |",
+            "word_count": 420,
+            "sources_cited": [
+                "Begriffserklärung ZIP-Technologie - Döppner",
+                "Technischer Forschungsbericht ZIP-Screen-Systeme",
+                "ROMA zipSCREEN.2",
+                "EN 14501 Prüfung",
+                "Soltis Perform 92",
+                "Markise Test Netzvergleich"
+            ]
+        },
+        "technical_specs": {
+            "content": "",
+            "word_count": 0,
+            "sources_cited": []
+        },
+        "practical_tips": {
+            "content": "",
+            "word_count": 0,
+            "sources_cited": []
+        }
+    },
+    "extracted_at": "2026-03-10T14:33:00Z",
+    "status": "pass_1_complete"
+}

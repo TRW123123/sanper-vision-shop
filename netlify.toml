@@ -24,7 +24,5 @@
     Cache-Control = "public, max-age=2592000"
 
 
-# Let Astro + Netlify pretty_urls handle trailing slashes automatically
+# Let Astro handle trailing slashes automatically
 # DO NOT add explicit redirects here - they cause redirect loops!
-[build.processing.html]
-  pretty_urls = true

@@ -1,0 +1,41 @@
+{
+    "slug": "montage-wdvs-fassade-fundament",
+    "product": "alle",
+    "cluster": "montage",
+    "region": "deutschland",
+    "target_keyword": "Terrassenüberdachung Montage WDVS",
+    "secondary_keywords": [
+        "Fischer Thermax Pergola",
+        "Fundament Terrassenüberdachung",
+        "Wandanschluss Pergola",
+        "Kältebrücke Terrassendach"
+    ],
+    "passes": {
+        "hard_facts": {
+            "content": "## Montage an WDVS-Fassaden, Wandanschluss & Fundamente\n\n### Warum WDVS-Montage kritisch ist\n- Herkömmliche Verschraubung komprimiert den Dämmstoff und zerstört die Putzschicht\n- Ohne thermische Trennung fungiert Metallkonsole als Kühlkörper (Wärmebrücke) → leitet Wärme nach außen\n- Folge: Kondensationsschäden und Schimmelbildung an der Hausinnenseite\n\n### Fischer Thermax System\n- Thermisch getrennter Schwerlastanker mit Isolierkonus\n- Durchbricht Dämmung nur punktuell\n- Verankert schwere Lasten sicher im tragenden Mauerwerk/Beton\n- Unterbricht Wärmefluss und dichtet gegen Schlagregen ab\n\n### Kompriband\n- In Quellen als empfohlenes Montagematerial zur Abdichtung aufgeführt (neben Silikon und PU-Schaum)\n- Detaillierte technische Beschreibung: In den Quellen nicht spezifiziert\n\n### Fundamentarten & Frosttiefe\n- **Frostfreie Tiefe Deutschland:** Standard 80 cm, regional (Hochlagen/Ostdeutschland) bis 120 cm\n- **Punktfundamente:** Betonwürfel unter den Pfosten\n- **Streifenfundamente:** Länglicher Betonstreifen\n- **Bodenplatten:** Durchgehende Betonplatte\n- **Köcherfundamente:** Betonzylinder für Pfosteneinsteckung\n- **Krinner-Schraubfundamente:** Alternative ohne Betonarbeiten\n\n### Häufigste Montagefehler → Schimmel & Undichtigkeit\n1. **Wärmebrücken:** Montage ohne thermische Entkopplung (Isolierkonus) auf WDVS → Schimmel innen\n2. **Schlechte U_f-Werte der Profile:** Taupunktunterschreitung im Profil im Winter → Kondensat → Schimmel\n3. **Überdämmen/Einputzen von Glashalteprofilen:** Unzulässig, verhindert Scheibenaustausch\n4. **Blockierte Entwässerung:** Wenn Bodenschwellen-Drainage durch Beton/Versiegelung blockiert → Staunässe → Feuchtigkeitsschäden",
+            "word_count": 410,
+            "sources_cited": [
+                "Technischer Vergleich Pergola-Systeme",
+                "PERGOLUX Pergola Wandbefestigung",
+                "Allgemeine Nutzungshinweise",
+                "Artares Das weinor Lamellendach",
+                "Terrassenüberdachung Branchendaten.pdf",
+                "Wintergarten Aluminium Profil Systeme wlw",
+                "Ganzglas-Schiebeanlage Fehler",
+                "stuck-verband.de"
+            ]
+        },
+        "technical_specs": {
+            "content": "",
+            "word_count": 0,
+            "sources_cited": []
+        },
+        "practical_tips": {
+            "content": "",
+            "word_count": 0,
+            "sources_cited": []
+        }
+    },
+    "extracted_at": "2026-03-10T14:34:00Z",
+    "status": "pass_1_complete"
+}

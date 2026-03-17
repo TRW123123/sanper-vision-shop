@@ -1,0 +1,38 @@
+{
+    "slug": "steuerung-smart-home-lamellendach",
+    "product": "lamellendach",
+    "cluster": "smart-home",
+    "region": "deutschland",
+    "target_keyword": "Lamellendach Smart Home Steuerung",
+    "secondary_keywords": [
+        "Somfy Pergola",
+        "Lamellendach Sensor",
+        "Terrassenüberdachung automatisch",
+        "Windwächter Markise"
+    ],
+    "passes": {
+        "hard_facts": {
+            "content": "## Steuerung, Sensorik & Smart Home bei Lamellendächern\n\n### Marken & Protokolle\n- **Somfy io** (io-homecontrol): Bidirektionales Funkprotokoll, Statusrückmeldung\n- **Somfy RTS:** Älteres, unidirektionales Protokoll\n- **Elero:** Spezialisierte Antriebe (RolMotion, SunTop) für Rollläden/Markisen\n- **TaHoma (Somfy Switch & App):** Smart-Home-Zentrale, App-Steuerung\n- **KNX-Integration:** Über Gateways (z.B. WMS Converter) für professionelle Gebäudeautomation\n\n### Verfügbare Sensorik\n- **Wind:** Anemometer (Windgeschwindigkeitsmesser)\n- **Regen:** Niederschlagssensor\n- **Sonne:** Luxmeter (Lichtstärkemessung)\n- **Schnee:** Schneesensor (Frostüberwachung)\n- **Temperatur:** Temperatursensor\n- **Kombigeräte:** z.B. weinor BiSens SWR-230V (Sonne, Wind, Regen, Frost in einem Gerät)\n\n### Premium vs. Basis-Steuerung\n- **Basis:** Handkurbel oder kabelgebundene Rohrmotoren mit Wandschalter. Keine Wetterautomatik, keine Statusrückmeldung.\n- **Premium:** Bidirektionale Funkmotoren (Somfy io) mit Smartphone-Rückmeldung, automatisierte Wetterszenarien, stufenloses LED-/Heizungsdimmen, Hinderniserkennung, Festfrierschutz.\n\n### Automatische Sturmabschaltung\n1. Windsensor misst kontinuierlich die Windgeschwindigkeit\n2. Ab eingestelltem Schwellenwert (z.B. 50 km/h) → Funksignal an Motor\n3. ZIP-Screens fahren in Kassette, Lamellen schließen oder fahren in windneutrale Position\n4. **Sperrzeit:** 12–17 Minuten nach Abflauen bleibt manuelle Bedienung gesperrt (verhindert ständiges Ein-/Ausfahren bei Böen)\n\n### Motorenspezifikationen\n- **ZIP-Screens:** Rohrmotoren mit Kraftmessung, mechatronischer Endlagenerkennung, Tuchlängenausgleich (6–120 Nm Drehmoment)\n- **Lamellendächer:** Motoren wettergeschützt direkt in die Statik-Lamelle integriert",
+            "word_count": 380,
+            "sources_cited": [
+                "Somfy io Quellen",
+                "Elero Antriebe",
+                "TaHoma",
+                "weinor BiSens",
+                "KNX/WMS Converter"
+            ]
+        },
+        "technical_specs": {
+            "content": "",
+            "word_count": 0,
+            "sources_cited": []
+        },
+        "practical_tips": {
+            "content": "",
+            "word_count": 0,
+            "sources_cited": []
+        }
+    },
+    "extracted_at": "2026-03-10T14:26:00Z",
+    "status": "pass_1_complete"
+}

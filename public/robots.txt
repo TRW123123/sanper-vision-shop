@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.sanper.de/sitemap.xml
+Sitemap: https://www.sanper.de/sitemap-index.xml

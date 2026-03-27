@@ -1,17 +1,17 @@
 export const company = {
-    name: "Sanper Beschattungssysteme",
+    name: "Apexx Bau",
     legalName: "Hakan Yilmaz",
     slogan: "Premium Beschattungssysteme & Verglasungen",
     address: {
-        street: "Wambeler Holz 20",
-        zip: "44328",
-        city: "Dortmund",
+        street: "Heidestraße 2",
+        zip: "58239",
+        city: "Schwerte",
         country: "Deutschland"
     },
     contact: {
         phone: "0170 534 2268",
-        email: "info@sanper.de",
-        website: "https://www.sanper.de"
+        email: "info@apexx-bau.de",
+        website: "https://www.apexx-bau.de"
     },
     legal: {
         owner: "Hakan Yilmaz",

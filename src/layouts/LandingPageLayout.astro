@@ -12,12 +12,12 @@ interface Props {
 
 const {
   title,
-  description = "Sanper Beschattungssysteme - Premium Pergolen & Wintergärten direkt vom Hersteller.",
+  description = "Apexx Bau - Premium Pergolen & Wintergärten direkt vom Hersteller.",
   image = "/og-image.png",
   noIndex = false,
 } = Astro.props;
 
-const siteUrl = Astro.site?.toString() || "https://www.sanper.de";
+const siteUrl = Astro.site?.toString() || "https://www.apexx-bau.de";
 const canonicalURL = new URL(Astro.url.pathname, siteUrl);
 const ogImageURL = new URL(image, siteUrl).toString();
 const isProduction = process.env.CONTEXT === "production";
@@ -27,9 +27,9 @@ const shouldNoIndex = noIndex || !isProduction;
 const organizationSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Sanper Beschattungssysteme",
-  url: "https://www.sanper.de",
-  logo: "https://www.sanper.de/logo.png",
+  name: "Apexx Bau",
+  url: "https://www.apexx-bau.de",
+  logo: "https://www.apexx-bau.de/logo.png",
 });
 ---
 
@@ -59,7 +59,7 @@ const organizationSchema = JSON.stringify({
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImageURL} />
-    <meta property="og:site_name" content="Sanper Beschattungssysteme" />
+    <meta property="og:site_name" content="Apexx Bau" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />

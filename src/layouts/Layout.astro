@@ -14,12 +14,12 @@ interface Props {
 
 const {
   title,
-  description = "Sanper Beschattungssysteme - Premium Pergolen & Wintergärten",
+  description = "Apexx Bau - Premium Pergolen & Wintergärten",
   image = "/og-image.png",
   noindex = false,
 } = Astro.props;
 
-const siteUrl = Astro.site?.toString() || "https://www.sanper.de";
+const siteUrl = Astro.site?.toString() || "https://www.apexx-bau.de";
 const canonicalURL = new URL(Astro.url.pathname, siteUrl);
 const ogImageURL = new URL(image, siteUrl).toString();
 const isProduction = process.env.CONTEXT === "production";
@@ -28,9 +28,9 @@ const isProduction = process.env.CONTEXT === "production";
 const organizationSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Sanper Beschattungssysteme",
-  url: "https://www.sanper.de",
-  logo: "https://www.sanper.de/logo.png",
+  name: "Apexx Bau",
+  url: "https://www.apexx-bau.de",
+  logo: "https://www.apexx-bau.de/logo.png",
   description:
     "Maßgefertigte bioklimatische Pergolen, Wintergärten und Markisen. Premium Qualität direkt vom Hersteller.",
   address: {
@@ -42,7 +42,7 @@ const organizationSchema = JSON.stringify({
   },
   contactPoint: {
     "@type": "ContactPoint",
-    email: "info@sanper.de",
+    email: "info@apexx-bau.de",
     contactType: "customer service",
     availableLanguage: ["German"],
   }
@@ -74,7 +74,7 @@ const organizationSchema = JSON.stringify({
     <meta property="og:image" content={ogImageURL} />
     <meta property="og:url" content={canonicalURL.toString()} />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Sanper Beschattungssysteme" />
+    <meta property="og:site_name" content="Apexx Bau" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.sanper.de/sitemap-index.xml
+Sitemap: https://www.apexx-bau.de/sitemap-index.xml

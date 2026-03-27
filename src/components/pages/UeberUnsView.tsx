@@ -6,7 +6,7 @@ import Footer from "@/components/layout/Footer";
 // No, the Original had <Navbar/> <main>... <Footer/>.
 // In Astro, Layout handles Navbar/Footer. So I should REMOVE Footer/Navbar from this View component 
 // if I put it inside Layout.
-// Sanper-Astro Layout.astro HAS Navbar and Footer.
+// Apexx Bau-Astro Layout.astro HAS Navbar and Footer.
 // So I must REMOVE Navbar and Footer from these View components.
 // I will verify I removed them in previous steps (KontaktView). Yes, I removed Navbar, but let me check Footer in KontaktView.
 // Checked KontaktView above: Did I remove Footer?
@@ -54,7 +54,7 @@ const UeberUnsView = () => {
             <section className="py-20 lg:py-32 bg-muted/30">
                 <div className="container">
                     <div className="max-w-3xl">
-                        <h1 className="mb-6">Über Sanper</h1>
+                        <h1 className="mb-6">Über Apexx Bau</h1>
                         <p className="text-xl text-muted-foreground leading-relaxed">
                             Seit über 15 Jahren entwickeln und fertigen wir intelligente Beschattungs-
                             und Verglasungssysteme für anspruchsvolle Architektur. Mit deutscher

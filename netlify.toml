@@ -26,3 +26,15 @@
 
 # Let Astro handle trailing slashes automatically
 # DO NOT add explicit redirects here - they cause redirect loops!
+
+[[redirects]]
+  from = "https://sanper.de/*"
+  to = "https://www.apexx-bau.de/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.sanper.de/*"
+  to = "https://www.apexx-bau.de/:splat"
+  status = 301
+  force = true

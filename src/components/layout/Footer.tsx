@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Sanper</h3>
+            <img src="/logo.png" alt="Apexx Bau Logo" className="h-8 md:h-10 w-auto object-contain mb-2" />
             <p className="text-sm text-muted-foreground leading-relaxed">
               {company.slogan} <br />
               Premium-Qualität made in Deutschland.

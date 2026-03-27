@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 }
 
 const { page } = Astro.props;
-const siteUrl = "https://www.sanper.de";
+const siteUrl = "https://www.apexx-bau.de";
 
 // Helper to determine template type if not strictly defined (fallback)
 const templateType = page.template || "hub";
@@ -109,11 +109,11 @@ const productSchema = templateType === "money"
       image: `${siteUrl}/images/${page.images[0]}.jpg`,
       brand: {
         "@type": "Brand",
-        name: "Sanper",
+        name: "Apexx Bau",
       },
       manufacturer: {
         "@type": "Organization",
-        name: "Sanper Beschattungssysteme",
+        name: "Apexx Bau",
         url: siteUrl,
       },
       aggregateRating: {
@@ -130,7 +130,7 @@ const productSchema = templateType === "money"
         offerCount: "3",
         seller: {
           "@type": "Organization",
-          name: "Sanper Beschattungssysteme",
+          name: "Apexx Bau",
         },
       },
     })
@@ -228,7 +228,7 @@ const productSchema = templateType === "money"
           {[1, 2, 3, 4, 5].map(() => <Star className="fill-current w-5 h-5" />)}
         </div>
         <p class="text-sm text-white/80">
-          <span class="font-bold text-white">Exzellente Bewertungen</span> für Sanper
+          <span class="font-bold text-white">Exzellente Bewertungen</span> für Apexx Bau
           Systeme
         </p>
       </div>
@@ -294,7 +294,7 @@ const productSchema = templateType === "money"
             class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-accent/10 text-accent font-medium text-sm"
           >
             <Shield className="w-4 h-4" />
-            Sanper Vision Versprechen
+            Apexx Bau Versprechen
           </div>
           <h2 class="text-3xl md:text-4xl font-bold">
             Warum Kunden uns vertrauen
@@ -351,7 +351,7 @@ const productSchema = templateType === "money"
             {/* Showroom/Trust Image */}
             <img
               src="/images/showroom_consultation_germany.jpg"
-              alt="Sanper Showroom Dortmund"
+              alt="Apexx Bau Showroom Dortmund"
               class="w-full h-full object-cover"
               onError={(e) => (e.currentTarget.style.display = "none")}
             />

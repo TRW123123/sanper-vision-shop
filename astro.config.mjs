@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.sanper.de',
+  site: 'https://www.apexx-bau.de',
   trailingSlash: 'always',
   integrations: [
     react(),

@@ -32,7 +32,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="dark sticky top-0 z-50 w-full border-b border-border bg-[#14171A] text-foreground">
+    <nav className="dark sticky top-0 z-50 w-full border-b border-border bg-[#1A1E21] text-foreground">
       <div className="container flex h-20 items-center justify-between">
         <a href="/" className="flex items-center space-x-2">
           <img src="/logo.png" alt="Apexx Bau Logo" className="h-8 md:h-10 w-auto object-contain" />

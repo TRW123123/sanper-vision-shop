@@ -32,9 +32,7 @@ const {
 {block_1_content && block_1_placement === targetPlacement && (
   <section class="py-12 bg-muted/30">
     <div class="container max-w-4xl">
-      <p class="text-lg text-muted-foreground leading-relaxed">
-        {block_1_content}
-      </p>
+      <div class="text-lg text-muted-foreground leading-relaxed prose prose-slate max-w-none" set:html={block_1_content} />
     </div>
   </section>
 )}
@@ -43,9 +41,7 @@ const {
 {block_2_content && block_2_placement === targetPlacement && (
   <section class="py-12 bg-muted/30">
     <div class="container max-w-4xl">
-      <p class="text-lg text-muted-foreground leading-relaxed">
-        {block_2_content}
-      </p>
+      <div class="text-lg text-muted-foreground leading-relaxed prose prose-slate max-w-none" set:html={block_2_content} />
     </div>
   </section>
 )}

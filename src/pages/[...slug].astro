@@ -191,9 +191,7 @@ const productSchema = templateType === "money"
       {/* CSV Content Block 1 - after_intro placement */}
       {
         page.block_1_content && page.block_1_placement === "after_intro" && (
-          <p class="text-base md:text-lg max-w-3xl mx-auto mb-10 text-white/80 leading-relaxed">
-            {page.block_1_content}
-          </p>
+          <div class="text-base md:text-lg max-w-3xl mx-auto mb-10 text-white/80 leading-relaxed" set:html={page.block_1_content} />
         )
       }
 
@@ -378,9 +376,7 @@ const productSchema = templateType === "money"
     page.block_1_content && page.block_1_placement === "before_faq" && (
       <section class="py-12 bg-muted/30">
         <div class="container max-w-4xl">
-          <p class="text-lg text-muted-foreground leading-relaxed">
-            {page.block_1_content}
-          </p>
+          <div class="text-lg text-muted-foreground leading-relaxed prose prose-slate max-w-none" set:html={page.block_1_content} />
         </div>
       </section>
     )
@@ -389,9 +385,7 @@ const productSchema = templateType === "money"
     page.block_2_content && page.block_2_placement === "before_faq" && (
       <section class="py-12 bg-muted/30">
         <div class="container max-w-4xl">
-          <p class="text-lg text-muted-foreground leading-relaxed">
-            {page.block_2_content}
-          </p>
+          <div class="text-lg text-muted-foreground leading-relaxed prose prose-slate max-w-none" set:html={page.block_2_content} />
         </div>
       </section>
     )

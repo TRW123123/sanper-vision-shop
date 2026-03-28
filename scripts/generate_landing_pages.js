@@ -101,8 +101,8 @@ rawData.forEach(row => {
         slug: slug,
         template: template,
         product_id: productId,
-        title: `${h1} | Sanper Vision`,
-        meta_description: `Hochwertige ${keyword} direkt vom Hersteller. Konfigurieren Sie jetzt Ihre ${keyword} nach Maß. Top Qualität & faire Preise.`,
+        title: `${h1} | Apexx Bau`,
+        meta_description: `Hochwertige ${keyword} direkt vom Hersteller. Konfigurieren Sie jetzt Ihre ${keyword} nach Maß. Premium Qualität & faire Preise.`,
         h1: h1,
         intro_text: `Entdecken Sie unsere Lösungen für "${keyword}". Als Hersteller bieten wir Ihnen maßgefertigte Qualität, langlebige Materialien und professionelle Montage.`,
         features: [

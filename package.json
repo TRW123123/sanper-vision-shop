@@ -1,12 +1,16 @@
 {
-  "name": "sanper-vision-astro",
+  "name": "apexx-bau-astro",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "data:generate": "node scripts/generate_landing_pages.js",
+    "data:enrich": "node enrich_content.cjs",
+    "data:merge": "node merge_csv_content.cjs",
+    "data:full-regen": "npm run data:generate && npm run data:enrich && npm run data:merge"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",

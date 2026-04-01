@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.join(__dirname, '..');
-const excelPath = path.join(rootDir, 'src', 'data', 'SEO Sanper Magic Tool.xlsx');
+const excelPath = path.join(rootDir, 'src', 'data', 'SEO Apexx Magic Tool.xlsx');
 const outputPath = path.join(rootDir, 'src', 'data', 'landing_pages.json');
 const imagesDir = path.join(rootDir, 'public', 'images');
 
@@ -29,7 +29,20 @@ const rawData = XLSX.utils.sheet_to_json(sheet);
 console.log(`Total rows in Excel: ${rawData.length}`);
 
 // 3. Process Data
-const landingPages = [];
+const landingPages = [
+    {
+        slug: "",
+        template: "hub",
+        product_id: "homepage",
+        title: "Apexx Bau | Premium Terrassenüberdachungen & Lamellendächer",
+        meta_description: "Apexx Bau ist Ihr Experte für hochwertige Terrassenüberdachungen, Lamellendächer und Kaltwintergärten. Direkt vom Hersteller, maßgefertigt und professionell montiert.",
+        h1: "Premium Outdoor-Systeme für Ihr Zuhause",
+        intro_text: "Ihr Partner für exklusive Terrassengestaltung in NRW und deutschlandweit.",
+        features: ["Hersteller-Direktvertrieb", "Maßanfertigung", "5 Jahre Garantie"],
+        images: ["hero-fallback"],
+        faq: []
+    }
+];
 const MIN_VOLUME = 100;
 
 function slugify(text) {
@@ -77,21 +90,42 @@ rawData.forEach(row => {
         template = 'money';
     }
 
-    // Determine Product ID (Simple logic for now - default to 'pergola-systeme' unless keyword suggests otherwise)
+    // Determine Product ID
     let productId = 'pergola-systeme';
     const k = keyword.toLowerCase();
-    if (k.includes('wintergarten') || k.includes('kaltwintergarten')) productId = 'wintergarten-systeme';
-    if (k.includes('lamellendach')) productId = 'bioklimatische-pergola';
-    if (k.includes('screen') || k.includes('markise') || k.includes('rollo')) productId = 'zip-screen';
-    if (k.includes('glas') || k.includes('schiebe')) productId = 'verglasungssysteme';
+    if (k.includes('wintergarten') || k.includes('kaltwintergarten') || k.includes('glas') || k.includes('schiebe')) {
+        productId = 'wintergarten-systeme';
+    } else if (k.includes('screen') || k.includes('markise') || k.includes('rollo')) {
+        productId = 'zip-screen-systeme';
+    } else if (k.includes('lamellendach') || k.includes('pergola')) {
+        productId = 'pergola-systeme';
+    }
 
     // Generate Content
-    const slug = slugify(keyword);
+    const keywordSlug = slugify(keyword);
+    
+    // Canonical Mapping for Enrichment matching
+    const canonicalMap = {
+        'bioklimatische-pergola': 'bioklimatisch',
+        'pergola-terrasse': 'terrasse',
+        'pergola-aluminium': 'aluminium',
+        'pergola-freistehend': 'freistehend',
+        'pergola-preise': 'preise',
+        'glasschiebewand': 'glasschiebewand',
+        'senkrechtmarkise': 'senkrechtmarkise',
+        'zip-screen-terrasse': 'terrasse',
+        'zip-screen-wetterfest': 'wetterfest'
+    };
+
+    const mappedSlug = canonicalMap[keywordSlug] || keywordSlug;
+
+    // Construct hierarchical slug: productId/keywordSlug (unless they are the same)
+    const slug = (productId === mappedSlug) ? productId : `${productId}/${mappedSlug}`;
     const h1 = toTitleCase(keyword);
 
     // Pick an image
     // Try to find a somewhat relevant image if possible, else random
-    let imageFile = availableImages.find(img => img.toLowerCase().includes(slug.split('-')[0]));
+    let imageFile = availableImages.find(img => img.toLowerCase().includes(keywordSlug.split('-')[0]));
     if (!imageFile) {
         imageFile = getRandomImage();
     }

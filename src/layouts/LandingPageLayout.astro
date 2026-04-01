@@ -67,7 +67,7 @@ const organizationSchema = JSON.stringify({
     <meta name="twitter:image" content={ogImageURL} />
 
     <!-- Structured Data -->
-    <script type="application/ld+json" set:html={organizationSchema} />
+    <script type="application/ld+json" is:inline set:html={organizationSchema} />
     <slot name="schema" />
   </head>
   <body

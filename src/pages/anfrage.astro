@@ -1,0 +1,25 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import AnfrageView from "@/components/pages/AnfrageView";
+---
+
+<Layout
+  title="Angebot anfordern - Apexx Bau"
+  description="Fordern Sie Ihr unverbindliches Angebot fuer Pergolen, Verglasungen und ZIP-Screens an."
+>
+  <form name="anfrage" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="text" name="telefon" />
+    <input type="text" name="plz" />
+    <input type="text" name="stadt" />
+    <input type="text" name="produkt" />
+    <input type="text" name="product_slug" />
+    <input type="text" name="masse" />
+    <input type="text" name="montage" />
+    <textarea name="nachricht"></textarea>
+    <input type="text" name="bot-field" />
+  </form>
+
+  <AnfrageView client:load />
+</Layout>

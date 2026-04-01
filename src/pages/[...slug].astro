@@ -5,9 +5,37 @@ import { Button } from "@/components/ui/button";
 import { Check, Star, Shield, ArrowRight } from "lucide-react";
 import { ProjectGallery } from "@/components/home/ProjectGallery";
 
+type FAQItem = {
+  question: string;
+  answer: string;
+};
+
+type LandingPage = {
+  slug: string;
+  template?: string;
+  product_id?: string;
+  title: string;
+  h1: string;
+  meta_description: string;
+  intro_text: string;
+  features?: string[];
+  images?: string[];
+  faq?: FAQItem[];
+  block_1_content?: string;
+  block_2_content?: string;
+  block_1_placement?: string;
+  block_2_placement?: string;
+  cta_primary_text?: string;
+  cta_secondary_text?: string;
+  feature_descriptions?: string[];
+};
+
+type ParentPage = Pick<LandingPage, "slug" | "h1" | "title">;
+
 export async function getStaticPaths() {
+  const allPages = landingPages as LandingPage[];
   const excludedSlugs = new Set(["", "kontakt"]);
-  return landingPages
+  return allPages
     .filter((page) => !excludedSlugs.has(page.slug)) // Exclude conflicting static pages
     .map((page) => ({
       params: { slug: page.slug },
@@ -15,14 +43,34 @@ export async function getStaticPaths() {
     }));
 }
 
-const { page } = Astro.props;
+const { page } = Astro.props as { page: LandingPage };
 const siteUrl = "https://www.apexx-bau.de";
+const heroImage = page.images?.[0]
+  ? `/images/${page.images[0]}.jpg`
+  : "/images/stock/hero-fallback.jpg";
+const allPages = landingPages as LandingPage[];
+const virtualParentPages: Record<string, ParentPage> = {
+  "pergola-systeme": {
+    slug: "pergola-systeme",
+    h1: "Pergola-Systeme",
+    title: "Pergola-Systeme",
+  },
+  "wintergarten-systeme": {
+    slug: "wintergarten-systeme",
+    h1: "Verglasungssysteme",
+    title: "Verglasungssysteme",
+  },
+  "zip-screen-systeme": {
+    slug: "zip-screen-systeme",
+    h1: "Textile Beschattung",
+    title: "Textile Beschattung",
+  },
+};
 
 // Helper to determine template type if not strictly defined (fallback)
 const templateType = page.template || "hub";
 
 // Internal Linking Logic
-const allPages = landingPages;
 const currentSlug = page.slug;
 const isHub = templateType === "hub";
 
@@ -30,7 +78,7 @@ const isHub = templateType === "hub";
 // Logic: If I am "pergola-systeme/lamellendach", my parent is "pergola-systeme"
 const parentSlug = currentSlug.includes("/") ? currentSlug.split("/")[0] : null;
 const parentPage = parentSlug
-  ? allPages.find((p) => p.slug === parentSlug)
+  ? allPages.find((p) => p.slug === parentSlug) ?? virtualParentPages[parentSlug]
   : null;
 
 // 2. Identify Siblings (Same product_id, excluding self)
@@ -88,7 +136,7 @@ const faqSchema =
     ? JSON.stringify({
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        mainEntity: page.faq.map((item) => ({
+        mainEntity: page.faq.map((item: FAQItem) => ({
           "@type": "Question",
           name: item.question,
           acceptedAnswer: {
@@ -106,7 +154,7 @@ const productSchema = templateType === "money"
       "@type": "Product",
       name: page.h1,
       description: page.meta_description,
-      image: `${siteUrl}/images/${page.images[0]}.jpg`,
+      image: `${siteUrl}${heroImage}`,
       brand: {
         "@type": "Brand",
         name: "Apexx Bau",
@@ -140,13 +188,13 @@ const productSchema = templateType === "money"
 <LandingPageLayout
   title={page.title}
   description={page.meta_description}
-  image={`/images/${page.images[0]}.jpg`}
+  image={heroImage}
 >
   <!-- Inject page-specific schemas -->
   <Fragment slot="schema">
-    <script type="application/ld+json" set:html={breadcrumbSchema} />
-    {faqSchema && <script type="application/ld+json" set:html={faqSchema} />}
-    {productSchema && <script type="application/ld+json" set:html={productSchema} />}
+    <script type="application/ld+json" is:inline set:html={breadcrumbSchema} />
+    {faqSchema && <script type="application/ld+json" is:inline set:html={faqSchema} />}
+    {productSchema && <script type="application/ld+json" is:inline set:html={productSchema} />}
   </Fragment>
 
   {/* HERO SECTION */}
@@ -160,11 +208,9 @@ const productSchema = templateType === "money"
         /* Note: In production we would use Astro <Image /> optimized component here */
       }
       <img
-        src={`/images/${page.images[0]}.jpg`}
+        src={heroImage}
         alt={page.h1}
         class="w-full h-full object-cover"
-        onError={(e) =>
-          (e.currentTarget.src = "/images/stock/hero-fallback.jpg")}
       />
     </div>
 
@@ -351,7 +397,6 @@ const productSchema = templateType === "money"
               src="/images/showroom_consultation_germany.jpg"
               alt="Apexx Bau Showroom Dortmund"
               class="w-full h-full object-cover"
-              onError={(e) => (e.currentTarget.style.display = "none")}
             />
           </div>
           {/* Decorative Elements */}
@@ -486,7 +531,7 @@ const productSchema = templateType === "money"
                 href="/"
                 class="text-primary hover:underline flex items-center gap-2"
               >
-                <ArrowRight class="w-4 h-4" /> Startseite
+                <ArrowRight className="w-4 h-4" /> Startseite
               </a>
             </li>
             {
@@ -496,7 +541,7 @@ const productSchema = templateType === "money"
                     href={`/${parentPage.slug}`}
                     class="text-primary hover:underline flex items-center gap-2"
                   >
-                    <ArrowRight class="w-4 h-4" /> {parentPage.title}
+                    <ArrowRight className="w-4 h-4" /> {parentPage.title}
                   </a>
                 </li>
               )

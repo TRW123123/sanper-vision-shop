@@ -3,14 +3,10 @@ import LandingPageLayout from "@/layouts/LandingPageLayout.astro";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, BookOpen, Clock, Calendar, Shield } from "lucide-react";
 
-// Get all ratgeber JSON files
-const ratgeberFiles = import.meta.glob("../../data/ratgeber/*.json", { eager: true });
-const articles = Object.values(ratgeberFiles) as any[];
-
 export async function getStaticPaths() {
   const ratgeberFiles = import.meta.glob("../../data/ratgeber/*.json", { eager: true });
   const articles = Object.values(ratgeberFiles) as any[];
-  
+
   return articles.map((article) => ({
     params: { slug: article.slug },
     props: { article },
@@ -27,25 +23,29 @@ function simpleMarkdown(md: string) {
     .replace(/^## (.*$)/gim, '<h2 class="text-2xl font-bold mt-10 mb-6 text-primary border-b pb-2">$1</h2>')
     .replace(/^# (.*$)/gim, '<h1 class="text-3xl font-bold mb-8">$1</h1>')
     .replace(/^\- (.*$)/gim, '<li class="ml-4 list-disc mb-2">$1</li>')
-    .replace(/\*\*(.*)\*\*/gm, '<strong>$1</strong>')
-    .split('\n\n').map(p => {
-        if (p.includes('<h') || p.includes('<li')) return p;
-        return `<p class="mb-4 leading-relaxed text-muted-foreground">${p.replace(/\n/g, '<br />')}</p>`;
-    }).join('\n');
+    .replace(/\*\*(.*)\*\*/gm, "<strong>$1</strong>")
+    .split("\n\n")
+    .map((paragraph) => {
+      if (paragraph.includes("<h") || paragraph.includes("<li")) return paragraph;
+      return `<p class="mb-4 leading-relaxed text-muted-foreground">${paragraph.replace(/\n/g, "<br />")}</p>`;
+    })
+    .join("\n");
 }
 
 const htmlContent = simpleMarkdown(article.passes?.hard_facts?.content || "");
-const dateFormatted = article.extracted_at ? new Date(article.extracted_at).toLocaleDateString('de-DE', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric'
-}) : "März 2026";
+const dateFormatted = article.extracted_at
+  ? new Date(article.extracted_at).toLocaleDateString("de-DE", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    })
+  : "März 2026";
 
 const wordCount = article.passes?.hard_facts?.word_count || 0;
 const readingTime = Math.ceil(wordCount / 200) || 5;
 ---
 
-<LandingPageLayout 
+<LandingPageLayout
   title={`${article.target_keyword} | Ratgeber | Apexx Bau`}
   description={`Fachratgeber zu ${article.target_keyword}. Erfahren Sie alles über Planung, Kosten und technische Details für Ihr Projekt.`}
 >
@@ -53,26 +53,26 @@ const readingTime = Math.ceil(wordCount / 200) || 5;
     <div class="container max-w-4xl">
       <nav class="mb-8">
         <a href="/" class="text-primary hover:underline flex items-center gap-2 text-sm font-medium">
-          <ArrowLeft class="w-4 h-4" /> Zurück zur Übersicht
+          <ArrowLeft className="w-4 h-4" /> Zurück zur Übersicht
         </a>
       </nav>
-      
+
       <div class="flex items-center gap-4 mb-6 text-sm text-muted-foreground">
         <span class="flex items-center gap-1.5">
-          <Calendar class="w-4 h-4" /> {dateFormatted}
+          <Calendar className="w-4 h-4" /> {dateFormatted}
         </span>
         <span class="flex items-center gap-1.5">
-          <BookOpen class="w-4 h-4" /> {wordCount} Wörter
+          <BookOpen className="w-4 h-4" /> {wordCount} Wörter
         </span>
         <span class="flex items-center gap-1.5">
-          <Clock class="w-4 h-4" /> {readingTime} Min. Lesezeit
+          <Clock className="w-4 h-4" /> {readingTime} Min. Lesezeit
         </span>
       </div>
 
       <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">
         {article.target_keyword}
       </h1>
-      
+
       <div class="flex flex-wrap gap-2 mb-8">
         {article.secondary_keywords?.map((tag: string) => (
           <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">
@@ -86,11 +86,11 @@ const readingTime = Math.ceil(wordCount / 200) || 5;
   <article class="py-20">
     <div class="container max-w-4xl">
       <div class="prose prose-slate max-w-none prose-headings:text-foreground prose-p:text-muted-foreground" set:html={htmlContent} />
-      
+
       {article.passes?.hard_facts?.sources_cited?.length > 0 && (
         <div class="mt-20 p-8 rounded-2xl bg-muted/50 border border-border">
           <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
-            <Shield class="w-5 h-5 text-primary" /> Quellen & Referenzen
+            <Shield className="w-5 h-5 text-primary" /> Quellen & Referenzen
           </h3>
           <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-muted-foreground">
             {article.passes.hard_facts.sources_cited.map((source: string) => (
@@ -107,7 +107,7 @@ const readingTime = Math.ceil(wordCount / 200) || 5;
         <div class="relative z-10">
           <h2 class="text-3xl font-bold mb-4">Individuelle Beratung gewünscht?</h2>
           <p class="text-primary-foreground/80 mb-8 max-w-xl mx-auto text-lg">
-            Haben Sie spezifische Fragen zu Ihrem {article.product === 'alle' ? 'Projekt' : article.product}? Unsere Experten helfen Ihnen gerne weiter.
+            Haben Sie spezifische Fragen zu Ihrem {article.product === "alle" ? "Projekt" : article.product}? Unsere Experten helfen Ihnen gerne weiter.
           </p>
           <Button size="lg" variant="secondary" className="h-14 px-8 text-lg" asChild>
             <a href="/kontakt">Kostenloses Angebot anfordern</a>

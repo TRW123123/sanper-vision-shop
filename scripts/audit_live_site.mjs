@@ -1,7 +1,6 @@
 import fs from 'fs';
-import path from 'path';
 
-const BASE_URL = "https://www.sanper.de";
+const BASE_URL = "https://www.apexx-bau.de";
 const CSV_PATH = "./src/data/task_input.csv";
 const REPORT_PATH = "./verify_output.txt";
 

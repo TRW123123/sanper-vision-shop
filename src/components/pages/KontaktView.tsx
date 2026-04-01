@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -10,6 +10,7 @@ import { company } from "@/data/company";
 
 const KontaktView = () => {
     const [type, setType] = useState<string | null>(null);
+    const [isSubmitting, setIsSubmitting] = useState(false);
     const { toast } = useToast();
     const [formData, setFormData] = useState({
         name: "",
@@ -20,28 +21,57 @@ const KontaktView = () => {
     });
 
     useEffect(() => {
-        // Client-side only access to URL params
         const searchParams = new URLSearchParams(window.location.search);
         setType(searchParams.get("type"));
     }, []);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        toast({
-            title: "Anfrage gesendet",
-            description: "Wir werden uns in Kürze bei Ihnen melden.",
-        });
-        setFormData({ name: "", firma: "", email: "", telefon: "", nachricht: "" });
+        setIsSubmitting(true);
+
+        const payload = new FormData();
+        payload.append("form-name", "kontakt");
+        payload.append("request_type", type || "allgemein");
+        payload.append("name", formData.name);
+        payload.append("firma", formData.firma);
+        payload.append("email", formData.email);
+        payload.append("telefon", formData.telefon);
+        payload.append("nachricht", formData.nachricht);
+
+        try {
+            const response = await fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(payload as any).toString(),
+            });
+
+            if (!response.ok) {
+                throw new Error("Kontaktformular konnte nicht gesendet werden.");
+            }
+
+            toast({
+                title: "Anfrage gesendet",
+                description: "Wir werden uns in Kürze bei Ihnen melden.",
+            });
+            setFormData({ name: "", firma: "", email: "", telefon: "", nachricht: "" });
+        } catch (error) {
+            toast({
+                title: "Senden fehlgeschlagen",
+                description: "Bitte versuchen Sie es in wenigen Minuten erneut oder schreiben Sie uns direkt per E-Mail.",
+                variant: "destructive",
+            });
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
         <div className="min-h-screen">
-            {/* Hero */}
-            <section className="py-20 lg:py-32 bg-muted/30">
+            <section className="bg-muted/30 py-20 lg:py-32">
                 <div className="container">
                     <div className="max-w-3xl">
                         <h1 className="mb-6">Kontakt</h1>
-                        <p className="text-xl text-muted-foreground leading-relaxed">
+                        <p className="text-xl leading-relaxed text-muted-foreground">
                             Wir beraten Sie gerne zu allen Fragen rund um Beschattung, Verglasung
                             und Außenraumgestaltung. Unser Team steht Ihnen zur Verfügung.
                         </p>
@@ -49,17 +79,16 @@ const KontaktView = () => {
                 </div>
             </section>
 
-            {/* Contact Info Cards */}
             <section className="py-section">
                 <div className="container">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                    <div className="mb-16 grid grid-cols-1 gap-6 md:grid-cols-3">
                         <Card>
-                            <CardContent className="p-6 text-center space-y-4">
-                                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent">
+                            <CardContent className="space-y-4 p-6 text-center">
+                                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-accent">
                                     <Phone className="h-6 w-6" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-semibold mb-2">Telefon</h3>
+                                    <h3 className="mb-2 text-lg font-semibold">Telefon</h3>
                                     <a
                                         href={`tel:${company.contact.phone}`}
                                         className="text-muted-foreground hover:text-foreground"
@@ -71,12 +100,12 @@ const KontaktView = () => {
                         </Card>
 
                         <Card>
-                            <CardContent className="p-6 text-center space-y-4">
-                                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent">
+                            <CardContent className="space-y-4 p-6 text-center">
+                                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-accent">
                                     <Mail className="h-6 w-6" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-semibold mb-2">E-Mail</h3>
+                                    <h3 className="mb-2 text-lg font-semibold">E-Mail</h3>
                                     <a
                                         href={`mailto:${company.contact.email}`}
                                         className="text-muted-foreground hover:text-foreground"
@@ -88,12 +117,12 @@ const KontaktView = () => {
                         </Card>
 
                         <Card>
-                            <CardContent className="p-6 text-center space-y-4">
-                                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent">
+                            <CardContent className="space-y-4 p-6 text-center">
+                                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-accent">
                                     <MapPin className="h-6 w-6" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-semibold mb-2">Adresse</h3>
+                                    <h3 className="mb-2 text-lg font-semibold">Adresse</h3>
                                     <p className="text-muted-foreground">
                                         {company.address.street}
                                         <br />
@@ -104,11 +133,10 @@ const KontaktView = () => {
                         </Card>
                     </div>
 
-                    {/* Contact Form */}
-                    <div className="max-w-2xl mx-auto">
+                    <div className="mx-auto max-w-2xl">
                         <Card>
                             <CardContent className="p-8">
-                                <h2 className="text-2xl font-semibold mb-6">
+                                <h2 className="mb-6 text-2xl font-semibold">
                                     {type === "katalog"
                                         ? "Katalog anfordern"
                                         : type === "beratung"
@@ -185,9 +213,9 @@ const KontaktView = () => {
                                         verarbeitet.
                                     </div>
 
-                                    <Button type="submit" size="lg" className="w-full">
+                                    <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
                                         <Send className="mr-2 h-4 w-4" />
-                                        Anfrage senden
+                                        {isSubmitting ? "Wird gesendet..." : "Anfrage senden"}
                                     </Button>
                                 </form>
                             </CardContent>

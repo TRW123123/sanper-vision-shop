@@ -1,0 +1,40 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import ProductCategoryOverview from "@/components/pages/ProductCategoryOverview.astro";
+
+const highlights = [
+  {
+    title: "ZIP-Screens",
+    description: "Stramm geführte textile Systeme für Sichtschutz, Sonnenschutz und Windberuhigung an Pergolen, Fassaden und Veranden.",
+  },
+  {
+    title: "Senkrechtmarkisen",
+    description: "Schlanke vertikale Lösungen für Fenster, Öffnungen und seitliche Abschirmung mit klarer, technischer Anmutung.",
+  },
+  {
+    title: "Dach- und Spezialmarkisen",
+    description: "Textile Beschattung für Wintergärten, Glasdächer und größere Spannweiten, wenn Hitzeeintrag kontrolliert werden soll.",
+  },
+];
+
+const benefits = [
+  "Textile Beschattung muss zur Ausrichtung, Windlast und Nutzung passen, sonst bleibt sie im Alltag oft hinter den Erwartungen zurück.",
+  "Je nach Stoff, Führung und Antrieb verändert sich nicht nur der Hitzeschutz, sondern auch die Privatsphäre und die optische Wirkung.",
+  "ZIP-Screens lassen sich sinnvoll mit Pergolen und Verglasungen kombinieren, wenn Anschlüsse und Bedienlogik früh abgestimmt sind.",
+  "Für große Glasflächen und offene Terrassen ist die richtige textile Lösung oft der schnellste Hebel für mehr Komfort im Sommer.",
+];
+---
+
+<Layout
+  title="Textile Beschattung - Apexx Bau"
+  description="Textile Beschattung von Apexx Bau: ZIP-Screens, Senkrechtmarkisen und Dachmarkisen für Wohn- und Gewerbeprojekte."
+>
+  <ProductCategoryOverview
+    eyebrow="Textile Beschattung"
+    title="Textile Beschattung für Hitze-, Sicht- und Blendschutz mit klarer Wirkung"
+    description="Unsere textilen Systeme ergänzen Pergolen, Verglasungen und Fassaden überall dort, wo Licht und Klima fein steuerbar bleiben sollen."
+    lead="Wir schauen nicht nur auf Stoff und Optik, sondern auf Führung, Windverhalten, Bedienung und die Kombination mit dem restlichen System."
+    highlights={highlights}
+    benefits={benefits}
+  />
+</Layout>

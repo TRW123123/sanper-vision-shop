@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const jsonPath = path.join('C:', 'Users', 'User', 'Projects', 'sanper-vision-astro', 'src', 'data', 'landing_pages.json');
+const jsonPath = path.join(__dirname, '..', 'src', 'data', 'landing_pages.json');
 const data = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
 
 const countWords = (str) => {

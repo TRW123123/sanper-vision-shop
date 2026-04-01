@@ -10,21 +10,21 @@ const ProductCategories = () => {
       description:
         "Bioclimatic Pergolen mit drehbaren Lamellen für optimale Klimakontrolle und Rolling Roof Systeme für vollständigen Wetterschutz.",
       image: "/images/products/bioclimatic-pergola.png",
-      href: "/pergola-systeme",
+      href: "/pergola-systeme/",
     },
     {
       title: "Verglasungssysteme",
       description:
         "Rahmenlose Giyotin-Glas-Systeme und Wintergärten für transparente Raumabschlüsse mit maximaler Lichtausbeute.",
       image: "/images/products/guillotine-glass.png",
-      href: "/wintergarten-systeme",
+      href: "/wintergarten-systeme/",
     },
     {
       title: "Textile Beschattung",
       description:
         "Kassettenmarkisen, ZIP-Screen und Piston-Tavan Systeme für flexible und elegante Sonnenschutzlösungen.",
       image: "/images/products/zip-screen.png",
-      href: "/zip-screen-systeme",
+      href: "/zip-screen-systeme/",
     },
   ];
 

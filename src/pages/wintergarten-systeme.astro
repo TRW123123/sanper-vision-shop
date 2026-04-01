@@ -1,0 +1,40 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import ProductCategoryOverview from "@/components/pages/ProductCategoryOverview.astro";
+
+const highlights = [
+  {
+    title: "Glasschiebewände",
+    description: "Rahmenarme Systeme für flexible Öffnung, hohe Transparenz und eine leichtere Nutzung von Terrasse und Übergangsbereichen.",
+  },
+  {
+    title: "Guillotine-Glas",
+    description: "Vertikale Schiebesysteme für anspruchsvolle Bereiche, in denen Bedienkomfort und Windschutz besonders wichtig sind.",
+  },
+  {
+    title: "Wintergarten-Lösungen",
+    description: "Verglasungen, die Licht, Schutz und Erweiterbarkeit sinnvoll zusammenbringen und ganzjährig gedacht werden.",
+  },
+];
+
+const benefits = [
+  "Verglasung muss nicht nur gut aussehen, sondern auch Bedienung, Dichtigkeit, Laufruhe und spätere Reinigung sauber lösen.",
+  "Je nach Nutzung unterscheiden sich Anforderungen stark zwischen Wohnhaus, Gastronomie, Büro und halbgeschütztem Außenbereich.",
+  "Wir betrachten Öffnungsarten, Schwellen, Anschlussdetails und Beschattung frühzeitig gemeinsam, damit das System im Alltag funktioniert.",
+  "Besonders bei Sichtachsen und hochwertigen Fassaden lohnt sich eine Lösung, die technisch ruhig bleibt und optisch nicht überlädt.",
+];
+---
+
+<Layout
+  title="Verglasungssysteme - Apexx Bau"
+  description="Verglasungssysteme von Apexx Bau: Glasschiebewände, Guillotine-Glas und Wintergarten-Lösungen für anspruchsvolle Projekte."
+>
+  <ProductCategoryOverview
+    eyebrow="Verglasungssysteme"
+    title="Verglasungssysteme für transparente Übergänge und geschützte Außenräume"
+    description="Unsere Verglasungslösungen schaffen nutzbare Räume zwischen innen und außen, ohne Licht, Offenheit oder Flexibilität zu verlieren."
+    lead="Wir planen Verglasungen passend zur Situation vor Ort, damit Bedienbarkeit, Windschutz, Anschlussdetails und spätere Beschattung nicht erst nachträglich gelöst werden müssen."
+    highlights={highlights}
+    benefits={benefits}
+  />
+</Layout>

@@ -1,4 +1,3 @@
-import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 
 // Using our existing product images (relative paths from public)

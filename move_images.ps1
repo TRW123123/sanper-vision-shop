@@ -1,5 +1,6 @@
-$source = "C:\Users\Safak\.gemini\antigravity\brain\43e6c2a1-dfe8-4f14-9e3d-a01b6a5b55a7"
-$dest = "C:\Users\Safak\.gemini\antigravity\scratch\sanper-vision-astro\public\images\products"
+$rootDir = Get-Location
+$source = Join-Path $rootDir "scripts\temp_images" # Adjusted to be relative to project root
+$dest = Join-Path $rootDir "public\images\products"
 
 if (-not (Test-Path $dest)) {
     New-Item -ItemType Directory -Force -Path $dest | Out-Null

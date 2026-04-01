@@ -1,0 +1,119 @@
+---
+interface Highlight {
+  title: string;
+  description: string;
+}
+
+interface Props {
+  eyebrow: string;
+  title: string;
+  description: string;
+  lead: string;
+  highlights: Highlight[];
+  benefits: string[];
+  primaryCtaHref?: string;
+  primaryCtaLabel?: string;
+  secondaryCtaHref?: string;
+  secondaryCtaLabel?: string;
+}
+
+const {
+  eyebrow,
+  title,
+  description,
+  lead,
+  highlights,
+  benefits,
+  primaryCtaHref = "/konfigurator/",
+  primaryCtaLabel = "Projekt konfigurieren",
+  secondaryCtaHref = "/kontakt/?type=beratung",
+  secondaryCtaLabel = "Beratung anfragen",
+} = Astro.props;
+---
+
+<section class="border-b border-border bg-muted/30 py-20 lg:py-28">
+  <div class="container">
+    <div class="max-w-3xl space-y-6">
+      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary">{eyebrow}</p>
+      <h1 class="text-4xl font-bold tracking-tight lg:text-6xl">{title}</h1>
+      <p class="text-xl leading-relaxed text-muted-foreground">{description}</p>
+      <p class="max-w-2xl leading-relaxed text-foreground/80">{lead}</p>
+      <div class="flex flex-col gap-4 pt-2 sm:flex-row">
+        <a
+          href={primaryCtaHref}
+          class="inline-flex h-12 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+        >
+          {primaryCtaLabel}
+        </a>
+        <a
+          href={secondaryCtaHref}
+          class="inline-flex h-12 items-center justify-center rounded-md border border-border bg-background px-6 text-sm font-medium transition-colors hover:bg-muted"
+        >
+          {secondaryCtaLabel}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 lg:py-20">
+  <div class="container">
+    <div class="grid gap-6 md:grid-cols-3">
+      {highlights.map((highlight) => (
+        <article class="rounded-2xl border border-border bg-card p-6 shadow-sm">
+          <h2 class="mb-3 text-xl font-semibold">{highlight.title}</h2>
+          <p class="leading-relaxed text-muted-foreground">{highlight.description}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section class="bg-muted/30 py-16 lg:py-20">
+  <div class="container">
+    <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+      <div class="space-y-4">
+        <h2 class="text-3xl font-bold tracking-tight">Worauf wir in dieser Kategorie besonders achten</h2>
+        <p class="max-w-2xl leading-relaxed text-muted-foreground">
+          Jede Lösung wird bei uns auf Nutzung, Witterung, Optik und spätere Erweiterbarkeit abgestimmt. So entsteht kein
+          Standardpaket, sondern ein System, das wirklich zum Objekt passt.
+        </p>
+      </div>
+      <ul class="grid gap-4">
+        {benefits.map((benefit) => (
+          <li class="rounded-xl border border-border bg-background px-5 py-4 text-sm leading-relaxed text-foreground/90">
+            {benefit}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 lg:py-20">
+  <div class="container">
+    <div class="rounded-3xl bg-primary px-8 py-10 text-primary-foreground lg:px-12 lg:py-14">
+      <div class="max-w-3xl space-y-5">
+        <h2 class="text-3xl font-bold tracking-tight">Lassen Sie uns das passende System gemeinsam auswählen</h2>
+        <p class="max-w-2xl text-primary-foreground/85">
+          Wenn Maße, Montage-Situation oder gewünschte Ausstattung schon feststehen, erstellen wir auf dieser Basis direkt
+          eine sinnvolle Empfehlung und den nächsten konkreten Schritt.
+        </p>
+        <div class="flex flex-col gap-4 pt-2 sm:flex-row">
+          <a
+            href={primaryCtaHref}
+            class="inline-flex h-12 items-center justify-center rounded-md bg-white px-6 text-sm font-medium text-primary transition-colors hover:bg-white/90"
+          >
+            {primaryCtaLabel}
+          </a>
+          <a
+            href={secondaryCtaHref}
+            class="inline-flex h-12 items-center justify-center rounded-md border border-white/20 px-6 text-sm font-medium text-white transition-colors hover:bg-white/10"
+          >
+            {secondaryCtaLabel}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

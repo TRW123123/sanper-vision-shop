@@ -37,13 +37,13 @@ const structuredData = {
   description="Impressum von Apexx Bau - Ihr Spezialist für Beschattungssysteme, Pergolen und Glassysteme. Rechtliche Angaben gemäß § 5 TMG."
   noindex={true}
 >
-  <script type="application/ld+json" slot="head" set:html={JSON.stringify(structuredData)} />
+  <script type="application/ld+json" slot="head" is:inline set:html={JSON.stringify(structuredData)} />
 
   <main>
     <article class="py-12 lg:py-20">
       <div class="container max-w-3xl">
         {/* Breadcrumbs */}
-        <Breadcrumb class="mb-8">
+        <Breadcrumb className="mb-8">
           <BreadcrumbList>
             <BreadcrumbItem>
               <BreadcrumbLink asChild>

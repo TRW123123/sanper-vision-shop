@@ -4,7 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const filePath = path.join(__dirname, '..', 'src', 'data', 'SEO Sanper Magic Tool.xlsx');
+const filePath = path.join(__dirname, '..', 'src', 'data', 'SEO Apexx Magic Tool.xlsx');
 
 try {
     const workbook = XLSX.readFile(filePath);

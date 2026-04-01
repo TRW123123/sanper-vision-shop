@@ -1,0 +1,40 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import ProductCategories from "@/components/home/ProductCategories";
+---
+
+<Layout
+  title="Produkte - Apexx Bau"
+  description="Überblick über Pergola-Systeme, Verglasungssysteme und textile Beschattung von Apexx Bau."
+>
+  <main>
+    <section class="border-b border-border bg-muted/30 py-20 lg:py-28">
+      <div class="container">
+        <div class="max-w-3xl space-y-6">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Produktübersicht</p>
+          <h1 class="text-4xl font-bold tracking-tight lg:text-6xl">Systeme für Außenräume mit klarer Funktion</h1>
+          <p class="text-xl leading-relaxed text-muted-foreground">
+            Von bioklimatischen Pergolen über moderne Verglasungen bis zu textiler Beschattung: Hier sehen Sie die drei
+            Produktbereiche, mit denen wir private und gewerbliche Projekte umsetzen.
+          </p>
+          <div class="flex flex-col gap-4 pt-2 sm:flex-row">
+            <a
+              href="/konfigurator/"
+              class="inline-flex h-12 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              Projekt konfigurieren
+            </a>
+            <a
+              href="/kontakt/?type=beratung"
+              class="inline-flex h-12 items-center justify-center rounded-md border border-border bg-background px-6 text-sm font-medium transition-colors hover:bg-muted"
+            >
+              Beratung anfragen
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <ProductCategories />
+  </main>
+</Layout>

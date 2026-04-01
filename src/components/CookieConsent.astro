@@ -62,6 +62,7 @@
 
   function loadAnalytics(): void {
     const gaId = "G-JX2XWBGF7W";
+    type AnalyticsWindow = Window & typeof globalThis & { dataLayer?: unknown[][] };
 
     // Check if already loaded
     if (document.getElementById("ga-script")) return;
@@ -74,15 +75,14 @@
     document.head.appendChild(script);
 
     // 2. Initialize dataLayer
-    // @ts-ignore
-    window.dataLayer = window.dataLayer || [];
-    // @ts-ignore
-    function gtag() {
-      dataLayer.push(arguments);
+    const analyticsWindow = window as AnalyticsWindow;
+    analyticsWindow.dataLayer = analyticsWindow.dataLayer || [];
+
+    function gtag(...args: unknown[]) {
+      analyticsWindow.dataLayer?.push(args);
     }
-    // @ts-ignore
+
     gtag("js", new Date());
-    // @ts-ignore
     gtag("config", gaId, { anonymize_ip: true }); // GDPR compliant IP anonymization
 
     console.log("[Consent] Google Analytics loaded (G-JX2XWBGF7W)");

@@ -1,0 +1,40 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import ProductCategoryOverview from "@/components/pages/ProductCategoryOverview.astro";
+
+const highlights = [
+  {
+    title: "Bioklimatische Pergolen",
+    description: "Lamellen, die Licht, Luft und Wetterschutz steuerbar machen und so deutlich mehr Nutzungszeit im Außenraum schaffen.",
+  },
+  {
+    title: "Freistehend oder angebunden",
+    description: "Je nach Objekt integrieren wir Pergolen an der Fassade, auf der Terrasse oder als eigenständige Lösung im Garten.",
+  },
+  {
+    title: "Für privat und gewerblich",
+    description: "Vom hochwertigen Wohnhaus bis zur Außengastronomie planen wir Systeme mit klarer Statik, sauberer Entwässerung und ruhiger Optik.",
+  },
+];
+
+const benefits = [
+  "Lamellendächer lassen sich präzise an Sonne, Regen und Wind anpassen, statt nur offen oder geschlossen zu sein.",
+  "Zusatzoptionen wie LED, ZIP-Screens oder Glas-Seitenanlagen können von Anfang an mitgedacht werden.",
+  "Bei größeren Spannweiten und sichtbaren Außenbereichen ist ein stimmiges Verhältnis aus Funktion, Proportion und Detailqualität entscheidend.",
+  "Für gewerbliche Nutzungen achten wir besonders auf Alltagstauglichkeit, Bedienlogik und eine robuste Oberflächenqualität.",
+];
+---
+
+<Layout
+  title="Pergola-Systeme - Apexx Bau"
+  description="Pergola-Systeme von Apexx Bau: bioklimatische Lösungen, Lamellendächer und hochwertige Außenraum-Systeme."
+>
+  <ProductCategoryOverview
+    eyebrow="Pergola-Systeme"
+    title="Pergola-Systeme für mehr Nutzungszeit, mehr Komfort und eine klare Architektur"
+    description="Unsere Pergola-Lösungen verbinden Wetterschutz, Beschattung und Gestaltung in einem System, das auf Ihr Objekt abgestimmt wird."
+    lead="Ob private Terrasse, Poolbereich oder gewerblich genutzter Außenraum: Wir planen Pergola-Systeme so, dass Statik, Entwässerung, Ausstattung und Nutzung später sauber zusammenspielen."
+    highlights={highlights}
+    benefits={benefits}
+  />
+</Layout>

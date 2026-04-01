@@ -1,10 +1,10 @@
-fetch('https://sanper-vision-astro-v2.netlify.app/')
+fetch('https://apexx-bau-astro.netlify.app/')
     .then(r => r.text())
     .then(t => {
         console.log('--- CHECK RESULTS ---');
-        // Check for the Canonical Link (pointing to sanper.de)
+        // Check for the Canonical Link (pointing to apexx-bau.de)
         const hasCanonical = t.includes('rel="canonical"');
-        const correctTarget = t.includes('href="https://www.sanper.de/"') || t.includes('href="https://www.sanper.de"');
+        const correctTarget = t.includes('href="https://www.apexx-bau.de/"') || t.includes('href="https://www.apexx-bau.de"');
 
         console.log(hasCanonical && correctTarget ? '✅ CANONICAL_FOUND_AND_CORRECT' : '❌ CANONICAL_issue');
         if (!hasCanonical) console.log('   -> Tag missing');

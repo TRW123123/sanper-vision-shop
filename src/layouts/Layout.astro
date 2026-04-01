@@ -86,8 +86,10 @@ const organizationSchema = JSON.stringify({
     <link rel="canonical" href={canonicalURL} />
     {!isProduction && <meta name="robots" content="noindex, nofollow" />}
 
+    <slot name="head" />
+
     <!-- Structured Data -->
-    <script type="application/ld+json" set:html={organizationSchema} />
+    <script type="application/ld+json" is:inline set:html={organizationSchema} />
   </head>
   <body>
     <!-- 

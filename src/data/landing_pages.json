@@ -1,6 +1,32 @@
 [
     {
-        "slug": "pergola",
+        "slug": "",
+        "template": "hub",
+        "product_id": "homepage",
+        "title": "Apexx Bau | Premium Terrassenüberdachungen & Lamellendächer",
+        "meta_description": "Apexx Bau ist Ihr Experte für hochwertige Terrassenüberdachungen, Lamellendächer und Kaltwintergärten. Direkt vom Hersteller, maßgefertigt und professionell montiert.",
+        "h1": "Premium Outdoor-Systeme für Ihr Zuhause",
+        "intro_text": "Ihr Partner für exklusive Terrassengestaltung in NRW und deutschlandweit.",
+        "features": [
+            "Hersteller-Direktvertrieb",
+            "Maßanfertigung",
+            "5 Jahre Garantie"
+        ],
+        "images": [
+            "hero-fallback"
+        ],
+        "faq": [],
+        "block_1_content": "Apexx Bau ist kein Anbieter für Standardlösungen. Wir arbeiten für Menschen, die ihren Außenbereich langfristig nutzen wollen und deshalb mehr brauchen als ein Produkt von der Stange. Der entscheidende Unterschied liegt in der Verantwortung: Planung, Fertigung und Montage müssen zusammenpassen. Bei Apexx Bau sind Maße, Statik, Material und Befestigung vorab abgestimmt – nicht erst auf der Baustelle. Diese Seite hilft Ihnen zu prüfen, ob ein individuell geplantes System für Ihr Projekt sinnvoll ist, bevor Sie Angebote vergleichen.",
+        "block_2_content": "Viele Probleme entstehen nach dem Kauf: unklare Zuständigkeiten, Verzögerungen, fehlende Ersatzteile oder Monteure ohne Systemkenntnis. Diese Risiken sind bei Outdoor-Systemen besonders relevant. Apexx Bau reduziert sie durch klare Verantwortlichkeit, abgestimmte Prozesse und planbaren Service. Wenn Sie eine kurzfristige Lösung suchen, gibt es einfachere Wege. Wenn Sie Wert auf Haltbarkeit und Sicherheit legen, sind Sie hier richtig.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_trust",
+        "cta_primary_text": "Beratung starten",
+        "cta_secondary_text": "Kostenloses Angebot",
+        "faq_theme": "allgemein",
+        "faq_unique_q_count": 5
+    },
+    {
+        "slug": "pergola-systeme/pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola | Apexx Bau",
@@ -19,7 +45,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-holz",
+        "slug": "pergola-systeme/pergola-holz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Holz | Apexx Bau",
@@ -38,9 +64,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-lamellendach",
+        "slug": "pergola-systeme/pergola-lamellendach",
         "template": "money",
-        "product_id": "bioklimatische-pergola",
+        "product_id": "pergola-systeme",
         "title": "Pergola Lamellendach | Apexx Bau",
         "meta_description": "Hochwertige pergola lamellendach direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola lamellendach nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Lamellendach",
@@ -57,7 +83,7 @@
         "faq": []
     },
     {
-        "slug": "pergolado-pergolado",
+        "slug": "pergola-systeme/pergolado-pergolado",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergolado Pergolado | Apexx Bau",
@@ -71,12 +97,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-04"
+            "pergola-systeme-terrasse-lamellendach-zip-screen-b2c-detail-01"
         ],
         "faq": []
     },
     {
-        "slug": "la-pergola",
+        "slug": "pergola-systeme/la-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "La Pergola | Apexx Bau",
@@ -95,7 +121,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-terrasse",
+        "slug": "pergola-systeme/terrasse",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Terrasse | Apexx Bau",
@@ -111,10 +137,18 @@
         "images": [
             "pergola-systeme-carport-lamellendach-b2c-hero-05"
         ],
-        "faq": []
+        "faq": [],
+        "block_1_content": "Terrassenlösungen müssen an Gebäudeanschlüsse, Gefälle und Abdichtung angepasst werden. Diese Seite hilft zu prüfen, wie eine Pergola sinnvoll an das Haus angebunden wird, ohne Bausubstanz zu gefährden.",
+        "block_2_content": "Risiken entstehen durch falsche Befestigung oder mangelhafte Abdichtung. Das zeigt sich oft erst nach Monaten.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_faq",
+        "cta_primary_text": "Beratung anfragen",
+        "cta_secondary_text": "—",
+        "faq_theme": "anbau",
+        "faq_unique_q_count": 5
     },
     {
-        "slug": "pergolen",
+        "slug": "pergola-systeme/pergolen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergolen | Apexx Bau",
@@ -128,12 +162,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-carport-lamellendach-b2c-hero-05"
+            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "perfolla",
+        "slug": "pergola-systeme/perfolla",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Perfolla | Apexx Bau",
@@ -147,12 +181,12 @@
             "Montage-Service"
         ],
         "images": [
-            "transparentes-rolltor-gewerbe-schaufenster-b2b-hero-01"
+            "pergola-systeme-garten-lamellendach-led-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "pergula",
+        "slug": "pergola-systeme/pergula",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergula | Apexx Bau",
@@ -166,12 +200,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-04"
+            "pergola-systeme-terrasse-tavan-zip-screen-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "pargolla",
+        "slug": "pergola-systeme/pargolla",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pargolla | Apexx Bau",
@@ -185,12 +219,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-stoffdach-b2c-hero-03"
+            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "pergola-garten",
+        "slug": "pergola-systeme/pergola-garten",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Garten | Apexx Bau",
@@ -209,9 +243,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-mit-lamellendach",
+        "slug": "pergola-systeme/pergola-mit-lamellendach",
         "template": "money",
-        "product_id": "bioklimatische-pergola",
+        "product_id": "pergola-systeme",
         "title": "Pergola Mit Lamellendach | Apexx Bau",
         "meta_description": "Hochwertige pergola mit lamellendach direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola mit lamellendach nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Mit Lamellendach",
@@ -228,7 +262,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-berdachung",
+        "slug": "pergola-systeme/pergola-berdachung",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola üBerdachung | Apexx Bau",
@@ -247,7 +281,7 @@
         "faq": []
     },
     {
-        "slug": "garten-pergola",
+        "slug": "pergola-systeme/garten-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Garten Pergola | Apexx Bau",
@@ -266,7 +300,7 @@
         "faq": []
     },
     {
-        "slug": "ikea-pergola",
+        "slug": "pergola-systeme/ikea-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Ikea Pergola | Apexx Bau",
@@ -280,12 +314,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-02"
+            "windschutzglas-systeme-terrasse-verstellbar-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "lamellen-pergola",
+        "slug": "pergola-systeme/lamellen-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Lamellen Pergola | Apexx Bau",
@@ -304,7 +338,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-3x4",
+        "slug": "pergola-systeme/pergola-3x4",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 3x4 | Apexx Bau",
@@ -323,7 +357,7 @@
         "faq": []
     },
     {
-        "slug": "holz-pergola",
+        "slug": "pergola-systeme/holz-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Holz Pergola | Apexx Bau",
@@ -337,14 +371,14 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-garten-seitenbeschattung-b2c-hero-05"
+            "zip_screen_privacy_evening_modern"
         ],
         "faq": []
     },
     {
-        "slug": "markise-fr-pergola",
+        "slug": "zip-screen-systeme/markise-fr-pergola",
         "template": "money",
-        "product_id": "zip-screen",
+        "product_id": "zip-screen-systeme",
         "title": "Markise Für Pergola | Apexx Bau",
         "meta_description": "Hochwertige markise für pergola direkt vom Hersteller. Konfigurieren Sie jetzt Ihre markise für pergola nach Maß. Premium Qualität & faire Preise.",
         "h1": "Markise Für Pergola",
@@ -356,14 +390,14 @@
             "Montage-Service"
         ],
         "images": [
-            "showroom_consultation_germany"
+            "wintergarten_modern_night"
         ],
         "faq": []
     },
     {
-        "slug": "markise-oder-pergola",
+        "slug": "zip-screen-systeme/markise-oder-pergola",
         "template": "money",
-        "product_id": "zip-screen",
+        "product_id": "zip-screen-systeme",
         "title": "Markise Oder Pergola | Apexx Bau",
         "meta_description": "Hochwertige markise oder pergola direkt vom Hersteller. Konfigurieren Sie jetzt Ihre markise oder pergola nach Maß. Premium Qualität & faire Preise.",
         "h1": "Markise Oder Pergola",
@@ -375,14 +409,14 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-01"
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "markise-pergola",
+        "slug": "zip-screen-systeme/markise-pergola",
         "template": "money",
-        "product_id": "zip-screen",
+        "product_id": "zip-screen-systeme",
         "title": "Markise Pergola | Apexx Bau",
         "meta_description": "Hochwertige markise pergola direkt vom Hersteller. Konfigurieren Sie jetzt Ihre markise pergola nach Maß. Premium Qualität & faire Preise.",
         "h1": "Markise Pergola",
@@ -394,12 +428,12 @@
             "Montage-Service"
         ],
         "images": [
-            "transparentes-rolltor-terrasse-glas-b2c-hero-02"
+            "pergola-systeme-terrasse-tavan-zip-screen-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "pergola-aluminium",
+        "slug": "pergola-systeme/aluminium",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Aluminium | Apexx Bau",
@@ -415,10 +449,18 @@
         "images": [
             "pergola-systeme-carport-lamellendach-b2c-hero-05"
         ],
-        "faq": []
+        "faq": [],
+        "block_1_content": "Aluminium eignet sich für Systeme, die formstabil, wartungsarm und langlebig sein sollen. Im Vergleich zu Holz oder Stahl verändert es sich kaum und benötigt keine regelmäßige Pflege. Diese Seite hilft bei der Materialentscheidung anhand von Nutzung und Wartungsaufwand.",
+        "block_2_content": "Risiken liegen in falschen Materialstärken oder minderwertigen Profilen. Nicht jedes Aluminium erfüllt die gleichen Anforderungen.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_faq",
+        "cta_primary_text": "Material bewerten",
+        "cta_secondary_text": "—",
+        "faq_theme": "material",
+        "faq_unique_q_count": 5
     },
     {
-        "slug": "pergola-freistehend",
+        "slug": "pergola-systeme/freistehend",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Freistehend | Apexx Bau",
@@ -434,12 +476,20 @@
         "images": [
             "pergola-systeme-carport-lamellendach-b2c-hero-05"
         ],
-        "faq": []
+        "faq": [],
+        "block_1_content": "Freistehende Pergolen ermöglichen maximale Freiheit bei der Platzierung, etwa bei Pool- oder Gartenbereichen. Voraussetzung ist eine saubere statische Planung. Diese Seite hilft zu klären, wann freistehend technisch sinnvoll ist.",
+        "block_2_content": "Häufige Risiken sind fehlende Fundamente oder unterschätzte Windlasten. Ohne Prüfung drohen spätere Schäden oder Genehmigungsprobleme.",
+        "block_1_placement": "after_intro",
+        "block_2_placement": "before_cta",
+        "cta_primary_text": "Machbarkeit klären",
+        "cta_secondary_text": "—",
+        "faq_theme": "statik",
+        "faq_unique_q_count": 5
     },
     {
-        "slug": "pergola-oder-markise",
+        "slug": "zip-screen-systeme/pergola-oder-markise",
         "template": "money",
-        "product_id": "zip-screen",
+        "product_id": "zip-screen-systeme",
         "title": "Pergola Oder Markise | Apexx Bau",
         "meta_description": "Hochwertige pergola oder markise direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola oder markise nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Oder Markise",
@@ -456,7 +506,7 @@
         "faq": []
     },
     {
-        "slug": "ristorante-la-pergola",
+        "slug": "pergola-systeme/ristorante-la-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Ristorante La Pergola | Apexx Bau",
@@ -470,12 +520,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-aluminium-festdach-zip-screen-b2c-hero-04"
+            "zip_screen_privacy_evening_modern"
         ],
         "faq": []
     },
     {
-        "slug": "balkon-pergola",
+        "slug": "pergola-systeme/balkon-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Balkon Pergola | Apexx Bau",
@@ -489,12 +539,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten-systeme-glasdach-zip-screen-b2c-hero-01"
+            "wintergarten_modern_night"
         ],
         "faq": []
     },
     {
-        "slug": "la-pergola-augsburg",
+        "slug": "pergola-systeme/la-pergola-augsburg",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "La Pergola Augsburg | Apexx Bau",
@@ -513,7 +563,7 @@
         "faq": []
     },
     {
-        "slug": "la-pergola-cucina-italiana",
+        "slug": "pergola-systeme/la-pergola-cucina-italiana",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "La Pergola Cucina Italiana | Apexx Bau",
@@ -532,7 +582,7 @@
         "faq": []
     },
     {
-        "slug": "la-pergola-garching-bei-mnchen",
+        "slug": "pergola-systeme/la-pergola-garching-bei-mnchen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "La Pergola Garching Bei München | Apexx Bau",
@@ -551,7 +601,7 @@
         "faq": []
     },
     {
-        "slug": "la-pergola-ristorante",
+        "slug": "pergola-systeme/la-pergola-ristorante",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "La Pergola Ristorante | Apexx Bau",
@@ -570,7 +620,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-balkon",
+        "slug": "pergola-systeme/pergola-balkon",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Balkon | Apexx Bau",
@@ -589,7 +639,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-bausatz-holz",
+        "slug": "pergola-systeme/pergola-bausatz-holz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Bausatz Holz | Apexx Bau",
@@ -608,7 +658,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-dach",
+        "slug": "pergola-systeme/pergola-dach",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Dach | Apexx Bau",
@@ -627,7 +677,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-holz-bausatz",
+        "slug": "pergola-systeme/pergola-holz-bausatz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Holz Bausatz | Apexx Bau",
@@ -646,7 +696,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-holz-selber-bauen",
+        "slug": "pergola-systeme/pergola-holz-selber-bauen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Holz Selber Bauen | Apexx Bau",
@@ -665,7 +715,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-pergola",
+        "slug": "pergola-systeme/pergola-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Pergola | Apexx Bau",
@@ -684,9 +734,9 @@
         "faq": []
     },
     {
-        "slug": "terrasse-lamellendach",
+        "slug": "pergola-systeme/terrasse-lamellendach",
         "template": "money",
-        "product_id": "bioklimatische-pergola",
+        "product_id": "pergola-systeme",
         "title": "Terrasse Lamellendach | Apexx Bau",
         "meta_description": "Hochwertige terrasse lamellendach direkt vom Hersteller. Konfigurieren Sie jetzt Ihre terrasse lamellendach nach Maß. Premium Qualität & faire Preise.",
         "h1": "Terrasse Lamellendach",
@@ -703,7 +753,7 @@
         "faq": []
     },
     {
-        "slug": "gartenpergola",
+        "slug": "pergola-systeme/gartenpergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Gartenpergola | Apexx Bau",
@@ -717,12 +767,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-05"
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-06"
         ],
         "faq": []
     },
     {
-        "slug": "holzpergola",
+        "slug": "pergola-systeme/holzpergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Holzpergola | Apexx Bau",
@@ -736,12 +786,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-stoffdach-glas-schiebesystem-b2c-hero-03"
+            "pergola-systeme-terrasse-tavan-zip-screen-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "lamellen-terrassenberdachung",
+        "slug": "pergola-systeme/lamellen-terrassenberdachung",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Lamellen Terrassenüberdachung | Apexx Bau",
@@ -760,9 +810,9 @@
         "faq": []
     },
     {
-        "slug": "lamellendach-pergola",
+        "slug": "pergola-systeme/lamellendach-pergola",
         "template": "money",
-        "product_id": "bioklimatische-pergola",
+        "product_id": "pergola-systeme",
         "title": "Lamellendach Pergola | Apexx Bau",
         "meta_description": "Hochwertige lamellendach pergola direkt vom Hersteller. Konfigurieren Sie jetzt Ihre lamellendach pergola nach Maß. Premium Qualität & faire Preise.",
         "h1": "Lamellendach Pergola",
@@ -779,7 +829,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-3x3",
+        "slug": "pergola-systeme/pergola-3x3",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 3x3 | Apexx Bau",
@@ -798,7 +848,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-4x4",
+        "slug": "pergola-systeme/pergola-4x4",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 4x4 | Apexx Bau",
@@ -817,7 +867,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-auf-terrasse",
+        "slug": "pergola-systeme/pergola-auf-terrasse",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Auf Terrasse | Apexx Bau",
@@ -836,7 +886,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-ikea",
+        "slug": "pergola-systeme/pergola-ikea",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Ikea | Apexx Bau",
@@ -855,7 +905,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-metall",
+        "slug": "pergola-systeme/pergola-metall",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Metall | Apexx Bau",
@@ -874,7 +924,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-selber-bauen-holz",
+        "slug": "pergola-systeme/pergola-selber-bauen-holz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Selber Bauen Holz | Apexx Bau",
@@ -893,7 +943,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-zum-selber-bauen",
+        "slug": "pergola-systeme/pergola-zum-selber-bauen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Zum Selber Bauen | Apexx Bau",
@@ -912,7 +962,7 @@
         "faq": []
     },
     {
-        "slug": "pergolux-pergola",
+        "slug": "pergola-systeme/pergolux-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergolux Pergola | Apexx Bau",
@@ -926,12 +976,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten_interior_living_room"
+            "pergola-systeme-garten-lamellendach-led-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "biohort-pergola",
+        "slug": "pergola-systeme/biohort-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Biohort Pergola | Apexx Bau",
@@ -945,12 +995,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-04"
+            "pergola-systeme-garten-aluminium-festdach-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "holz-pergola-bausatz",
+        "slug": "pergola-systeme/holz-pergola-bausatz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Holz Pergola Bausatz | Apexx Bau",
@@ -964,12 +1014,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten-systeme-glasdach-tavan-zip-screen-b2c-hero-03"
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "pergola-aus-holz-selber-bauen",
+        "slug": "pergola-systeme/pergola-aus-holz-selber-bauen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Aus Holz Selber Bauen | Apexx Bau",
@@ -988,7 +1038,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-bauen",
+        "slug": "pergola-systeme/pergola-bauen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Bauen | Apexx Bau",
@@ -1007,7 +1057,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-bausatz",
+        "slug": "pergola-systeme/pergola-bausatz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Bausatz | Apexx Bau",
@@ -1026,7 +1076,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-mit-seitenwand",
+        "slug": "pergola-systeme/pergola-mit-seitenwand",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Mit Seitenwand | Apexx Bau",
@@ -1045,7 +1095,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-tennis",
+        "slug": "pergola-systeme/pergola-tennis",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Tennis | Apexx Bau",
@@ -1064,7 +1114,7 @@
         "faq": []
     },
     {
-        "slug": "pergolas",
+        "slug": "pergola-systeme/pergolas",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergolas | Apexx Bau",
@@ -1078,12 +1128,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-05"
+            "pergola-systeme-terrasse-tavan-zip-screen-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "berdachung-pergola",
+        "slug": "pergola-systeme/berdachung-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "üBerdachung Pergola | Apexx Bau",
@@ -1097,12 +1147,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-02"
+            "pergola-systeme-terrasse-lamellendach-glas-schiebesystem-b2c-hero-06"
         ],
         "faq": []
     },
     {
-        "slug": "la-pergola-essen",
+        "slug": "pergola-systeme/la-pergola-essen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "La Pergola Essen | Apexx Bau",
@@ -1121,7 +1171,7 @@
         "faq": []
     },
     {
-        "slug": "metall-pergola",
+        "slug": "pergola-systeme/metall-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Metall Pergola | Apexx Bau",
@@ -1135,12 +1185,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-aluminium-festdach-b2c-hero-01"
+            "zip_screen_sun_protection"
         ],
         "faq": []
     },
     {
-        "slug": "mirador-pergola",
+        "slug": "pergola-systeme/mirador-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Mirador Pergola | Apexx Bau",
@@ -1154,12 +1204,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-04"
+            "pergola-systeme-terrasse-aluminium-festdach-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "obi-pergola",
+        "slug": "pergola-systeme/obi-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Obi Pergola | Apexx Bau",
@@ -1173,12 +1223,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-aluminium-festdach-b2c-hero-01"
+            "pergola-systeme-carport-lamellendach-b2c-hero-05"
         ],
         "faq": []
     },
     {
-        "slug": "pagols",
+        "slug": "pergola-systeme/pagols",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pagols | Apexx Bau",
@@ -1192,12 +1242,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten_interior_living_room"
+            "zip_screen_privacy_evening_modern"
         ],
         "faq": []
     },
     {
-        "slug": "pergola-bauhaus",
+        "slug": "pergola-systeme/pergola-bauhaus",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Bauhaus | Apexx Bau",
@@ -1216,9 +1266,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-glasdach",
+        "slug": "wintergarten-systeme/pergola-glasdach",
         "template": "money",
-        "product_id": "verglasungssysteme",
+        "product_id": "wintergarten-systeme",
         "title": "Pergola Glasdach | Apexx Bau",
         "meta_description": "Hochwertige pergola glasdach direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola glasdach nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Glasdach",
@@ -1235,7 +1285,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-holz-freistehend",
+        "slug": "pergola-systeme/pergola-holz-freistehend",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Holz Freistehend | Apexx Bau",
@@ -1254,7 +1304,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-hornbach",
+        "slug": "pergola-systeme/pergola-hornbach",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Hornbach | Apexx Bau",
@@ -1273,7 +1323,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-kaufen",
+        "slug": "pergola-systeme/pergola-kaufen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Kaufen | Apexx Bau",
@@ -1292,7 +1342,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-mit-dach",
+        "slug": "pergola-systeme/pergola-mit-dach",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Mit Dach | Apexx Bau",
@@ -1311,7 +1361,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-mit-seitenwnden",
+        "slug": "pergola-systeme/pergola-mit-seitenwnden",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Mit Seitenwänden | Apexx Bau",
@@ -1330,7 +1380,7 @@
         "faq": []
     },
     {
-        "slug": "pizzeria-la-pergola",
+        "slug": "pergola-systeme/pizzeria-la-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pizzeria La Pergola | Apexx Bau",
@@ -1344,12 +1394,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-04"
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "restaurant-pergolas",
+        "slug": "pergola-systeme/restaurant-pergolas",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Restaurant Pergolas | Apexx Bau",
@@ -1363,12 +1413,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-stoffdach-b2c-hero-01"
+            "transparentes-rolltor-garage-glas-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "restaurants-pergola",
+        "slug": "pergola-systeme/restaurants-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Restaurants Pergola | Apexx Bau",
@@ -1382,12 +1432,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-02"
+            "pergola-systeme-terrasse-stoffdach-glas-schiebesystem-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "bauhaus-pergola",
+        "slug": "pergola-systeme/bauhaus-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Bauhaus Pergola | Apexx Bau",
@@ -1401,12 +1451,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-garten-seitenbeschattung-b2c-hero-05"
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "bausatz-pergola-holz",
+        "slug": "pergola-systeme/bausatz-pergola-holz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Bausatz Pergola Holz | Apexx Bau",
@@ -1420,12 +1470,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-04"
+            "wintergarten-systeme-glasdach-tavan-zip-screen-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "garten-pergola-holz",
+        "slug": "pergola-systeme/garten-pergola-holz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Garten Pergola Holz | Apexx Bau",
@@ -1444,9 +1494,9 @@
         "faq": []
     },
     {
-        "slug": "glasdach-pergola",
+        "slug": "wintergarten-systeme/glasdach-pergola",
         "template": "money",
-        "product_id": "verglasungssysteme",
+        "product_id": "wintergarten-systeme",
         "title": "Glasdach Pergola | Apexx Bau",
         "meta_description": "Hochwertige glasdach pergola direkt vom Hersteller. Konfigurieren Sie jetzt Ihre glasdach pergola nach Maß. Premium Qualität & faire Preise.",
         "h1": "Glasdach Pergola",
@@ -1463,7 +1513,7 @@
         "faq": []
     },
     {
-        "slug": "la-pergola-kitzingen",
+        "slug": "pergola-systeme/la-pergola-kitzingen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "La Pergola Kitzingen | Apexx Bau",
@@ -1482,7 +1532,7 @@
         "faq": []
     },
     {
-        "slug": "la-pergola-sylt",
+        "slug": "pergola-systeme/la-pergola-sylt",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "La Pergola Sylt | Apexx Bau",
@@ -1501,7 +1551,7 @@
         "faq": []
     },
     {
-        "slug": "pavillon-pergola",
+        "slug": "pergola-systeme/pavillon-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pavillon Pergola | Apexx Bau",
@@ -1515,12 +1565,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-05"
+            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "pergola-3x4-wasserdicht-stabil-winterfest",
+        "slug": "pergola-systeme/pergola-3x4-wasserdicht-stabil-winterfest",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 3x4 Wasserdicht Stabil Winterfest | Apexx Bau",
@@ -1539,7 +1589,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-freistehend-holz",
+        "slug": "pergola-systeme/pergola-freistehend-holz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Freistehend Holz | Apexx Bau",
@@ -1558,9 +1608,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-lamellendach-3x4",
+        "slug": "pergola-systeme/pergola-lamellendach-3x4",
         "template": "money",
-        "product_id": "bioklimatische-pergola",
+        "product_id": "pergola-systeme",
         "title": "Pergola Lamellendach 3x4 | Apexx Bau",
         "meta_description": "Hochwertige pergola lamellendach 3x4 direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola lamellendach 3x4 nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Lamellendach 3x4",
@@ -1577,9 +1627,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-mit-glasdach",
+        "slug": "wintergarten-systeme/pergola-mit-glasdach",
         "template": "money",
-        "product_id": "verglasungssysteme",
+        "product_id": "wintergarten-systeme",
         "title": "Pergola Mit Glasdach | Apexx Bau",
         "meta_description": "Hochwertige pergola mit glasdach direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola mit glasdach nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Mit Glasdach",
@@ -1596,7 +1646,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-mit-sichtschutz",
+        "slug": "pergola-systeme/pergola-mit-sichtschutz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Mit Sichtschutz | Apexx Bau",
@@ -1615,7 +1665,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-obi",
+        "slug": "pergola-systeme/pergola-obi",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Obi | Apexx Bau",
@@ -1634,7 +1684,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-pavillon",
+        "slug": "pergola-systeme/pergola-pavillon",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Pavillon | Apexx Bau",
@@ -1653,7 +1703,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-sonnenschutz",
+        "slug": "pergola-systeme/pergola-sonnenschutz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Sonnenschutz | Apexx Bau",
@@ -1672,7 +1722,7 @@
         "faq": []
     },
     {
-        "slug": "restaurant-pergola",
+        "slug": "pergola-systeme/restaurant-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Restaurant Pergola | Apexx Bau",
@@ -1686,12 +1736,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-04"
+            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-05"
         ],
         "faq": []
     },
     {
-        "slug": "ristorante-pergola-eidelstedt",
+        "slug": "pergola-systeme/ristorante-pergola-eidelstedt",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Ristorante Pergola Eidelstedt | Apexx Bau",
@@ -1705,12 +1755,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-03"
+            "showroom_consultation_germany"
         ],
         "faq": []
     },
     {
-        "slug": "sichtschutz-pergola",
+        "slug": "pergola-systeme/sichtschutz-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Sichtschutz Pergola | Apexx Bau",
@@ -1724,14 +1774,14 @@
             "Montage-Service"
         ],
         "images": [
-            "transparentes-rolltor-garage-glas-b2c-hero-01"
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-03"
         ],
         "faq": []
     },
     {
-        "slug": "terrassenberdachung-lamellendach",
+        "slug": "pergola-systeme/terrassenberdachung-lamellendach",
         "template": "money",
-        "product_id": "bioklimatische-pergola",
+        "product_id": "pergola-systeme",
         "title": "Terrassenüberdachung Lamellendach | Apexx Bau",
         "meta_description": "Hochwertige terrassenüberdachung lamellendach direkt vom Hersteller. Konfigurieren Sie jetzt Ihre terrassenüberdachung lamellendach nach Maß. Premium Qualität & faire Preise.",
         "h1": "Terrassenüberdachung Lamellendach",
@@ -1743,12 +1793,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-05"
+            "transparentes-rolltor-terrasse-glas-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "weide-pergola",
+        "slug": "pergola-systeme/weide-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Weide Pergola | Apexx Bau",
@@ -1762,12 +1812,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-03"
+            "pergola-systeme-terrasse-stoffdach-glas-schiebesystem-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "4-x-4-pergola",
+        "slug": "pergola-systeme/4-x-4-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "4 X 4 Pergola | Apexx Bau",
@@ -1786,7 +1836,7 @@
         "faq": []
     },
     {
-        "slug": "holz-pergola-freistehend",
+        "slug": "pergola-systeme/holz-pergola-freistehend",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Holz Pergola Freistehend | Apexx Bau",
@@ -1800,12 +1850,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-aluminium-festdach-b2c-hero-01"
+            "pergola-systeme-terrasse-lamellendach-glas-schiebesystem-b2c-hero-06"
         ],
         "faq": []
     },
     {
-        "slug": "holzpergola-bausatz",
+        "slug": "pergola-systeme/holzpergola-bausatz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Holzpergola Bausatz | Apexx Bau",
@@ -1819,12 +1869,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola_bioclimatic_detail_rain"
+            "pergola-systeme-garten-aluminium-festdach-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "hornbach-pergola",
+        "slug": "pergola-systeme/hornbach-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Hornbach Pergola | Apexx Bau",
@@ -1838,12 +1888,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-02"
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-07"
         ],
         "faq": []
     },
     {
-        "slug": "hotel-la-pergola",
+        "slug": "pergola-systeme/hotel-la-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Hotel La Pergola | Apexx Bau",
@@ -1857,12 +1907,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-hero-01"
+            "pergola-systeme-carport-lamellendach-b2c-hero-05"
         ],
         "faq": []
     },
     {
-        "slug": "lamellenberdachung-terrasse",
+        "slug": "pergola-systeme/lamellenberdachung-terrasse",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Lamellenüberdachung Terrasse | Apexx Bau",
@@ -1876,14 +1926,14 @@
             "Montage-Service"
         ],
         "images": [
-            "transparentes-rolltor-gewerbe-schaufenster-b2b-hero-01"
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "pavillon-lamellendach",
+        "slug": "pergola-systeme/pavillon-lamellendach",
         "template": "money",
-        "product_id": "bioklimatische-pergola",
+        "product_id": "pergola-systeme",
         "title": "Pavillon Lamellendach | Apexx Bau",
         "meta_description": "Hochwertige pavillon lamellendach direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pavillon lamellendach nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pavillon Lamellendach",
@@ -1895,12 +1945,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-zip-screen-b2c-detail-01"
+            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "pergola-aus-metall",
+        "slug": "pergola-systeme/pergola-aus-metall",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Aus Metall | Apexx Bau",
@@ -1919,7 +1969,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-bauhausstil",
+        "slug": "pergola-systeme/pergola-bauhausstil",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Bauhausstil | Apexx Bau",
@@ -1938,7 +1988,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-bausatz-holz-hornbach",
+        "slug": "pergola-systeme/pergola-bausatz-holz-hornbach",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Bausatz Holz Hornbach | Apexx Bau",
@@ -1957,7 +2007,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-dachterrasse",
+        "slug": "pergola-systeme/pergola-dachterrasse",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Dachterrasse | Apexx Bau",
@@ -1976,7 +2026,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-lamellen",
+        "slug": "pergola-systeme/pergola-lamellen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Lamellen | Apexx Bau",
@@ -1995,9 +2045,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-markise-wasserdicht",
+        "slug": "zip-screen-systeme/pergola-markise-wasserdicht",
         "template": "money",
-        "product_id": "zip-screen",
+        "product_id": "zip-screen-systeme",
         "title": "Pergola Markise Wasserdicht | Apexx Bau",
         "meta_description": "Hochwertige pergola markise wasserdicht direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola markise wasserdicht nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Markise Wasserdicht",
@@ -2014,7 +2064,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-mit-lamellen",
+        "slug": "pergola-systeme/pergola-mit-lamellen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Mit Lamellen | Apexx Bau",
@@ -2033,7 +2083,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-mit-sonnenschutz",
+        "slug": "pergola-systeme/pergola-mit-sonnenschutz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Mit Sonnenschutz | Apexx Bau",
@@ -2052,7 +2102,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-rund",
+        "slug": "pergola-systeme/pergola-rund",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Rund | Apexx Bau",
@@ -2071,7 +2121,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-seitenwand",
+        "slug": "pergola-systeme/pergola-seitenwand",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Seitenwand | Apexx Bau",
@@ -2090,7 +2140,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-sylt",
+        "slug": "pergola-systeme/pergola-sylt",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Sylt | Apexx Bau",
@@ -2109,7 +2159,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-terrassenberdachung",
+        "slug": "pergola-systeme/pergola-terrassenberdachung",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Terrassenüberdachung | Apexx Bau",
@@ -2128,7 +2178,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-wandmontage",
+        "slug": "pergola-systeme/pergola-wandmontage",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Wandmontage | Apexx Bau",
@@ -2147,7 +2197,7 @@
         "faq": []
     },
     {
-        "slug": "pergolas-terrassenberdachung",
+        "slug": "pergola-systeme/pergolas-terrassenberdachung",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergolas Terrassenüberdachung | Apexx Bau",
@@ -2161,12 +2211,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten_interior_living_room"
+            "pergola_bioclimatic_detail_rain"
         ],
         "faq": []
     },
     {
-        "slug": "pergole",
+        "slug": "pergola-systeme/pergole",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergole | Apexx Bau",
@@ -2180,12 +2230,12 @@
             "Montage-Service"
         ],
         "images": [
-            "transparentes-rolltor-terrasse-glas-b2c-hero-02"
+            "showroom_consultation_germany"
         ],
         "faq": []
     },
     {
-        "slug": "pergolensitz",
+        "slug": "pergola-systeme/pergolensitz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergolensitz | Apexx Bau",
@@ -2199,12 +2249,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-hero-07"
+            "pergola-systeme-garten-aluminium-festdach-zip-screen-b2c-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "ristorante-pizzeria-la-pergola",
+        "slug": "pergola-systeme/ristorante-pizzeria-la-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Ristorante Pizzeria La Pergola | Apexx Bau",
@@ -2218,12 +2268,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten_interior_living_room"
+            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "solar-pergola",
+        "slug": "pergola-systeme/solar-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Solar Pergola | Apexx Bau",
@@ -2237,12 +2287,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-aluminium-festdach-b2c-hero-02"
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "terrasse-pergola",
+        "slug": "pergola-systeme/terrasse-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Terrasse Pergola | Apexx Bau",
@@ -2261,7 +2311,7 @@
         "faq": []
     },
     {
-        "slug": "terrassenberdachung-mit-lamellen",
+        "slug": "pergola-systeme/terrassenberdachung-mit-lamellen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Terrassenüberdachung Mit Lamellen | Apexx Bau",
@@ -2275,12 +2325,12 @@
             "Montage-Service"
         ],
         "images": [
-            "transparentes-rolltor-terrasse-glas-b2c-hero-02"
+            "zip-screen-systeme-garten-seitenbeschattung-b2c-hero-05"
         ],
         "faq": []
     },
     {
-        "slug": "blumfeldt-pavillon",
+        "slug": "pergola-systeme/blumfeldt-pavillon",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Blumfeldt Pavillon | Apexx Bau",
@@ -2299,7 +2349,7 @@
         "faq": []
     },
     {
-        "slug": "elektrische-pergola",
+        "slug": "pergola-systeme/elektrische-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Elektrische Pergola | Apexx Bau",
@@ -2313,12 +2363,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten_interior_living_room"
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "holz-pergola-terrasse",
+        "slug": "pergola-systeme/holz-pergola-terrasse",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Holz Pergola Terrasse | Apexx Bau",
@@ -2332,12 +2382,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-hero-01"
+            "zip_screen_sun_protection"
         ],
         "faq": []
     },
     {
-        "slug": "la-pergola-speisekarte",
+        "slug": "pergola-systeme/la-pergola-speisekarte",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "La Pergola Speisekarte | Apexx Bau",
@@ -2356,7 +2406,7 @@
         "faq": []
     },
     {
-        "slug": "markilux-pergola",
+        "slug": "pergola-systeme/markilux-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Markilux Pergola | Apexx Bau",
@@ -2370,12 +2420,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-aluminium-festdach-b2c-hero-02"
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "pergola-4x3",
+        "slug": "pergola-systeme/pergola-4x3",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 4x3 | Apexx Bau",
@@ -2394,7 +2444,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-aldi",
+        "slug": "pergola-systeme/pergola-aldi",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Aldi | Apexx Bau",
@@ -2413,7 +2463,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-als-sonnenschutz",
+        "slug": "pergola-systeme/pergola-als-sonnenschutz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Als Sonnenschutz | Apexx Bau",
@@ -2432,7 +2482,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-auf-balkon",
+        "slug": "pergola-systeme/pergola-auf-balkon",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Auf Balkon | Apexx Bau",
@@ -2451,7 +2501,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-club",
+        "slug": "pergola-systeme/pergola-club",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Club | Apexx Bau",
@@ -2470,7 +2520,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-elektrisch",
+        "slug": "pergola-systeme/pergola-elektrisch",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Elektrisch | Apexx Bau",
@@ -2489,7 +2539,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-freistehend-wasserdicht",
+        "slug": "pergola-systeme/pergola-freistehend-wasserdicht",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Freistehend Wasserdicht | Apexx Bau",
@@ -2508,7 +2558,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-garten-holz",
+        "slug": "pergola-systeme/pergola-garten-holz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Garten Holz | Apexx Bau",
@@ -2527,7 +2577,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-gnstig",
+        "slug": "pergola-systeme/pergola-gnstig",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Günstig | Apexx Bau",
@@ -2546,7 +2596,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-holz-terrasse",
+        "slug": "pergola-systeme/pergola-holz-terrasse",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Holz Terrasse | Apexx Bau",
@@ -2565,7 +2615,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-konfigurator",
+        "slug": "pergola-systeme/pergola-konfigurator",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Konfigurator | Apexx Bau",
@@ -2584,9 +2634,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-markisen",
+        "slug": "zip-screen-systeme/pergola-markisen",
         "template": "money",
-        "product_id": "zip-screen",
+        "product_id": "zip-screen-systeme",
         "title": "Pergola Markisen | Apexx Bau",
         "meta_description": "Hochwertige pergola markisen direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola markisen nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Markisen",
@@ -2603,9 +2653,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-mit-schiebedach",
+        "slug": "wintergarten-systeme/pergola-mit-schiebedach",
         "template": "money",
-        "product_id": "verglasungssysteme",
+        "product_id": "wintergarten-systeme",
         "title": "Pergola Mit Schiebedach | Apexx Bau",
         "meta_description": "Hochwertige pergola mit schiebedach direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola mit schiebedach nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Mit Schiebedach",
@@ -2622,7 +2672,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-nach-ma",
+        "slug": "pergola-systeme/pergola-nach-ma",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Nach Maß | Apexx Bau",
@@ -2641,9 +2691,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-schiebedach",
+        "slug": "wintergarten-systeme/pergola-schiebedach",
         "template": "money",
-        "product_id": "verglasungssysteme",
+        "product_id": "wintergarten-systeme",
         "title": "Pergola Schiebedach | Apexx Bau",
         "meta_description": "Hochwertige pergola schiebedach direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola schiebedach nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Schiebedach",
@@ -2660,7 +2710,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-terasse",
+        "slug": "pergola-systeme/pergola-terasse",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Terasse | Apexx Bau",
@@ -2679,7 +2729,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-terrasse-holz",
+        "slug": "pergola-systeme/pergola-terrasse-holz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Terrasse Holz | Apexx Bau",
@@ -2698,7 +2748,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-vorhang",
+        "slug": "pergola-systeme/pergola-vorhang",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Vorhang | Apexx Bau",
@@ -2717,7 +2767,7 @@
         "faq": []
     },
     {
-        "slug": "vorhang-pergola",
+        "slug": "pergola-systeme/vorhang-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Vorhang Pergola | Apexx Bau",
@@ -2731,12 +2781,12 @@
             "Montage-Service"
         ],
         "images": [
-            "transparentes-rolltor-garage-glas-b2c-hero-01"
+            "pergola-systeme-garten-aluminium-festdach-zip-screen-b2c-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "alu-pergola",
+        "slug": "pergola-systeme/alu-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Alu Pergola | Apexx Bau",
@@ -2755,7 +2805,7 @@
         "faq": []
     },
     {
-        "slug": "dachterrasse-pergola",
+        "slug": "pergola-systeme/dachterrasse-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Dachterrasse Pergola | Apexx Bau",
@@ -2769,12 +2819,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip_screen_sun_protection"
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-02"
         ],
         "faq": []
     },
     {
-        "slug": "freistehende-pergola",
+        "slug": "pergola-systeme/freistehende-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Freistehende Pergola | Apexx Bau",
@@ -2788,14 +2838,14 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-03"
+            "pergola-systeme-garten-lamellendach-led-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "freistehende-pergola-markise",
+        "slug": "zip-screen-systeme/freistehende-pergola-markise",
         "template": "money",
-        "product_id": "zip-screen",
+        "product_id": "zip-screen-systeme",
         "title": "Freistehende Pergola Markise | Apexx Bau",
         "meta_description": "Hochwertige freistehende pergola markise direkt vom Hersteller. Konfigurieren Sie jetzt Ihre freistehende pergola markise nach Maß. Premium Qualität & faire Preise.",
         "h1": "Freistehende Pergola Markise",
@@ -2807,12 +2857,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-stoffdach-b2c-hero-02"
+            "pergola-systeme-carport-lamellendach-b2c-hero-05"
         ],
         "faq": []
     },
     {
-        "slug": "gnstige-pergola",
+        "slug": "pergola-systeme/gnstige-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Günstige Pergola | Apexx Bau",
@@ -2826,12 +2876,12 @@
             "Montage-Service"
         ],
         "images": [
-            "hero-bg"
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-07"
         ],
         "faq": []
     },
     {
-        "slug": "la-pergola",
+        "slug": "pergola-systeme/la-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "La Pergola. | Apexx Bau",
@@ -2850,7 +2900,7 @@
         "faq": []
     },
     {
-        "slug": "outsunny-pergola",
+        "slug": "pergola-systeme/outsunny-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Outsunny Pergola | Apexx Bau",
@@ -2864,12 +2914,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-zip-screen-b2c-detail-01"
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-06"
         ],
         "faq": []
     },
     {
-        "slug": "pergola-2x3m",
+        "slug": "pergola-systeme/pergola-2x3m",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 2x3m | Apexx Bau",
@@ -2888,7 +2938,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-3x3-wasserdicht-stabil-winterfest",
+        "slug": "pergola-systeme/pergola-3x3-wasserdicht-stabil-winterfest",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 3x3 Wasserdicht Stabil Winterfest | Apexx Bau",
@@ -2907,7 +2957,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-3x6",
+        "slug": "pergola-systeme/pergola-3x6",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 3x6 | Apexx Bau",
@@ -2926,7 +2976,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-alu",
+        "slug": "pergola-systeme/pergola-alu",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Alu | Apexx Bau",
@@ -2945,7 +2995,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-bepflanzen",
+        "slug": "pergola-systeme/pergola-bepflanzen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Bepflanzen | Apexx Bau",
@@ -2964,7 +3014,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-fr-terrasse",
+        "slug": "pergola-systeme/pergola-fr-terrasse",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Für Terrasse | Apexx Bau",
@@ -2983,7 +3033,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-fr-weinreben",
+        "slug": "pergola-systeme/pergola-fr-weinreben",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Für Weinreben | Apexx Bau",
@@ -3002,7 +3052,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-holz-mit-dach",
+        "slug": "pergola-systeme/pergola-holz-mit-dach",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Holz Mit Dach | Apexx Bau",
@@ -3021,7 +3071,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-metall-freistehend",
+        "slug": "pergola-systeme/pergola-metall-freistehend",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Metall Freistehend | Apexx Bau",
@@ -3040,9 +3090,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-mit-lamellendach-3x4m",
+        "slug": "pergola-systeme/pergola-mit-lamellendach-3x4m",
         "template": "money",
-        "product_id": "bioklimatische-pergola",
+        "product_id": "pergola-systeme",
         "title": "Pergola Mit Lamellendach 3x4m | Apexx Bau",
         "meta_description": "Hochwertige pergola mit lamellendach 3x4m direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola mit lamellendach 3x4m nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Mit Lamellendach 3x4m",
@@ -3059,7 +3109,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-modern",
+        "slug": "pergola-systeme/pergola-modern",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Modern | Apexx Bau",
@@ -3078,7 +3128,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-pour-terrasse",
+        "slug": "pergola-systeme/pergola-pour-terrasse",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Pour Terrasse | Apexx Bau",
@@ -3097,7 +3147,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-rankhilfe",
+        "slug": "pergola-systeme/pergola-rankhilfe",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Rankhilfe | Apexx Bau",
@@ -3116,7 +3166,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-solar",
+        "slug": "pergola-systeme/pergola-solar",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Solar | Apexx Bau",
@@ -3135,7 +3185,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-tarasowa",
+        "slug": "pergola-systeme/pergola-tarasowa",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Tarasowa | Apexx Bau",
@@ -3154,7 +3204,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-wasserdicht",
+        "slug": "pergola-systeme/pergola-wasserdicht",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Wasserdicht | Apexx Bau",
@@ -3173,7 +3223,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-wei",
+        "slug": "pergola-systeme/pergola-wei",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Weiß | Apexx Bau",
@@ -3192,7 +3242,7 @@
         "faq": []
     },
     {
-        "slug": "pergolen-aus-holz",
+        "slug": "pergola-systeme/pergolen-aus-holz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergolen Aus Holz | Apexx Bau",
@@ -3206,12 +3256,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-aluminium-festdach-zip-screen-b2c-hero-04"
+            "pergola-systeme-terrasse-stoffdach-glas-schiebesystem-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "seitenwnde-fr-pergola",
+        "slug": "pergola-systeme/seitenwnde-fr-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Seitenwände Für Pergola | Apexx Bau",
@@ -3225,12 +3275,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-01"
+            "transparentes-rolltor-gewerbe-schaufenster-b2b-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "sweek-pergola",
+        "slug": "pergola-systeme/sweek-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Sweek Pergola | Apexx Bau",
@@ -3244,12 +3294,12 @@
             "Montage-Service"
         ],
         "images": [
-            "transparentes-rolltor-gewerbe-schaufenster-b2b-hero-01"
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-03"
         ],
         "faq": []
     },
     {
-        "slug": "terrassen-pergola",
+        "slug": "pergola-systeme/terrassen-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Terrassen Pergola | Apexx Bau",
@@ -3263,12 +3313,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-stoffdach-glas-schiebesystem-b2c-hero-03"
+            "wintergarten_modern_night"
         ],
         "faq": []
     },
     {
-        "slug": "weinrebe-pergola",
+        "slug": "pergola-systeme/weinrebe-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Weinrebe Pergola | Apexx Bau",
@@ -3282,12 +3332,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-aluminium-festdach-b2c-hero-02"
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-02"
         ],
         "faq": []
     },
     {
-        "slug": "weie-pergola",
+        "slug": "pergola-systeme/weie-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Weiße Pergola | Apexx Bau",
@@ -3301,12 +3351,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-glas-schiebesystem-b2c-hero-06"
+            "transparentes-rolltor-gewerbe-schaufenster-b2b-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "berdachung-terrasse-lamellen",
+        "slug": "pergola-systeme/berdachung-terrasse-lamellen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "üBerdachung Terrasse Lamellen | Apexx Bau",
@@ -3320,12 +3370,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-hero-07"
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "aluminium-pergola",
+        "slug": "pergola-systeme/aluminium-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Aluminium Pergola | Apexx Bau",
@@ -3344,7 +3394,7 @@
         "faq": []
     },
     {
-        "slug": "diy-pergola",
+        "slug": "pergola-systeme/diy-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Diy Pergola | Apexx Bau",
@@ -3358,12 +3408,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten-systeme-glasdach-zip-screen-b2c-hero-01"
+            "transparentes-rolltor-garage-glas-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "freistehende-pergola-metall",
+        "slug": "pergola-systeme/freistehende-pergola-metall",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Freistehende Pergola Metall | Apexx Bau",
@@ -3377,14 +3427,14 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-tavan-zip-screen-detail-01"
+            "zip-screen-systeme-garten-seitenbeschattung-b2c-hero-05"
         ],
         "faq": []
     },
     {
-        "slug": "glas-pergola",
+        "slug": "wintergarten-systeme/glas-pergola",
         "template": "money",
-        "product_id": "verglasungssysteme",
+        "product_id": "wintergarten-systeme",
         "title": "Glas Pergola | Apexx Bau",
         "meta_description": "Hochwertige glas pergola direkt vom Hersteller. Konfigurieren Sie jetzt Ihre glas pergola nach Maß. Premium Qualität & faire Preise.",
         "h1": "Glas Pergola",
@@ -3401,7 +3451,7 @@
         "faq": []
     },
     {
-        "slug": "lamellen-pergola-wasserdicht",
+        "slug": "pergola-systeme/lamellen-pergola-wasserdicht",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Lamellen Pergola Wasserdicht | Apexx Bau",
@@ -3420,7 +3470,7 @@
         "faq": []
     },
     {
-        "slug": "lidl-pergola",
+        "slug": "pergola-systeme/lidl-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Lidl Pergola | Apexx Bau",
@@ -3434,12 +3484,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-stoffdach-b2c-hero-02"
+            "pergola-systeme-garten-lamellendach-led-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "mr-gardener-pergola",
+        "slug": "pergola-systeme/mr-gardener-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Mr Gardener Pergola | Apexx Bau",
@@ -3453,12 +3503,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
+            "wintergarten_modern_night"
         ],
         "faq": []
     },
     {
-        "slug": "pegola",
+        "slug": "pergola-systeme/pegola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pegola | Apexx Bau",
@@ -3472,12 +3522,12 @@
             "Montage-Service"
         ],
         "images": [
-            "transparentes-rolltor-gewerbe-schaufenster-b2b-hero-01"
+            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "perfola",
+        "slug": "pergola-systeme/perfola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Perfola | Apexx Bau",
@@ -3491,12 +3541,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-hero-02"
+            "transparentes-rolltor-terrasse-glas-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "pergola-4x4-wasserdicht-stabil-winterfest",
+        "slug": "pergola-systeme/pergola-4x4-wasserdicht-stabil-winterfest",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 4x4 Wasserdicht Stabil Winterfest | Apexx Bau",
@@ -3515,7 +3565,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-anthrazit",
+        "slug": "pergola-systeme/pergola-anthrazit",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Anthrazit | Apexx Bau",
@@ -3534,7 +3584,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-aus-bambus",
+        "slug": "pergola-systeme/pergola-aus-bambus",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Aus Bambus | Apexx Bau",
@@ -3553,7 +3603,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-aus-holz-bauen",
+        "slug": "pergola-systeme/pergola-aus-holz-bauen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Aus Holz Bauen | Apexx Bau",
@@ -3572,7 +3622,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-aus-polen",
+        "slug": "pergola-systeme/pergola-aus-polen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Aus Polen | Apexx Bau",
@@ -3591,7 +3641,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-aus-stahl",
+        "slug": "pergola-systeme/pergola-aus-stahl",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Aus Stahl | Apexx Bau",
@@ -3610,7 +3660,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-bauen-holz",
+        "slug": "pergola-systeme/pergola-bauen-holz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Bauen Holz | Apexx Bau",
@@ -3629,7 +3679,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-freistehend-metall",
+        "slug": "pergola-systeme/pergola-freistehend-metall",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Freistehend Metall | Apexx Bau",
@@ -3648,7 +3698,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-fr-dachterrasse",
+        "slug": "pergola-systeme/pergola-fr-dachterrasse",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Für Dachterrasse | Apexx Bau",
@@ -3667,9 +3717,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-markise-wetterfest",
+        "slug": "zip-screen-systeme/pergola-markise-wetterfest",
         "template": "money",
-        "product_id": "zip-screen",
+        "product_id": "zip-screen-systeme",
         "title": "Pergola Markise Wetterfest | Apexx Bau",
         "meta_description": "Hochwertige pergola markise wetterfest direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola markise wetterfest nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Markise Wetterfest",
@@ -3686,7 +3736,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-polen",
+        "slug": "pergola-systeme/pergola-polen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Polen | Apexx Bau",
@@ -3705,7 +3755,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-regenschutz",
+        "slug": "pergola-systeme/pergola-regenschutz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Regenschutz | Apexx Bau",
@@ -3724,7 +3774,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-stahl",
+        "slug": "pergola-systeme/pergola-stahl",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Stahl | Apexx Bau",
@@ -3743,7 +3793,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-stoffdach",
+        "slug": "pergola-systeme/pergola-stoffdach",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Stoffdach | Apexx Bau",
@@ -3762,7 +3812,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-terrasse-freistehend",
+        "slug": "pergola-systeme/pergola-terrasse-freistehend",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Terrasse Freistehend | Apexx Bau",
@@ -3781,7 +3831,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-terrassendach",
+        "slug": "pergola-systeme/pergola-terrassendach",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Terrassendach | Apexx Bau",
@@ -3800,7 +3850,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-weinranken",
+        "slug": "pergola-systeme/pergola-weinranken",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Weinranken | Apexx Bau",
@@ -3819,7 +3869,7 @@
         "faq": []
     },
     {
-        "slug": "purple-leaf-pergola",
+        "slug": "pergola-systeme/purple-leaf-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Purple Leaf Pergola | Apexx Bau",
@@ -3833,12 +3883,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-02"
+            "pergola-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "restaurant-la-pergola",
+        "slug": "pergola-systeme/restaurant-la-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Restaurant La Pergola | Apexx Bau",
@@ -3852,12 +3902,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-03"
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "speisekarte-la-pergola",
+        "slug": "pergola-systeme/speisekarte-la-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Speisekarte La Pergola | Apexx Bau",
@@ -3871,12 +3921,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-tavan-zip-screen-detail-01"
+            "wintergarten-systeme-glasdach-tavan-zip-screen-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "stahl-pergola",
+        "slug": "pergola-systeme/stahl-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Stahl Pergola | Apexx Bau",
@@ -3890,12 +3940,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten_modern_night"
+            "pergola-systeme-terrasse-stoffdach-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "terrassendach-lamellen",
+        "slug": "pergola-systeme/terrassendach-lamellen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Terrassendach Lamellen | Apexx Bau",
@@ -3909,12 +3959,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
+            "wintergarten_interior_living_room"
         ],
         "faq": []
     },
     {
-        "slug": "terrassenberdachung-aus-holland",
+        "slug": "pergola-systeme/terrassenberdachung-aus-holland",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Terrassenüberdachung Aus Holland | Apexx Bau",
@@ -3928,12 +3978,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-02"
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-07"
         ],
         "faq": []
     },
     {
-        "slug": "terrassenberdachung-stahl",
+        "slug": "pergola-systeme/terrassenberdachung-stahl",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Terrassenüberdachung Stahl | Apexx Bau",
@@ -3947,12 +3997,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-05"
+            "pergola-systeme-terrasse-lamellendach-zip-screen-b2c-detail-01"
         ],
         "faq": []
     },
     {
-        "slug": "toom-pergola",
+        "slug": "pergola-systeme/toom-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Toom Pergola | Apexx Bau",
@@ -3966,12 +4016,12 @@
             "Montage-Service"
         ],
         "images": [
-            "showroom_consultation_germany"
+            "transparentes-rolltor-gewerbe-schaufenster-b2b-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "unopiu-pergola",
+        "slug": "pergola-systeme/unopiu-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Unopiu Pergola | Apexx Bau",
@@ -3985,12 +4035,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-aluminium-festdach-b2c-hero-01"
+            "pergola-systeme-terrasse-tavan-zip-screen-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "vorhnge-fr-pergola",
+        "slug": "pergola-systeme/vorhnge-fr-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Vorhänge Für Pergola | Apexx Bau",
@@ -4004,12 +4054,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-tavan-zip-screen-b2c-hero-01"
+            "pergola-systeme-terrasse-stoffdach-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "weinreben-pergola",
+        "slug": "pergola-systeme/weinreben-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Weinreben Pergola | Apexx Bau",
@@ -4023,12 +4073,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
+            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-05"
         ],
         "faq": []
     },
     {
-        "slug": "aparthotel-la-pergola-andratx",
+        "slug": "pergola-systeme/aparthotel-la-pergola-andratx",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Aparthotel La Pergola Andratx | Apexx Bau",
@@ -4042,12 +4092,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-05"
+            "pergola-systeme-terrasse-stoffdach-glas-schiebesystem-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "bank-mit-pergola",
+        "slug": "pergola-systeme/bank-mit-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Bank Mit Pergola | Apexx Bau",
@@ -4061,12 +4111,12 @@
             "Montage-Service"
         ],
         "images": [
-            "windschutzglas-systeme-terrasse-verstellbar-b2c-hero-01"
+            "showroom_consultation_germany"
         ],
         "faq": []
     },
     {
-        "slug": "bepflanzung-pergola",
+        "slug": "pergola-systeme/bepflanzung-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Bepflanzung Pergola | Apexx Bau",
@@ -4080,12 +4130,12 @@
             "Montage-Service"
         ],
         "images": [
-            "transparentes-rolltor-terrasse-glas-b2c-hero-02"
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-01"
         ],
         "faq": []
     },
     {
-        "slug": "garching-la-pergola",
+        "slug": "pergola-systeme/garching-la-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Garching La Pergola | Apexx Bau",
@@ -4099,12 +4149,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-stoffdach-b2c-hero-02"
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "gartenhaus-mit-pergola",
+        "slug": "pergola-systeme/gartenhaus-mit-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Gartenhaus Mit Pergola | Apexx Bau",
@@ -4118,12 +4168,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-seitenbeschattung-b2c-hero-02"
+            "pergola-systeme-terrasse-aluminium-festdach-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "holz-fr-pergola-bauen",
+        "slug": "pergola-systeme/holz-fr-pergola-bauen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Holz Für Pergola Bauen | Apexx Bau",
@@ -4137,12 +4187,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
+            "windschutzglas-systeme-terrasse-verstellbar-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "holz-pergola-bauen",
+        "slug": "pergola-systeme/holz-pergola-bauen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Holz Pergola Bauen | Apexx Bau",
@@ -4156,12 +4206,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-tavan-zip-screen-detail-01"
+            "pergola-systeme-terrasse-stoffdach-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "holz-pergola-kaufen",
+        "slug": "pergola-systeme/holz-pergola-kaufen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Holz Pergola Kaufen | Apexx Bau",
@@ -4175,12 +4225,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-carport-lamellendach-b2c-hero-05"
+            "zip-screen-systeme-garten-seitenbeschattung-b2c-hero-05"
         ],
         "faq": []
     },
     {
-        "slug": "holz-pergola-modern",
+        "slug": "pergola-systeme/holz-pergola-modern",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Holz Pergola Modern | Apexx Bau",
@@ -4194,12 +4244,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-seitenbeschattung-b2c-hero-02"
+            "pergola-systeme-garten-lamellendach-led-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "hotel-pergola",
+        "slug": "pergola-systeme/hotel-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Hotel Pergola | Apexx Bau",
@@ -4213,12 +4263,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-hero-02"
+            "pergola-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "la-pergola-giengen",
+        "slug": "pergola-systeme/la-pergola-giengen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "La Pergola Giengen | Apexx Bau",
@@ -4237,7 +4287,7 @@
         "faq": []
     },
     {
-        "slug": "mallorca-la-pergola",
+        "slug": "pergola-systeme/mallorca-la-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Mallorca La Pergola | Apexx Bau",
@@ -4251,12 +4301,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-04"
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-01"
         ],
         "faq": []
     },
     {
-        "slug": "metall-pergola-bausatz",
+        "slug": "pergola-systeme/metall-pergola-bausatz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Metall Pergola Bausatz | Apexx Bau",
@@ -4270,12 +4320,12 @@
             "Montage-Service"
         ],
         "images": [
-            "hero-bg"
+            "pergola-systeme-terrasse-tavan-zip-screen-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "metall-berdachung",
+        "slug": "pergola-systeme/metall-berdachung",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Metall üBerdachung | Apexx Bau",
@@ -4289,12 +4339,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-aluminium-festdach-zip-screen-b2c-hero-04"
+            "pergola-systeme-terrasse-stoffdach-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "pergola-2x2m",
+        "slug": "pergola-systeme/pergola-2x2m",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 2x2m | Apexx Bau",
@@ -4313,7 +4363,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-3x4-mit-seitenteilen",
+        "slug": "pergola-systeme/pergola-3x4-mit-seitenteilen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 3x4 Mit Seitenteilen | Apexx Bau",
@@ -4332,7 +4382,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-4x6",
+        "slug": "pergola-systeme/pergola-4x6",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 4x6 | Apexx Bau",
@@ -4351,7 +4401,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-5x4m",
+        "slug": "pergola-systeme/pergola-5x4m",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 5x4m | Apexx Bau",
@@ -4370,7 +4420,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-6x3",
+        "slug": "pergola-systeme/pergola-6x3",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 6x3 | Apexx Bau",
@@ -4389,7 +4439,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-aluminium-3x4",
+        "slug": "pergola-systeme/pergola-aluminium-3x4",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Aluminium 3x4 | Apexx Bau",
@@ -4408,7 +4458,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-aluminium-freistehend",
+        "slug": "pergola-systeme/pergola-aluminium-freistehend",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Aluminium Freistehend | Apexx Bau",
@@ -4427,7 +4477,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-anbau",
+        "slug": "pergola-systeme/pergola-anbau",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Anbau | Apexx Bau",
@@ -4446,7 +4496,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-aus-holz-kaufen",
+        "slug": "pergola-systeme/pergola-aus-holz-kaufen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Aus Holz Kaufen | Apexx Bau",
@@ -4465,7 +4515,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-classic-111",
+        "slug": "pergola-systeme/pergola-classic-111",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Classic 111 | Apexx Bau",
@@ -4484,7 +4534,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-dach-wasserdicht",
+        "slug": "pergola-systeme/pergola-dach-wasserdicht",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Dach Wasserdicht | Apexx Bau",
@@ -4503,7 +4553,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-fr-wein",
+        "slug": "pergola-systeme/pergola-fr-wein",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Für Wein | Apexx Bau",
@@ -4522,7 +4572,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-garching",
+        "slug": "pergola-systeme/pergola-garching",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Garching | Apexx Bau",
@@ -4541,7 +4591,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-holz-bauen",
+        "slug": "pergola-systeme/pergola-holz-bauen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Holz Bauen | Apexx Bau",
@@ -4560,7 +4610,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-holz-kaufen",
+        "slug": "pergola-systeme/pergola-holz-kaufen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Holz Kaufen | Apexx Bau",
@@ -4579,7 +4629,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-klein",
+        "slug": "pergola-systeme/pergola-klein",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Klein | Apexx Bau",
@@ -4598,7 +4648,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-kosten",
+        "slug": "pergola-systeme/pergola-kosten",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Kosten | Apexx Bau",
@@ -4617,9 +4667,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-mit-lamellendach-und-seitenwand",
+        "slug": "pergola-systeme/pergola-mit-lamellendach-und-seitenwand",
         "template": "money",
-        "product_id": "bioklimatische-pergola",
+        "product_id": "pergola-systeme",
         "title": "Pergola Mit Lamellendach Und Seitenwand | Apexx Bau",
         "meta_description": "Hochwertige pergola mit lamellendach und seitenwand direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola mit lamellendach und seitenwand nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Mit Lamellendach Und Seitenwand",
@@ -4636,7 +4686,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-ogrodowa",
+        "slug": "pergola-systeme/pergola-ogrodowa",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Ogrodowa | Apexx Bau",
@@ -4655,7 +4705,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-ohne-installation",
+        "slug": "pergola-systeme/pergola-ohne-installation",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Ohne Installation | Apexx Bau",
@@ -4674,7 +4724,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-warema",
+        "slug": "pergola-systeme/pergola-warema",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Warema | Apexx Bau",
@@ -4693,7 +4743,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-berdachung-wasserdicht",
+        "slug": "pergola-systeme/pergola-berdachung-wasserdicht",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola üBerdachung Wasserdicht | Apexx Bau",
@@ -4712,7 +4762,7 @@
         "faq": []
     },
     {
-        "slug": "pergolas-bauhaus",
+        "slug": "pergola-systeme/pergolas-bauhaus",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergolas Bauhaus | Apexx Bau",
@@ -4726,12 +4776,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-lamellendach-led-b2c-hero-03"
+            "pergola-systeme-terrasse-lamellendach-zip-screen-b2c-detail-01"
         ],
         "faq": []
     },
     {
-        "slug": "pergolas-terrassendach",
+        "slug": "pergola-systeme/pergolas-terrassendach",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergolas Terrassendach | Apexx Bau",
@@ -4745,12 +4795,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-04"
+            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-05"
         ],
         "faq": []
     },
     {
-        "slug": "pergolla",
+        "slug": "pergola-systeme/pergolla",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergolla | Apexx Bau",
@@ -4764,12 +4814,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten_modern_night"
+            "pergola-systeme-terrasse-stoffdach-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "pergolux-pergola-s2",
+        "slug": "pergola-systeme/pergolux-pergola-s2",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergolux Pergola S2 | Apexx Bau",
@@ -4783,12 +4833,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-06"
+            "pergola-systeme-terrasse-stoffdach-glas-schiebesystem-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "prergola",
+        "slug": "pergola-systeme/prergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Prergola | Apexx Bau",
@@ -4802,12 +4852,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-06"
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-01"
         ],
         "faq": []
     },
     {
-        "slug": "terrassenberdachung-pergola",
+        "slug": "pergola-systeme/terrassenberdachung-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Terrassenüberdachung Pergola | Apexx Bau",
@@ -4821,12 +4871,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten_interior_living_room"
+            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "warema-pergola",
+        "slug": "pergola-systeme/warema-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Warema Pergola | Apexx Bau",
@@ -4840,12 +4890,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
+            "transparentes-rolltor-gewerbe-schaufenster-b2b-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "wintergarten-pergola",
+        "slug": "wintergarten-systeme/wintergarten-pergola",
         "template": "money",
         "product_id": "wintergarten-systeme",
         "title": "Wintergarten Pergola | Apexx Bau",
@@ -4864,7 +4914,7 @@
         "faq": []
     },
     {
-        "slug": "aluminum-pergola",
+        "slug": "pergola-systeme/aluminum-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Aluminum Pergola | Apexx Bau",
@@ -4878,12 +4928,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-carport-lamellendach-b2c-hero-05"
+            "pergola-systeme-garten-aluminium-festdach-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "angelas-pergola",
+        "slug": "pergola-systeme/angelas-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Angelas Pergola | Apexx Bau",
@@ -4897,12 +4947,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-02"
+            "pergola-systeme-garten-aluminium-festdach-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "bauhaus-pergolas",
+        "slug": "pergola-systeme/bauhaus-pergolas",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Bauhaus Pergolas | Apexx Bau",
@@ -4916,12 +4966,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-hero-01"
+            "pergola-systeme-terrasse-stoffdach-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "dach-fr-pergola",
+        "slug": "pergola-systeme/dach-fr-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Dach Für Pergola | Apexx Bau",
@@ -4940,7 +4990,7 @@
         "faq": []
     },
     {
-        "slug": "freistehende-pergola-aluminium",
+        "slug": "pergola-systeme/freistehende-pergola-aluminium",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Freistehende Pergola Aluminium | Apexx Bau",
@@ -4954,12 +5004,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-02"
+            "wintergarten-systeme-glasdach-zip-screen-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "grill-pergola",
+        "slug": "pergola-systeme/grill-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Grill Pergola | Apexx Bau",
@@ -4973,12 +5023,12 @@
             "Montage-Service"
         ],
         "images": [
-            "transparentes-rolltor-gewerbe-schaufenster-b2b-hero-01"
+            "pergola_bioclimatic_detail_rain"
         ],
         "faq": []
     },
     {
-        "slug": "hagebau-pergola",
+        "slug": "pergola-systeme/hagebau-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Hagebau Pergola | Apexx Bau",
@@ -4992,12 +5042,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "holz-fr-pergola-kaufen",
+        "slug": "pergola-systeme/holz-fr-pergola-kaufen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Holz Für Pergola Kaufen | Apexx Bau",
@@ -5011,12 +5061,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-tavan-zip-screen-detail-01"
+            "pergola-systeme-terrasse-stoffdach-glas-schiebesystem-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "holz-pergola-garten",
+        "slug": "pergola-systeme/holz-pergola-garten",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Holz Pergola Garten | Apexx Bau",
@@ -5030,12 +5080,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-lamellendach-led-b2c-hero-03"
+            "pergola-systeme-terrasse-stoffdach-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "kleine-pergola",
+        "slug": "pergola-systeme/kleine-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Kleine Pergola | Apexx Bau",
@@ -5049,12 +5099,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-05"
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "kosten-pergola",
+        "slug": "pergola-systeme/kosten-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Kosten Pergola | Apexx Bau",
@@ -5068,12 +5118,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-stoffdach-b2c-hero-02"
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-07"
         ],
         "faq": []
     },
     {
-        "slug": "la-pergola-aspach",
+        "slug": "pergola-systeme/la-pergola-aspach",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "La Pergola Aspach | Apexx Bau",
@@ -5092,7 +5142,7 @@
         "faq": []
     },
     {
-        "slug": "la-pergola-nrnberg",
+        "slug": "pergola-systeme/la-pergola-nrnberg",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "La Pergola Nürnberg | Apexx Bau",
@@ -5111,7 +5161,7 @@
         "faq": []
     },
     {
-        "slug": "la-pergola-wenningstedt",
+        "slug": "pergola-systeme/la-pergola-wenningstedt",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "La Pergola Wenningstedt | Apexx Bau",
@@ -5130,7 +5180,7 @@
         "faq": []
     },
     {
-        "slug": "lamellen-pavillion",
+        "slug": "pergola-systeme/lamellen-pavillion",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Lamellen Pavillion | Apexx Bau",
@@ -5149,7 +5199,7 @@
         "faq": []
     },
     {
-        "slug": "lamellen-pergola-3x4",
+        "slug": "pergola-systeme/lamellen-pergola-3x4",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Lamellen Pergola 3x4 | Apexx Bau",
@@ -5168,7 +5218,7 @@
         "faq": []
     },
     {
-        "slug": "mobile-terrassenberdachung",
+        "slug": "pergola-systeme/mobile-terrassenberdachung",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Mobile Terrassenüberdachung | Apexx Bau",
@@ -5182,12 +5232,12 @@
             "Montage-Service"
         ],
         "images": [
-            "transparentes-rolltor-gewerbe-schaufenster-b2b-hero-01"
+            "pergola-systeme-terrasse-tavan-zip-screen-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "pavillons-pergolen",
+        "slug": "pergola-systeme/pavillons-pergolen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pavillons Pergolen | Apexx Bau",
@@ -5201,12 +5251,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-hero-07"
+            "windschutzglas-systeme-terrasse-verstellbar-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "pergola-3x2m",
+        "slug": "pergola-systeme/pergola-3x2m",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 3x2m | Apexx Bau",
@@ -5225,7 +5275,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-bad-hersfeld",
+        "slug": "pergola-systeme/pergola-bad-hersfeld",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Bad Hersfeld | Apexx Bau",
@@ -5244,7 +5294,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-bausatz-holz-obi",
+        "slug": "pergola-systeme/pergola-bausatz-holz-obi",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Bausatz Holz Obi | Apexx Bau",
@@ -5263,7 +5313,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-bausatz-metall",
+        "slug": "pergola-systeme/pergola-bausatz-metall",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Bausatz Metall | Apexx Bau",
@@ -5282,7 +5332,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-befestigen-ohne-bohren",
+        "slug": "pergola-systeme/pergola-befestigen-ohne-bohren",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Befestigen Ohne Bohren | Apexx Bau",
@@ -5301,7 +5351,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-bodenbefestigung",
+        "slug": "pergola-systeme/pergola-bodenbefestigung",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Bodenbefestigung | Apexx Bau",
@@ -5320,7 +5370,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-jysk",
+        "slug": "pergola-systeme/pergola-jysk",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Jysk | Apexx Bau",
@@ -5339,7 +5389,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-kaufen-holz",
+        "slug": "pergola-systeme/pergola-kaufen-holz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Kaufen Holz | Apexx Bau",
@@ -5358,9 +5408,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-lamellendach-4x4",
+        "slug": "pergola-systeme/pergola-lamellendach-4x4",
         "template": "money",
-        "product_id": "bioklimatische-pergola",
+        "product_id": "pergola-systeme",
         "title": "Pergola Lamellendach 4x4 | Apexx Bau",
         "meta_description": "Hochwertige pergola lamellendach 4x4 direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola lamellendach 4x4 nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Lamellendach 4x4",
@@ -5377,7 +5427,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-lidl",
+        "slug": "pergola-systeme/pergola-lidl",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Lidl | Apexx Bau",
@@ -5396,9 +5446,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-markise-elektrisch",
+        "slug": "zip-screen-systeme/pergola-markise-elektrisch",
         "template": "money",
-        "product_id": "zip-screen",
+        "product_id": "zip-screen-systeme",
         "title": "Pergola Markise Elektrisch | Apexx Bau",
         "meta_description": "Hochwertige pergola markise elektrisch direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola markise elektrisch nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Markise Elektrisch",
@@ -5415,7 +5465,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-metall-selber-bauen",
+        "slug": "pergola-systeme/pergola-metall-selber-bauen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Metall Selber Bauen | Apexx Bau",
@@ -5434,7 +5484,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-mit-solardach",
+        "slug": "pergola-systeme/pergola-mit-solardach",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Mit Solardach | Apexx Bau",
@@ -5453,7 +5503,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-sichtschutz-holz",
+        "slug": "pergola-systeme/pergola-sichtschutz-holz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Sichtschutz Holz | Apexx Bau",
@@ -5472,7 +5522,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-spiel",
+        "slug": "pergola-systeme/pergola-spiel",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Spiel | Apexx Bau",
@@ -5491,7 +5541,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-toom",
+        "slug": "pergola-systeme/pergola-toom",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Toom | Apexx Bau",
@@ -5510,7 +5560,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-verbinder",
+        "slug": "pergola-systeme/pergola-verbinder",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Verbinder | Apexx Bau",
@@ -5529,7 +5579,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-wasserdicht-stabil-winterfest",
+        "slug": "pergola-systeme/pergola-wasserdicht-stabil-winterfest",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Wasserdicht Stabil Winterfest | Apexx Bau",
@@ -5548,7 +5598,7 @@
         "faq": []
     },
     {
-        "slug": "pergular",
+        "slug": "pergola-systeme/pergular",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergular | Apexx Bau",
@@ -5562,12 +5612,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-03"
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "regenschutz-fr-pergola",
+        "slug": "pergola-systeme/regenschutz-fr-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Regenschutz Für Pergola | Apexx Bau",
@@ -5581,12 +5631,12 @@
             "Montage-Service"
         ],
         "images": [
-            "transparentes-rolltor-gewerbe-schaufenster-b2b-hero-01"
+            "hero-bg"
         ],
         "faq": []
     },
     {
-        "slug": "sichtschutz-pergola-holz",
+        "slug": "pergola-systeme/sichtschutz-pergola-holz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Sichtschutz Pergola Holz | Apexx Bau",
@@ -5600,12 +5650,12 @@
             "Montage-Service"
         ],
         "images": [
-            "transparentes-rolltor-garage-glas-b2c-hero-01"
+            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "sonnenschutz-terrasse-pergola",
+        "slug": "pergola-systeme/sonnenschutz-terrasse-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Sonnenschutz Terrasse Pergola | Apexx Bau",
@@ -5619,12 +5669,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-01"
+            "pergola-systeme-terrasse-aluminium-festdach-zip-screen-b2c-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "stoff-pergola",
+        "slug": "pergola-systeme/stoff-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Stoff Pergola | Apexx Bau",
@@ -5643,7 +5693,7 @@
         "faq": []
     },
     {
-        "slug": "terrasse-sonnenschutz-pergola",
+        "slug": "pergola-systeme/terrasse-sonnenschutz-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Terrasse Sonnenschutz Pergola | Apexx Bau",
@@ -5662,9 +5712,9 @@
         "faq": []
     },
     {
-        "slug": "warema-pergola-markise",
+        "slug": "zip-screen-systeme/warema-pergola-markise",
         "template": "money",
-        "product_id": "zip-screen",
+        "product_id": "zip-screen-systeme",
         "title": "Warema Pergola Markise | Apexx Bau",
         "meta_description": "Hochwertige warema pergola markise direkt vom Hersteller. Konfigurieren Sie jetzt Ihre warema pergola markise nach Maß. Premium Qualität & faire Preise.",
         "h1": "Warema Pergola Markise",
@@ -5676,12 +5726,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-03"
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "berdachung-aus-metall",
+        "slug": "pergola-systeme/berdachung-aus-metall",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "üBerdachung Aus Metall | Apexx Bau",
@@ -5695,12 +5745,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-hero-02"
+            "pergola-systeme-terrasse-lamellendach-b2c-hero-07"
         ],
         "faq": []
     },
     {
-        "slug": "aluminium-pergola-mit-lamellen",
+        "slug": "pergola-systeme/aluminium-pergola-mit-lamellen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Aluminium Pergola Mit Lamellen | Apexx Bau",
@@ -5719,7 +5769,7 @@
         "faq": []
     },
     {
-        "slug": "bausatz-pergola",
+        "slug": "pergola-systeme/bausatz-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Bausatz Pergola | Apexx Bau",
@@ -5733,12 +5783,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-aluminium-festdach-b2c-hero-03"
+            "pergola-systeme-terrasse-lamellendach-zip-screen-b2c-detail-01"
         ],
         "faq": []
     },
     {
-        "slug": "blumfeldt-pergola",
+        "slug": "pergola-systeme/blumfeldt-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Blumfeldt Pergola | Apexx Bau",
@@ -5752,12 +5802,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-tavan-zip-screen-b2c-hero-01"
+            "pergola-systeme-terrasse-lamellendach-zip-screen-b2c-detail-01"
         ],
         "faq": []
     },
     {
-        "slug": "freistehende-pergola-holz",
+        "slug": "pergola-systeme/freistehende-pergola-holz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Freistehende Pergola Holz | Apexx Bau",
@@ -5771,12 +5821,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-hero-01"
+            "pergola-systeme-terrasse-lamellendach-zip-screen-b2c-detail-01"
         ],
         "faq": []
     },
     {
-        "slug": "garten-pergola-aus-metall",
+        "slug": "pergola-systeme/garten-pergola-aus-metall",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Garten Pergola Aus Metall | Apexx Bau",
@@ -5795,7 +5845,7 @@
         "faq": []
     },
     {
-        "slug": "hammarn-pergola",
+        "slug": "pergola-systeme/hammarn-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Hammarön Pergola | Apexx Bau",
@@ -5809,14 +5859,14 @@
             "Montage-Service"
         ],
         "images": [
-            "hero-bg"
+            "zip_screen_sun_protection"
         ],
         "faq": []
     },
     {
-        "slug": "lamellendach-wasserdicht",
+        "slug": "pergola-systeme/lamellendach-wasserdicht",
         "template": "money",
-        "product_id": "bioklimatische-pergola",
+        "product_id": "pergola-systeme",
         "title": "Lamellendach Wasserdicht | Apexx Bau",
         "meta_description": "Hochwertige lamellendach wasserdicht direkt vom Hersteller. Konfigurieren Sie jetzt Ihre lamellendach wasserdicht nach Maß. Premium Qualität & faire Preise.",
         "h1": "Lamellendach Wasserdicht",
@@ -5833,7 +5883,7 @@
         "faq": []
     },
     {
-        "slug": "lamellenpavillon-3x3",
+        "slug": "pergola-systeme/lamellenpavillon-3x3",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Lamellenpavillon 3x3 | Apexx Bau",
@@ -5847,14 +5897,14 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-tavan-zip-screen-b2c-hero-02"
+            "pergola-systeme-terrasse-stoffdach-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "markilux-pergola-markise",
+        "slug": "zip-screen-systeme/markilux-pergola-markise",
         "template": "money",
-        "product_id": "zip-screen",
+        "product_id": "zip-screen-systeme",
         "title": "Markilux Pergola Markise | Apexx Bau",
         "meta_description": "Hochwertige markilux pergola markise direkt vom Hersteller. Konfigurieren Sie jetzt Ihre markilux pergola markise nach Maß. Premium Qualität & faire Preise.",
         "h1": "Markilux Pergola Markise",
@@ -5866,12 +5916,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-stoffdach-b2c-hero-03"
+            "pergola_bioclimatic_detail_rain"
         ],
         "faq": []
     },
     {
-        "slug": "mobile-pergola",
+        "slug": "pergola-systeme/mobile-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Mobile Pergola | Apexx Bau",
@@ -5885,12 +5935,12 @@
             "Montage-Service"
         ],
         "images": [
-            "transparentes-rolltor-gewerbe-schaufenster-b2b-hero-01"
+            "wintergarten-systeme-glasdach-tavan-zip-screen-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "perghola",
+        "slug": "pergola-systeme/perghola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Perghola | Apexx Bau",
@@ -5904,12 +5954,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-hero-02"
+            "pergola-systeme-terrasse-stoffdach-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "pergola-3-x-4-m",
+        "slug": "pergola-systeme/pergola-3-x-4-m",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 3 X 4 M | Apexx Bau",
@@ -5928,7 +5978,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-4x4m",
+        "slug": "pergola-systeme/pergola-4x4m",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 4x4m | Apexx Bau",
@@ -5947,7 +5997,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-5x5m",
+        "slug": "pergola-systeme/pergola-5x5m",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 5x5m | Apexx Bau",
@@ -5966,7 +6016,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-aluminium-lamellen",
+        "slug": "pergola-systeme/pergola-aluminium-lamellen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Aluminium Lamellen | Apexx Bau",
@@ -5985,7 +6035,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-aus-metall-selber-bauen",
+        "slug": "pergola-systeme/pergola-aus-metall-selber-bauen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Aus Metall Selber Bauen | Apexx Bau",
@@ -6004,7 +6054,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-bedachung",
+        "slug": "pergola-systeme/pergola-bedachung",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Bedachung | Apexx Bau",
@@ -6023,7 +6073,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-eidelstedt",
+        "slug": "pergola-systeme/pergola-eidelstedt",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Eidelstedt | Apexx Bau",
@@ -6042,7 +6092,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-eiscaf",
+        "slug": "pergola-systeme/pergola-eiscaf",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Eiscafé | Apexx Bau",
@@ -6061,7 +6111,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-hagebau",
+        "slug": "pergola-systeme/pergola-hagebau",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Hagebau | Apexx Bau",
@@ -6080,9 +6130,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-lamellendach-3x3",
+        "slug": "pergola-systeme/pergola-lamellendach-3x3",
         "template": "money",
-        "product_id": "bioklimatische-pergola",
+        "product_id": "pergola-systeme",
         "title": "Pergola Lamellendach 3x3 | Apexx Bau",
         "meta_description": "Hochwertige pergola lamellendach 3x3 direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola lamellendach 3x3 nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Lamellendach 3x3",
@@ -6099,9 +6149,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-lamellendach-4x5",
+        "slug": "pergola-systeme/pergola-lamellendach-4x5",
         "template": "money",
-        "product_id": "bioklimatische-pergola",
+        "product_id": "pergola-systeme",
         "title": "Pergola Lamellendach 4x5 | Apexx Bau",
         "meta_description": "Hochwertige pergola lamellendach 4x5 direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola lamellendach 4x5 nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Lamellendach 4x5",
@@ -6118,9 +6168,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-mit-lamellendach-zum-ffnen",
+        "slug": "pergola-systeme/pergola-mit-lamellendach-zum-ffnen",
         "template": "money",
-        "product_id": "bioklimatische-pergola",
+        "product_id": "pergola-systeme",
         "title": "Pergola Mit Lamellendach Zum öFfnen | Apexx Bau",
         "meta_description": "Hochwertige pergola mit lamellendach zum öffnen direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola mit lamellendach zum öffnen nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Mit Lamellendach Zum öFfnen",
@@ -6137,7 +6187,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-rosenbogen",
+        "slug": "pergola-systeme/pergola-rosenbogen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Rosenbogen | Apexx Bau",
@@ -6156,7 +6206,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-weide",
+        "slug": "pergola-systeme/pergola-weide",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Weide | Apexx Bau",
@@ -6175,7 +6225,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-windschutz",
+        "slug": "pergola-systeme/pergola-windschutz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Windschutz | Apexx Bau",
@@ -6194,7 +6244,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-berdachungen",
+        "slug": "pergola-systeme/pergola-berdachungen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola üBerdachungen | Apexx Bau",
@@ -6213,7 +6263,7 @@
         "faq": []
     },
     {
-        "slug": "pergolix",
+        "slug": "pergola-systeme/pergolix",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergolix | Apexx Bau",
@@ -6227,12 +6277,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-seitenbeschattung-b2c-hero-02"
+            "pergola-systeme-terrasse-lamellendach-glas-schiebesystem-b2c-hero-06"
         ],
         "faq": []
     },
     {
-        "slug": "pergulas",
+        "slug": "pergola-systeme/pergulas",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergulas | Apexx Bau",
@@ -6246,12 +6296,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-zip-screen-b2c-detail-01"
+            "showroom_consultation_germany"
         ],
         "faq": []
     },
     {
-        "slug": "perguli",
+        "slug": "pergola-systeme/perguli",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Perguli | Apexx Bau",
@@ -6265,12 +6315,12 @@
             "Montage-Service"
         ],
         "images": [
-            "hero-bg"
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "perloga",
+        "slug": "pergola-systeme/perloga",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Perloga | Apexx Bau",
@@ -6284,12 +6334,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-02"
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-01"
         ],
         "faq": []
     },
     {
-        "slug": "rezensionen-fr-ristorante-la-pergola",
+        "slug": "pergola-systeme/rezensionen-fr-ristorante-la-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Rezensionen Für Ristorante La Pergola | Apexx Bau",
@@ -6303,12 +6353,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-lamellendach-led-b2c-hero-03"
+            "transparentes-rolltor-terrasse-glas-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "terrasse-pergola-holz",
+        "slug": "pergola-systeme/terrasse-pergola-holz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Terrasse Pergola Holz | Apexx Bau",
@@ -6327,7 +6377,7 @@
         "faq": []
     },
     {
-        "slug": "terrasse-pergola-sonnenschutz",
+        "slug": "pergola-systeme/terrasse-pergola-sonnenschutz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Terrasse Pergola Sonnenschutz | Apexx Bau",
@@ -6346,7 +6396,7 @@
         "faq": []
     },
     {
-        "slug": "terrassenberdachung-lamellen-wasserdicht",
+        "slug": "pergola-systeme/terrassenberdachung-lamellen-wasserdicht",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Terrassenüberdachung Lamellen Wasserdicht | Apexx Bau",
@@ -6360,12 +6410,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
+            "wintergarten-systeme-glasdach-tavan-zip-screen-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "weide-pergola-erfahrungen",
+        "slug": "pergola-systeme/weide-pergola-erfahrungen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Weide Pergola Erfahrungen | Apexx Bau",
@@ -6379,12 +6429,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
+            "pergola-systeme-garten-aluminium-festdach-zip-screen-b2c-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "weinrebe-fr-pergola",
+        "slug": "pergola-systeme/weinrebe-fr-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Weinrebe Für Pergola | Apexx Bau",
@@ -6398,12 +6448,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
+            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "weinreben-fr-pergola",
+        "slug": "pergola-systeme/weinreben-fr-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Weinreben Für Pergola | Apexx Bau",
@@ -6417,12 +6467,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-hero-02"
+            "pergola-systeme-terrasse-tavan-zip-screen-detail-01"
         ],
         "faq": []
     },
     {
-        "slug": "welches-holz-fr-terrassenberdachung",
+        "slug": "pergola-systeme/welches-holz-fr-terrassenberdachung",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Welches Holz Für Terrassenüberdachung | Apexx Bau",
@@ -6436,12 +6486,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-garten-seitenbeschattung-b2c-hero-05"
+            "wintergarten-systeme-glasdach-zip-screen-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "windschutz-pergola",
+        "slug": "pergola-systeme/windschutz-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Windschutz Pergola | Apexx Bau",
@@ -6460,7 +6510,7 @@
         "faq": []
     },
     {
-        "slug": "berdachung-fr-pergola",
+        "slug": "pergola-systeme/berdachung-fr-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "üBerdachung Für Pergola | Apexx Bau",
@@ -6474,12 +6524,12 @@
             "Montage-Service"
         ],
         "images": [
-            "showroom_consultation_germany"
+            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "berdachung-metall",
+        "slug": "pergola-systeme/berdachung-metall",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "üBerdachung Metall | Apexx Bau",
@@ -6493,12 +6543,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten_interior_living_room"
+            "pergola-systeme-terrasse-tavan-zip-screen-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "berdachung-sitzecke",
+        "slug": "pergola-systeme/berdachung-sitzecke",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "üBerdachung Sitzecke | Apexx Bau",
@@ -6512,12 +6562,12 @@
             "Montage-Service"
         ],
         "images": [
-            "hero-bg"
+            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "3x4-pergola",
+        "slug": "pergola-systeme/3x4-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "3x4 Pergola | Apexx Bau",
@@ -6531,12 +6581,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten-systeme-glasdach-zip-screen-b2c-hero-01"
+            "zip-screen-systeme-terrasse-seitenbeschattung-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "abdeckung-fr-pergola",
+        "slug": "pergola-systeme/abdeckung-fr-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Abdeckung Für Pergola | Apexx Bau",
@@ -6550,12 +6600,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-aluminium-festdach-b2c-hero-01"
+            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "alu-pergola-3x4",
+        "slug": "pergola-systeme/alu-pergola-3x4",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Alu Pergola 3x4 | Apexx Bau",
@@ -6574,7 +6624,7 @@
         "faq": []
     },
     {
-        "slug": "alu-pergola-freistehend",
+        "slug": "pergola-systeme/alu-pergola-freistehend",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Alu Pergola Freistehend | Apexx Bau",
@@ -6593,7 +6643,7 @@
         "faq": []
     },
     {
-        "slug": "aluminium-lamellen-pergola",
+        "slug": "pergola-systeme/aluminium-lamellen-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Aluminium Lamellen Pergola | Apexx Bau",
@@ -6612,9 +6662,9 @@
         "faq": []
     },
     {
-        "slug": "bauhaus-pergola-lamellendach",
+        "slug": "pergola-systeme/bauhaus-pergola-lamellendach",
         "template": "money",
-        "product_id": "bioklimatische-pergola",
+        "product_id": "pergola-systeme",
         "title": "Bauhaus Pergola Lamellendach | Apexx Bau",
         "meta_description": "Hochwertige bauhaus pergola lamellendach direkt vom Hersteller. Konfigurieren Sie jetzt Ihre bauhaus pergola lamellendach nach Maß. Premium Qualität & faire Preise.",
         "h1": "Bauhaus Pergola Lamellendach",
@@ -6626,12 +6676,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-stoffdach-b2c-hero-03"
+            "pergola-systeme-terrasse-aluminium-festdach-zip-screen-b2c-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "eckpergola-metall",
+        "slug": "pergola-systeme/eckpergola-metall",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Eckpergola Metall | Apexx Bau",
@@ -6645,12 +6695,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-zip-screen-b2c-detail-01"
+            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "giethoorn-hotel-pergola",
+        "slug": "pergola-systeme/giethoorn-hotel-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Giethoorn Hotel Pergola | Apexx Bau",
@@ -6664,12 +6714,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
+            "pergola-systeme-terrasse-stoffdach-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "hagebaumarkt-pergola",
+        "slug": "pergola-systeme/hagebaumarkt-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Hagebaumarkt Pergola | Apexx Bau",
@@ -6683,12 +6733,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten_interior_living_room"
+            "pergola-systeme-terrasse-tavan-zip-screen-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "holz-fr-pergola",
+        "slug": "pergola-systeme/holz-fr-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Holz Für Pergola | Apexx Bau",
@@ -6702,12 +6752,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-carport-lamellendach-b2c-hero-05"
+            "pergola-systeme-terrasse-tavan-zip-screen-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "holz-pergola-bauhaus",
+        "slug": "pergola-systeme/holz-pergola-bauhaus",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Holz Pergola Bauhaus | Apexx Bau",
@@ -6721,12 +6771,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-aluminium-festdach-zip-screen-b2c-hero-04"
+            "pergola-systeme-garten-lamellendach-led-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "holzpergola-kaufen",
+        "slug": "pergola-systeme/holzpergola-kaufen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Holzpergola Kaufen | Apexx Bau",
@@ -6740,12 +6790,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-detail-02"
+            "pergola-systeme-garten-lamellendach-led-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "la-pergola-kobelweg",
+        "slug": "pergola-systeme/la-pergola-kobelweg",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "La Pergola Kobelweg | Apexx Bau",
@@ -6764,7 +6814,7 @@
         "faq": []
     },
     {
-        "slug": "la-pergola-restaurant",
+        "slug": "pergola-systeme/la-pergola-restaurant",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "La Pergola Restaurant | Apexx Bau",
@@ -6783,7 +6833,7 @@
         "faq": []
     },
     {
-        "slug": "la-pergola-restaurant-rom",
+        "slug": "pergola-systeme/la-pergola-restaurant-rom",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "La Pergola Restaurant Rom | Apexx Bau",
@@ -6802,7 +6852,7 @@
         "faq": []
     },
     {
-        "slug": "lrche-pergola",
+        "slug": "pergola-systeme/lrche-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Lärche Pergola | Apexx Bau",
@@ -6816,14 +6866,14 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-04"
+            "transparentes-rolltor-garage-glas-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "markisen-fr-pergola",
+        "slug": "zip-screen-systeme/markisen-fr-pergola",
         "template": "money",
-        "product_id": "zip-screen",
+        "product_id": "zip-screen-systeme",
         "title": "Markisen Für Pergola | Apexx Bau",
         "meta_description": "Hochwertige markisen für pergola direkt vom Hersteller. Konfigurieren Sie jetzt Ihre markisen für pergola nach Maß. Premium Qualität & faire Preise.",
         "h1": "Markisen Für Pergola",
@@ -6835,12 +6885,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten-systeme-glasdach-zip-screen-b2c-hero-01"
+            "transparentes-rolltor-gewerbe-schaufenster-b2b-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "otto-pergola",
+        "slug": "pergola-systeme/otto-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Otto Pergola | Apexx Bau",
@@ -6854,12 +6904,12 @@
             "Montage-Service"
         ],
         "images": [
-            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-04"
+            "pergola-systeme-garten-lamellendach-zip-screen-b2c-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "pergola-250x250",
+        "slug": "pergola-systeme/pergola-250x250",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 250x250 | Apexx Bau",
@@ -6878,7 +6928,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-2x4m",
+        "slug": "pergola-systeme/pergola-2x4m",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 2x4m | Apexx Bau",
@@ -6897,9 +6947,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-3x3-lamellendach",
+        "slug": "pergola-systeme/pergola-3x3-lamellendach",
         "template": "money",
-        "product_id": "bioklimatische-pergola",
+        "product_id": "pergola-systeme",
         "title": "Pergola 3x3 Lamellendach | Apexx Bau",
         "meta_description": "Hochwertige pergola 3x3 lamellendach direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola 3x3 lamellendach nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola 3x3 Lamellendach",
@@ -6916,7 +6966,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-3x3m",
+        "slug": "pergola-systeme/pergola-3x3m",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 3x3m | Apexx Bau",
@@ -6935,7 +6985,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-3x4-hornbach",
+        "slug": "pergola-systeme/pergola-3x4-hornbach",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola 3x4 Hornbach | Apexx Bau",
@@ -6954,7 +7004,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-abdeckung",
+        "slug": "pergola-systeme/pergola-abdeckung",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Abdeckung | Apexx Bau",
@@ -6973,7 +7023,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-alu-freistehend",
+        "slug": "pergola-systeme/pergola-alu-freistehend",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Alu Freistehend | Apexx Bau",
@@ -6992,7 +7042,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-an-hauswand",
+        "slug": "pergola-systeme/pergola-an-hauswand",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola An Hauswand | Apexx Bau",
@@ -7011,7 +7061,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-bausatz-freistehend-holz",
+        "slug": "pergola-systeme/pergola-bausatz-freistehend-holz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Bausatz Freistehend Holz | Apexx Bau",
@@ -7030,7 +7080,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-befestigung-ohne-bohren",
+        "slug": "pergola-systeme/pergola-befestigung-ohne-bohren",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Befestigung Ohne Bohren | Apexx Bau",
@@ -7049,7 +7099,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-beige",
+        "slug": "pergola-systeme/pergola-beige",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Beige | Apexx Bau",
@@ -7068,7 +7118,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-biohort",
+        "slug": "pergola-systeme/pergola-biohort",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Biohort | Apexx Bau",
@@ -7087,7 +7137,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-eckverbinder",
+        "slug": "pergola-systeme/pergola-eckverbinder",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Eckverbinder | Apexx Bau",
@@ -7106,7 +7156,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-faltdach",
+        "slug": "pergola-systeme/pergola-faltdach",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Faltdach | Apexx Bau",
@@ -7125,7 +7175,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-freistehend-alu",
+        "slug": "pergola-systeme/pergola-freistehend-alu",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Freistehend Alu | Apexx Bau",
@@ -7144,7 +7194,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-holz-massiv",
+        "slug": "pergola-systeme/pergola-holz-massiv",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Holz Massiv | Apexx Bau",
@@ -7163,7 +7213,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-holzoptik",
+        "slug": "pergola-systeme/pergola-holzoptik",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Holzoptik | Apexx Bau",
@@ -7182,7 +7232,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-hhe",
+        "slug": "pergola-systeme/pergola-hhe",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Höhe | Apexx Bau",
@@ -7201,7 +7251,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-lamelle",
+        "slug": "pergola-systeme/pergola-lamelle",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Lamelle | Apexx Bau",
@@ -7220,9 +7270,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-lamellendach-bauhaus",
+        "slug": "pergola-systeme/pergola-lamellendach-bauhaus",
         "template": "money",
-        "product_id": "bioklimatische-pergola",
+        "product_id": "pergola-systeme",
         "title": "Pergola Lamellendach Bauhaus | Apexx Bau",
         "meta_description": "Hochwertige pergola lamellendach bauhaus direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola lamellendach bauhaus nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Lamellendach Bauhaus",
@@ -7239,9 +7289,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-lamellendach-selber-bauen",
+        "slug": "pergola-systeme/pergola-lamellendach-selber-bauen",
         "template": "money",
-        "product_id": "bioklimatische-pergola",
+        "product_id": "pergola-systeme",
         "title": "Pergola Lamellendach Selber Bauen | Apexx Bau",
         "meta_description": "Hochwertige pergola lamellendach selber bauen direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola lamellendach selber bauen nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Lamellendach Selber Bauen",
@@ -7258,9 +7308,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-lamellendach-wasserdicht",
+        "slug": "pergola-systeme/pergola-lamellendach-wasserdicht",
         "template": "money",
-        "product_id": "bioklimatische-pergola",
+        "product_id": "pergola-systeme",
         "title": "Pergola Lamellendach Wasserdicht | Apexx Bau",
         "meta_description": "Hochwertige pergola lamellendach wasserdicht direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola lamellendach wasserdicht nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Lamellendach Wasserdicht",
@@ -7277,9 +7327,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-markise-hornbach",
+        "slug": "zip-screen-systeme/pergola-markise-hornbach",
         "template": "money",
-        "product_id": "zip-screen",
+        "product_id": "zip-screen-systeme",
         "title": "Pergola Markise Hornbach | Apexx Bau",
         "meta_description": "Hochwertige pergola markise hornbach direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola markise hornbach nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Markise Hornbach",
@@ -7296,9 +7346,9 @@
         "faq": []
     },
     {
-        "slug": "pergola-markise-werner",
+        "slug": "zip-screen-systeme/pergola-markise-werner",
         "template": "money",
-        "product_id": "zip-screen",
+        "product_id": "zip-screen-systeme",
         "title": "Pergola Markise Werner | Apexx Bau",
         "meta_description": "Hochwertige pergola markise werner direkt vom Hersteller. Konfigurieren Sie jetzt Ihre pergola markise werner nach Maß. Premium Qualität & faire Preise.",
         "h1": "Pergola Markise Werner",
@@ -7315,7 +7365,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-maanfertigung",
+        "slug": "pergola-systeme/pergola-maanfertigung",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Maßanfertigung | Apexx Bau",
@@ -7334,7 +7384,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-mirador",
+        "slug": "pergola-systeme/pergola-mirador",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Mirador | Apexx Bau",
@@ -7353,7 +7403,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-mit-aluminium-lamellen",
+        "slug": "pergola-systeme/pergola-mit-aluminium-lamellen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Mit Aluminium Lamellen | Apexx Bau",
@@ -7372,7 +7422,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-mit-beschattung",
+        "slug": "pergola-systeme/pergola-mit-beschattung",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Mit Beschattung | Apexx Bau",
@@ -7391,7 +7441,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-mit-stoffdach",
+        "slug": "pergola-systeme/pergola-mit-stoffdach",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Mit Stoffdach | Apexx Bau",
@@ -7410,7 +7460,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-mit-tr",
+        "slug": "pergola-systeme/pergola-mit-tr",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Mit Tür | Apexx Bau",
@@ -7429,7 +7479,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-nrnberg",
+        "slug": "pergola-systeme/pergola-nrnberg",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Nürnberg | Apexx Bau",
@@ -7448,7 +7498,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-ohne-bohren",
+        "slug": "pergola-systeme/pergola-ohne-bohren",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Ohne Bohren | Apexx Bau",
@@ -7467,7 +7517,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-pergolux",
+        "slug": "pergola-systeme/pergola-pergolux",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Pergolux | Apexx Bau",
@@ -7486,7 +7536,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-pizzeria",
+        "slug": "pergola-systeme/pergola-pizzeria",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Pizzeria | Apexx Bau",
@@ -7505,7 +7555,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-reiter",
+        "slug": "pergola-systeme/pergola-reiter",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Reiter | Apexx Bau",
@@ -7524,7 +7574,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-selber-bauen-aus-holz",
+        "slug": "pergola-systeme/pergola-selber-bauen-aus-holz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Selber Bauen Aus Holz | Apexx Bau",
@@ -7543,7 +7593,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-selber-bauen-obi",
+        "slug": "pergola-systeme/pergola-selber-bauen-obi",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Selber Bauen Obi | Apexx Bau",
@@ -7562,7 +7612,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-sonnenschutz-terrasse",
+        "slug": "pergola-systeme/pergola-sonnenschutz-terrasse",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Sonnenschutz Terrasse | Apexx Bau",
@@ -7581,7 +7631,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-tr",
+        "slug": "pergola-systeme/pergola-tr",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Tür | Apexx Bau",
@@ -7600,7 +7650,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-wasserdicht-freistehend",
+        "slug": "pergola-systeme/pergola-wasserdicht-freistehend",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Wasserdicht Freistehend | Apexx Bau",
@@ -7619,7 +7669,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-wetterfest",
+        "slug": "pergola-systeme/pergola-wetterfest",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola Wetterfest | Apexx Bau",
@@ -7638,7 +7688,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-berdachung-holz",
+        "slug": "pergola-systeme/pergola-berdachung-holz",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola üBerdachung Holz | Apexx Bau",
@@ -7657,7 +7707,7 @@
         "faq": []
     },
     {
-        "slug": "pergola-berdachung-terrasse",
+        "slug": "pergola-systeme/pergola-berdachung-terrasse",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergola üBerdachung Terrasse | Apexx Bau",
@@ -7676,7 +7726,7 @@
         "faq": []
     },
     {
-        "slug": "pergolas-pavillon",
+        "slug": "pergola-systeme/pergolas-pavillon",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergolas Pavillon | Apexx Bau",
@@ -7690,12 +7740,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola_bioclimatic_detail_rain"
+            "zip_screen_privacy_evening_modern"
         ],
         "faq": []
     },
     {
-        "slug": "pergolen-aus-metall",
+        "slug": "pergola-systeme/pergolen-aus-metall",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pergolen Aus Metall | Apexx Bau",
@@ -7709,12 +7759,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-tavan-zip-screen-detail-01"
+            "wintergarten-systeme-glasdach-tavan-zip-screen-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "perkula",
+        "slug": "pergola-systeme/perkula",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Perkula | Apexx Bau",
@@ -7728,12 +7778,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-tavan-zip-screen-b2c-hero-01"
+            "pergola-systeme-terrasse-stoffdach-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "pflanzkasten-mit-pergola",
+        "slug": "pergola-systeme/pflanzkasten-mit-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pflanzkasten Mit Pergola | Apexx Bau",
@@ -7747,12 +7797,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-stoffdach-b2c-hero-01"
+            "pergola-systeme-garten-aluminium-festdach-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "pv-pergola",
+        "slug": "pergola-systeme/pv-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Pv Pergola | Apexx Bau",
@@ -7766,12 +7816,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-stoffdach-glas-schiebesystem-b2c-hero-03"
+            "zip-screen-systeme-terrasse-seitenbeschattung-b2c-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "sonnensegel-pergola-selber-bauen",
+        "slug": "pergola-systeme/sonnensegel-pergola-selber-bauen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Sonnensegel Pergola Selber Bauen | Apexx Bau",
@@ -7785,12 +7835,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-02"
+            "pergola-systeme-garten-aluminium-festdach-zip-screen-b2c-hero-04"
         ],
         "faq": []
     },
     {
-        "slug": "sweeek-pergola",
+        "slug": "pergola-systeme/sweeek-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Sweeek Pergola | Apexx Bau",
@@ -7804,12 +7854,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-tavan-zip-screen-b2c-hero-02"
+            "wintergarten_interior_living_room"
         ],
         "faq": []
     },
     {
-        "slug": "terasse-pergola",
+        "slug": "pergola-systeme/terasse-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Terasse Pergola | Apexx Bau",
@@ -7823,12 +7873,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-lamellendach-b2c-hero-07"
+            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-02"
         ],
         "faq": []
     },
     {
-        "slug": "terrassendach-mit-lamellen",
+        "slug": "pergola-systeme/terrassendach-mit-lamellen",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Terrassendach Mit Lamellen | Apexx Bau",
@@ -7842,12 +7892,12 @@
             "Montage-Service"
         ],
         "images": [
-            "wintergarten_modern_night"
+            "showroom_consultation_germany"
         ],
         "faq": []
     },
     {
-        "slug": "trauben-fr-pergola",
+        "slug": "pergola-systeme/trauben-fr-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Trauben Für Pergola | Apexx Bau",
@@ -7861,12 +7911,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
+            "windschutzglas-systeme-terrasse-verstellbar-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "trauben-pergola",
+        "slug": "pergola-systeme/trauben-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Trauben Pergola | Apexx Bau",
@@ -7880,12 +7930,12 @@
             "Montage-Service"
         ],
         "images": [
-            "hero-bg"
+            "zip-screen-systeme-terrasse-dikey-zip-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "vidaxl-pergola",
+        "slug": "pergola-systeme/vidaxl-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Vidaxl Pergola | Apexx Bau",
@@ -7899,12 +7949,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-aluminium-festdach-zip-screen-b2c-hero-04"
+            "pergola-systeme-terrasse-aluminium-festdach-b2c-hero-01"
         ],
         "faq": []
     },
     {
-        "slug": "vordach-pergola",
+        "slug": "pergola-systeme/vordach-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Vordach Pergola | Apexx Bau",
@@ -7918,12 +7968,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-terrasse-tavan-zip-screen-b2c-hero-01"
+            "pergola-systeme-garten-aluminium-festdach-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "weide-pergola-3x4",
+        "slug": "pergola-systeme/weide-pergola-3x4",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "Weide Pergola 3x4 | Apexx Bau",
@@ -7937,12 +7987,12 @@
             "Montage-Service"
         ],
         "images": [
-            "pergola-systeme-garten-aluminium-festdach-zip-screen-b2c-hero-04"
+            "pergola-systeme-terrasse-stoffdach-glas-schiebesystem-b2c-hero-03"
         ],
         "faq": []
     },
     {
-        "slug": "berdachte-pergola",
+        "slug": "pergola-systeme/berdachte-pergola",
         "template": "money",
         "product_id": "pergola-systeme",
         "title": "üBerdachte Pergola | Apexx Bau",
@@ -7956,7 +8006,7 @@
             "Montage-Service"
         ],
         "images": [
-            "transparentes-rolltor-gewerbe-schaufenster-b2b-hero-01"
+            "wintergarten-systeme-gewerbe-glas-schiebesystem-b2b-hero-03"
         ],
         "faq": []
     }

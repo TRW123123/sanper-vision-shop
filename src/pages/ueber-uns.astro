@@ -1,11 +1,36 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import UeberUnsView from "@/components/pages/UeberUnsView";
+import CSVContentBlocks from "@/components/csv/CSVContentBlocks.astro";
+
+// Content from merge_csv for ueber-uns
+const pageContent = {
+  block_1_content: "Apexx Bau arbeitet als Familienunternehmen mit klarer Verantwortung für Planung, Fertigung und Montage. Diese Seite gibt Einblick in Arbeitsweise und Entscheidungswege.",
+  block_1_placement: "after_intro",
+  block_2_content: "Risiken bei anonymen Anbietern sind unklare Zuständigkeiten und wechselnde Ansprechpartner.",
+  block_2_placement: "before_cta",
+};
 ---
 
 <Layout
   title="Über uns - Apexx Bau"
-  description="Erfahren Sie mehr über Apexx Bau, unsere Werte, unsere Geschichte und unseren Qualitätsanspruch."
+  description="Erfahren Sie mehr über Apexx Bau: Familienunternehmen mit klarer Verantwortung für Planung, Fertigung und Montage. Keine Zwischenhändler, keine wechselnden Ansprechpartner."
 >
+  <CSVContentBlocks
+    block_1_content={pageContent.block_1_content}
+    block_1_placement={pageContent.block_1_placement}
+    block_2_content={pageContent.block_2_content}
+    block_2_placement={pageContent.block_2_placement}
+    targetPlacement="after_intro"
+  />
+
   <UeberUnsView />
+
+  <CSVContentBlocks
+    block_1_content={pageContent.block_1_content}
+    block_1_placement={pageContent.block_1_placement}
+    block_2_content={pageContent.block_2_content}
+    block_2_placement={pageContent.block_2_placement}
+    targetPlacement="before_cta"
+  />
 </Layout>

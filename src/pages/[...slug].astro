@@ -50,7 +50,14 @@ export async function getStaticPaths() {
     "zip-screen-systeme",     // zip-screen-systeme.astro
   ]);
   return allPages
-    .filter((page) => !excludedSlugs.has(page.slug)) // Exclude conflicting static pages
+    .filter((page) => {
+      // Exclude static .astro page conflicts
+      if (excludedSlugs.has(page.slug)) return false;
+      // Only generate pages that have enriched content (block_1, FAQs, or hub template)
+      const isEnriched = !!(page.block_1_content || (page.faq && page.faq.length > 0));
+      const isHub = page.template === "hub";
+      return isEnriched || isHub;
+    })
     .map((page) => ({
       params: { slug: page.slug },
       props: { page },
@@ -63,9 +70,29 @@ const heroImage = page.images?.[0]
   ? `/images/${page.images[0]}.jpg`
   : "/images/stock/hero-fallback.jpg";
 
-// Thin content detection: noindex pages without enriched content
-const isEnriched = !!(page.block_1_content || (page.faq && page.faq.length > 0));
-const shouldNoIndex = !isEnriched;
+// All generated pages now have enriched content (filtered in getStaticPaths)
+const shouldNoIndex = false;
+
+// Ratgeber cross-links by product category
+const ratgeberByCategory: Record<string, Array<{title: string; href: string}>> = {
+  "pergola-systeme": [
+    { title: "Aluminium oder Holz?", href: "/ratgeber/aluminium-vs-holz-terrassenueberdachung/" },
+    { title: "Schneelast & Statik", href: "/ratgeber/schneelast-windlast-statik-lamellendach/" },
+    { title: "Kosten & Preise", href: "/ratgeber/kosten-preise-terrassenueberdachung/" },
+  ],
+  "wintergarten-systeme": [
+    { title: "Glasschiebewand Technik", href: "/ratgeber/glasschiebewand-giyotin-wintergarten/" },
+    { title: "Baugenehmigung NRW", href: "/ratgeber/baugenehmigung-terrassenueberdachung-nrw/" },
+    { title: "Montage an WDVS", href: "/ratgeber/montage-wdvs-fassade-fundament/" },
+  ],
+  "zip-screen-systeme": [
+    { title: "ZIP-Screen Technik", href: "/ratgeber/zip-screen-technik-energieeffizienz/" },
+    { title: "Smart Home Steuerung", href: "/ratgeber/steuerung-smart-home-lamellendach/" },
+    { title: "Kosten & Preise", href: "/ratgeber/kosten-preise-terrassenueberdachung/" },
+  ],
+};
+const relatedRatgeber = ratgeberByCategory[page.product_id || ""] || ratgeberByCategory["pergola-systeme"];
+
 const allPages = landingPages as LandingPage[];
 const virtualParentPages: Record<string, ParentPage> = {
   "pergola-systeme": {
@@ -496,6 +523,23 @@ const productSchema = templateType === "money"
       </section>
     )
   }
+
+  {/* RATGEBER CROSS-LINKS */}
+  {relatedRatgeber.length > 0 && (
+    <section class="py-12 bg-muted/30">
+      <div class="container max-w-4xl">
+        <h2 class="text-xl font-bold mb-6">Passende Ratgeber</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {relatedRatgeber.map((article) => (
+            <a href={article.href} class="p-5 rounded-xl border border-border bg-card hover:border-primary/40 hover:shadow-sm transition-all">
+              <span class="font-medium text-sm">{article.title}</span>
+              <span class="block text-xs text-muted-foreground mt-1">Ratgeber lesen →</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 
   {/* LEAD CAPTURE / FINAL CTA */}
   <section

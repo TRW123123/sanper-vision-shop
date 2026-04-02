@@ -11,7 +11,8 @@
     "data:enrich": "node enrich_content.cjs",
     "data:merge": "node merge_csv_content.cjs",
     "data:faqs": "node scripts/generate_faqs.cjs",
-    "data:full-regen": "npm run data:generate && npm run data:merge && npm run data:enrich && npm run data:faqs"
+    "data:meta": "node scripts/patch_meta.cjs",
+    "data:full-regen": "npm run data:generate && npm run data:merge && npm run data:enrich && npm run data:faqs && npm run data:meta"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",

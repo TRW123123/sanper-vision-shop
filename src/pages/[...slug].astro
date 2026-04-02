@@ -2,7 +2,7 @@
 import LandingPageLayout from "@/layouts/LandingPageLayout.astro";
 import landingPages from "@/data/landing_pages.json";
 import { Button } from "@/components/ui/button";
-import { Check, Star, Shield, ArrowRight } from "lucide-react";
+import { Check, Shield, ArrowRight } from "lucide-react";
 import { ProjectGallery } from "@/components/home/ProjectGallery";
 
 type FAQItem = {
@@ -34,7 +34,21 @@ type ParentPage = Pick<LandingPage, "slug" | "h1" | "title">;
 
 export async function getStaticPaths() {
   const allPages = landingPages as LandingPage[];
-  const excludedSlugs = new Set(["", "kontakt"]);
+  // Exclude slugs that have static .astro pages to avoid route conflicts
+  const excludedSlugs = new Set([
+    "",           // index.astro
+    "kontakt",    // kontakt.astro
+    "produkte",   // produkte.astro
+    "anfrage",    // anfrage.astro
+    "konfigurator", // konfigurator.astro
+    "ueber-uns",  // ueber-uns.astro
+    "impressum",  // impressum.astro
+    "datenschutz", // datenschutz.astro
+    "agb",        // agb.astro
+    "pergola-systeme",        // pergola-systeme.astro
+    "wintergarten-systeme",   // wintergarten-systeme.astro
+    "zip-screen-systeme",     // zip-screen-systeme.astro
+  ]);
   return allPages
     .filter((page) => !excludedSlugs.has(page.slug)) // Exclude conflicting static pages
     .map((page) => ({
@@ -48,6 +62,10 @@ const siteUrl = "https://www.apexx-bau.de";
 const heroImage = page.images?.[0]
   ? `/images/${page.images[0]}.jpg`
   : "/images/stock/hero-fallback.jpg";
+
+// Thin content detection: noindex pages without enriched content
+const isEnriched = !!(page.block_1_content || (page.faq && page.faq.length > 0));
+const shouldNoIndex = !isEnriched;
 const allPages = landingPages as LandingPage[];
 const virtualParentPages: Record<string, ParentPage> = {
   "pergola-systeme": {
@@ -147,7 +165,7 @@ const faqSchema =
       })
     : null;
 
-// Generate Product + AggregateRating Schema (for Rich Snippets in SERPs)
+// Generate Product Schema (without fake reviews to avoid Structured Data Spam)
 const productSchema = templateType === "money"
   ? JSON.stringify({
       "@context": "https://schema.org",
@@ -164,18 +182,10 @@ const productSchema = templateType === "money"
         name: "Apexx Bau",
         url: siteUrl,
       },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "47",
-        bestRating: "5",
-        worstRating: "1",
-      },
       offers: {
         "@type": "AggregateOffer",
         priceCurrency: "EUR",
         availability: "https://schema.org/InStock",
-        offerCount: "3",
         seller: {
           "@type": "Organization",
           name: "Apexx Bau",
@@ -189,6 +199,7 @@ const productSchema = templateType === "money"
   title={page.title}
   description={page.meta_description}
   image={heroImage}
+  noindex={shouldNoIndex}
 >
   <!-- Inject page-specific schemas -->
   <Fragment slot="schema">
@@ -204,13 +215,15 @@ const productSchema = templateType === "money"
     {/* Background Image with Overlay */}
     <div class="absolute inset-0 z-0">
       <div class="absolute inset-0 bg-black/40 z-10"></div>
-      {
-        /* Note: In production we would use Astro <Image /> optimized component here */
-      }
       <img
         src={heroImage}
         alt={page.h1}
         class="w-full h-full object-cover"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+        width="1920"
+        height="1080"
       />
     </div>
 
@@ -266,15 +279,12 @@ const productSchema = templateType === "money"
         }
       </div>
 
-      {/* Trust Pilot / Ratings Mockup */}
+      {/* Trust Badge */}
       <div class="mt-12 flex flex-col items-center gap-2">
-        <div class="flex gap-1 text-yellow-400">
-          {[1, 2, 3, 4, 5].map(() => <Star className="fill-current w-5 h-5" />)}
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
+          <Shield className="w-4 h-4 text-white" />
+          <span class="text-sm text-white/90 font-medium">5 Jahre Herstellergarantie</span>
         </div>
-        <p class="text-sm text-white/80">
-          <span class="font-bold text-white">Exzellente Bewertungen</span> für Apexx Bau
-          Systeme
-        </p>
       </div>
     </div>
   </section>
@@ -397,6 +407,10 @@ const productSchema = templateType === "money"
               src="/images/showroom_consultation_germany.jpg"
               alt="Apexx Bau Showroom Dortmund"
               class="w-full h-full object-cover"
+              loading="lazy"
+              decoding="async"
+              width="800"
+              height="800"
             />
           </div>
           {/* Decorative Elements */}

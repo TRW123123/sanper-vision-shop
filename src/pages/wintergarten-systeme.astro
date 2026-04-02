@@ -1,6 +1,11 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import ProductCategoryOverview from "@/components/pages/ProductCategoryOverview.astro";
+import CSVContentBlocks from "@/components/csv/CSVContentBlocks.astro";
+import CSVFAQSection from "@/components/csv/CSVFAQSection.astro";
+import { getPageContent } from "@/lib/getPageContent";
+
+const pageContent = getPageContent("wintergarten-systeme");
 
 const highlights = [
   {
@@ -29,6 +34,14 @@ const benefits = [
   title="Verglasungssysteme - Apexx Bau"
   description="Verglasungssysteme von Apexx Bau: Glasschiebewände, Guillotine-Glas und Wintergarten-Lösungen für anspruchsvolle Projekte."
 >
+  <CSVContentBlocks
+    block_1_content={pageContent?.block_1_content}
+    block_1_placement={pageContent?.block_1_placement}
+    block_2_content={pageContent?.block_2_content}
+    block_2_placement={pageContent?.block_2_placement}
+    targetPlacement="after_intro"
+  />
+
   <ProductCategoryOverview
     eyebrow="Verglasungssysteme"
     title="Verglasungssysteme für transparente Übergänge und geschützte Außenräume"
@@ -36,5 +49,18 @@ const benefits = [
     lead="Wir planen Verglasungen passend zur Situation vor Ort, damit Bedienbarkeit, Windschutz, Anschlussdetails und spätere Beschattung nicht erst nachträglich gelöst werden müssen."
     highlights={highlights}
     benefits={benefits}
+  />
+
+  <CSVContentBlocks
+    block_1_content={pageContent?.block_1_content}
+    block_1_placement={pageContent?.block_1_placement}
+    block_2_content={pageContent?.block_2_content}
+    block_2_placement={pageContent?.block_2_placement}
+    targetPlacement="before_faq"
+  />
+
+  <CSVFAQSection
+    faq={pageContent?.faq}
+    faq_unique_q_count={pageContent?.faq_unique_q_count}
   />
 </Layout>

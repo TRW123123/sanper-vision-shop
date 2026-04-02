@@ -1,6 +1,11 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import ProductCategoryOverview from "@/components/pages/ProductCategoryOverview.astro";
+import CSVContentBlocks from "@/components/csv/CSVContentBlocks.astro";
+import CSVFAQSection from "@/components/csv/CSVFAQSection.astro";
+import { getPageContent } from "@/lib/getPageContent";
+
+const pageContent = getPageContent("zip-screen-systeme");
 
 const highlights = [
   {
@@ -29,6 +34,14 @@ const benefits = [
   title="Textile Beschattung - Apexx Bau"
   description="Textile Beschattung von Apexx Bau: ZIP-Screens, Senkrechtmarkisen und Dachmarkisen für Wohn- und Gewerbeprojekte."
 >
+  <CSVContentBlocks
+    block_1_content={pageContent?.block_1_content}
+    block_1_placement={pageContent?.block_1_placement}
+    block_2_content={pageContent?.block_2_content}
+    block_2_placement={pageContent?.block_2_placement}
+    targetPlacement="after_intro"
+  />
+
   <ProductCategoryOverview
     eyebrow="Textile Beschattung"
     title="Textile Beschattung für Hitze-, Sicht- und Blendschutz mit klarer Wirkung"
@@ -36,5 +49,18 @@ const benefits = [
     lead="Wir schauen nicht nur auf Stoff und Optik, sondern auf Führung, Windverhalten, Bedienung und die Kombination mit dem restlichen System."
     highlights={highlights}
     benefits={benefits}
+  />
+
+  <CSVContentBlocks
+    block_1_content={pageContent?.block_1_content}
+    block_1_placement={pageContent?.block_1_placement}
+    block_2_content={pageContent?.block_2_content}
+    block_2_placement={pageContent?.block_2_placement}
+    targetPlacement="before_faq"
+  />
+
+  <CSVFAQSection
+    faq={pageContent?.faq}
+    faq_unique_q_count={pageContent?.faq_unique_q_count}
   />
 </Layout>

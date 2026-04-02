@@ -66,7 +66,7 @@ const organizationSchema = JSON.stringify({
     <meta name="generator" content={Astro.generator} />
 
     <!-- Preload LCP Hero Image -->
-    <link rel="preload" as="image" href="/images/hero-bg.jpg" />
+    <link rel="preload" as="image" href={image.startsWith('/') ? image : `/images/${image}`} />
 
     <!-- Open Graph -->
     <meta property="og:title" content={title} />

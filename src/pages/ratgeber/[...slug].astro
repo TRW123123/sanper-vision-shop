@@ -3,6 +3,35 @@ import LandingPageLayout from "@/layouts/LandingPageLayout.astro";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, BookOpen, Clock, Calendar, Shield } from "lucide-react";
 
+// Related pages mapping: product → relevant landing pages
+const relatedPagesByProduct: Record<string, Array<{ title: string; href: string }>> = {
+  "alle": [
+    { title: "Pergola-Systeme", href: "/pergola-systeme/" },
+    { title: "Verglasungssysteme", href: "/wintergarten-systeme/" },
+    { title: "Textile Beschattung", href: "/zip-screen-systeme/" },
+  ],
+  "lamellendach": [
+    { title: "Bioklimatische Pergola", href: "/pergola-systeme/bioklimatisch/" },
+    { title: "Pergola Aluminium", href: "/pergola-systeme/aluminium/" },
+    { title: "Pergola Preise", href: "/pergola-systeme/preise/" },
+  ],
+  "pergola": [
+    { title: "Pergola Terrasse", href: "/pergola-systeme/terrasse/" },
+    { title: "Pergola Freistehend", href: "/pergola-systeme/freistehend/" },
+    { title: "Pergola Montage", href: "/pergola-systeme/montage/" },
+  ],
+  "wintergarten": [
+    { title: "Glasschiebewand", href: "/wintergarten-systeme/glasschiebewand/" },
+    { title: "Kaltwintergarten", href: "/wintergarten-systeme/kaltwintergarten/" },
+    { title: "Wintergarten Preise", href: "/wintergarten-systeme/polen-preise/" },
+  ],
+  "zip-screen": [
+    { title: "Senkrechtmarkise", href: "/zip-screen-systeme/senkrechtmarkise/" },
+    { title: "ZIP-Screen Terrasse", href: "/zip-screen-systeme/terrasse/" },
+    { title: "Wetterfeste Außenrollos", href: "/zip-screen-systeme/wetterfest/" },
+  ],
+};
+
 export async function getStaticPaths() {
   const ratgeberFiles = import.meta.glob("../../data/ratgeber/*.json", { eager: true });
   const articles = Object.values(ratgeberFiles) as any[];
@@ -33,6 +62,9 @@ function simpleMarkdown(md: string) {
 }
 
 const htmlContent = simpleMarkdown(article.passes?.hard_facts?.content || "");
+const htmlTechnicalSpecs = simpleMarkdown(article.passes?.technical_specs?.content || "");
+const htmlPracticalTips = simpleMarkdown(article.passes?.practical_tips?.content || "");
+
 const dateFormatted = article.extracted_at
   ? new Date(article.extracted_at).toLocaleDateString("de-DE", {
       year: "numeric",
@@ -41,7 +73,9 @@ const dateFormatted = article.extracted_at
     })
   : "März 2026";
 
-const wordCount = article.passes?.hard_facts?.word_count || 0;
+const wordCount = (article.passes?.hard_facts?.word_count || 0)
+  + (article.passes?.technical_specs?.word_count || 0)
+  + (article.passes?.practical_tips?.word_count || 0);
 const readingTime = Math.ceil(wordCount / 200) || 5;
 ---
 
@@ -87,6 +121,18 @@ const readingTime = Math.ceil(wordCount / 200) || 5;
     <div class="container max-w-4xl">
       <div class="prose prose-slate max-w-none prose-headings:text-foreground prose-p:text-muted-foreground" set:html={htmlContent} />
 
+      {htmlTechnicalSpecs && (
+        <div class="mt-16 p-8 rounded-2xl bg-muted/30 border border-border">
+          <div class="prose prose-slate max-w-none prose-headings:text-foreground prose-p:text-muted-foreground" set:html={htmlTechnicalSpecs} />
+        </div>
+      )}
+
+      {htmlPracticalTips && (
+        <div class="mt-16">
+          <div class="prose prose-slate max-w-none prose-headings:text-foreground prose-p:text-muted-foreground" set:html={htmlPracticalTips} />
+        </div>
+      )}
+
       {article.passes?.hard_facts?.sources_cited?.length > 0 && (
         <div class="mt-20 p-8 rounded-2xl bg-muted/50 border border-border">
           <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
@@ -99,6 +145,20 @@ const readingTime = Math.ceil(wordCount / 200) || 5;
               </li>
             ))}
           </ul>
+        </div>
+      )}
+
+      {/* Related Pages */}
+      {(relatedPagesByProduct[article.product] || relatedPagesByProduct["alle"])?.length > 0 && (
+        <div class="mt-16 p-8 rounded-2xl border border-border bg-card">
+          <h3 class="text-lg font-bold mb-4">Passende Systeme entdecken</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            {(relatedPagesByProduct[article.product] || relatedPagesByProduct["alle"]).map((page) => (
+              <a href={page.href} class="p-4 rounded-xl border border-border hover:border-primary/40 hover:bg-muted/50 transition-all text-sm font-medium">
+                {page.title} →
+              </a>
+            ))}
+          </div>
         </div>
       )}
 

@@ -2,26 +2,28 @@
 import "@/styles/globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { Toaster } from "@/components/ui/toaster";
+import CookieConsent from "@/components/CookieConsent.astro";
 
 interface Props {
   title: string;
   description?: string;
   image?: string;
-  noIndex?: boolean;
+  noindex?: boolean;
 }
 
 const {
   title,
   description = "Apexx Bau - Premium Pergolen & Wintergärten direkt vom Hersteller.",
   image = "/og-image.png",
-  noIndex = false,
+  noindex = false,
 } = Astro.props;
 
 const siteUrl = Astro.site?.toString() || "https://www.apexx-bau.de";
 const canonicalURL = new URL(Astro.url.pathname, siteUrl);
 const ogImageURL = new URL(image, siteUrl).toString();
 const isProduction = process.env.CONTEXT === "production";
-const shouldNoIndex = noIndex || !isProduction;
+const shouldNoIndex = noindex || !isProduction;
 
 // Organization Schema (consistent across all layouts)
 const organizationSchema = JSON.stringify({
@@ -30,6 +32,20 @@ const organizationSchema = JSON.stringify({
   name: "Apexx Bau",
   url: "https://www.apexx-bau.de",
   logo: "https://www.apexx-bau.de/logo.png",
+  description: "Maßgefertigte bioklimatische Pergolen, Wintergärten und Markisen. Premium Qualität direkt vom Hersteller.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Heidestraße 2",
+    addressLocality: "Schwerte",
+    postalCode: "58239",
+    addressCountry: "DE",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    email: "info@apexx-bau.de",
+    contactType: "customer service",
+    availableLanguage: ["German"],
+  }
 });
 ---
 
@@ -80,5 +96,8 @@ const organizationSchema = JSON.stringify({
     </main>
 
     <Footer />
+    <CookieConsent />
+    <Toaster client:idle />
+    <script src="../lib/scroll-animation.js"></script>
   </body>
 </html>

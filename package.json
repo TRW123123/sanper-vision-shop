@@ -10,7 +10,8 @@
     "data:generate": "node scripts/generate_landing_pages.js",
     "data:enrich": "node enrich_content.cjs",
     "data:merge": "node merge_csv_content.cjs",
-    "data:full-regen": "npm run data:generate && npm run data:enrich && npm run data:merge"
+    "data:faqs": "node scripts/generate_faqs.cjs",
+    "data:full-regen": "npm run data:generate && npm run data:merge && npm run data:enrich && npm run data:faqs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",

@@ -75,6 +75,12 @@ const Navbar = () => {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
+                <a href="/ratgeber/" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
+                  Ratgeber
+                </a>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
                 <a href="/ueber-uns/" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
                   Über uns
                 </a>
@@ -139,6 +145,14 @@ const Navbar = () => {
                 ))}
               </div>
             </div>
+
+            <a
+              href="/ratgeber/"
+              className="block py-2 text-base font-medium"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Ratgeber
+            </a>
 
             <a
               href="/ueber-uns/"

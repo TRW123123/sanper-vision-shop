@@ -283,10 +283,10 @@ export const getCategoryIdFromName = (name: string): string => {
 // Bestseller-Produkte für Homepage
 export const getBestsellerProducts = (): Product[] => {
   const bestsellerSlugs = [
-    "bioklimatische-pergola",
-    "zip-screen",
-    "transparente-zip-markise",
-    "guillotine-glassysteme"
+    "pergola-systeme/lamellendach",
+    "zip-screen-systeme",
+    "wintergarten-systeme/glasschiebewand",
+    "pergola-systeme/bioklimatisch"
   ];
 
   return products.filter(product => bestsellerSlugs.includes(product.slug));

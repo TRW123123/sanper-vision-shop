@@ -17,7 +17,25 @@ const { faq, faq_unique_q_count } = Astro.props;
 
 // Only render if FAQ exists and count > 0
 const shouldRender = faq && faq.length > 0 && (faq_unique_q_count ?? 0) > 0;
+
+// Generate FAQPage Schema for Rich Snippets
+const faqSchema = shouldRender ? JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faq!.map((item) => ({
+    "@type": "Question",
+    "name": item.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.answer,
+    },
+  })),
+}) : null;
 ---
+
+{shouldRender && faqSchema && (
+  <script type="application/ld+json" is:inline set:html={faqSchema} />
+)}
 
 {shouldRender && (
   <section class="py-20 bg-background">

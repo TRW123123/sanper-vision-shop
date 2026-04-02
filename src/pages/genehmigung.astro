@@ -1,0 +1,96 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { Button } from "@/components/ui/button";
+import CSVFAQSection from "@/components/csv/CSVFAQSection.astro";
+import { Shield, FileText, AlertTriangle, CheckCircle } from "lucide-react";
+
+const faqs = [
+  { question: "Brauche ich eine Baugenehmigung für eine Terrassenüberdachung in NRW?", answer: "In NRW sind viele Terrassenüberdachungen bis zu bestimmten Maßen verfahrensfrei (§62 BauO NRW). Entscheidend sind Grundfläche, Tiefe und Abstand zur Grundstücksgrenze. Wir prüfen das vor Projektstart." },
+  { question: "Was kostet eine Baugenehmigung?", answer: "Die Gebühren liegen je nach Kommune bei 100–600 €. Dazu kommen Kosten für Bauzeichnungen (300–800 €) und ggf. einen Statiker (300–1.200 €)." },
+  { question: "Wie lange dauert das Genehmigungsverfahren?", answer: "Im vereinfachten Verfahren 4–8 Wochen, im regulären Verfahren 8–16 Wochen. Wir empfehlen, die Genehmigung vor der Bestellung zu klären." },
+  { question: "Was passiert wenn ich ohne Genehmigung baue?", answer: "Im schlimmsten Fall droht ein Rückbau auf eigene Kosten. Außerdem erlischt der Versicherungsschutz. Das Risiko steht in keinem Verhältnis zum Aufwand einer Genehmigung." },
+  { question: "Hilft Apexx Bau bei der Genehmigung?", answer: "Ja. Wir prüfen die Genehmigungspflicht, erstellen die nötigen Bauzeichnungen und koordinieren bei Bedarf den Statiker. Die Einreichung beim Bauamt übernehmen Sie oder wir begleiten den Prozess." },
+];
+---
+
+<Layout
+  title="Baugenehmigung für Terrassenüberdachung - Apexx Bau"
+  description="Brauchen Sie eine Baugenehmigung für Ihre Terrassenüberdachung? Regelungen, Kosten und Ablauf verständlich erklärt. Wir prüfen das für Sie."
+>
+  <main>
+    <section class="py-20 lg:py-28 bg-muted/30 border-b border-border">
+      <div class="container max-w-3xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary mb-4">Genehmigung</p>
+        <h1 class="text-4xl font-bold tracking-tight lg:text-5xl mb-6">Baugenehmigung für Terrassenüberdachungen</h1>
+        <p class="text-xl leading-relaxed text-muted-foreground mb-6">
+          Je nach Bauart und Standort kann eine Genehmigung erforderlich sein. Diese Seite hilft zu klären, wann das zutrifft und wie vorzugehen ist.
+        </p>
+        <p class="leading-relaxed text-foreground/80">
+          Risiken bestehen bei verspäteter Klärung, die Projekte verzögern oder stoppen kann. Eine frühzeitige Prüfung spart Zeit, Geld und Nerven.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-16 lg:py-20">
+      <div class="container max-w-3xl">
+        <div class="grid gap-6">
+          <div class="rounded-2xl border border-border bg-card p-6">
+            <div class="flex gap-4">
+              <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                <FileText className="w-5 h-5 text-primary" />
+              </div>
+              <div>
+                <h2 class="text-xl font-semibold mb-2">Verfahrensfreie Vorhaben (NRW)</h2>
+                <p class="text-muted-foreground leading-relaxed">
+                  In NRW sind Terrassenüberdachungen unter bestimmten Voraussetzungen genehmigungsfrei (§62 BauO NRW). Entscheidend: Grundfläche, Tiefe und Grenzabstand. Freistehende Konstruktionen und Wintergärten haben strengere Auflagen als einfache Wandanbauten.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl border border-border bg-card p-6">
+            <div class="flex gap-4">
+              <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                <AlertTriangle className="w-5 h-5 text-primary" />
+              </div>
+              <div>
+                <h2 class="text-xl font-semibold mb-2">Wann immer eine Genehmigung nötig ist</h2>
+                <p class="text-muted-foreground leading-relaxed">
+                  Wintergärten (da als Wohnraum gewertet), Konstruktionen im Außenbereich laut §35 BauGB, Bauten in Denkmalschutzzonen und Systeme die den Bebauungsplan verletzen (GRZ, Abstandsflächen) brauchen immer eine Genehmigung — unabhängig von der Größe.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl border border-border bg-card p-6">
+            <div class="flex gap-4">
+              <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                <CheckCircle className="w-5 h-5 text-primary" />
+              </div>
+              <div>
+                <h2 class="text-xl font-semibold mb-2">Unser Ablauf</h2>
+                <p class="text-muted-foreground leading-relaxed">
+                  Wir prüfen die Genehmigungspflicht anhand Ihrer Adresse und Maße, erstellen bei Bedarf Bauzeichnungen und Statiknachweis, und begleiten Sie durch den Prozess. Kosten für Genehmigung und Statik werden vorab transparent kalkuliert.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <CSVFAQSection faq={faqs} faq_unique_q_count={5} />
+
+    <section class="py-16 lg:py-20">
+      <div class="container max-w-3xl text-center">
+        <div class="rounded-3xl bg-primary px-8 py-10 text-primary-foreground">
+          <h2 class="text-3xl font-bold mb-4">Genehmigung klären</h2>
+          <p class="text-primary-foreground/80 mb-8 max-w-xl mx-auto">
+            Wir prüfen kostenlos, ob Ihr Vorhaben genehmigungspflichtig ist. In den meisten Fällen haben Sie innerhalb von 24 Stunden Klarheit.
+          </p>
+          <Button size="lg" variant="secondary" className="h-14 px-8 text-lg" asChild>
+            <a href="/kontakt?type=beratung">Genehmigung prüfen lassen</a>
+          </Button>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

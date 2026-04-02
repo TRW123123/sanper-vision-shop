@@ -19,7 +19,7 @@ const {
   noindex = false,
 } = Astro.props;
 
-const siteUrl = Astro.site?.toString() || "https://www.apexx-bau.de";
+const siteUrl = Astro.site?.toString() || "https://apexx-bau.de";
 const canonicalURL = new URL(Astro.url.pathname, siteUrl);
 const ogImageURL = new URL(image, siteUrl).toString();
 const isProduction = process.env.CONTEXT === "production";
@@ -29,8 +29,8 @@ const organizationSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Apexx Bau",
-  url: "https://www.apexx-bau.de",
-  logo: "https://www.apexx-bau.de/logo.png",
+  url: "https://apexx-bau.de",
+  logo: "https://apexx-bau.de/logo.png",
   description:
     "Maßgefertigte bioklimatische Pergolen, Wintergärten und Markisen. Premium Qualität direkt vom Hersteller.",
   address: {
@@ -61,7 +61,7 @@ const organizationSchema = JSON.stringify({
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta
       name="robots"
-      content={noindex ? "noindex, follow" : "index, follow"}
+      content={(noindex || !isProduction) ? "noindex, nofollow" : "index, follow"}
     />
     <meta name="generator" content={Astro.generator} />
 
@@ -84,8 +84,6 @@ const organizationSchema = JSON.stringify({
 
     <title>{title}</title>
     <link rel="canonical" href={canonicalURL} />
-    {!isProduction && <meta name="robots" content="noindex, nofollow" />}
-
     <slot name="head" />
 
     <!-- Structured Data -->

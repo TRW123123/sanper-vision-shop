@@ -45,6 +45,10 @@ export async function getStaticPaths() {
     "impressum",  // impressum.astro
     "datenschutz", // datenschutz.astro
     "agb",        // agb.astro
+    "genehmigung", // genehmigung.astro
+    "wartung",    // wartung.astro
+    "lieferzeit", // lieferzeit.astro
+    "referenzen", // referenzen.astro
     "pergola-systeme",        // pergola-systeme.astro
     "wintergarten-systeme",   // wintergarten-systeme.astro
     "zip-screen-systeme",     // zip-screen-systeme.astro
@@ -65,7 +69,7 @@ export async function getStaticPaths() {
 }
 
 const { page } = Astro.props as { page: LandingPage };
-const siteUrl = "https://www.apexx-bau.de";
+const siteUrl = "https://apexx-bau.de";
 const heroImage = page.images?.[0]
   ? `/images/${page.images[0]}.jpg`
   : "/images/stock/hero-fallback.jpg";

@@ -1,0 +1,78 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { Button } from "@/components/ui/button";
+import CSVFAQSection from "@/components/csv/CSVFAQSection.astro";
+
+const faqs = [
+  { question: "Wie oft muss eine Aluminium-Pergola gewartet werden?", answer: "Praktisch gar nicht. Gelegentliches Abwischen mit feuchtem Tuch genügt. Die Qualicoat-Pulverbeschichtung schützt dauerhaft vor UV, Salz und Feuchtigkeit." },
+  { question: "Müssen die Motoren gewartet werden?", answer: "Nein. Die bürstenlosen Somfy-Motoren sind wartungsfrei und hermetisch gekapselt. Lebensdauer: 20.000+ Zyklen." },
+  { question: "Was ist mit den Lamellen-Lagern?", answer: "Apexx Bau verbaut selbstschmierende Messinglager und Edelstahlbolzen. Diese sind korrosionsfrei und brauchen keine Schmierung — auch nach Jahrzehnten nicht." },
+  { question: "Wie reinige ich Glasschiebewände?", answer: "Mit Glasreiniger und weicher Bürste. Die Laufschienen sollten 1–2x jährlich von Schmutz und Blättern befreit werden." },
+  { question: "Bietet Apexx Bau einen Wartungsservice an?", answer: "Auf Anfrage bieten wir einen optionalen Jahres-Check an: Sichtprüfung, Lauftechnik-Test, Sensor-Kalibrierung und Reinigung der Entwässerung." },
+];
+---
+
+<Layout
+  title="Wartung & Pflege - Apexx Bau"
+  description="Wartung und Pflege von Pergolen, Wintergärten und ZIP-Screens. Wie viel Aufwand ist realistisch? Aluminium-Systeme im Überblick."
+>
+  <main>
+    <section class="py-20 lg:py-28 bg-muted/30 border-b border-border">
+      <div class="container max-w-3xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary mb-4">Wartung</p>
+        <h1 class="text-4xl font-bold tracking-tight lg:text-5xl mb-6">Wartung & Pflege</h1>
+        <p class="text-xl leading-relaxed text-muted-foreground mb-6">
+          Wartung beeinflusst Lebensdauer und Funktion. Diese Seite hilft, den realen Wartungsaufwand richtig einzuschätzen.
+        </p>
+        <p class="leading-relaxed text-foreground/80">
+          Risiken entstehen, wenn Wartung unterschätzt oder nicht eingeplant wird. Aluminium-Systeme sind hier grundsätzlich im Vorteil.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-16 lg:py-20">
+      <div class="container max-w-3xl space-y-8">
+        <div class="rounded-2xl border border-border bg-card p-6">
+          <h2 class="text-xl font-semibold mb-3">Aluminium-Pergola: Quasi wartungsfrei</h2>
+          <p class="text-muted-foreground leading-relaxed">
+            Stranggepresstes Aluminium EN AW-6060 mit Qualicoat-Beschichtung braucht keine Pflege. Kein Streichen, kein Schleifen, kein Holzschutzmittel. Die Edelstahlbolzen und Messinglager sind korrosionsfrei. Empfehlung: 1–2x jährlich mit Gartenschlauch abspülen.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-border bg-card p-6">
+          <h2 class="text-xl font-semibold mb-3">Glasschiebewände: Minimaler Aufwand</h2>
+          <p class="text-muted-foreground leading-relaxed">
+            Glasflächen reinigen sich bei guter Dachneigung teilweise selbst durch Regen. Laufschienen 1–2x jährlich von Laub und Sand befreien. ESG-Glas ist kratzfest und vergilbt nicht.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-border bg-card p-6">
+          <h2 class="text-xl font-semibold mb-3">ZIP-Screens: Gewebe und Führung prüfen</h2>
+          <p class="text-muted-foreground leading-relaxed">
+            Tuch 2x jährlich mit lauwarmem Wasser und weicher Bürste reinigen — kein Hochdruckreiniger. Keder alle 2 Jahre auf Verschleiß prüfen. Führungsschienen halbjährlich auswischen. Das Soltis-Gewebe ist UV- und schimmelbeständig.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-border bg-card p-6">
+          <h2 class="text-xl font-semibold mb-3">Holz-Pergola: Hoher Aufwand (Vergleich)</h2>
+          <p class="text-muted-foreground leading-relaxed">
+            Zum Vergleich: Holzkonstruktionen müssen alle 3–5 Jahre abgeschliffen und mit Schutzlasur behandelt werden. Kosten: 200–400 € pro Durchgang (Material + Arbeitszeit). Über 20 Jahre sind das 1.000–2.000 € reine Wartungskosten — bei Aluminium: null.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <CSVFAQSection faq={faqs} faq_unique_q_count={5} />
+
+    <section class="py-16">
+      <div class="container max-w-3xl text-center">
+        <div class="rounded-3xl bg-primary px-8 py-10 text-primary-foreground">
+          <h2 class="text-3xl font-bold mb-4">Wartungsarme Systeme anfragen</h2>
+          <p class="text-primary-foreground/80 mb-8 max-w-xl mx-auto">
+            Wir beraten Sie zu Systemen, die minimalen Wartungsaufwand mit maximaler Lebensdauer verbinden.
+          </p>
+          <Button size="lg" variant="secondary" className="h-14 px-8 text-lg" asChild>
+            <a href="/kontakt?type=beratung">Beratung anfragen</a>
+          </Button>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

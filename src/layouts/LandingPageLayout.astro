@@ -19,7 +19,7 @@ const {
   noindex = false,
 } = Astro.props;
 
-const siteUrl = Astro.site?.toString() || "https://www.apexx-bau.de";
+const siteUrl = Astro.site?.toString() || "https://apexx-bau.de";
 const canonicalURL = new URL(Astro.url.pathname, siteUrl);
 const ogImageURL = new URL(image, siteUrl).toString();
 const isProduction = process.env.CONTEXT === "production";
@@ -30,8 +30,8 @@ const organizationSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Apexx Bau",
-  url: "https://www.apexx-bau.de",
-  logo: "https://www.apexx-bau.de/logo.png",
+  url: "https://apexx-bau.de",
+  logo: "https://apexx-bau.de/logo.png",
   description: "Maßgefertigte bioklimatische Pergolen, Wintergärten und Markisen. Premium Qualität direkt vom Hersteller.",
   address: {
     "@type": "PostalAddress",

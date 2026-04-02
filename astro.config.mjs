@@ -13,7 +13,7 @@ const enrichedSlugs = new Set(
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.apexx-bau.de',
+  site: 'https://apexx-bau.de',
   trailingSlash: 'always',
   integrations: [
     react(),

@@ -11,7 +11,7 @@ export const company = {
     contact: {
         phone: "0170 534 2268",
         email: "info@apexx-bau.de",
-        website: "https://www.apexx-bau.de"
+        website: "https://apexx-bau.de"
     },
     legal: {
         owner: "Hakan Yilmaz",

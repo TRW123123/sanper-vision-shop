@@ -1,0 +1,84 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { Button } from "@/components/ui/button";
+import CSVFAQSection from "@/components/csv/CSVFAQSection.astro";
+
+const faqs = [
+  { question: "Wie lange dauert es von der Bestellung bis zur Montage?", answer: "Typisch 6–10 Wochen: 1–2 Wochen Planung und Aufmaß, 4–6 Wochen Fertigung, 1–2 Tage Montage. Bei komplexen Projekten mit Verglasung kann es 8–12 Wochen dauern." },
+  { question: "Kann ich den Termin beschleunigen?", answer: "Bei frühzeitiger Planung (vor der Saison, z.B. Oktober–Februar) sind die Fertigungskapazitäten flexibler. In der Hochsaison (März–Juni) sind Wartezeiten länger." },
+  { question: "Was beeinflusst die Lieferzeit am meisten?", answer: "RAL-Sonderfarben (+1–2 Wochen), Sondermaße, Zusatzausstattung (Verglasung, ZIP-Screens) und die aktuelle Auslastung der Fertigung." },
+  { question: "Muss ich bei der Montage anwesend sein?", answer: "Ideal ja — zumindest bei Beginn (Zugang, Strom, Wasser) und bei der Abnahme (Einweisung in Bedienung). Die Montage selbst läuft eigenständig." },
+  { question: "Was passiert bei Verzögerungen?", answer: "Wir kommunizieren proaktiv. Sollte es zu Verzögerungen kommen (z.B. durch Wetter oder Materialengpässe), informieren wir Sie sofort und bieten einen neuen Termin an." },
+];
+---
+
+<Layout
+  title="Lieferzeit & Ablauf - Apexx Bau"
+  description="Lieferzeiten für Pergolen, Wintergärten und ZIP-Screens: Typisch 6–10 Wochen von Bestellung bis Montage. Ablauf und Einflussfaktoren."
+>
+  <main>
+    <section class="py-20 lg:py-28 bg-muted/30 border-b border-border">
+      <div class="container max-w-3xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary mb-4">Lieferzeit</p>
+        <h1 class="text-4xl font-bold tracking-tight lg:text-5xl mb-6">Lieferzeit & Projektablauf</h1>
+        <p class="text-xl leading-relaxed text-muted-foreground mb-6">
+          Lieferzeiten hängen von Planung, Fertigung und Montage ab. Diese Seite erklärt die wichtigsten Einflussfaktoren.
+        </p>
+        <p class="leading-relaxed text-foreground/80">
+          Risiken entstehen durch unrealistische Erwartungen oder fehlende Abstimmung im Projektablauf. Je früher Sie planen, desto flexibler sind die Termine.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-16 lg:py-20">
+      <div class="container max-w-3xl">
+        <h2 class="text-3xl font-bold mb-8">Typischer Projektablauf</h2>
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 border border-border">
+              <span class="font-bold text-primary text-sm">1</span>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg">Beratung & Aufmaß</h3>
+              <p class="text-muted-foreground">1–2 Wochen. Persönliches Gespräch, Vor-Ort-Aufmaß, technische Klärung. Ergebnis: verbindliches Angebot.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 border border-border">
+              <span class="font-bold text-primary text-sm">2</span>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg">Fertigung</h3>
+              <p class="text-muted-foreground">4–6 Wochen. Maßfertigung Ihrer Anlage: Profilzuschnitt, Pulverbeschichtung (RAL-Farbe), Vormontage, Qualitätskontrolle.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 border border-border">
+              <span class="font-bold text-primary text-sm">3</span>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg">Montage & Abnahme</h3>
+              <p class="text-muted-foreground">1–4 Tage. Installation durch eigene Teams, Funktionstest, Einweisung in Bedienung und Pflege. Übergabe mit Garantiedokument.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <CSVFAQSection faq={faqs} faq_unique_q_count={5} />
+
+    <section class="py-16">
+      <div class="container max-w-3xl text-center">
+        <div class="rounded-3xl bg-primary px-8 py-10 text-primary-foreground">
+          <h2 class="text-3xl font-bold mb-4">Termin klären</h2>
+          <p class="text-primary-foreground/80 mb-8 max-w-xl mx-auto">
+            Je früher Sie anfragen, desto flexibler können wir Ihren Wunschtermin einplanen. Besonders für die Frühlingssaison empfehlen wir eine Anfrage im Herbst/Winter.
+          </p>
+          <Button size="lg" variant="secondary" className="h-14 px-8 text-lg" asChild>
+            <a href="/kontakt?type=beratung">Termin anfragen</a>
+          </Button>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

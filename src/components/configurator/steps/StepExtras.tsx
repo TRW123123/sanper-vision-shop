@@ -1,82 +1,70 @@
 import { Checkbox } from "@/components/ui/checkbox";
 import { cn } from "@/lib/utils";
-import { Lightbulb, Wind, Sun, Shield } from "lucide-react";
+import { getExtrasForCategory } from "@/lib/configurator-options";
+import { Lightbulb, Flame, Wind, Smartphone, Bug, Wrench } from "lucide-react";
+
+const ICONS: Record<string, React.ReactNode> = {
+    led: <Lightbulb className="w-5 h-5" />,
+    heizung: <Flame className="w-5 h-5" />,
+    seiten: <Wind className="w-5 h-5" />,
+    smarthome: <Smartphone className="w-5 h-5" />,
+    insektenschutz: <Bug className="w-5 h-5" />,
+    montage: <Wrench className="w-5 h-5" />,
+};
 
 interface StepExtrasProps {
+    category: string;
     value: string[];
     onChange: (value: string[]) => void;
 }
 
-const EXTRAS = [
-    {
-        id: "led",
-        label: "LED Beleuchtung",
-        description: "Integrierte Dimmbare LED-Stripes",
-        icon: <Lightbulb className="w-6 h-6" />
-    },
-    {
-        id: "heizung",
-        label: "Infrarot-Heizung",
-        description: "Für kühle Abende",
-        icon: <Sun className="w-6 h-6" />
-    },
-    {
-        id: "seiten",
-        label: "Seitenelemente",
-        description: "Glas oder Zip-Screen als Windschutz",
-        icon: <Wind className="w-6 h-6" />
-    },
-    {
-        id: "montage",
-        label: "Montage gewünscht",
-        description: "Inkl. Aufmaß durch unsere Profis",
-        icon: <Shield className="w-6 h-6" />
-    }
-];
+export const StepExtras = ({ category, value, onChange }: StepExtrasProps) => {
+    const available = getExtrasForCategory(category);
 
-export const StepExtras = ({ value, onChange }: StepExtrasProps) => {
-    const toggleExtra = (id: string) => {
-        if (value.includes(id)) {
-            onChange(value.filter(v => v !== id));
-        } else {
-            onChange([...value, id]);
-        }
+    const toggle = (id: string) => {
+        if (value.includes(id)) onChange(value.filter(v => v !== id));
+        else onChange([...value, id]);
     };
 
     return (
         <div className="space-y-6">
-            <div className="text-center mb-8">
-                <h2 className="text-2xl font-bold mb-2">Besondere Wünsche?</h2>
-                <p className="text-muted-foreground">Wählen Sie optionale Extras für Ihr Projekt.</p>
+            <div className="text-center mb-6">
+                <h2 className="text-2xl font-bold mb-2">Welche Ausstattung wünschen Sie?</h2>
+                <p className="text-muted-foreground">
+                    Optionale Extras — alles einzeln abwählbar, nichts ist Pflicht.
+                </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {EXTRAS.map((extra) => {
-                    const isSelected = value.includes(extra.id);
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {available.map(extra => {
+                    const selected = value.includes(extra.id);
                     return (
-                        <div
+                        <button
+                            type="button"
                             key={extra.id}
+                            onClick={() => toggle(extra.id)}
                             className={cn(
-                                "flex items-start space-x-4 p-4 rounded-xl border-2 cursor-pointer transition-all hover:border-primary/50",
-                                isSelected ? "border-primary bg-primary/5" : "border-border"
+                                "flex items-start gap-4 p-4 rounded-xl border-2 text-left transition-all",
+                                selected ? "border-primary bg-primary/5" : "border-border hover:border-primary/50"
                             )}
-                            onClick={() => toggleExtra(extra.id)}
                         >
                             <div className={cn(
-                                "p-2 rounded-lg",
-                                isSelected ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
+                                "p-2 rounded-lg shrink-0",
+                                selected ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
                             )}>
-                                {extra.icon}
+                                {ICONS[extra.id] ?? <Lightbulb className="w-5 h-5" />}
                             </div>
                             <div className="flex-1">
                                 <div className="flex items-center justify-between">
-                                    <h3 className="font-semibold">{extra.label}</h3>
-                                    <Checkbox checked={isSelected} className="pointer-events-none" />
+                                    <h3 className="font-semibold text-sm">{extra.label}</h3>
+                                    <Checkbox checked={selected} className="pointer-events-none" />
                                 </div>
-                                <p className="text-sm text-muted-foreground mt-1">{extra.description}</p>
+                                <p className="text-xs text-muted-foreground mt-1 leading-relaxed">
+                                    {extra.description}
+                                </p>
                             </div>
-                        </div>
-                    )
+                        </button>
+                    );
                 })}
             </div>
         </div>

@@ -2,18 +2,23 @@ import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { AnimatePresence, motion } from "framer-motion";
-import { StepType } from "./steps/StepType";
+import { StepCategory } from "./steps/StepCategory";
+import { StepSystem } from "./steps/StepSystem";
 import { StepDimensions } from "./steps/StepDimensions";
+import { StepColor } from "./steps/StepColor";
 import { StepExtras } from "./steps/StepExtras";
-import { StepContact } from "./steps/StepContact";
+import { StepSummary } from "./steps/StepSummary";
 import { Check, ChevronRight, ChevronLeft } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 import { loadPricing, calculatePrice, formatEUR, type PricingTable } from "@/lib/pricing";
 
 export type ConfiguratorState = {
     step: number;
-    productType: string;
-    dimensions: { width: number; projection: number };
+    category: string;
+    productId: string;
+    dimensions: { width: number; projection: number; height: number };
+    situation: string;
+    color: string;
     extras: string[];
     contact: {
         firstName: string;
@@ -25,19 +30,26 @@ export type ConfiguratorState = {
     };
 };
 
+const TOTAL_STEPS = 6;
+
+const STEP_LABELS = [
+    "Kategorie",
+    "System",
+    "Maße",
+    "Farbe",
+    "Extras",
+    "Kontakt",
+];
+
 const INITIAL_STATE: ConfiguratorState = {
     step: 1,
-    productType: "",
-    dimensions: { width: 300, projection: 250 },
+    category: "",
+    productId: "",
+    dimensions: { width: 400, projection: 300, height: 250 },
+    situation: "",
+    color: "",
     extras: [],
-    contact: {
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        zip: "",
-        message: ""
-    }
+    contact: { firstName: "", lastName: "", email: "", phone: "", zip: "", message: "" },
 };
 
 export const Configurator = () => {
@@ -45,49 +57,60 @@ export const Configurator = () => {
     const [pricing, setPricing] = useState<PricingTable | null>(null);
     const { toast } = useToast();
 
-    // Load pricing CSV once on mount
     useEffect(() => {
-        loadPricing().then(setPricing).catch(err => {
-            console.error("Pricing load failed:", err);
-        });
+        loadPricing().then(setPricing).catch(err => console.error("Pricing load failed:", err));
     }, []);
 
-    // Live price calculation
+    const update = (u: Partial<ConfiguratorState>) => setState(prev => ({ ...prev, ...u }));
+
     const price = useMemo(() => {
-        if (!pricing || !state.productType) return null;
+        if (!pricing || !state.productId) return null;
         return calculatePrice(pricing, {
-            productType: state.productType,
+            productType: state.productId,
             widthCm: state.dimensions.width,
             projectionCm: state.dimensions.projection,
             extras: state.extras,
         });
-    }, [pricing, state.productType, state.dimensions, state.extras]);
+    }, [pricing, state.productId, state.dimensions, state.extras]);
 
-    const updateState = (updates: Partial<ConfiguratorState>) => {
-        setState(prev => ({ ...prev, ...updates }));
+    const canAdvance = (): { ok: boolean; reason?: string } => {
+        switch (state.step) {
+            case 1: return state.category ? { ok: true } : { ok: false, reason: "Bitte wählen Sie eine Kategorie." };
+            case 2: return state.productId ? { ok: true } : { ok: false, reason: "Bitte wählen Sie ein System." };
+            case 3: return state.situation ? { ok: true } : { ok: false, reason: "Bitte wählen Sie die Einbausituation." };
+            case 4: return state.color ? { ok: true } : { ok: false, reason: "Bitte wählen Sie eine Farbe." };
+            default: return { ok: true };
+        }
     };
 
-    const nextStep = () => {
-        if (state.step === 1 && !state.productType) {
-            toast({ title: "Bitte wählen Sie einen Produkttyp", variant: "destructive" });
+    const next = () => {
+        const check = canAdvance();
+        if (!check.ok) {
+            toast({ title: check.reason!, variant: "destructive" });
             return;
         }
-        // Validation for contact step could go here
-        setState(prev => ({ ...prev, step: Math.min(prev.step + 1, 4) }));
+        setState(prev => ({ ...prev, step: Math.min(prev.step + 1, TOTAL_STEPS) }));
     };
 
-    const prevStep = () => {
-        setState(prev => ({ ...prev, step: Math.max(prev.step - 1, 1) }));
-    };
+    const prev = () => setState(p => ({ ...p, step: Math.max(p.step - 1, 1) }));
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    const submit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        const formData = new FormData();
+        if (!state.contact.firstName || !state.contact.lastName || !state.contact.email) {
+            toast({ title: "Bitte füllen Sie Vorname, Nachname und E-Mail aus.", variant: "destructive" });
+            return;
+        }
+
+        const formData = new URLSearchParams();
         formData.append("form-name", "konfigurator");
-        formData.append("productType", state.productType);
-        formData.append("width", state.dimensions.width.toString());
-        formData.append("projection", state.dimensions.projection.toString());
+        formData.append("category", state.category);
+        formData.append("productId", state.productId);
+        formData.append("width", String(state.dimensions.width));
+        formData.append("projection", String(state.dimensions.projection));
+        formData.append("height", String(state.dimensions.height));
+        formData.append("situation", state.situation);
+        formData.append("color", state.color);
         formData.append("extras", state.extras.join(", "));
         formData.append("firstName", state.contact.firstName);
         formData.append("lastName", state.contact.lastName);
@@ -96,51 +119,69 @@ export const Configurator = () => {
         formData.append("zip", state.contact.zip);
         formData.append("message", state.contact.message);
         if (price) {
-            formData.append("priceMin", Math.round(price.min).toString());
-            formData.append("priceMax", Math.round(price.max).toString());
+            formData.append("priceMin", String(Math.round(price.min)));
+            formData.append("priceMax", String(Math.round(price.max)));
         }
 
         try {
             await fetch("/", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams(formData as any).toString(),
+                body: formData.toString(),
             });
-
             toast({
-                title: "Anfrage erfolgreich gesendet!",
-                description: "Wir haben Ihre Konfiguration erhalten und melden uns in Kürze.",
+                title: "Anfrage erfolgreich gesendet",
+                description: "Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
             });
-        } catch (error) {
-            toast({
-                title: "Fehler beim Senden",
-                description: "Bitte versuchen Sie es später erneut.",
-                variant: "destructive"
-            });
+        } catch {
+            toast({ title: "Fehler beim Senden", description: "Bitte versuchen Sie es später erneut.", variant: "destructive" });
         }
     };
 
-    const renderStep = () => {
+    const render = () => {
         switch (state.step) {
             case 1:
-                return <StepType value={state.productType} onChange={(v) => updateState({ productType: v })} />;
+                return <StepCategory value={state.category} onChange={(v) => update({ category: v, productId: "" })} />;
             case 2:
-                return <StepDimensions value={state.dimensions} onChange={(v) => updateState({ dimensions: v })} />;
+                return <StepSystem category={state.category} value={state.productId} onChange={(v) => update({ productId: v })} />;
             case 3:
-                return <StepExtras value={state.extras} onChange={(v) => updateState({ extras: v })} />;
+                return (
+                    <StepDimensions
+                        value={state.dimensions}
+                        situation={state.situation}
+                        onChange={(v) => update({ dimensions: v })}
+                        onSituationChange={(v) => update({ situation: v })}
+                    />
+                );
             case 4:
-                return <StepContact value={state.contact} onChange={(v) => updateState({ contact: v })} onSubmit={handleSubmit} />;
+                return <StepColor value={state.color} onChange={(v) => update({ color: v })} />;
+            case 5:
+                return <StepExtras category={state.category} value={state.extras} onChange={(v) => update({ extras: v })} />;
+            case 6:
+                return (
+                    <StepSummary
+                        category={state.category}
+                        productId={state.productId}
+                        dimensions={state.dimensions}
+                        situation={state.situation}
+                        color={state.color}
+                        extras={state.extras}
+                        contact={state.contact}
+                        onContactChange={(c) => update({ contact: c })}
+                        onSubmit={submit}
+                    />
+                );
             default:
                 return null;
         }
     };
 
-    const progress = (state.step / 4) * 100;
+    const progress = (state.step / TOTAL_STEPS) * 100;
 
     return (
-        <div className="w-full max-w-4xl mx-auto p-4">
+        <div className="w-full max-w-5xl mx-auto p-4">
             {/* Progress Bar */}
-            <div className="mb-8 relative h-2 bg-muted rounded-full overflow-hidden">
+            <div className="mb-4 relative h-2 bg-muted rounded-full overflow-hidden">
                 <motion.div
                     className="absolute left-0 top-0 h-full bg-primary"
                     initial={{ width: 0 }}
@@ -149,11 +190,18 @@ export const Configurator = () => {
                 />
             </div>
 
-            <div className="mb-8 flex justify-between text-sm font-medium text-muted-foreground">
-                <span className={state.step >= 1 ? "text-primary" : ""}>1. Typ</span>
-                <span className={state.step >= 2 ? "text-primary" : ""}>2. Maße</span>
-                <span className={state.step >= 3 ? "text-primary" : ""}>3. Ausstattung</span>
-                <span className={state.step >= 4 ? "text-primary" : ""}>4. Kontakt</span>
+            <div className="mb-8 flex justify-between text-xs sm:text-sm font-medium text-muted-foreground overflow-x-auto">
+                {STEP_LABELS.map((label, i) => {
+                    const n = i + 1;
+                    return (
+                        <span
+                            key={label}
+                            className={state.step >= n ? "text-primary whitespace-nowrap px-1" : "whitespace-nowrap px-1"}
+                        >
+                            {n}. {label}
+                        </span>
+                    );
+                })}
             </div>
 
             {/* Live Price Range — driven by /pricing.csv
@@ -176,7 +224,7 @@ export const Configurator = () => {
             )}
 
             <Card className="border-none shadow-lg bg-card/50 backdrop-blur-sm">
-                <CardContent className="p-6 sm:p-8 min-h-[400px]">
+                <CardContent className="p-6 sm:p-8 min-h-[420px]">
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={state.step}
@@ -185,7 +233,7 @@ export const Configurator = () => {
                             exit={{ opacity: 0, x: -20 }}
                             transition={{ duration: 0.2 }}
                         >
-                            {renderStep()}
+                            {render()}
                         </motion.div>
                     </AnimatePresence>
                 </CardContent>
@@ -194,7 +242,7 @@ export const Configurator = () => {
             <div className="mt-8 flex justify-between">
                 <Button
                     variant="outline"
-                    onClick={prevStep}
+                    onClick={prev}
                     disabled={state.step === 1}
                     className={state.step === 1 ? "invisible" : ""}
                 >
@@ -202,13 +250,13 @@ export const Configurator = () => {
                     Zurück
                 </Button>
 
-                {state.step < 4 ? (
-                    <Button onClick={nextStep}>
+                {state.step < TOTAL_STEPS ? (
+                    <Button onClick={next}>
                         Weiter
                         <ChevronRight className="ml-2 h-4 w-4" />
                     </Button>
                 ) : (
-                    <Button onClick={handleSubmit} className="bg-primary text-primary-foreground hover:bg-primary/90">
+                    <Button onClick={submit} className="bg-primary text-primary-foreground hover:bg-primary/90">
                         Anfrage absenden
                         <Check className="ml-2 h-4 w-4" />
                     </Button>

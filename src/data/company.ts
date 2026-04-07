@@ -9,7 +9,7 @@ export const company = {
         country: "Deutschland"
     },
     contact: {
-        phone: "0170 534 2268",
+        phone: "0171 534 2268",
         email: "info@apexx-bau.de",
         website: "https://apexx-bau.de"
     },

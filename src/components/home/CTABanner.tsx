@@ -18,7 +18,7 @@ const CTABanner = () => {
               asChild
               className="bg-white text-accent hover:bg-white/90 hover-scale"
             >
-              <a href="/kontakt?type=beratung">
+              <a href="/konfigurator/">
                 Beratung anfragen
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>

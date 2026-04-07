@@ -96,10 +96,10 @@ const Navbar = () => {
 
           <div className="flex items-center gap-3">
             <Button variant="outline" asChild>
-              <a href="/kontakt?type=katalog">Katalog anfordern</a>
+              <a href="/konfigurator/">Katalog anfordern</a>
             </Button>
             <Button asChild>
-              <a href="/kontakt?type=beratung">Beratung anfragen</a>
+              <a href="/konfigurator/">Beratung anfragen</a>
             </Button>
           </div>
         </div>
@@ -172,10 +172,10 @@ const Navbar = () => {
 
             <div className="flex flex-col gap-3 pt-4">
               <Button variant="outline" asChild className="w-full">
-                <a href="/kontakt?type=katalog">Katalog anfordern</a>
+                <a href="/konfigurator/">Katalog anfordern</a>
               </Button>
               <Button asChild className="w-full">
-                <a href="/kontakt?type=beratung">Beratung anfragen</a>
+                <a href="/konfigurator/">Beratung anfragen</a>
               </Button>
             </div>
           </div>

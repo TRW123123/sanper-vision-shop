@@ -23,7 +23,7 @@ export const CONFIGURATOR_CATEGORIES: CategoryOption[] = [
         label: "Verglasungssysteme",
         description: "Guillotine-Glas, Wintergarten und Schiebesysteme für ganzjährigen Schutz.",
         image: "/images/products/winter-garden.png",
-        imagePosition: "center 40%",
+        imagePosition: "center 60%",
     },
     {
         id: "Textile Beschattung",

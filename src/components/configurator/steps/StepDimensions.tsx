@@ -136,7 +136,7 @@ export const StepDimensions = ({ category, value, situation, onChange, onSituati
                                 className={cn(
                                     "text-left p-4 rounded-xl border-2 transition-all",
                                     situation === opt.id
-                                        ? "border-primary bg-primary/5"
+                                        ? "border-primary bg-primary/10 ring-2 ring-primary/20"
                                         : "border-border hover:border-primary/50"
                                 )}
                             >

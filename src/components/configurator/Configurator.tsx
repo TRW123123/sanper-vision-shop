@@ -232,7 +232,7 @@ export const Configurator = () => {
             )}
 
             <Card className="border-none shadow-lg bg-card/50 backdrop-blur-sm">
-                <CardContent className="p-4 sm:p-6 min-h-[320px]">
+                <CardContent className="p-4 sm:p-6">
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={state.step}
@@ -247,7 +247,7 @@ export const Configurator = () => {
                 </CardContent>
             </Card>
 
-            <div className="sticky bottom-0 z-10 bg-background/80 backdrop-blur-md border-t border-border/50 -mx-4 px-4 py-4 mt-6 flex justify-between">
+            <div className="mt-6 flex justify-between">
                 <Button
                     variant="outline"
                     onClick={prev}

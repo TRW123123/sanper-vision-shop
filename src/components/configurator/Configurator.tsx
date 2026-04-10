@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { AnimatePresence, motion } from "framer-motion";
@@ -55,7 +55,14 @@ const INITIAL_STATE: ConfiguratorState = {
 export const Configurator = () => {
     const [state, setState] = useState<ConfiguratorState>(INITIAL_STATE);
     const [pricing, setPricing] = useState<PricingTable | null>(null);
+    const containerRef = useRef<HTMLDivElement>(null);
     const { toast } = useToast();
+
+    const scrollToTop = useCallback(() => {
+        setTimeout(() => {
+            containerRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 150);
+    }, []);
 
     useEffect(() => {
         loadPricing().then(setPricing).catch(err => console.error("Pricing load failed:", err));
@@ -93,9 +100,13 @@ export const Configurator = () => {
             return;
         }
         setState(prev => ({ ...prev, step: Math.min(prev.step + 1, TOTAL_STEPS) }));
+        scrollToTop();
     };
 
-    const prev = () => setState(p => ({ ...p, step: Math.max(p.step - 1, 1) }));
+    const prev = () => {
+        setState(p => ({ ...p, step: Math.max(p.step - 1, 1) }));
+        scrollToTop();
+    };
 
     const submit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -147,7 +158,10 @@ export const Configurator = () => {
                 return <StepCategory value={state.category} onChange={(v) => {
                     update({ category: v, productId: "" });
                     // Auto-advance to Step 2 after category selection
-                    setTimeout(() => setState(p => ({ ...p, step: 2 })), 300);
+                    setTimeout(() => {
+                        setState(p => ({ ...p, step: 2 }));
+                        scrollToTop();
+                    }, 300);
                 }} />;
             case 2:
                 return <StepSystem category={state.category} value={state.productId} onChange={(v) => update({ productId: v })} />;
@@ -187,7 +201,7 @@ export const Configurator = () => {
     const progress = (state.step / TOTAL_STEPS) * 100;
 
     return (
-        <div className="w-full max-w-5xl mx-auto p-4">
+        <div ref={containerRef} className="w-full max-w-5xl mx-auto p-4">
             {/* Progress Bar */}
             <div className="mb-4 relative h-2 bg-muted rounded-full overflow-hidden">
                 <motion.div
@@ -239,7 +253,7 @@ export const Configurator = () => {
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: -20 }}
-                            transition={{ duration: 0.2 }}
+                            transition={{ duration: 0.12 }}
                         >
                             {render()}
                         </motion.div>

@@ -64,7 +64,7 @@ export const StepSystem = ({ category, value, onChange }: StepSystemProps) => {
                                     )}
                                     {p.windschutz && p.windschutz !== "—" && (
                                         <span className="inline-flex items-center gap-1">
-                                            <Wind className="w-3 h-3" /> {p.windschutz}
+                                            <Wind className="w-3 h-3" /> Windschutz {p.windschutz !== "Ja" ? `(${p.windschutz})` : ""}
                                         </span>
                                     )}
                                     {p.wasserschutz === "Ja" && (

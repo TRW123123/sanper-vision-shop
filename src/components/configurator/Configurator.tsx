@@ -77,7 +77,10 @@ export const Configurator = () => {
         switch (state.step) {
             case 1: return state.category ? { ok: true } : { ok: false, reason: "Bitte wählen Sie eine Kategorie." };
             case 2: return state.productId ? { ok: true } : { ok: false, reason: "Bitte wählen Sie ein System." };
-            case 3: return state.situation ? { ok: true } : { ok: false, reason: "Bitte wählen Sie die Einbausituation." };
+            case 3: {
+                const needsSituation = state.category === "Pergola-Systeme" || state.category === "Verglasungssysteme";
+                return (!needsSituation || state.situation) ? { ok: true } : { ok: false, reason: "Bitte wählen Sie die Einbausituation." };
+            }
             case 4: return state.color ? { ok: true } : { ok: false, reason: "Bitte wählen Sie eine Farbe." };
             default: return { ok: true };
         }
@@ -147,6 +150,7 @@ export const Configurator = () => {
             case 3:
                 return (
                     <StepDimensions
+                        category={state.category}
                         value={state.dimensions}
                         situation={state.situation}
                         onChange={(v) => update({ dimensions: v })}

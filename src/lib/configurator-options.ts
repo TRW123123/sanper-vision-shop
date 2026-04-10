@@ -6,6 +6,8 @@ export type CategoryOption = {
     label: string;
     description: string;
     image: string;
+    /** CSS object-position für Bildausschnitt (default: center) */
+    imagePosition?: string;
 };
 
 export const CONFIGURATOR_CATEGORIES: CategoryOption[] = [
@@ -14,18 +16,28 @@ export const CONFIGURATOR_CATEGORIES: CategoryOption[] = [
         label: "Pergola-Systeme",
         description: "Bioklimatische Pergolen, Rolling Roof und Pergola Arc für Terrasse und Garten.",
         image: "/images/products/bioclimatic-pergola.png",
+        imagePosition: "center 60%",
     },
     {
         id: "Verglasungssysteme",
         label: "Verglasungssysteme",
         description: "Guillotine-Glas, Wintergarten und Schiebesysteme für ganzjährigen Schutz.",
         image: "/images/products/winter-garden.png",
+        imagePosition: "center 40%",
     },
     {
         id: "Textile Beschattung",
         label: "Textile Beschattung",
         description: "Zip-Screen, Kassettenmarkisen und Dachmarkisen für flexiblen Sonnenschutz.",
         image: "/images/products/zip-screen.png",
+        imagePosition: "center 70%",
+    },
+    {
+        id: "Tür & Tor Systeme",
+        label: "Tür & Tor Systeme",
+        description: "Haustüren, Garagentore, Schiebetüren und Hoftore aus Aluminium.",
+        image: "/images/products/transparent-shutter.png",
+        imagePosition: "center 50%",
     },
 ];
 
@@ -96,6 +108,24 @@ export const EXTRA_OPTIONS: ExtraOption[] = [
         label: "Insektenschutz",
         description: "Feinmaschiges Netz, integriert in die Seitenführung.",
         availableIn: ["Textile Beschattung", "Pergola-Systeme"],
+    },
+    {
+        id: "einbruchschutz",
+        label: "Einbruchschutz RC2/RC3",
+        description: "Zertifizierter Widerstandsschutz gegen Aufhebelversuche.",
+        availableIn: ["Tür & Tor Systeme"],
+    },
+    {
+        id: "fingerprint",
+        label: "Fingerprint-Zugang",
+        description: "Biometrischer Zugang ohne Schlüssel — wetterfest und vandalismussicher.",
+        availableIn: ["Tür & Tor Systeme"],
+    },
+    {
+        id: "antrieb",
+        label: "Elektrischer Antrieb",
+        description: "Motorisierung inkl. Fernbedienung und App-Steuerung.",
+        availableIn: ["Tür & Tor Systeme"],
     },
     {
         id: "montage",

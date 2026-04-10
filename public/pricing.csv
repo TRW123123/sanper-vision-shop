@@ -12,11 +12,19 @@ product,p10,Kolbenunterstuetzte Zip-Dachmarkise,per_m2,520,Textile Beschattung
 product,p11,Motorisiertes Deckenrollo,per_m2,260,Textile Beschattung
 product,p16,Wintergartensysteme,per_m2,1500,Verglasungssysteme
 product,p22,Pergola Arc,per_m2,950,Pergola-Systeme
+product,p30,Aluminium-Haustuer,per_m2,2200,Tuer und Tor Systeme
+product,p31,Sektionaltor Garage,per_m2,850,Tuer und Tor Systeme
+product,p32,Aluminium-Schiebetuer,per_m2,1800,Tuer und Tor Systeme
+product,p33,Industrietor Schnelllauftor,per_m2,950,Tuer und Tor Systeme
+product,p34,Hoftor Einfahrtstor,per_m2,1100,Tuer und Tor Systeme
 extra,led,LED-Beleuchtung,per_m_width,45,Pro laufendem Meter Breite
 extra,heizung,Infrarot-Heizung,flat,890,Pauschale fuer 1-2 Strahler
 extra,seiten,Seitenelemente,per_m_width,320,Pro laufendem Meter Breite
 extra,smarthome,Smart-Home-Steuerung,flat,480,Pauschale
 extra,insektenschutz,Insektenschutz,per_m_width,95,Pro laufendem Meter Breite
+extra,einbruchschutz,Einbruchschutz RC2/RC3,flat,650,Pauschale
+extra,fingerprint,Fingerprint-Zugang,flat,420,Pauschale
+extra,antrieb,Elektrischer Antrieb,flat,780,Pauschale inkl. Fernbedienung
 extra,montage,Montage,percent_of_subtotal,15,Prozent auf Zwischensumme
 config,price_spread_percent,Preisspanne,percent,20,+/- Prozent fuer Spanne
 config,show_live_price,Live Preis anzeigen,bool,0,1 = sichtbar im Konfigurator / 0 = versteckt (Engine laeuft trotzdem)

@@ -237,6 +237,91 @@ export const products: Product[] = [
     anmerkungen: "Gewölbtes Design; Smart-Home-kompatibel; LED-Beleuchtung",
     kurzbeschreibung: "Architektonische Pergola Arc mit gewölbtem Design, Smart-Home-Integration und LED-Beleuchtung.",
     bilder: ["/images/products/pergola-arc.png"]
+  },
+  {
+    id: "30",
+    produktname: "Aluminium-Haustür",
+    slug: "tuer-tor-systeme/haustuer",
+    kategorie: "Tür & Tor Systeme",
+    systemtyp: "Thermisch getrennte Aluminium-Haustür mit Sicherheitsverriegelung",
+    material: "Thermisch getrenntes Aluminium; Sicherheitsglas; Mehrfachverriegelung",
+    einsatzbereich: ["Eigenheim", "Villa", "Mehrfamilienhaus", "Bürogebäude"],
+    masse_optionen: "Breite 900–1400 mm; Höhe 2000–2500 mm; ein- oder zweiflügelig",
+    motorisierung: false,
+    windschutz: "Hoch",
+    wasserschutz: "Hoch",
+    zertifikate: ["CE", "RC2", "EN 14351"],
+    anmerkungen: "Einbruchschutz RC2/RC3; U-Wert ab 0,87 W/m²K",
+    kurzbeschreibung: "Premium-Haustür aus thermisch getrenntem Aluminium mit Mehrfachverriegelung und exzellenter Wärmedämmung.",
+    bilder: ["/images/products/transparent-shutter.png"]
+  },
+  {
+    id: "31",
+    produktname: "Sektionaltor (Garage)",
+    slug: "tuer-tor-systeme/garagentor",
+    kategorie: "Tür & Tor Systeme",
+    systemtyp: "Isoliertes Sektionaltor mit Motorantrieb",
+    material: "Doppelwandige Stahlpaneele; PU-Schaum-Isolierung; Aluminium-Zierleisten",
+    einsatzbereich: ["Garage", "Carport", "Gewerbe"],
+    masse_optionen: "Breite 2000–6000 mm; Höhe 2000–3000 mm; Schlupftür optional",
+    motorisierung: true,
+    windschutz: "Hoch",
+    wasserschutz: "Hoch",
+    zertifikate: ["CE", "EN 13241", "TÜV"],
+    anmerkungen: "App-Steuerung; Fingerprint optional; Lichtband möglich",
+    kurzbeschreibung: "Isoliertes Sektionaltor mit leisem Motorantrieb, App-Steuerung und optionalem Fingerprint-Zugang.",
+    bilder: ["/images/products/transparent-shutter.png"]
+  },
+  {
+    id: "32",
+    produktname: "Aluminium-Schiebetür",
+    slug: "tuer-tor-systeme/schiebetuer",
+    kategorie: "Tür & Tor Systeme",
+    systemtyp: "Hebe-Schiebe-Tür mit großen Glasflächen",
+    material: "Thermisch getrenntes Aluminium; Sicherheits-Isolierglas; Edelstahl-Laufschiene",
+    einsatzbereich: ["Terrasse", "Wintergarten", "Loft", "Penthouse"],
+    masse_optionen: "Breite bis 6500 mm; Höhe bis 2800 mm; 2–4 Schiebeflügel",
+    motorisierung: true,
+    windschutz: "Hoch",
+    wasserschutz: "Hoch",
+    zertifikate: ["CE", "EN 14351", "RC2"],
+    anmerkungen: "Barrierefreie Schwelle; Dreifachverglasung möglich",
+    kurzbeschreibung: "Großflächige Hebe-Schiebetür mit barrierefreier Schwelle und bis zu 4 Schiebeflügeln.",
+    bilder: ["/images/products/glass-windbreaker.png"]
+  },
+  {
+    id: "33",
+    produktname: "Industrietor / Schnelllauftor",
+    slug: "tuer-tor-systeme/industrietor",
+    kategorie: "Tür & Tor Systeme",
+    systemtyp: "Schnelllauftor für Gewerbe und Industrie",
+    material: "Aluminium-Lamellen oder PVC-Behang; Stahlrahmen; Frequenzumrichter",
+    einsatzbereich: ["Lagerhalle", "Produktionshalle", "Logistikzentrum", "Werkstatt"],
+    masse_optionen: "Breite bis 12000 mm; Höhe bis 6000 mm; Öffnungsgeschwindigkeit bis 2 m/s",
+    motorisierung: true,
+    windschutz: "Sehr hoch",
+    wasserschutz: "Hoch",
+    zertifikate: ["CE", "EN 13241", "EN 12604"],
+    anmerkungen: "Lichtschranke; Radar-Sensor; Windlast-optimiert",
+    kurzbeschreibung: "Schnelllauftor mit bis zu 2 m/s Öffnungsgeschwindigkeit, Radar-Sensorik und hoher Windlast-Beständigkeit.",
+    bilder: ["/images/products/transparent-shutter.png"]
+  },
+  {
+    id: "34",
+    produktname: "Hoftor / Einfahrtstor",
+    slug: "tuer-tor-systeme/hoftor",
+    kategorie: "Tür & Tor Systeme",
+    systemtyp: "Aluminium-Einfahrtstor als Flügel- oder Schiebetor",
+    material: "Pulverbeschichtetes Aluminium; Edelstahl-Beschläge; Elektroantrieb",
+    einsatzbereich: ["Villa", "Grundstück", "Firmengelände", "Parkplatz"],
+    masse_optionen: "Breite 3000–8000 mm; Höhe 1500–2500 mm; Flügel oder Schiene",
+    motorisierung: true,
+    windschutz: "Hoch",
+    wasserschutz: "Mittel",
+    zertifikate: ["CE", "EN 13241"],
+    anmerkungen: "Fernbedienung; Gegensprechanlage optional; Design individuell",
+    kurzbeschreibung: "Repräsentatives Einfahrtstor aus Aluminium mit Elektroantrieb und optionaler Gegensprechanlage.",
+    bilder: ["/images/products/transparent-shutter.png"]
   }
 ];
 
@@ -258,6 +343,12 @@ export const categories = [
     name: "Textile Beschattung",
     description: "Kassettenmarkisen, ZIP-Screen und Piston-Tavan Systeme für flexible und elegante Sonnenschutzlösungen.",
     image: "/images/zip-screen-systeme-terrasse-dikey-zip-b2c-hero-03.jpg"
+  },
+  {
+    id: "tuer-tor-systeme",
+    name: "Tür & Tor Systeme",
+    description: "Haustüren, Garagentore, Schiebetüren und Einfahrtstore aus hochwertigem Aluminium.",
+    image: "/images/products/transparent-shutter.png"
   }
 ];
 

@@ -16,7 +16,7 @@ export const StepCategory = ({ value, onChange }: StepCategoryProps) => {
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {CONFIGURATOR_CATEGORIES.map((cat) => (
                     <button
                         type="button"
@@ -34,6 +34,7 @@ export const StepCategory = ({ value, onChange }: StepCategoryProps) => {
                                 src={cat.image}
                                 alt={cat.label}
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                style={cat.imagePosition ? { objectPosition: cat.imagePosition } : undefined}
                             />
                             {value === cat.id && (
                                 <div className="absolute inset-0 bg-primary/10 flex items-center justify-center">

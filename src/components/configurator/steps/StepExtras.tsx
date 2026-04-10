@@ -1,7 +1,7 @@
 import { Checkbox } from "@/components/ui/checkbox";
 import { cn } from "@/lib/utils";
 import { getExtrasForCategory } from "@/lib/configurator-options";
-import { Lightbulb, Flame, Wind, Smartphone, Bug, Wrench } from "lucide-react";
+import { Lightbulb, Flame, Wind, Smartphone, Bug, Wrench, ShieldCheck, Fingerprint, Zap } from "lucide-react";
 
 const ICONS: Record<string, React.ReactNode> = {
     led: <Lightbulb className="w-5 h-5" />,
@@ -9,6 +9,9 @@ const ICONS: Record<string, React.ReactNode> = {
     seiten: <Wind className="w-5 h-5" />,
     smarthome: <Smartphone className="w-5 h-5" />,
     insektenschutz: <Bug className="w-5 h-5" />,
+    einbruchschutz: <ShieldCheck className="w-5 h-5" />,
+    fingerprint: <Fingerprint className="w-5 h-5" />,
+    antrieb: <Zap className="w-5 h-5" />,
     montage: <Wrench className="w-5 h-5" />,
 };
 

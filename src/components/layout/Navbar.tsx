@@ -35,7 +35,7 @@ const Navbar = () => {
     <nav className="dark sticky top-0 z-50 w-full border-b border-border bg-[#1A1E21] text-foreground">
       <div className="container flex h-20 items-center justify-between">
         <a href="/" className="flex items-center space-x-2">
-          <img src="/logo.png" alt="Apexx Bau Logo" className="h-[72px] md:h-24 w-auto object-contain" />
+          <img src="/logo.png" alt="Apexx Bau Logo" className="h-[60px] md:h-20 w-auto object-contain" />
         </a>
 
         {/* Desktop Navigation */}

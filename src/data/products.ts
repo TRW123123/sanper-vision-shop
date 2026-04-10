@@ -253,7 +253,7 @@ export const products: Product[] = [
     zertifikate: ["CE", "RC2", "EN 14351"],
     anmerkungen: "Einbruchschutz RC2/RC3; U-Wert ab 0,87 W/m²K",
     kurzbeschreibung: "Premium-Haustür aus thermisch getrenntem Aluminium mit Mehrfachverriegelung und exzellenter Wärmedämmung.",
-    bilder: ["/images/products/transparent-shutter.png"]
+    bilder: ["/images/products/aluminium-door.png"]
   },
   {
     id: "31",
@@ -270,7 +270,7 @@ export const products: Product[] = [
     zertifikate: ["CE", "EN 13241", "TÜV"],
     anmerkungen: "App-Steuerung; Fingerprint optional; Lichtband möglich",
     kurzbeschreibung: "Isoliertes Sektionaltor mit leisem Motorantrieb, App-Steuerung und optionalem Fingerprint-Zugang.",
-    bilder: ["/images/products/transparent-shutter.png"]
+    bilder: ["/images/products/sectional-garage-door.png"]
   },
   {
     id: "32",
@@ -287,7 +287,7 @@ export const products: Product[] = [
     zertifikate: ["CE", "EN 14351", "RC2"],
     anmerkungen: "Barrierefreie Schwelle; Dreifachverglasung möglich",
     kurzbeschreibung: "Großflächige Hebe-Schiebetür mit barrierefreier Schwelle und bis zu 4 Schiebeflügeln.",
-    bilder: ["/images/products/glass-windbreaker.png"]
+    bilder: ["/images/products/sliding-door-aluminium.png"]
   },
   {
     id: "33",
@@ -304,7 +304,7 @@ export const products: Product[] = [
     zertifikate: ["CE", "EN 13241", "EN 12604"],
     anmerkungen: "Lichtschranke; Radar-Sensor; Windlast-optimiert",
     kurzbeschreibung: "Schnelllauftor mit bis zu 2 m/s Öffnungsgeschwindigkeit, Radar-Sensorik und hoher Windlast-Beständigkeit.",
-    bilder: ["/images/products/transparent-shutter.png"]
+    bilder: ["/images/products/industrial-gate.png"]
   },
   {
     id: "34",
@@ -321,7 +321,7 @@ export const products: Product[] = [
     zertifikate: ["CE", "EN 13241"],
     anmerkungen: "Fernbedienung; Gegensprechanlage optional; Design individuell",
     kurzbeschreibung: "Repräsentatives Einfahrtstor aus Aluminium mit Elektroantrieb und optionaler Gegensprechanlage.",
-    bilder: ["/images/products/transparent-shutter.png"]
+    bilder: ["/images/products/entrance-gate-aluminium.png"]
   }
 ];
 

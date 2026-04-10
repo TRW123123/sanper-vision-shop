@@ -36,7 +36,7 @@ export const CONFIGURATOR_CATEGORIES: CategoryOption[] = [
         id: "Tür & Tor Systeme",
         label: "Tür & Tor Systeme",
         description: "Haustüren, Garagentore, Schiebetüren und Hoftore aus Aluminium.",
-        image: "/images/products/transparent-shutter.png",
+        image: "/images/products/aluminium-door.png",
         imagePosition: "center 50%",
     },
 ];

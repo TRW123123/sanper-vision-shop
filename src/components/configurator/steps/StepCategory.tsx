@@ -46,9 +46,9 @@ export const StepCategory = ({ value, onChange }: StepCategoryProps) => {
                                 </div>
                             )}
                         </div>
-                        <div className="p-4">
-                            <h3 className="font-semibold mb-1">{cat.label}</h3>
-                            <p className="text-xs text-muted-foreground leading-relaxed">{cat.description}</p>
+                        <div className="p-3">
+                            <h3 className="font-semibold text-sm leading-tight mb-1">{cat.label}</h3>
+                            <p className="text-[11px] text-muted-foreground leading-relaxed line-clamp-2">{cat.description}</p>
                         </div>
                     </button>
                 ))}

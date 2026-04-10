@@ -144,7 +144,11 @@ export const Configurator = () => {
     const render = () => {
         switch (state.step) {
             case 1:
-                return <StepCategory value={state.category} onChange={(v) => update({ category: v, productId: "" })} />;
+                return <StepCategory value={state.category} onChange={(v) => {
+                    update({ category: v, productId: "" });
+                    // Auto-advance to Step 2 after category selection
+                    setTimeout(() => setState(p => ({ ...p, step: 2 })), 300);
+                }} />;
             case 2:
                 return <StepSystem category={state.category} value={state.productId} onChange={(v) => update({ productId: v })} />;
             case 3:
@@ -194,7 +198,7 @@ export const Configurator = () => {
                 />
             </div>
 
-            <div className="mb-8 flex justify-between text-xs sm:text-sm font-medium text-muted-foreground overflow-x-auto">
+            <div className="mb-4 flex justify-between text-xs sm:text-sm font-medium text-muted-foreground overflow-x-auto">
                 {STEP_LABELS.map((label, i) => {
                     const n = i + 1;
                     return (
@@ -228,7 +232,7 @@ export const Configurator = () => {
             )}
 
             <Card className="border-none shadow-lg bg-card/50 backdrop-blur-sm">
-                <CardContent className="p-6 sm:p-8 min-h-[420px]">
+                <CardContent className="p-4 sm:p-6 min-h-[320px]">
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={state.step}
@@ -243,7 +247,7 @@ export const Configurator = () => {
                 </CardContent>
             </Card>
 
-            <div className="mt-8 flex justify-between">
+            <div className="sticky bottom-0 z-10 bg-background/80 backdrop-blur-md border-t border-border/50 -mx-4 px-4 py-4 mt-6 flex justify-between">
                 <Button
                     variant="outline"
                     onClick={prev}

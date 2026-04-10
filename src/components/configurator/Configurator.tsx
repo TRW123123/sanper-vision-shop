@@ -258,10 +258,9 @@ export const Configurator = () => {
                             {render()}
                         </motion.div>
                     </AnimatePresence>
-                </CardContent>
-            </Card>
 
-            <div className="mt-6 flex justify-between">
+                    {/* Navigation inside card so it's always visible */}
+                    <div className="mt-6 pt-4 border-t border-border/30 flex justify-between">
                 <Button
                     variant="outline"
                     onClick={prev}
@@ -283,7 +282,9 @@ export const Configurator = () => {
                         <Check className="ml-2 h-4 w-4" />
                     </Button>
                 )}
-            </div>
+                    </div>
+                </CardContent>
+            </Card>
         </div>
     );
 };
